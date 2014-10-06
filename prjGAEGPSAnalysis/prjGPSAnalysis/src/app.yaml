@@ -1,0 +1,57 @@
+application: gps-analysis
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /favicon\.ico
+  static_files: static/images/favicon.ico
+  upload: static/images/favicon.ico
+
+- url: /apple-touch-icon\.png
+  static_files: static/images/kp_map.png
+  upload: static/images/kp_map.png
+
+- url: /css
+  static_dir: static/css
+
+- url: /font-awesome
+  static_dir: static/font-awesome-4.1.0
+
+- url: /js
+  static_dir: static/javascripts
+
+- url: /img
+  static_dir: static/images
+
+- url: /ng_templates
+  static_dir: static/ng_templates
+
+- url: /leaflet
+  static_dir: static/leaflet-0.7
+
+- url: /mis
+  static_dir: static/mis
+
+- url: /robots\.txt
+  static_files: static/mis/robots.txt
+  upload: static/mis/robots.txt
+
+- url: /(.*)?
+  script: dispatchers.dispatchers_base.app
+  secure: always
+
+- url: /gps_data.*
+  script: dispatchers.dispatchers_data_analysis.app
+  secure: always
+
+inbound_services:
+- channel_presence
+
+libraries:
+- name: webapp2
+  version: latest
+
+- name: jinja2
+  version: latest

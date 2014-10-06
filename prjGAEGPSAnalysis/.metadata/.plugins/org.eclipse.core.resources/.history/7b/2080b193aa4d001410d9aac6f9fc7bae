@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+'''
+Created on Jun 24, 2014
+
+@author: Alan Tai
+'''
+__author__ = 'Alan Tai'
+
+
+from handlers.handler_webapp2_extra_auth import BaseHandler
+import logging
+import jinja2
+import webapp2
+
+# dictionaries
+
+from dictionaries.dict_keys_values import KeysVaulesGeneral
+dict_general = KeysVaulesGeneral()
+
+# jinja environment setting
+jinja_environment = jinja2.Environment(loader=jinja2.FileSystemLoader('static/templates'))
+
+# dispatchers
+class GPSDataRetrievingDispatcher(BaseHandler):
+    def post(self):
+        """ front page dispatcher """
+        template_values = {}
+        template_values.update({'title':u'Web App Demo'})
+        self.render_template(dict_general.index, template_values)
+
+# configuration
+config = dict_general.config_setting
+
+# app
+app = webapp2.WSGIApplication([
+    webapp2.Route(r'/gps_data_retrieving', GPSDataRetrievingDispatcher, name='gps_data_retrieving')
+], debug=True, config=config)
+
+# log
+logging.getLogger().setLevel(logging.DEBUG) 
+    
