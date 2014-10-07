@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;prjGPSAnalysis/src/static/ng_templates/shared/gsp_data.html&apos; to &apos;gps_data.html&apos;" description="Rename resource &apos;gsp_data.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/static/ng_templates/shared/gsp_data.html" name="gps_data.html" stamp="1412655000153" updateReferences="true"/>
+</session>

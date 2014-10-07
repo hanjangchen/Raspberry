@@ -55,9 +55,32 @@ my_app.controller('index_page_ctrl', function ($state) {
     $state.transitionTo('index_1');
   });
 
+// directives
+my_app.directive('ngIndexGpsData', function(){
+	return {
+		restrict: 'EA',
+		scope: {
+			ng_data: '=my_data'
+		},
+		transclude: true,
+		templateUrl: '/ng_templates/shared/gps_data.html',
+		link: function(scope, element, attrs){
+			scope.gpsData = 'gpsData';
+			element.bind('click', function () {
+                element.html('You clicked me!');
+            });
+			element.bind('mouseenter', function () {
+                element.css({'font-weight': 'bold'});
+            });
+			element.bind('mouseleave', function () {
+                element.css({'font-weight': '100'});
+            });
+		}
+	};
+});
 
 
-
+// functions
 function myController($scope) {
 	$scope.email = 'gogistics@gogistics-tw.com';
 	

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="57" version="2.0">
+<workbench progressCount="50" version="2.0">
 <workbenchAdvisor/>
-<window height="728" width="1024" x="100" y="0">
+<window height="414" maximized="true" width="1024" x="211" y="133">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -15,14 +15,18 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -31,10 +35,51 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="front_page.html" partName="front_page.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/desktop/front_page.html" title="front_page.html" tooltip="prjGPSAnalysis/src/static/ng_templates/desktop/front_page.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/ng_templates/desktop/front_page.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="30" selectionOffset="44" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="front_page.html" partName="front_page.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/mobile/front_page.html" title="front_page.html" tooltip="prjGPSAnalysis/src/static/ng_templates/mobile/front_page.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/ng_templates/mobile/front_page.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="44" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" partName="index.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/desktop/index.html" title="index.html" tooltip="prjGPSAnalysis/src/static/ng_templates/desktop/index.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/ng_templates/desktop/index.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="325" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" partName="index.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/mobile/index.html" title="index.html" tooltip="prjGPSAnalysis/src/static/ng_templates/mobile/index.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/ng_templates/mobile/index.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="167" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="index_1.html" partName="index_1.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/mobile/index_1.html" title="index_1.html" tooltip="prjGPSAnalysis/src/static/ng_templates/mobile/index_1.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/ng_templates/mobile/index_1.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="155" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="app.js" partName="app.js" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts/app.js" title="app.js" tooltip="prjGPSAnalysis/src/static/javascripts/app.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/javascripts/app.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="1659" selectionTopPixel="698"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="index_1.html" partName="index_1.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/desktop/index_1.html" title="index_1.html" tooltip="prjGPSAnalysis/src/static/ng_templates/desktop/index_1.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/ng_templates/desktop/index_1.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="128" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="gps_data.html" partName="gps_data.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/shared/gps_data.html" title="gps_data.html" tooltip="prjGPSAnalysis/src/static/ng_templates/shared/gps_data.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/ng_templates/shared/gps_data.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="24" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -60,12 +105,19 @@
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis"/>
-<selected IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/models"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/desktop"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/mobile"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/shared"/>
+<selected IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/ng_templates/shared/gps_data.html"/>
 </viewState>
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.python.pydev.navigator.view" activePerspective="org.python.pydev.ui.PythonPerspective">
+<perspectives activePart="org.eclipse.wst.html.core.htmlsource.source" activePerspective="org.python.pydev.ui.PythonPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -139,31 +191,22 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@7a9af7" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7a9af7" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.6985173" ratioLeft="424" ratioRight="183" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.AllMarkersView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
+<info folder="true" part="bottomRight" ratio="0.6985173" ratioLeft="424" ratioRight="183" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.AllMarkersView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
@@ -174,8 +217,7 @@
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -183,12 +225,9 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.7" ratioLeft="525" ratioRight="225" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="topRight" ratio="0.7" ratioLeft="525" ratioRight="225" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -267,7 +306,164 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/ng_templates/desktop/index_1.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/ng_templates/mobile/index_1.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/prjGPSAnalysis/src/static/javascripts/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/ng_templates/shared/gps_data.html"/>
+</editors>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="1595" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="1">
+<position info="not_deleted" x="81" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="1586" y="1"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="1586" y="1"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="1586" y="1"/>
+</item>
+<item historyLabel="gps_data.html" index="3">
+<position info="not_deleted" x="35" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="1586" y="1"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="145" y="0"/>
+</item>
+<item historyLabel="gps_data.html" index="3">
+<position info="not_deleted" x="63" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="145" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="2032" y="0"/>
+</item>
+<item historyLabel="gps_data.html" index="3">
+<position info="not_deleted" x="63" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position/>
+</item>
+<item historyLabel="gps_data.html" index="3">
+<position/>
+</item>
+<item historyLabel="index_1.html" index="1">
+<position info="not_deleted" x="81" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="2032" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="105" y="0"/>
+</item>
+<item historyLabel="gps_data.html" index="3">
+<position info="not_deleted" x="23" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="2032" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="2172" y="0"/>
+</item>
+<item historyLabel="gps_data.html" index="3">
+<position info="not_deleted" x="33" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="2172" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="gps_data.html" index="3">
+<position info="not_deleted" x="24" y="11"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="2285" y="0"/>
+</item>
+<item historyLabel="gps_data.html" index="3">
+<position info="not_deleted" x="24" y="11"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="1830" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="125" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position/>
+</item>
+<item historyLabel="gps_data.html" index="3">
+<position info="not_deleted" x="24" y="11"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="120" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="120" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="108" y="0"/>
+</item>
+<item historyLabel="app.js" index="2">
+<position info="not_deleted" x="1659" y="7"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="108" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="1">
+<position info="not_deleted" x="81" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="106" y="21"/>
+</item>
+<item historyLabel="index_1.html" index="1">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="106" y="21"/>
+</item>
+<item historyLabel="index_1.html" index="1">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="index_1.html" index="0">
+<position info="not_deleted" x="128" y="21"/>
+</item>
+<item active="true" historyLabel="index_1.html" index="1">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -281,10 +477,55 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.intro.impl.presentations.IntroLaunchBar"/>
 <trimItem IMemento.internal.id="com.google.gdt.eclipse.login.status.trim"/>
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="gps_data.html" tooltip="prjGPSAnalysis/src/static/ng_templates/shared/gps_data.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/shared/gps_data.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index_1.html" tooltip="prjGPSAnalysis/src/static/ng_templates/desktop/index_1.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/desktop/index_1.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="gsp_data.html" tooltip="prjGPSAnalysis/src/static/ng_templates/shared/gsp_data.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/shared/gsp_data.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="app.js" tooltip="prjGPSAnalysis/src/static/javascripts/app.js">
+<persistable path="/prjGPSAnalysis/src/static/javascripts/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index_1.html" tooltip="prjGPSAnalysis/src/static/ng_templates/mobile/index_1.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/mobile/index_1.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index_2.html" tooltip="prjGPSAnalysis/src/static/ng_templates/mobile/index_2.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/mobile/index_2.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" tooltip="prjGPSAnalysis/src/static/ng_templates/mobile/index.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/mobile/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="app.yaml" tooltip="prjGPSAnalysis/src/app.yaml">
+<persistable path="/prjGPSAnalysis/src/app.yaml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="models_gps_data.py" tooltip="prjGPSAnalysis/src/models/models_gps_data.py">
+<persistable path="/prjGPSAnalysis/src/models/models_gps_data.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="dispatchers_base.py" tooltip="prjGPSAnalysis/src/dispatchers/dispatchers_base.py">
+<persistable path="/prjGPSAnalysis/src/dispatchers/dispatchers_base.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="dispatchers_data_analysis.py" tooltip="prjGPSAnalysis/src/dispatchers/dispatchers_data_analysis.py">
+<persistable path="/prjGPSAnalysis/src/dispatchers/dispatchers_data_analysis.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" tooltip="prjGPSAnalysis/src/static/ng_templates/desktop/index.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/desktop/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index_2.html" tooltip="prjGPSAnalysis/src/static/ng_templates/desktop/index_2.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/desktop/index_2.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="front_page.html" tooltip="prjGPSAnalysis/src/static/ng_templates/mobile/front_page.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/mobile/front_page.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="front_page.html" tooltip="prjGPSAnalysis/src/static/ng_templates/desktop/front_page.html">
+<persistable path="/prjGPSAnalysis/src/static/ng_templates/desktop/front_page.html"/>
+</file>
+</mruList>
 </workbench>

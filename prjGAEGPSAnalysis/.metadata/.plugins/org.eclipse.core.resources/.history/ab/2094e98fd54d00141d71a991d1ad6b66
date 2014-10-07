@@ -1,0 +1,4 @@
+<div ng-controller="myController">
+    <h4>GPS Analysis (Desktop Index 2)</h4>
+    <p>index_2</p>
+</div>

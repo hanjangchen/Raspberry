@@ -1,0 +1,6 @@
+<div ng-controller="myController">
+    <h4>GPS Analysis (Mobile Index)</h4>
+	<ng-link ui-sref = "index_1" ng-class="is_selected('index_1') ? 'active' : 'inactive' " ng-mousedown="select_topic('index_1')">Index 1</ng-link>
+    <ng-link ui-sref = "index_2" ng-class="is_selected('index_2') ? 'active' : 'inactive' " ng-mousedown="select_topic('index_2')">Index 2</ng-link>
+    <div ui-view></div>
+</div>
