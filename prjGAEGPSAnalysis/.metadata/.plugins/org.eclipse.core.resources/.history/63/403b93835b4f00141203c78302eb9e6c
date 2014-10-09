@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+.active {
+    color: #f00;
+}
+.active:hover {
+    cursor: pointer;
+}
+.inactive {
+    color: #000;
+}
+.inactive:hover {
+    cursor: pointer;
+}
+
+#template_conatiner_view{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}

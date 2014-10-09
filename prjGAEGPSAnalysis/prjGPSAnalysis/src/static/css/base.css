@@ -12,3 +12,8 @@
 .inactive:hover {
     cursor: pointer;
 }
+
+.template_conatiner_view{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}

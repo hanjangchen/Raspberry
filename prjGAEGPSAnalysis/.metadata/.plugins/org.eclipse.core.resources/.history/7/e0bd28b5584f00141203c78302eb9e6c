@@ -1,0 +1,11 @@
+<div ng-controller="myController" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+	    <h4 class="navbar-brand">GPS Analysis (Desktop Index)</h4>
+	    <span class="navbar-text nav">Company Email: {{email}}</span>
+	    <ng-link ui-sref = "index_1" ng-class="is_selected('index_1') ? 'active' : 'inactive' " ng-click="select_topic('index_1')">Index 1</ng-link>
+	    <ng-link ui-sref = "index_2" ng-class="is_selected('index_2') ? 'active' : 'inactive' " ng-click="select_topic('index_2')">Index 2</ng-link>
+    </div>
+</div>
+
+<!-- template view -->
+<div ui-view></div>
