@@ -1,0 +1,5 @@
+<div ng-controller="myController" class="navbar navbar-default navbar-fixed-top">
+    <h2 class="navbar-header text-center">GPS Analysis (Desktop Version)</h2>
+    <p>Company Email: {{email}}</p>
+    <a  ui-sref="index_page"> Go to Index</a>
+</div>

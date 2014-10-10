@@ -40,11 +40,9 @@ handlers:
 
 - url: /(.*)?
   script: dispatchers.dispatchers_base.app
-  secure: always
 
 - url: /gps_data.*
   script: dispatchers.dispatchers_data_analysis.app
-  secure: always
 
 inbound_services:
 - channel_presence
