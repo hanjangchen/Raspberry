@@ -41,7 +41,7 @@ config = dict_general.config_setting
 # app
 app = webapp2.WSGIApplication([
     webapp2.Route(r'/', FrontPageDispatcher, name='front_page'),
-    webapp2.Route(r'/test/<regx_id:\d+>', RegxTestDispatcher, name='regx_page')
+    webapp2.Route(r'/base/test/<regx_id:\d+>', RegxTestDispatcher, name='regx_page')
 ], debug=True, config=config)
 
 # log

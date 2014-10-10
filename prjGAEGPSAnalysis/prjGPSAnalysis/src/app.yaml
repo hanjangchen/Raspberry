@@ -38,10 +38,10 @@ handlers:
   static_files: static/mis/robots.txt
   upload: static/mis/robots.txt
 
-- url: /(.*)?
+- url: /(base/.*)?
   script: dispatchers.dispatchers_base.app
 
-- url: /gps_data.*
+- url: /gps_data_retrieving
   script: dispatchers.dispatchers_data_analysis.app
 
 inbound_services:
