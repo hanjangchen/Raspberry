@@ -1,0 +1,16 @@
+<div ng-controller="myController">
+	<h4>GPS Analysis</h4>
+	<p>index_2</p>
+	<video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
+ preload="auto" width="200" height="100"
+ data-setup="{}">
+ <source src="/mis/trailer_480p.mov" type='video/mp4'>
+ <source src="/mis/big-buck-bunny_trailer.webm" type='video/webm'>
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+
+<video width="320" height="240">
+  <source src="/mis/trailer_480p.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+  <source src="/mis/big-buck-bunny_trailer.webm" type='video/webm; codecs="theora, vorbis"' />
+</video>
+</div>

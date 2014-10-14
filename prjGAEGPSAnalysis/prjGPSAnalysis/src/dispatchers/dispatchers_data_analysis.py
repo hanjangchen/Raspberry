@@ -49,7 +49,7 @@ config = dict_general.config_setting
 
 # app routing
 app = webapp2.WSGIApplication([
-    webapp2.Route(r'/gps_data_retrieving', GPSDataRetrievingDispatcher, name='gps_data_retrieving')
+    webapp2.Route(r'/data_retrieving/temperature', GPSDataRetrievingDispatcher, name='data_retrieving_temperature')
 ], debug=True, config=config)
 
 # log info.

@@ -41,7 +41,7 @@ handlers:
 - url: /(base/.*)?
   script: dispatchers.dispatchers_base.app
 
-- url: /gps_data_retrieving
+- url: /data_retrieving/.*
   script: dispatchers.dispatchers_data_analysis.app
 
 inbound_services:
