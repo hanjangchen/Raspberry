@@ -10,13 +10,14 @@ angular.module('myGpsDataDirective', []).directive('myIndexGpsData', function(){
 		link: function(scope, element, attrs){
 			 scope.gpsData = 'Under Construction...';
 			 element.bind('click', function () {
-             alert('Topic Selected...');
+             element.html('You clicked me!');
          });
 			element.bind('mouseenter', function () {
              element.css({'font-weight': 'bold', 'cursor': 'pointer'});
+             element.css({});
          });
 			element.bind('mouseleave', function () {
-             element.css({'font-weight': '300'});
+             element.css({'font-weight': '100'});
          });
 			
 		}

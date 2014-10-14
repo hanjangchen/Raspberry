@@ -16,7 +16,7 @@ angular.module('myGpsDataDirective', []).directive('myIndexGpsData', function(){
              element.css({'font-weight': 'bold', 'cursor': 'pointer'});
          });
 			element.bind('mouseleave', function () {
-             element.css({'font-weight': '300'});
+             element.css({'font-weight': '100'});
          });
 			
 		}
