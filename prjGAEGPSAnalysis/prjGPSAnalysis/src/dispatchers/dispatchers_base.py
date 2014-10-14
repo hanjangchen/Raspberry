@@ -25,7 +25,7 @@ class FrontPageDispatcher(BaseHandler):
     def get(self):
         """ front page dispatcher """
         template_values = {}
-        template_values.update({'title':u'Web App Demo'})
+        template_values.update({'title':u'GPS Analysis'})
         self.render_template(dict_general.index, template_values)
         
 class RegxTestDispatcher(BaseHandler):

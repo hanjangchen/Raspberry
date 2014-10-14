@@ -11,7 +11,8 @@ dictionary for key-value pairs
 class KeysVaulesGeneral():
     """ keys values pairs """
     def __init__(self):
-        self.brand_title = u'澎湖小男孩'
+        self.brand_title = u'Gogistics'
+        self.web_title = u'GPS Analysis'
         self.index = '/front_page_container.html'
         
         #webapp2 config

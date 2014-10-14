@@ -8,7 +8,7 @@ angular.module('myGpsDataDirective', []).directive('myIndexGpsData', function(){
 		controller: function($scope){
 		},
 		link: function(scope, element, attrs){
-			 scope.gpsData = 'gpsData';
+			 scope.gpsData = 'Under Construction...';
 			 element.bind('click', function () {
              element.html('You clicked me!');
          });

@@ -1,0 +1,6 @@
+<div ng-controller="myController">
+    <h4>GPS Analysis</h4>
+    <my-index-gps-data my-data = "{'key':'value'}">
+    <p>Content</p>
+    </my-index-gps-data>
+</div>
