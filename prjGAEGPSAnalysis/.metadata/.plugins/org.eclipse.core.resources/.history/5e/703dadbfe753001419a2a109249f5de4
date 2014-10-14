@@ -29,10 +29,18 @@
 <div ui-view class="jumbotron text-center template_conatiner_view"></div>
 
 <script type="text/javascript">
+	var $menu_list = $('#menu_list');
 	var $list_icon = $('#list_icon');
+
+	function isCollapsed(element) {
+		var $e = element;
+
+		return $e.width() * $e.height() === 0;
+	}
 
 	$('.navbar-collapse a').click(function() {
 		if ($list_icon.is(":visible")) {
+			console.log('collapse');
 			$(".navbar-collapse").collapse('hide');
 		}
 	});

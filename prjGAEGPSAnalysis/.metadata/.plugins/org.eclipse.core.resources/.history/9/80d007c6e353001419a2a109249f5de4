@@ -11,17 +11,6 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-
-<!-- fav and touch icons for Apple devices -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144"
-	href="">
-<link rel="apple-touch-icon-precomposed" sizes="114x114"
-	href="">
-<link rel="apple-touch-icon-precomposed" sizes="72x72"
-	href="">
-<link rel="apple-touch-icon-precomposed"
-	href="">
-
 <!-- Bootstrap Core CSS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/base.css" rel="stylesheet">

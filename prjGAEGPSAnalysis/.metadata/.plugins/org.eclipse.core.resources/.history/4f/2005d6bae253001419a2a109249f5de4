@@ -1,7 +1,8 @@
 <div ng-controller="myIndexCtrl"
 	class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
+	<div>
+	<div class="container-fluid">
+		<div class="navbar-header" style="min-width: 300px;">
 			<div class="navbar-brand">Raspberry PI + GAE (GPS Analysis)</div>
 
 			<button id="list_icon" type="button" class="navbar-toggle"
@@ -11,7 +12,8 @@
 			</button>
 		</div>
 
-		<div id="menu_list" class="collapse navbar-collapse navHeaderCollapse">
+		<div id="menu_list" class="collapse navbar-collapse navHeaderCollapse"
+			style="min-width: 200px;">
 			<ul class="nav navbar-nav navbar-right text-center">
 				<li ng-class="is_selected('index_1') ? 'active' : 'inactive' "
 					ng-click="select_topic('index_1')"><a ui-sref="index_1">Index
@@ -23,16 +25,23 @@
 			</ul>
 		</div>
 	</div>
+	</div>
 </div>
 
 <!-- template view -->
 <div ui-view class="jumbotron text-center template_conatiner_view"></div>
 
 <script type="text/javascript">
-	var $list_icon = $('#list_icon');
+	var $menu_list = $('#menu_list');
+
+	function isCollapsed(element) {
+		var $e = $(element);
+
+		return $e.width() * $e.height() === 0;
+	}
 
 	$('.navbar-collapse a').click(function() {
-		if ($list_icon.is(":visible")) {
+		if (!isCollapsed($menu_list)) {
 			$(".navbar-collapse").collapse('hide');
 		}
 	});

@@ -25,6 +25,13 @@
 <!-- Bootstrap Core CSS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/base.css" rel="stylesheet">
+<style type="text/css">
+@media (min-width: 800px) and (max-width: 1000px) {
+   .collapse {
+       display: none !important;
+   }
+}
+</style>
 {% block css_content %} {% endblock %}
 
 

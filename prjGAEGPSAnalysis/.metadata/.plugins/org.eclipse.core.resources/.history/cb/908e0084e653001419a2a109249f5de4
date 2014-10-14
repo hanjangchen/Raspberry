@@ -25,6 +25,7 @@
 <!-- Bootstrap Core CSS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/base.css" rel="stylesheet">
+</style>
 {% block css_content %} {% endblock %}
 
 

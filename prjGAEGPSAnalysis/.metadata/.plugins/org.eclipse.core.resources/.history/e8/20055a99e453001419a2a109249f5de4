@@ -1,6 +1,6 @@
 <div ng-controller="myIndexCtrl"
 	class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="navbar-header">
 			<div class="navbar-brand">Raspberry PI + GAE (GPS Analysis)</div>
 
@@ -29,10 +29,16 @@
 <div ui-view class="jumbotron text-center template_conatiner_view"></div>
 
 <script type="text/javascript">
-	var $list_icon = $('#list_icon');
+	var $menu_list = $('#menu_list');
+
+	function isCollapsed(element) {
+		var $e = $(element);
+
+		return $e.width() * $e.height() === 0;
+	}
 
 	$('.navbar-collapse a').click(function() {
-		if ($list_icon.is(":visible")) {
+		if (!isCollapsed($menu_list)) {
 			$(".navbar-collapse").collapse('hide');
 		}
 	});

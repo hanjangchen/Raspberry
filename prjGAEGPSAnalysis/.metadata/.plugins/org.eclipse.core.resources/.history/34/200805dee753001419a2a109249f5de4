@@ -33,6 +33,7 @@
 
 	$('.navbar-collapse a').click(function() {
 		if ($list_icon.is(":visible")) {
+			console.log('collapse');
 			$(".navbar-collapse").collapse('hide');
 		}
 	});
