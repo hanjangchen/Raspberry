@@ -1,0 +1,41 @@
+<div ng-controller="myIndexCtrl" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+    
+    	<div class="navbar-header" style="min-width: 300px;">
+		    <div class="navbar-brand">Raspberry PI + GAE (GPS Analysis)</div>
+		    
+		    <button id="list_icon" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" rel="popover">
+		    	<span class="icon-bar"></span>
+		    	<span class="icon-bar"></span>
+		    	<span class="icon-bar"></span>
+		    </button>
+	    </div>
+	    
+	    <div class="collapse navbar-collapse navHeaderCollapse" style="min-width: 200px;">
+		    <ul class="nav navbar-nav navbar-right text-center">
+			    <li ng-class="is_selected('index_1') ? 'active' : 'inactive' " ng-click="select_topic('index_1')"><a ui-sref = "index_1" >Index 1 (Introduction)</a></li>
+			    <li ng-class="is_selected('index_2') ? 'active' : 'inactive' " ng-click="select_topic('index_2')"><a ui-sref = "index_2" >Index 2 (Data Analysis)</a></li>
+		    	<li><div class="navbar-text">Contact Us: [[email]]</div></li>
+		    </ul>
+	    </div>
+    </div>
+</div>
+
+<!-- template view -->
+<div ui-view class="jumbotron text-center template_conatiner_view"></div>
+
+<script type="text/javascript">
+var $dropdown = $('#list_icon');
+if (!$dropdown.data('popover')) {
+    // $dropdown.popover('show');
+    console.log('popover off');
+} else {
+    // $dropdown.popover('destroy');
+	console.log('popover on');
+}
+
+$dropdown.click(function(){
+	$dropdown.data('popover');
+    // $(".navbar-collapse").collapse('hide');
+});
+</script>

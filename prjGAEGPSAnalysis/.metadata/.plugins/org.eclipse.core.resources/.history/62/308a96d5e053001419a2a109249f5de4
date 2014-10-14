@@ -40,8 +40,10 @@
 	}
 
 	$('.navbar-collapse a').click(function() {
+		console.log(isCollapsed($menu_list));
 		if (!isCollapsed($menu_list)) {
 			$(".navbar-collapse").collapse('hide');
 		}
 	});
+
 </script>

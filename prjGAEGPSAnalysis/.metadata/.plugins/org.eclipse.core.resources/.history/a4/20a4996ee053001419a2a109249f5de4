@@ -31,6 +31,7 @@
 <div ui-view class="jumbotron text-center template_conatiner_view"></div>
 
 <script type="text/javascript">
+	var $dropdown = $('#list_icon');
 	var $menu_list = $('#menu_list');
 
 	function isCollapsed(element) {
@@ -39,9 +40,20 @@
 		return $e.width() * $e.height() === 0;
 	}
 
-	$('.navbar-collapse a').click(function() {
-		if (!isCollapsed($menu_list)) {
-			$(".navbar-collapse").collapse('hide');
+	$dropdown.click(function() {
+		if (isCollapsed($menu_list)) {
+			console.log('collapse');
+		} else {
+			console.log('not collapse');
 		}
 	});
+
+	$('.navbar-collapse a').click(function() {
+		console.log(isCollapsed($menu_list));
+		if (isCollapsed($menu_list)) {
+			$(".navbar-collapse").collapse('hide');
+			console.log('collapse');
+		}
+	});
+
 </script>

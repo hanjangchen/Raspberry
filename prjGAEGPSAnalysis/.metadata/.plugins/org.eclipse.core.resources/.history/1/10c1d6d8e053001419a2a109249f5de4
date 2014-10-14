@@ -44,4 +44,5 @@
 			$(".navbar-collapse").collapse('hide');
 		}
 	});
+
 </script>
