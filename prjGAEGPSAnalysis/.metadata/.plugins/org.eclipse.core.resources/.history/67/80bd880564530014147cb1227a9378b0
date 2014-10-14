@@ -1,0 +1,6 @@
+<div ng-controller="myController">
+	<div ng-transclude></div>
+	<div>
+		<br> GPS-Data: {{gpsData}}
+	</div>
+</div>

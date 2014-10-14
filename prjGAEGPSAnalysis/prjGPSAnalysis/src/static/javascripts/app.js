@@ -1,11 +1,24 @@
+/*
+ * base.js
+ * 1. handle base template
+ * 2. handle whole front-end templates routing
+ * 
+ * */
 'use strict';
 
-// Declare app level module which depends on filters, and services
-var my_app = angular.module('my_app', [ 'angular-responsive', 'ui.router', 'myGpsDataDirective' ]);
+// Declare app level module which depends on filters, and services, and modify $interpolateProvider to avoid the conflict with jinja2' symbol
+var my_app = angular.module('my_app', [ 'angular-responsive', 'ui.router', 'myGpsDataDirective' ], function($interpolateProvider) {
+	$interpolateProvider.startSymbol('[[');
+	$interpolateProvider.endSymbol(']]');
+});
+
+// global values
+my_app.value('GLOBAL_VALUES',{
+	EMAIL : 'gogistics@gogistics-tw.com'
+});
 
 // routing configuration
 my_app.config(function(responsiveHelperProvider, $stateProvider, $urlRouterProvider) {
-
 	// templates dispatcher which redirect visitors to appropriate templates;
 	// currently, there are desktop and mobile versions
 	var device = 'desktop';
@@ -30,7 +43,7 @@ my_app.config(function(responsiveHelperProvider, $stateProvider, $urlRouterProvi
 		url: '/index',
 		parent: 'home',
 		templateUrl: '/ng_templates/' + device + '/index.html',
-		controller: 'index_page_ctrl'
+		controller: 'indexPageDispatchCtrl'
 	})
 	.state('index_1', {
 		url: '/index_1',
@@ -46,17 +59,27 @@ my_app.config(function(responsiveHelperProvider, $stateProvider, $urlRouterProvi
 });
 
 /* controllers */
-//show default front page
-my_app.controller('front_page_ctrl', function ($state) {
-      $state.transitionTo('front_page');
-    });
+// ng-functions mapper
+my_app
+.controller('frontPageDispatchCtrl', frontPageDispatcheController)
+.controller('indexPageDispatchCtrl', indexPageDispatcheController)
+.controller('myIndexCtrl', myIndexController);
 
-my_app.controller('index_page_ctrl', function ($state) {
+// functions
+frontPageDispatcheController.$injector = ['$state', '$scope', 'GLOBAL_VALUES'];
+function frontPageDispatcheController($state, $scope, GLOBAL_VALUES) {
+	$scope.email = GLOBAL_VALUES.EMAIL;
+    $state.transitionTo('front_page');
+}
+
+indexPageDispatcheController.$injector = ['$state'];
+function indexPageDispatcheController($state) {
     $state.transitionTo('index_1');
-  });
+}
 
-my_app.controller('myController', function ($scope) {
-	$scope.email = 'gogistics@gogistics-tw.com';
+myIndexController.$injector = ['$scope', 'GLOBAL_VALUES'];
+function myIndexController($scope, GLOBAL_VALUES) {
+	$scope.email = GLOBAL_VALUES.EMAIL;
 	
 	$scope.select_topic = function(section) {
         $scope.selected = section;
@@ -68,4 +91,4 @@ my_app.controller('myController', function ($scope) {
 	
     // init selected topic
     $scope.select_topic('index_1');
-  });
+}
