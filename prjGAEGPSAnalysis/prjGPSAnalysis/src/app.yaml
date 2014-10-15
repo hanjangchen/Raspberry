@@ -26,7 +26,7 @@ handlers:
   static_dir: static/images
 
 - url: /ng_templates
-  static_dir: static/ng_templates
+  static_dir: static/my_ng_templates
 
 - url: /leaflet
   static_dir: static/leaflet-0.7

@@ -6,7 +6,7 @@
  * */
 'use strict';
 
-// Declare app level module which depends on filters, and services, and modify $interpolateProvider to avoid the conflict with jinja2' symbol
+// declare app level module which depends on filters, and services, and modify $interpolateProvider to avoid the conflict with jinja2' symbol
 var my_app = angular.module('my_app', [ 'angular-responsive', 'ui.router', 'myGpsDataDirective' ], function($interpolateProvider) {
 	$interpolateProvider.startSymbol('[[');
 	$interpolateProvider.endSymbol(']]');
@@ -17,7 +17,7 @@ my_app.value('GLOBAL_VALUES',{
 	EMAIL : 'gogistics@gogistics-tw.com'
 });
 
-// routing configuration
+// app-routing configuration
 my_app.config(function(responsiveHelperProvider, $stateProvider, $urlRouterProvider) {
 	// templates dispatcher which redirect visitors to appropriate templates;
 	// currently, there are desktop and mobile versions
@@ -40,9 +40,9 @@ my_app.config(function(responsiveHelperProvider, $stateProvider, $urlRouterProvi
 		templateUrl: '/ng_templates/' + device + '/front_page.html'
 	})
 	.state('index_page', {
-		url: '/index_page',
 		parent: 'home',
-		templateUrl: '/ng_templates/' + device + '/index.html'
+		templateUrl: '/ng_templates/' + device + '/index.html',
+		controller: 'indexPageDispatchCtrl'
 	})
 	.state('index_1', {
 		url: '/index_1',
@@ -75,7 +75,11 @@ function frontPageDispatchController($state, $scope, GLOBAL_VALUES) {
 indexPageDispatchController.$injector = ['$state', '$scope', 'GLOBAL_VALUES'];
 function indexPageDispatchController($state, $scope, GLOBAL_VALUES) {
 	$scope.email = GLOBAL_VALUES.EMAIL;
-    $state.transitionTo('index_1');
+	console.log($state.current.name);
+	
+	if($state.current.name !== 'index_1'){
+	    $state.transitionTo('index_1');
+	}
 }
 
 // page controllers

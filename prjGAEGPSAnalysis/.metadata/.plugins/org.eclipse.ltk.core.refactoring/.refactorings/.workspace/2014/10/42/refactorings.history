@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/prjGPSAnalysis/src/static/mis/big-buck-bunny_trailer.webm" element2="/prjGPSAnalysis/src/static/mis/trailer_480p.mov" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1413244993028"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/prjGPSAnalysis/src/static/mis/big-buck-bunny_trailer.webm" element2="/prjGPSAnalysis/src/static/mis/trailer_480p.mov" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1413244993028"/>&#x0A;<refactoring comment="Delete resource &apos;prjGPSAnalysis/src/static/javascripts/my_ng/directives&apos;" deleteContents="false" description="Delete resource &apos;prjGPSAnalysis/src/static/javascripts/my_ng/directives&apos;" element1="/prjGPSAnalysis/src/static/javascripts/my_ng/directives" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1413403633655"/>
 </session>

@@ -1,0 +1,7 @@
+<!-- sub-template for index page -->
+<div>
+    <h2>GPS Analysis</h2>
+    <my-index-gps-data my-data = "">
+    <p>Index 2</p>
+    </my-index-gps-data>
+</div>
