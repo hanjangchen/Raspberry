@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;prjGPSAnalysis/src/static/javascripts/my_ng_directives&apos; to &apos;my_ng&apos;" description="Rename resource &apos;my_ng_directives&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/static/javascripts/my_ng_directives" name="my_ng" stamp="1413402766519" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;prjGPSAnalysis/src/static/javascripts/app.js&apos; to &apos;base.js&apos;" description="Rename resource &apos;app.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/static/javascripts/app.js" name="base.js" stamp="1413402993293" updateReferences="true"/>
+</session>

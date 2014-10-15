@@ -13,6 +13,10 @@ class KeysVaulesGeneral():
     def __init__(self):
         self.brand_title = u'Gogistics'
         self.web_title = u'GPS Analysis'
+        
+        self.web_title_front_page = u'GPS Analysis - Front Page'
+        self.web_title_index_page = u'GPS Analysis - Index Page'
+        
         self.front_page = '/front_page_container.html'
         self.index_page = '/index_page_container.html'
         

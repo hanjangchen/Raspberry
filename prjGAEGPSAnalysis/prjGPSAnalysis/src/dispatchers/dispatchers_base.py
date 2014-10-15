@@ -25,7 +25,7 @@ class FrontPageDispatcher(BaseHandler):
     def get(self):
         """ front page dispatcher """
         template_values = {}
-        template_values.update({'title':u'GPS Analysis - Front Page'})
+        template_values.update({'title': dict_general.web_title_front_page})
         self.render_template(dict_general.front_page, template_values)
         
 # dispatchers
@@ -33,7 +33,7 @@ class IndexPageDispatcher(BaseHandler):
     def get(self):
         """ front page dispatcher """
         template_values = {}
-        template_values.update({'title':u'GPS Analysis - Index Page'})
+        template_values.update({'title':dict_general.web_title_index_page})
         self.render_template(dict_general.index_page, template_values)
         
 class RegxTestDispatcher(BaseHandler):
