@@ -1,0 +1,13 @@
+{% extends "/base.html"%}
+
+<!-- css block -->
+{% block css_content %}
+{% endblock %}
+
+<!-- main content -->
+{% block main_content %}
+<div ui-view ng-controller="indexPageDispatchCtrl"></div>
+{% endblock %}
+
+<!-- js block -->
+{% block js_content %}{% endblock %}

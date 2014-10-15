@@ -25,8 +25,16 @@ class FrontPageDispatcher(BaseHandler):
     def get(self):
         """ front page dispatcher """
         template_values = {}
-        template_values.update({'title':u'GPS Analysis'})
-        self.render_template(dict_general.index, template_values)
+        template_values.update({'title':u'GPS Analysis - Front Page'})
+        self.render_template(dict_general.front_page, template_values)
+        
+# dispatchers
+class IndexPageDispatcher(BaseHandler):
+    def get(self):
+        """ front page dispatcher """
+        template_values = {}
+        template_values.update({'title':u'GPS Analysis - Index Page'})
+        self.render_template(dict_general.index_page, template_values)
         
 class RegxTestDispatcher(BaseHandler):
     def get(self, regx_id):
@@ -41,6 +49,7 @@ config = dict_general.config_setting
 # app
 app = webapp2.WSGIApplication([
     webapp2.Route(r'/', FrontPageDispatcher, name='front_page'),
+    webapp2.Route(r'/base/index', IndexPageDispatcher, name='index_page'),
     webapp2.Route(r'/base/test/<regx_id:\d+>', RegxTestDispatcher, name='regx_page')
 ], debug=True, config=config)
 
