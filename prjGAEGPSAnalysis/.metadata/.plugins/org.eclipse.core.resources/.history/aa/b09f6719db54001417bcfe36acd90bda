@@ -13,7 +13,7 @@
 	
 	<div class="collapse navbar-collapse navHeaderCollapse" style="min-width: 200px;">
 		    <ul class="nav navbar-nav navbar-left text-center">
-			    <li><a  href="/base/index" target="_blank"> Go to Index</a></li>
+			    <li><a  href="/base/index"> Go to Index</a></li>
 		    	<li><div class="navbar-text navbar-right">Contact Us: [[email]]</div></li>
 		    </ul>
 	</div>

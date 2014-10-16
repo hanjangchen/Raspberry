@@ -30,7 +30,7 @@
 
 <title>{{ title|safe }}</title>
 </head>
-<body>
+<body ng-app="my_app">
 
 	<!-- main content -->
 	{% block main_content %}

@@ -6,7 +6,7 @@
 
 <!-- main content -->
 {% block main_content %}
-<div ng-app="front_page_app" ng-controller="frontPageDispatchCtrl"  ui-view></div>
+<div ui-view ng-controller="frontPageDispatchCtrl"></div>
 {% endblock %}
 
 <!-- sub-js block -->

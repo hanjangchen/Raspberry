@@ -30,7 +30,7 @@
 
 <title>{{ title|safe }}</title>
 </head>
-<body>
+<body ng-app="my_app">
 
 	<!-- main content -->
 	{% block main_content %}
@@ -50,8 +50,6 @@
 	<!-- mis js -->
 	<script type="text/javascript" src="/js/plugin_mis/responsive-directive.js"></script>
 	<script type="text/javascript" src="/js/plugin_bootstrap/bootstrap.min.js"></script>
-	
-	<!-- self-defined js -->
 	<script type="text/javascript" src="/js/base.js"></script>
 	
 	<!-- sub-js -->
