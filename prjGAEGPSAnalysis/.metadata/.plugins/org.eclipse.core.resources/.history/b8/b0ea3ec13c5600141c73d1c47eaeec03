@@ -1,0 +1,26 @@
+<!-- sub-template for index page -->
+<div>
+	<h2>GPS Analysis</h2>
+
+	<!-- shared content which is injected by directive -->
+	<my-index-gps-data>
+	<p>Index 1</p>
+	</my-index-gps-data>
+
+
+	<!--  -->
+	<div class="container-fluid">
+
+		<div class="row-fluid">
+			<div class="col-sm-3">
+				<h4>1 - Extra Small Columns</h4>
+			</div>
+			<div class="col-sm-3">
+				<h4>2 - Extra Small Columns</h4>
+			</div>
+			<div class="col-sm-3">
+				<h4>3 - Extra Small Columns</h4>
+			</div>
+		</div>
+	</div>
+</div>
