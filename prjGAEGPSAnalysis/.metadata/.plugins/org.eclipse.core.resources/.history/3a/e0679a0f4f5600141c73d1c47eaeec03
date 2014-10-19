@@ -1,0 +1,23 @@
+<!-- sub-template for index page -->
+<div>
+	<h2>GPS Analysis</h2>
+	<my-index-gps-data>
+	<p>Index 2</p>
+	</my-index-gps-data>
+</div>
+
+
+
+<!--  -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="span6">
+			<div class="span3">Left column A!</div>
+			<div class="span3">Left column B!</div>
+		</div>
+		<div class="span6">
+			<div class="span3">Right column A!</div>
+			<div class="span3">Right column B!</div>
+		</div>
+	</div>
+</div>
