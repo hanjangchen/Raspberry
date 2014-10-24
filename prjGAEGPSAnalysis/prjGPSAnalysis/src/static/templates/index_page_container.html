@@ -11,5 +11,17 @@
 
 <!-- sub-js block -->
 {% block js_content %}
+
+<script type="text/javascript">
+{% if gps_data_dict %}
+var gps_data_set = '{{gps_data_dict}}';
+
+{% for data in gps_data_set %}
+	console.log("{{data.gps_data}}");
+{% endfor %}
+
+{% endif %}
+</script>
+
 <script type="text/javascript" src="/js/index_page.js"></script>
 {% endblock %}

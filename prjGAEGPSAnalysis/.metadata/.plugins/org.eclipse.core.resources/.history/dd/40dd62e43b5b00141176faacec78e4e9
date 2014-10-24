@@ -1,0 +1,27 @@
+{% extends "/base.html"%}
+
+<!-- sub-css block -->
+{% block css_content %}
+{% endblock %}
+
+<!-- main content -->
+{% block main_content %}
+<div ng-app="index_page_app" ng-controller="indexPageDispatchCtrl" ui-view></div>
+{% endblock %}
+
+<!-- sub-js block -->
+{% block js_content %}
+
+<script type="text/javascript">
+{% if gps_data_dict %}
+var gps_data_set = "{{gps_data_dict}}";
+{% for data in gps_module_data_set %}
+	var gps_data = {{data}};
+	console.log(gps_data);
+{% endfor %}
+
+{% endif %}
+</script>
+
+<script type="text/javascript" src="/js/index_page.js"></script>
+{% endblock %}

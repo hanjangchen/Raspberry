@@ -4,6 +4,7 @@ Created on Jun 24, 2014
 
 @author: Alan Tai
 '''
+from models.models_gps_data import GPSData
 __author__ = 'Alan Tai'
 
 
@@ -11,6 +12,7 @@ from handlers.handler_webapp2_extra_auth import BaseHandler
 import logging
 import jinja2
 import webapp2
+import json
 
 # dictionaries
 
@@ -33,7 +35,17 @@ class IndexPageDispatcher(BaseHandler):
     def get(self):
         """ front page dispatcher """
         template_values = {}
-        template_values.update({'title':dict_general.web_title_index_page})
+        gps_data_dict = {}
+        # retrieve data
+        gps_module_data_set = GPSData.query()
+        
+        if gps_module_data_set.count() <=0:
+            gps_module_data_set = None
+        else:
+            for data_entity in gps_module_data_set:
+                gps_data_dict.update({"gps_data" : data_entity.gps_data})
+            
+        template_values.update({'title':dict_general.web_title_index_page, 'gps_data_dict': json.dumps(gps_data_dict)})
         self.render_template(dict_general.index_page, template_values)
         
 class RegxTestDispatcher(BaseHandler):
