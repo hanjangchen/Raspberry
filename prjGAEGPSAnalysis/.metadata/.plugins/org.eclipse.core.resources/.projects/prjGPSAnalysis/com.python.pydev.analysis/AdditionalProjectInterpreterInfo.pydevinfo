@@ -1,19 +1,19 @@
 -- VERSION_4
 -- START DISKCACHE
 D:\Raspberry\prjGAEGPSAnalysis\.metadata\.plugins\org.eclipse.core.resources\.projects\prjGPSAnalysis\com.python.pydev.analysis\v2_indexcache
-__init__|1412633192917|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\__init__.py
 models.__init__|1412633156341|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\models\__init__.py
+__init__|1412633192917|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\__init__.py
 dictionaries.dict_keys_values|1413402468141|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dictionaries\dict_keys_values.py
 models.models_gps_data|1412636631054|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\models\models_gps_data.py
 handlers.__init__|1412633156310|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\handlers\__init__.py
-dispatchers.dispatchers_base|1414133440637|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\dispatchers_base.py
+dispatchers.dispatchers_base|1414728366267|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\dispatchers_base.py
 handlers.handler_webapp2_extra_auth|1412633156298|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\handlers\handler_webapp2_extra_auth.py
-dispatchers.dispatchers_data_analysis|1413673381749|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\dispatchers_data_analysis.py
+dispatchers.dispatchers_data_analysis|1414709151148|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\dispatchers_data_analysis.py
 dictionaries.__init__|1412633156206|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dictionaries\__init__.py
 dispatchers.__init__|1412633156250|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\__init__.py
 -- END DISKCACHE
 -- START DICTIONARY
-14
+15
 6=KeysVaulesGeneral
 5=dictionaries.dict_keys_values
 3=handlers.handler_webapp2_extra_auth
@@ -25,12 +25,13 @@ dispatchers.__init__|1412633156250|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis
 1=dispatchers.dispatchers_data_analysis
 9=GPSData
 10=RegxTestDispatcher
-14=BaseHandler.dispatch
+14=UploadImgDispatcher
+15=BaseHandler.dispatch
 7=BaseHandler
 13=GPSDataRetrievingDispatcher
 -- END DICTIONARY
 -- START TREE 1
-13
+14
 __a|2|__author__!11@__author__!19@
 adm|1|admin_required!26@
 app|2|app!19@app!11@
@@ -43,11 +44,13 @@ ind|1|IndexPageDispatcher!17@
 jin|3|jinja_environment!27@jinja_environment!11@jinja_environment!19@
 key|1|KeysVaulesGeneral!41@
 reg|1|RegxTestDispatcher!17@
+upl|1|UploadImgDispatcher!17@
 use|1|user_required!26@
 -- END TREE
 -- START TREE 2
-16
+18
 __i|1|__init__!6&42@
+app|0|
 aut|1|auth!7&26@
 bra|1|brand_title!8&43@
 con|1|config_setting!8&43@
@@ -57,10 +60,11 @@ fro|1|front_page!8&43@
 get|3|get!10&18@get!11&18@get!12&18@
 gps|2|gps_data!9&35@gps_data_id!9&35@
 ind|1|index_page!8&43@
-pos|1|post!13&10@
+pos|2|post!13&10@post!14&18@
+reg|0|
 ren|1|render_template!7&26@
-ses|2|session!7&26@session_store!14&27@
+ses|2|session!7&26@session_store!15&27@
 upd|1|update_datetime!9&35@
 use|3|user_model!7&26@user!7&26@user_info!7&26@
-web|3|web_title_index_page!8&43@web_title_front_page!8&43@web_title!8&43@
+web|3|web_title!8&43@web_title_front_page!8&43@web_title_index_page!8&43@
 -- END TREE

@@ -13,6 +13,8 @@
 {% block js_content %}
 
 <script type="text/javascript">
+var upload_url = '{{upload_url}}';
+console.log(upload_url);
 {% if gps_data_dict %}
 var gps_data_set = '{{gps_data_dict}}';
 

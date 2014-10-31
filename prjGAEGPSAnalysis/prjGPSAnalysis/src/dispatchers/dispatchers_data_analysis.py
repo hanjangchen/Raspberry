@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
+__author__ = 'Alan Tai'
 '''
 Created on Jun 24, 2014
 
 @author: Alan Tai
 '''
 import json
-__author__ = 'Alan Tai'
 
 
 from handlers.handler_webapp2_extra_auth import BaseHandler
@@ -29,6 +29,7 @@ class GPSDataRetrievingDispatcher(BaseHandler):
     def post(self):
         """ gps data retrieving handler """
         assert self.request.get('data'), 'fail to retrieve data from raspberry pi'
+        
         
         time_stamp = int(round(time.time())).__str__()
         gps_data_id = 'GOGIS-GPS-' + time_stamp
