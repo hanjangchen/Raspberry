@@ -13,6 +13,10 @@
 {% block js_content %}
 
 <script type="text/javascript">
+var data_backend = {
+		upload_url : '{{upload_url}}',
+}
+
 var upload_url = '{{upload_url}}';
 console.log(upload_url);
 {% if gps_data_dict %}
@@ -25,5 +29,5 @@ var gps_data_set = '{{gps_data_dict}}';
 {% endif %}
 </script>
 
-<script type="text/javascript" src="/js/index_page.js"></script>
+<script type="text/javascript" src="/js/index_page_container.js"></script>
 {% endblock %}
