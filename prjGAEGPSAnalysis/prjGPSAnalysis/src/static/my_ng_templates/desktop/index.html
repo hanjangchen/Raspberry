@@ -14,12 +14,10 @@
 
 		<div id="menu_list" class="collapse navbar-collapse navHeaderCollapse">
 			<ul class="nav navbar-nav navbar-right text-center">
-				<li ng-class="is_selected('index_1') ? 'active' : 'inactive' "
-					ng-click="select_topic('index_1')"><a ui-sref="index_1">Index
-						1 (Introduction)</a></li>
-				<li ng-class="is_selected('index_2') ? 'active' : 'inactive' "
-					ng-click="select_topic('index_2')"><a ui-sref="index_2">Index
-						2 (Data Analysis)</a></li>
+				<li ng-class="is_selected('index_introduction') ? 'active' : 'inactive' "
+					ng-click="select_topic('index_introduction')"><a ui-sref="index_introduction">Introduction</a></li>
+				<li ng-class="is_selected('index_data_analysis') ? 'active' : 'inactive' "
+					ng-click="select_topic('index_data_analysis')"><a ui-sref="index_data_analysis">Data Analysis</a></li>
 				<li><a class="glyphicon glyphicon-envelope" href="mailto:[[email]]" title="Send Us Email to [[email]]" style="font-size: 1.2em;"></a></li>
 			</ul>
 		</div>

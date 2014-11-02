@@ -1,14 +1,10 @@
 (function(){
-	
-	/* Angular.js */
-	
 	/* JQuery */
 	$('#images_for_upload')
 			.change(
 					function() {
 
-						var input = document
-								.getElementById("images_for_upload");
+						var input = document.getElementById("images_for_upload");
 						var ul = document.getElementById("files_list");
 						var toolarge = "";
 						var maxsize = 1024000;

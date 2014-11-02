@@ -4,13 +4,13 @@
  * 2. handle whole front-end templates routing
  * 
  * */
-
 'use strict';
+var front_page_app;
 (function(){
 	
 	/* Angular.js */
 	// declare app level module which depends on filters, and services, and modify $interpolateProvider to avoid the conflict with jinja2' symbol
-	var front_page_app = angular.module('front_page_app', [ 'angular-responsive', 'ui.router' ], function($interpolateProvider) {
+	front_page_app = angular.module('front_page_app', [ 'angular-responsive', 'ui.router' ], function($interpolateProvider) {
 		$interpolateProvider.startSymbol('[[');
 		$interpolateProvider.endSymbol(']]');
 	});
@@ -33,7 +33,7 @@
 		// nested templates and routing
 		$stateProvider
 		.state('home', {
-			templateUrl: '/ng_templates/template_home.html',
+			templateUrl: '/ng_templates/my_ng_template_base.html',
 		})
 		.state('front_page', {
 			url: '/front_page',
@@ -54,10 +54,7 @@
 	    $state.transitionTo('front_page');
 	}
 	frontPageDispatchController.$injector = ['$state', '$scope', 'GLOBAL_VALUES'];
-
-	// ng-functions mapper
-	front_page_app
-	.controller('frontPageDispatchCtrl', frontPageDispatchController);
+	front_page_app.controller('frontPageDispatchCtrl', frontPageDispatchController);
 
 
 	/* JQuery */

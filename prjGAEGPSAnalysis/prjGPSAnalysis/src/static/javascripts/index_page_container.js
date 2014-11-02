@@ -5,18 +5,19 @@
  * 
  * */
 'use strict';
-
+var index_page_app;
 (function(){
 	// Angular.js
 	// declare app level module which depends on filters, and services, and modify $interpolateProvider to avoid the conflict with jinja2' symbol
-	var index_page_app = angular.module('index_page_app', [ 'angular-responsive', 'ui.router', 'myGpsDataDirective' ], function($interpolateProvider) {
+	index_page_app = angular.module('index_page_app', [ 'angular-responsive', 'ui.router', 'myGpsDataDirective' ], function($interpolateProvider) {
 		$interpolateProvider.startSymbol('[[');
 		$interpolateProvider.endSymbol(']]');
 	});
 
 	// global values
 	index_page_app.value('GLOBAL_VALUES',{
-		EMAIL : 'gogistics@gogistics-tw.com'
+		EMAIL : 'gogistics@gogistics-tw.com',
+		URL_UPLOAD_IMAGE_TO_BLOB : data_backend.upload_url,
 	});
 
 	// app-routing configuration
@@ -35,25 +36,25 @@
 		// nested templates and routing
 		$stateProvider
 		.state('home', {
-			templateUrl: '/ng_templates/template_home.html',
+			templateUrl: '/ng_templates/my_ng_template_base.html',
 		})
 		.state('index_page', {
 			parent: 'home',
 			templateUrl: '/ng_templates/' + device + '/index.html',
 			controller: 'indexPageDispatchCtrl'
 		})
-		.state('index_1', {
-			url: '/index_1',
+		.state('index_introduction', {
+			url: '/index_introduction',
 			parent: 'index_page',
-			templateUrl: '/ng_templates/' + device + '/index_1.html',
+			templateUrl: '/ng_templates/' + device + '/index_introduction.html',
 		})
-		.state('index_2', {
-			url: '/index_2',
+		.state('index_data_analysis', {
+			url: '/index_data_analysis',
 			parent: 'index_page',
-			templateUrl: '/ng_templates/' + device + '/index_2.html',
+			templateUrl: '/ng_templates/' + device + '/index_data_analysis.html',
 		});
 
-		$urlRouterProvider.otherwise('/index_1'); // for defualt state routing; for current routing mechanism, it's not necessary
+		$urlRouterProvider.otherwise('/index_introduction'); // for defualt state routing; for current routing mechanism, it's not necessary
 		
 	});
 
@@ -63,11 +64,11 @@
 		$scope.email = GLOBAL_VALUES.EMAIL;
 		console.log($state.current.name);
 		
-		if($state.current.name !== 'index_1'){
-		    $state.transitionTo('index_1');
+		if($state.current.name !== 'index_introduction'){
+		    $state.transitionTo('index_introduction');
 		}
 	}
-	indexPageDispatchController.$injector = ['$state', '$scope', 'GLOBAL_VALUES'];
+	indexPageDispatchController.$inject = ['$state', '$scope', 'GLOBAL_VALUES'];
 
 	// page controllers
 	var myIndexController = function ($scope, GLOBAL_VALUES) {
@@ -82,14 +83,39 @@
 	    }
 		
 	    // init selected topic
-	    $scope.select_topic('index_1');
+	    $scope.select_topic('index_introduction');
 	}
-	myIndexController.$injector = ['$scope', 'GLOBAL_VALUES'];
+	myIndexController.$inject = ['$scope', 'GLOBAL_VALUES'];
 
-	// ng-functions mapper
 	index_page_app
 	.controller('indexPageDispatchCtrl', indexPageDispatchController)
 	.controller('myIndexCtrl', myIndexController);
+	
+	
+	// ng-services of index_data_analysis
+	var indexTwoService = function($http, GLOBAL_VALUES){		
+		this.upload_imgs = function(arg_data){
+			// upload images
+			alert(arg_data);
+		}
+	}
+	indexTwoService.$inject = ['$http', 'GLOBAL_VALUES'];
+	index_page_app.service('myIndexTwoService', indexTwoService);
+	
+	// ng-controllers of index_data_analysis
+	var indexTwoController = function(myIndexTwoService, GLOBAL_VALUES, $scope){
+		// images data for uploading to blobstore
+		$scope.images_data_to_upload = 'data analysis';
+		
+		// upload images
+		var upload_img_to_blobstore = function (){
+			myIndexTwoService.upload_imgs('hello data analysis');
+		};
+		this.upload_img_to_blobstore = upload_img_to_blobstore;
+	}
+	indexTwoController.$inject = ['myIndexTwoService', 'GLOBAL_VALUES', '$scope'];
+	index_page_app.controller('myIndexTwoCtrl', indexTwoController);
+	/* services */
 	
 	/* JQuery */
 	

@@ -1,0 +1,51 @@
+<!-- sub-template for index page -->
+<div>
+	<h2>GPS Analysis</h2>
+	<my-index-gps-data>
+	<p>Index 2</p>
+	</my-index-gps-data>
+</div>
+
+<!-- content block -->
+<div class="container-fluid" ng-controller = "myIndexTwoCtrl">
+	<div class="jumbotron">
+		<p>Learn to Create Websites</p>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+			<p>HTML</p>
+			<input type="button" value="Click Test"  >
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<p>Upload</p>
+
+			<section>
+				<input type="file" id="images_for_upload" name="images_for_upload"
+					multiple="true" value="Add Images" accept="image/*"
+					required="required"> <input type="button" id="btn_upload"
+					value="Upload Images">
+			</section>
+			<section>
+				<strong>Files You Selected:</strong>
+				<ul id="files_list">
+					<li>No Files Selected</li>
+				</ul>
+			</section>
+			<section>
+				<table id="photo_table">
+					<tr>
+						<td id="addbirdphoto">Upload photos</td>
+					</tr>
+				</table>
+			</section>
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<p>Bootstrap</p>
+		</div>
+	</div>
+</div>
+
+<!-- js libs -->
+<script type="text/javascript" src="/js/plugin_mis/numeric-1.2.6.min.js"></script>
+<script type="text/javascript" src="/js/plugin_mis/particle_swarm_optimization.js"></script>
+<script type="text/javascript" src="/js/index_2.js"></script>
