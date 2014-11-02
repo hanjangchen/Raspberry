@@ -1,0 +1,5 @@
+<!-- index page directive -->
+<div>
+	<div ng-transclude></div>
+	<p>Gogistics</p>
+</div>

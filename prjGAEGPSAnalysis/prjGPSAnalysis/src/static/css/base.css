@@ -17,3 +17,10 @@
 	padding-top: 100px;
 	padding-bottom: 50px;
 }
+
+.my_navbar_brand_copy_right,.my_navbar_brand_copy_right>span {
+	color: #000;
+	font-size: 12px;
+	margin-top: 5px;
+	letter-spacing: 3px;
+}

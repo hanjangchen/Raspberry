@@ -18,7 +18,6 @@
 					ng-click="select_topic('index_introduction')"><a ui-sref="index_introduction">Introduction</a></li>
 				<li ng-class="is_selected('index_data_analysis') ? 'active' : 'inactive' "
 					ng-click="select_topic('index_data_analysis')"><a ui-sref="index_data_analysis">Data Analysis</a></li>
-				<li><a class="glyphicon glyphicon-envelope" href="mailto:[[email]]" title="Send Us Email to [[email]]" style="font-size: 1.2em;"></a></li>
 			</ul>
 		</div>
 	</div>
@@ -26,6 +25,20 @@
 
 <!-- template view -->
 <div ui-view class="jumbotron text-center template_conatiner_view"></div>
+
+
+<!--  -->
+<div class="navbar navbar-default navbar-bottom col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+	<my-index-gps-data class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></my-index-gps-data>
+	<!-- copy right -->
+		<div class="navbar-brand my_navbar_brand_copy_right col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			&copy; <span>資雲有限公司&nbsp;(Gogistics Ltd.)</span><span>&nbsp;&nbsp;Since
+				2014</span><span><a class="glyphicon glyphicon-envelope"
+				href="mailto:[[email]]" title="聯絡我們 -[[email]]"
+				style="color: #000; margin-left: 10px;"></a></span>
+		</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+</div>
 
 <!-- js -->
 <script type="text/javascript" src="/js/index.js"></script>

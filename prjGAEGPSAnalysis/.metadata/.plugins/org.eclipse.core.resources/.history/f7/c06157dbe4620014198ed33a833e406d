@@ -1,0 +1,11 @@
+<!-- index page directive -->
+<div class="navbar navbar-default navbar-bottom col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div ng-transclude></div>
+	<!-- copy right -->
+		<div class="navbar-brand my_navbar_brand_copy_right">
+			&copy; <span>資雲有限公司&nbsp;(Gogistics Ltd.)</span><span>&nbsp;&nbsp;Since
+				2014</span><span><a class="glyphicon glyphicon-envelope"
+				href="mailto:[[email]]" title="聯絡我們 -[[email]]"
+				style="color: #000; margin-left: 10px;"></a></span>
+		</div>
+</div>
