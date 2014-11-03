@@ -10,7 +10,7 @@
 	<!-- introduction -->
 	<div class="container-fluid">
 		<div class="jumbotron">
-			<h2>GPS Module Analysis and Development Tools</h2>
+			<h2>Research Fields and Development Tools</h2>
 			<p style="color: #555;">Under Construction</p>
 		</div>
 		<div class="row">
@@ -212,7 +212,7 @@
 					</p>
 				</div>
 				<hr class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-					style="border: none; border-bottom: dotted 1px #bbb;">
+					style="border-bottom: dotted 1px #bbb;">
 			</div>
 		</div>
 	</div>
