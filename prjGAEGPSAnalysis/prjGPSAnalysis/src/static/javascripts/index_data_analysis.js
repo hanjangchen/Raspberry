@@ -8,9 +8,9 @@
 						var valid_files_ul = $("#valid_files_list");
 						var invalid_files_ul = $("#invalid_files_list");
 						
-						console.log(valid_files_ul);
 						var toolarge = "";
 						var maxsize = 1024000;
+						var ary_img_description = {};
 
 						//
 						if (valid_files_ul.children().length > 0) {
@@ -28,6 +28,7 @@
 
 							} else {
 								valid_files_ul.append("<li class='list-group-item'>" + input.files[i].name + "</li>");
+								ary_img_description[i] = {"label" : "", "content" : "" };
 							}
 						}
 

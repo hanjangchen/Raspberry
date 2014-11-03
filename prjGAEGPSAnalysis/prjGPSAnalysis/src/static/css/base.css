@@ -18,6 +18,11 @@
 	padding-bottom: 50px;
 }
 
+
+.navbar-brand{
+	padding: 10px !important;
+}
+
 .my_navbar_brand_copy_right,.my_navbar_brand_copy_right>span {
 	color: #000;
 	font-size: 12px;
