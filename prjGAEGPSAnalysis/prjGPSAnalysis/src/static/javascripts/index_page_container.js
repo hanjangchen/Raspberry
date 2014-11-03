@@ -96,7 +96,7 @@ var index_page_app;
 	var indexTwoService = function($http, GLOBAL_VALUES){		
 		this.upload_imgs = function(arg_data){
 			// upload images
-			alert(arg_data);
+			console.log(arg_data);
 		}
 	}
 	indexTwoService.$inject = ['$http', 'GLOBAL_VALUES'];

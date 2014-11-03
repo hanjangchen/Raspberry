@@ -1,0 +1,54 @@
+<!-- sub-template for index page -->
+<div>
+	<h2>GPS Analysis</h2>
+</div>
+
+<!-- content block -->
+<div class="container-fluid" ng-controller = "myIndexTwoCtrl as ctrl">
+	<div class="row">
+		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">
+		</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center">
+			<!-- upload images -->
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-inline text-center">
+			
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+			
+				<h5 class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-right">Images Files:</h5>
+				<input type="file" ng-model="images_data_to_upload" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 form-control ">
+				<input type="button" value="Upload Images" ng-click= "ctrl.upload_img_to_blobstore()" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn btn-default " >
+			
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+			</div>
+			
+			<!-- upload -->
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group text-center">
+				<input type="file" id="images_for_upload" name="images_for_upload"
+					multiple="true" value="Add Images" accept="image/*"
+					required="required" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 btn btn-default" >
+				
+				<input type="button" id="btn_upload"
+					value="Upload Images" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 btn btn-default">
+			</div>
+			
+			<!--  -->
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<strong>Images You Selected:</strong>
+				<ul id="files_list" class="list-control col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				</ul>
+			</div>
+			
+			<!--  -->
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+				<table id="photo_table">
+				</table>
+			</div>
+		</div>
+		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+	</div>
+</div>
+
+<!-- js libs -->
+<script type="text/javascript" src="/js/plugin_mis/numeric-1.2.6.min.js"></script>
+<script type="text/javascript" src="/js/plugin_mis/particle_swarm_optimization.js"></script>
+<script type="text/javascript" src="/js/index_data_analysis.js"></script>
