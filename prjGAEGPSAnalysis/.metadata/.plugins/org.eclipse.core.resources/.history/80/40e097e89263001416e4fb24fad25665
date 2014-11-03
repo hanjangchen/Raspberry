@@ -47,8 +47,6 @@
 			</div>
 		</div>
 
-<hr class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-					style="border-bottom: solid 1px #aaa;">
 
 		<div class="row">
 			<h2>Software Development Tools & Skills</h2>
@@ -66,7 +64,7 @@
 					</p>
 				</div>
 				<hr class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-					style="border-bottom: dotted 1px #bbb;">
+					style="border-bottom: solid 1px #aaa;">
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -100,7 +98,7 @@
 					</p>
 				</div>
 				<hr class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-					style="border-bottom: dotted 1px #bbb;">
+					style="border-bottom: solid 1px #aaa;">
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -129,7 +127,7 @@
 					</p>
 				</div>
 				<hr class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-					style="border-bottom: dotted 1px #bbb;">
+					style="border-bottom: solid 1px #aaa;">
 			</div>
 		</div>
 	</div>
