@@ -1,6 +1,6 @@
 <!-- sub-template for index page -->
 <div>
-	<!-- introduction -->
+	<!--  -->
 	<div class="container-fluid">
 		<div class="jumbotron">
 			<h2>Research Fields and Development Tools</h2>
@@ -18,7 +18,7 @@
 					manipulate the electronic world around them, and how to program.</p>
 				<p>
 					<a href="http://www.raspberrypi.org/" target="_blank"
-						class="btn btn-primary" title="Raspberry PI Introduction">Learn More &raquo;</a>
+						class="btn btn-success">Learn More &raquo;</a>
 				</p>
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -29,7 +29,7 @@
 					immediately.</p>
 				<p>
 					<a href="https://cloud.google.com/appengine/docs" target="_blank"
-						class="btn btn-primary" title="Google App Engine Introduction">Learn More &raquo;</a>
+						class="btn btn-success">Learn More &raquo;</a>
 				</p>
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -39,9 +39,10 @@
 					first must have a look at how the old grey matter does its business</p>
 				<p>
 					<a href="http://www.ai-junkie.com/" target="_blank"
-						class="btn btn-primary" title="Neural Network Introduction">Learn More &raquo;</a>
+						class="btn btn-success">Learn More &raquo;</a>
 				</p>
 			</div>
 		</div>
 	</div>
+
 </div>

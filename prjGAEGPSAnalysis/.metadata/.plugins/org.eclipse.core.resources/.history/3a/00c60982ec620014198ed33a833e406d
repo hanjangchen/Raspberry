@@ -18,7 +18,7 @@
 					manipulate the electronic world around them, and how to program.</p>
 				<p>
 					<a href="http://www.raspberrypi.org/" target="_blank"
-						class="btn btn-primary" title="Raspberry PI Introduction">Learn More &raquo;</a>
+						class="btn btn-primary">Learn More &raquo;</a>
 				</p>
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -44,4 +44,5 @@
 			</div>
 		</div>
 	</div>
+
 </div>

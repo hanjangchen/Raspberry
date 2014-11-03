@@ -27,7 +27,7 @@
 <div ui-view class="jumbotron text-center template_conatiner_view"></div>
 
 
-<!-- copy right -->
+<!--  -->
 <div class="navbar navbar-default navbar-bottom col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 	<my-index-gps-data class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></my-index-gps-data>
 	<!-- copy right -->

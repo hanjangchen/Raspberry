@@ -9,16 +9,11 @@
 		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">
 		</div>
 		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center">
+			<p>Upload Information</p>
 			<!-- upload images -->
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-inline text-center">
-			
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-			
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
-				<input type="file" ng-model="images_data_to_upload" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 form-control ">
-				<input type="button" value="Upload Images" ng-click= "ctrl.upload_img_to_blobstore()" class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn btn-default " >
-			
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group text-center">
+				<input type="text" ng-model="images_data_to_upload" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-control ">
+				<input type="button" value="Click Test" ng-click= "ctrl.upload_img_to_blobstore()" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 btn btn-default " >
 			</div>
 			
 			<!-- upload -->
