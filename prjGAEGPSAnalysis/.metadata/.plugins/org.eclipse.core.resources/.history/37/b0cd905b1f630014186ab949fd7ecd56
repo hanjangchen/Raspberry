@@ -34,13 +34,13 @@
 				<div
 					class="list-control col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
 					<strong>Valid Images:</strong>
-					<ul id="valid_files_list" class="list-group">
+					<ul id="valid_files_list">
 					</ul>
 				</div>
 				<div
 					class="list-control col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
 					<strong>Invalid Images:</strong>
-					<ul id="invalid_files_list" class="list-group">
+					<ul id="invalid_files_list">
 					</ul>
 				</div>
 			</div>

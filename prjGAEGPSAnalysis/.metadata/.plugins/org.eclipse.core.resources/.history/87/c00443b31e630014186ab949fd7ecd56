@@ -13,30 +13,26 @@
 						var maxsize = 1024000;
 
 						//
-						if (valid_files_ul.children().length > 0) {
-							valid_files_ul.remove();
-						}
-						if (invalid_files_ul.children().length > 0) {
-							invalid_files_ul.remove();
-						}
+						$("#valid_files_list").remove();
+						$("#invalid_files_list").remove();
 
 						//
 						for ( var i = 0; i < input.files.length; i++) {
 							if (input.files[i].size > maxsize) {
 								toolarge += input.files[i].name + "\n";
-								invalid_files_ul.append("<li class='list-group-item'>" + input.files[i].name + "</li>");
+								$("#invalid_files_list").append("<li>" + input.files[i].name + "</li>");
 
 							} else {
-								valid_files_ul.append("<li class='list-group-item'>" + input.files[i].name + "</li>");
+								$("#valid_files_list").append("<li>" + input.files[i].name + "</li>");
 							}
 						}
 
 						//
 						if (valid_files_ul.children().length <= 0) {
-							valid_files_ul.append("<li class='list-group-item'>No Files Selected</li>");
+							valid_files_ul.append("<li>No Files Selected</li>");
 						}
 						if (invalid_files_ul.children().length <= 0) {
-							invalid_files_ul.append("<li class='list-group-item'>No Invalid Files</li>");
+							invalid_files_ul.append("<li>No Invalid Files</li>");
 						}
 
 						//

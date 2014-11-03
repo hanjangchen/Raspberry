@@ -3,44 +3,50 @@
 	$('#images_for_upload')
 			.change(
 					function() {
+
 						//
-						var input = document.getElementById("images_for_upload");
+						var input = document
+								.getElementById("images_for_upload");
 						var valid_files_ul = $("#valid_files_list");
 						var invalid_files_ul = $("#invalid_files_list");
-						
-						console.log(valid_files_ul);
+
 						var toolarge = "";
 						var maxsize = 1024000;
 
+						var valid_files_list = [];
+
 						//
-						if (valid_files_ul.children().length > 0) {
-							valid_files_ul.remove();
-						}
-						if (invalid_files_ul.children().length > 0) {
-							invalid_files_ul.remove();
-						}
+						valid_files_ul.remove();
+						invalid_files_ul.remove();
 
 						//
 						for ( var i = 0; i < input.files.length; i++) {
 							if (input.files[i].size > maxsize) {
 								toolarge += input.files[i].name + "\n";
-								invalid_files_ul.append("<li class='list-group-item'>" + input.files[i].name + "</li>");
+								invalid_files_ul.append("<li>" + input.files[i].name + "</li>");
 
 							} else {
-								valid_files_ul.append("<li class='list-group-item'>" + input.files[i].name + "</li>");
+								var li = document.createElement("li");
+								li.innerHTML = input.files[i].name;
+								valid_files_ul.appendChild(li);
+								valid_files_ul.append("<li>" + input.files[i].name + "</li>");
 							}
 						}
 
 						//
-						if (valid_files_ul.children().length <= 0) {
-							valid_files_ul.append("<li class='list-group-item'>No Files Selected</li>");
+						if (!valid_files_ul.hasChildNodes()) {
+							var li = document.createElement("li");
+							li.innerHTML = 'No Files Selected';
+							valid_files_ul.appendChild(li);
 						}
-						if (invalid_files_ul.children().length <= 0) {
-							invalid_files_ul.append("<li class='list-group-item'>No Invalid Files</li>");
+						if (!invalid_files_ul.hasChildNodes()) {
+							var li = document.createElement("li");
+							li.innerHTML = 'No Invalid Files';
+							invalid_files_ul.appendChild(li);
 						}
 
 						//
-						if (toolarge !== "") {
+						if (toolarge != "") {
 							alert("These images were not uploaded due to size limit of 1MB\n"
 									+ toolarge);
 						}
