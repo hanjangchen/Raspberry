@@ -161,21 +161,23 @@
 							numerical calculations, particularly for linear algebra (vectors
 							and matrices)...</p>
 						<p>
-							<a href="http://www.numericjs.com/documentation.html"
-								target="_blank" class="btn btn-primary"
-								title="Google App Engine Introduction">Learn More &raquo;</a>
+							<a href="http://numericjs.com/" target="_blank"
+								class="btn btn-primary" title="Google App Engine Introduction">Learn
+								More &raquo;</a>
 						</p>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>D3.js</h4>
-						<p style="font-size: 13px; text-align: justify;">D3 allows you
-							to bind arbitrary data to a Document Object Model (DOM), and then
-							apply data-driven transformations to the document. For example,
-							you can use D3 to generate an HTML table from an array of
-							numbers. Or, use the same data to create an interactive SVG bar
-							chart with smooth transitions and interaction...</p>
+						<p style="font-size: 13px; text-align: justify;">is a dynamic
+							computer programming language. It is most commonly used as part
+							of web browsers, whose implementations allow client-side scripts
+							to interact with the user, control the browser, communicate
+							asynchronously, and alter the document content that is displayed.
+							It is also used in server-side network programming with
+							frameworks such as Node.js, game development and the creation of
+							desktop and mobile applications....</p>
 						<p>
-							<a href="http://d3js.org/" target="_blank"
+							<a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank"
 								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
