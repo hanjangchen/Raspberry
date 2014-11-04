@@ -2,24 +2,25 @@
 	/* JQuery */
 	var ary_img_description = {};
 	var has_images_to_upload = false;
-
-	var input = document.getElementById("images_for_upload");
-	var valid_files_ul = $("#valid_files_list");
-	var invalid_files_ul = $("#invalid_files_list");
 	
 	$('#images_for_upload')
 			.change(
 					function() {
 						//
+						var input = document.getElementById("images_for_upload");
+						var valid_files_ul = $("#valid_files_list");
+						var invalid_files_ul = $("#invalid_files_list");
+						
 						var toolarge = "";
 						var maxsize = 1024000;
+						
 
 						//
 						if (valid_files_ul.children().length > 0) {
-							valid_files_ul.empty();
+							valid_files_ul.remove();
 						}
 						if (invalid_files_ul.children().length > 0) {
-							invalid_files_ul.empty();
+							invalid_files_ul.remove();
 						}
 
 						//
@@ -31,8 +32,6 @@
 							} else {
 								valid_files_ul.append("<li class='list-group-item'>" + input.files[i].name + "</li>");
 								ary_img_description[i] = {"label" : "", "content" : "" };
-								
-								// update the flag
 								has_images_to_upload = true;
 							}
 						}
@@ -56,19 +55,20 @@
 		var input = document.getElementById("images_for_upload");
 		var maxsize = 1024000;
 		var requests = [];
-		var upload_block = $('#processing_cover');
 
 		if (input.files.length <= 0 && has_images_to_upload) {
 			alert('No data for upload');
 		} else {
 			// popup cover
-			upload_block.css({
+			$('#processing_cover').css({
 				'display' : 'block'
 			});
 			for ( var i = 0; i < input.files.length; i++) {
 				if (input.files[i].size < maxsize) {
 					var filedata = new FormData();
 					filedata.append("image_for_upload", input.files[i]);
+					//
+					// send_imgs(data);
 
 					//
 					requests.push($.ajax({
@@ -86,16 +86,14 @@
 					$.when.apply(undefined, requests).done(function(results){
 							console.log(JSON.stringify(results,2,2));
 							// popup cover
-							upload_block.css({
+							$('#processing_cover').css({
 								'display' : 'none'
 							});
 							
-							// update the flag
-							has_images_to_upload = false;
+							//
+							$('#valid_files_list').remove();
 							
-							// update list
-							valid_files_ul.empty();
-							invalid_files_ul.empty();
+							$('#invalid_files_list').remove();
 						});
 				}
 			}

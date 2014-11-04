@@ -11,15 +11,17 @@
 			.change(
 					function() {
 						//
+						
 						var toolarge = "";
 						var maxsize = 1024000;
+						
 
 						//
 						if (valid_files_ul.children().length > 0) {
-							valid_files_ul.empty();
+							valid_files_ul.remove();
 						}
 						if (invalid_files_ul.children().length > 0) {
-							invalid_files_ul.empty();
+							invalid_files_ul.remove();
 						}
 
 						//
@@ -56,13 +58,12 @@
 		var input = document.getElementById("images_for_upload");
 		var maxsize = 1024000;
 		var requests = [];
-		var upload_block = $('#processing_cover');
 
 		if (input.files.length <= 0 && has_images_to_upload) {
 			alert('No data for upload');
 		} else {
 			// popup cover
-			upload_block.css({
+			$('#processing_cover').css({
 				'display' : 'block'
 			});
 			for ( var i = 0; i < input.files.length; i++) {
@@ -86,7 +87,7 @@
 					$.when.apply(undefined, requests).done(function(results){
 							console.log(JSON.stringify(results,2,2));
 							// popup cover
-							upload_block.css({
+							$('#processing_cover').css({
 								'display' : 'none'
 							});
 							
@@ -94,8 +95,8 @@
 							has_images_to_upload = false;
 							
 							// update list
-							valid_files_ul.empty();
-							invalid_files_ul.empty();
+							$('#valid_files_list').remove();
+							$('#invalid_files_list').remove();
 						});
 				}
 			}

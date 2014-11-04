@@ -10,8 +10,8 @@ handlers:
   upload: static/images/favicon.ico
 
 - url: /apple-touch-icon\.png
-  static_files: static/images/kp_map.png
-  upload: static/images/kp_map.png
+  static_files: static/images/gogistics_icon_black.png
+  upload: static/images/gogistics_icon_black.png
 
 - url: /css
   static_dir: static/css

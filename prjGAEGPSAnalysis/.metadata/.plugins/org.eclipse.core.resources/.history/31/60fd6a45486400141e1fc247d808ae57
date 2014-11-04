@@ -13,6 +13,7 @@
 						//
 						var toolarge = "";
 						var maxsize = 1024000;
+						
 
 						//
 						if (valid_files_ul.children().length > 0) {

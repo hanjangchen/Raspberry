@@ -11,8 +11,10 @@
 			.change(
 					function() {
 						//
+						
 						var toolarge = "";
 						var maxsize = 1024000;
+						
 
 						//
 						if (valid_files_ul.children().length > 0) {
@@ -86,7 +88,7 @@
 					$.when.apply(undefined, requests).done(function(results){
 							console.log(JSON.stringify(results,2,2));
 							// popup cover
-							upload_block.css({
+							$('#processing_cover').css({
 								'display' : 'none'
 							});
 							
