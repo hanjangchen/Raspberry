@@ -10,10 +10,6 @@
 	border: none !important;
 	padding: 2px !important;
 }
-
-.gsc-input{
-	border-radius: 2px !important;
-}
 -->
 </style>
 

@@ -8,11 +8,6 @@
 .gsc-control-cse,.gsc-control-cse-en {
 	background-color: transparent !important;
 	border: none !important;
-	padding: 2px !important;
-}
-
-.gsc-input{
-	border-radius: 2px !important;
 }
 -->
 </style>
@@ -23,15 +18,25 @@
 		<div class="navbar-header">
 			<a class="navbar-brand" href="/" title="Go to Front Page"><img
 				alt="icon_gps" src="/img/icon_gps.png" style="height: 30px;"></a>
-				
-				
-		<button id="list_icon" type="button" class="navbar-toggle"
-			data-toggle="collapse" data-target=".navHeaderCollapse">
-			<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-				class="icon-bar"></span>
-		</button>
+			<div>
+				<script type="text/javascript">
+					(function() {
+						var cx = '009311744041232225508:q_xyvascayk';
+						var gcse = document.createElement('script');
+						gcse.type = 'text/javascript';
+						gcse.async = true;
+						gcse.src = (document.location.protocol == 'https:' ? 'https:'
+								: 'http:')
+								+ '//www.google.com/cse/cse.js?cx=' + cx;
+						var s = document.getElementsByTagName('script')[0];
+						s.parentNode.insertBefore(gcse, s);
+					})();
+				</script>
+				<div class="navbar-form" style="width: 400px;">
+					<gcse:search></gcse:search>
+				</div>
+			</div>
 		</div>
-
 
 		<div id="menu_list" class="collapse navbar-collapse navHeaderCollapse">
 			<ul class="nav navbar-nav navbar-right text-center">
@@ -65,8 +70,6 @@
 			class="glyphicon glyphicon-envelope" href="mailto:[[email]]"
 			title="聯絡我們 -[[email]]" style="color: #000; margin-left: 10px;"></a></span>
 	</div>
-
-
 	<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
 </div>
 

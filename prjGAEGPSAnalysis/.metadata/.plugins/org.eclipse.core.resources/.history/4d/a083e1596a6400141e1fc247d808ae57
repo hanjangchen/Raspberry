@@ -10,10 +10,6 @@
 	border: none !important;
 	padding: 2px !important;
 }
-
-.gsc-input{
-	border-radius: 2px !important;
-}
 -->
 </style>
 
@@ -23,7 +19,24 @@
 		<div class="navbar-header">
 			<a class="navbar-brand" href="/" title="Go to Front Page"><img
 				alt="icon_gps" src="/img/icon_gps.png" style="height: 30px;"></a>
-				
+		
+		<div style="width: 400px; height: 50px;">
+			<script>
+				(function() {
+					var cx = '009311744041232225508:q_xyvascayk';
+					var gcse = document.createElement('script');
+					gcse.type = 'text/javascript';
+					gcse.async = true;
+					gcse.src = (document.location.protocol == 'https:' ? 'https:'
+							: 'http:')
+							+ '//www.google.com/cse/cse.js?cx=' + cx;
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(gcse, s);
+				})();
+			</script>
+			<gcse:search></gcse:search>
+			
+		</div>
 				
 		<button id="list_icon" type="button" class="navbar-toggle"
 			data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -31,6 +44,7 @@
 				class="icon-bar"></span>
 		</button>
 		</div>
+		
 
 
 		<div id="menu_list" class="collapse navbar-collapse navHeaderCollapse">

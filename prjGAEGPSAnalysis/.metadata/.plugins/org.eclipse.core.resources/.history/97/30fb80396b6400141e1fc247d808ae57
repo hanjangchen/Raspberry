@@ -14,8 +14,8 @@
 			<p style="color: #555;">Under Construction</p>
 		</div>
 
-		<div class="row" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border: none; border-bottom: dotted 1px #bbb;">
-			<div style="width: 400px; height: 50px; margin: 5px auto;">
+		<div class="row" style="border: none; border-bottom: dotted 1px #bbb;">
+			<div style="width: 400px; height: 50px;">
 				<script>
 					(function() {
 						var cx = '009311744041232225508:q_xyvascayk';
