@@ -44,12 +44,14 @@
 
 		<!-- uploading files list -->
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<div>
+			<div
+				class="list-control col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 				<strong>Valid Images:</strong>
-				<ul id="valid_files_list" class="list-group" style="min-width: 100%;">
+				<ul id="valid_files_list" class="list-group">
 				</ul>
 			</div>
-			<div>
+			<div
+				class="list-control col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 				<strong>Invalid Images:</strong>
 				<ul id="invalid_files_list" class="list-group">
 				</ul>
