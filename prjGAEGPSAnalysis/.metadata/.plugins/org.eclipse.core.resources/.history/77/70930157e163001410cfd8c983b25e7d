@@ -1,0 +1,39 @@
+<!-- front page template -->
+<style>
+<!--
+.vertical-center {
+	min-height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.jumbotron {
+	margin-top: 100px !important;
+	margin-bottom: 0px !important;
+	background-color: transparent;
+	height: 100%;
+}
+-->
+</style>
+<div style="height: 100%">
+	<div
+		class="col-xs-12 col-sm-12 col-md-12 col-lg-12 jumbotron vertical-center text-center">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div>
+				<a href="/base/index" target="_blank" title="Go to GPS Analysis Index Page"><img alt="topic_logo" src="/img/icon_gps_front_page_mobile.png" style="height: 80px;"></a>
+			</div>
+			<div
+				class="my_navbar_brand_copy_right">
+				<a href="http://gogistics.gogistics-tw.com" target="_blank"
+					title="Go to Gogistics Website" style="color: #000;"> &copy;<span>Gogistics Ltd.</span></a> <span><a
+					class="glyphicon glyphicon-envelope" href="mailto:[[email]]"
+					title="聯絡我們 -[[email]]" style="color: #000; margin-left: 10px;"></a></span>
+					
+					<span><a
+					class="glyphicon glyphicon-earphone" href="callto:14085655133"
+					title="Call US at 1-408-565-5133 (USA)" style="color: #000; margin-left: 10px;"></a></span>
+			</div>
+		</div>
+	</div>
+</div>

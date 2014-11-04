@@ -1,0 +1,65 @@
+<!-- sub-template for index page -->
+<div>
+	<h2>GPS Analysis</h2>
+</div>
+
+<!-- content block -->
+<style>
+<!--
+.btn-default {
+	width: 230px !important;
+	margin: 5px auto;
+}
+-->
+</style>
+<div class="container-fluid" ng-controller="myIndexTwoCtrl as ctrl">
+	<div class="row">
+		<!-- left buffer -->
+		<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 text-center">
+			<!-- upload images -->
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<div class="btn-group">
+
+					<p>
+						<input type="file" id="images_for_upload"
+							accept="image/*" required="required" class=" btn btn-default ">
+					</p>
+
+					<p>
+						<input type="button" value="Upload Images" id="btn_upload"
+							ng-click="ctrl.upload_img_to_blobstore()"
+							class=" btn btn-default ">
+					</p>
+				</div>
+			</div>
+
+			<!-- uploading files list -->
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div
+					class="list-control col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+					<strong>Valid Images:</strong>
+					<ul id="valid_files_list" class="list-group">
+					</ul>
+				</div>
+				<div
+					class="list-control col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+					<strong>Invalid Images:</strong>
+					<ul id="invalid_files_list" class="list-group">
+					</ul>
+				</div>
+			</div>
+
+			<!-- response photos list -->
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+				<table id="photo_table" class="table table-striped">
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- js libs -->
+<script type="text/javascript" src="/js/plugin_mis/numeric-1.2.6.min.js"></script>
+<script type="text/javascript"
+	src="/js/plugin_mis/particle_swarm_optimization.js"></script>
+<script type="text/javascript" src="/js/index_data_analysis.js"></script>

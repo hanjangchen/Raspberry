@@ -1,7 +1,7 @@
 /*
  *  Particles Swarm Optimization
  *  This is a standard PSO to find out optimal solution through out the stochastic spaces
- * 
+ *  PS: Current test function is (0.007 * x_1 * (-x_2 -1)) * ( cos(x_1 + 0.3) - sin(x_2))+(1 - sin(x_1)) and the optimal value is around -1.798
  * */
 
 var particles_swarm_optimization = {
@@ -12,7 +12,7 @@ var particles_swarm_optimization = {
 														// row 1 represent low
 														// boundary and row 2
 														// represent up boundary
-			particles_size : 50, // size of particles swarm
+			particles_size : 60, // size of particles swarm
 			iteration : 50, // iteration number
 			max_min_factor : -1, // 1 means to find max; -1 means to find min
 			Emax : Number.MAX_VALUE, // maximum value
