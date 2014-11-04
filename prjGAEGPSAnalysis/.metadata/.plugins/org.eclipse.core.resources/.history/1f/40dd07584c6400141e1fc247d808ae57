@@ -1,5 +1,6 @@
 <!-- front page template -->
 <style>
+<!--
 .vertical-center {
 	min-height: 100%;
 	min-height: 100vh;
@@ -11,6 +12,7 @@
 	margin-bottom: 0px !important;
 	background-color: transparent;
 }
+-->
 </style>
 <div style="height: 100%">
 	<div
