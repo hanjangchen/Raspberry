@@ -46,7 +46,7 @@ handlers:
   script: dispatchers.dispatchers_base.app
 
 - url: /data_retrieving/.*
-  script: dispatchers.dispatchers_data_analysis.app
+  script: dispatchers.dispatchers_data_management.app
 
 inbound_services:
 - channel_presence

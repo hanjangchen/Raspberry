@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
 encoding//src/dictionaries/dict_keys_values.py=utf-8
 encoding//src/dispatchers/dispatchers_base.py=utf-8
-encoding//src/dispatchers/dispatchers_data_management.py=utf-8
+encoding//src/dispatchers/dispatchers_data_analysis.py=utf-8
