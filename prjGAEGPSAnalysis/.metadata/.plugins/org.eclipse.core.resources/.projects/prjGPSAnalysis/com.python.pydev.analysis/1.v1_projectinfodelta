@@ -1,1 +1,14 @@
-DELSTRdispatchers.dispatchers_data_management
+INSTUPmodels.models_gps_data
+D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\models\models_gps_data.py
+INFOS:&&1|1|2|0&&3|3|2|1&&3|4|2|1&&3|5|2|1&&3|6|2|1&&1|7|2|0&&3|8|2|7&&3|9|2|7&&3|10|2|7&&3|11|2|7&&3|5|2|7&&3|6|2|7
+ImageDetail=7
+gps_data=4
+models.models_gps_data=2
+img_id=8
+update_datetime=6
+img_description=11
+GPSData=1
+create_datetime=5
+gps_data_id=3
+img_blob_url=10
+img_title=9

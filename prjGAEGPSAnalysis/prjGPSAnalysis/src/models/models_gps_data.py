@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+__author__ = 'Alan Tai'
 '''
 Created on Oct 3, 2014
 
