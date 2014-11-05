@@ -7,11 +7,13 @@
 <!-- main content -->
 {% block main_content %}
 <div ng-app="index_page_app" ng-controller="indexPageDispatchCtrl" ui-view></div>
+
 {% endblock %}
 
 <!-- sub-js block -->
 {% block js_content %}
 
+<!-- js -->
 <script type="text/javascript">
 var data_backend = {
 		upload_url : '{{upload_url}}',

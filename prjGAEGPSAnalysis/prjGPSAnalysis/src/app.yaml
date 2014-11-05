@@ -13,6 +13,10 @@ handlers:
   static_files: static/images/gogistics_icon_black.png
   upload: static/images/gogistics_icon_black.png
 
+- url: /apple-touch-icon-precomposed\.png
+  static_files: static/images/gogistics_icon_black.png
+  upload: static/images/gogistics_icon_black.png
+
 - url: /css
   static_dir: static/css
 

@@ -9,7 +9,7 @@ var index_page_app;
 (function(){
 	// Angular.js
 	// declare app level module which depends on filters, and services, and modify $interpolateProvider to avoid the conflict with jinja2' symbol
-	index_page_app = angular.module('index_page_app', [ 'angular-responsive', 'ui.router', 'myGpsDataDirective' ], function($interpolateProvider) {
+	index_page_app = angular.module('index_page_app', [ 'angular-responsive', 'ui.router', 'myGpsDataDirective' , 'myIndexAdminImagesUploadDirective'], function($interpolateProvider) {
 		$interpolateProvider.startSymbol('[[');
 		$interpolateProvider.endSymbol(']]');
 	});

@@ -10,3 +10,12 @@ class GPSData(ndb.Model):
     gps_data = ndb.JsonProperty()
     create_datetime = ndb.DateTimeProperty(auto_now_add = True) #time zone is in UTC
     update_datetime = ndb.DateTimeProperty(auto_now = True) #UTC time zone
+    
+    
+class ImageDetail(ndb.Model):
+    img_id = ndb.StringProperty()
+    img_title = ndb.StringProperty()
+    img_blob_url = ndb.StringProperty()
+    img_description = ndb.TextProperty()
+    create_datetime = ndb.DateTimeProperty(auto_now_add = True)
+    update_datetime = ndb.DateTimeProperty(auto_now = True)

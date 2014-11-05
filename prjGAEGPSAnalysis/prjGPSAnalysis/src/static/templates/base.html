@@ -55,6 +55,10 @@
 	
 	<!-- ng directives -->
 	<script type="text/javascript" src="/js/my_ng_directives/index_page_directives.js"></script>
+	{% if is_admin %}
+	<script type="text/javascript" src="/js/my_ng_directives/index_admin_upload_images_directive.js"></script>
+	{% endif %}
+	
 	
 	<!-- mis js -->
 	<script type="text/javascript" src="/js/plugin_mis/responsive-directive.js"></script>

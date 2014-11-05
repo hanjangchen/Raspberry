@@ -105,12 +105,13 @@
 	function handle_successful_ajax(response){
 		var data = JSON.parse(response);
 		imagelinks = data['img_urls'];
+		img_title = data['img_title'];
+		img_description = data['img_description'];
 		console.log(imagelinks);
 		for ( var i = 0; i < imagelinks.length; i++) {
 			$('#photo_table')
 					.append(
-							'<tr><td><img class="img-responsive" style="width: 300px;" src=' + imagelinks[i]
-									+ '></td></tr>');
+							'<tr><td><img class="img-responsive" style="width: 400px;" src=' + imagelinks[i] + '> </td>' + '<td><h4>Image Title</h4><p style="font-size: 13px;">'+ img_title +'</p>' + '<h4>Image Description</h4><p style="font-size: 13px;">' + img_description + '</p>' +  '</td></tr>');
 		}
 	}
 	
