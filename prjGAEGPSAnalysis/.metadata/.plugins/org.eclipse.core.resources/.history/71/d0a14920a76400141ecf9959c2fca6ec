@@ -47,7 +47,7 @@ class IndexPageDispatcher(BaseHandler):
             for data_entity in gps_module_data_set:
                 gps_data_dict.update({"gps_data" : data_entity.gps_data})
             
-        # admin filter factor
+        # admin filter
         is_admin = True
             
         # create blob upload path

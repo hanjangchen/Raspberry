@@ -24,7 +24,7 @@ var index_page_app, device;
 	index_page_app.config(function(responsiveHelperProvider, $stateProvider, $urlRouterProvider) {
 		// templates dispatcher which redirect visitors to appropriate templates;
 		// currently, there are desktop and mobile versions
-		device = 'desktop';
+		var device = 'desktop';
 		var responsiveHelper = responsiveHelperProvider.$get();
 		if (responsiveHelper.isMobile()) {
 			device = 'mobile';
