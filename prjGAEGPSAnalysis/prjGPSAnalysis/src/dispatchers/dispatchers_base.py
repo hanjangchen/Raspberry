@@ -5,10 +5,8 @@ Created on Jun 24, 2014
 
 @author: Alan Tai
 '''
-from models.models_gps_data import GPSData, ImageDetail
+from models.models_gps_data import GPSData
 from google.appengine.ext import blobstore
-from google.appengine.ext.webapp import blobstore_handlers
-from google.appengine.api import images
 
 
 from handlers.handler_webapp2_extra_auth import BaseHandler
@@ -16,7 +14,6 @@ import logging
 import jinja2
 import webapp2
 import json
-import time
 # dictionaries
 
 from dictionaries.dict_keys_values import KeysVaulesGeneral

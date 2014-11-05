@@ -45,7 +45,7 @@ class GPSDataRetrievingDispatcher(BaseHandler):
         self.response.out.headers['Content-Type'] = 'text/json'
         self.response.out.write(json.dumps(ajax_response))
         
-class ImagesDataDownloadDispatcher(blobstore_handlers.BlobstoreUploadHandler):
+class ImagesDataUploadDispatcher(blobstore_handlers.BlobstoreUploadHandler):
     def post(self):
         """ images upload handler """
         
@@ -71,6 +71,19 @@ class ImagesDataDownloadDispatcher(blobstore_handlers.BlobstoreUploadHandler):
         ajax_response = {"img_urls" : img_urls, "img_title" : img_title, "img_description" : img_description }
         self.response.write(json.dumps(ajax_response))
         
+class ImagesDataDownloadDispatcher(BaseHandler):
+    def post(self):
+        imgs_detail_entities = ImageDetail().query()
+        imgs_detail_list = []
+        if imgs_detail_entities.count() <= 0:
+            imgs_detail_entities = None
+        else:
+            for entity in imgs_detail_entities:
+                imgs_detail_list.append({'img_title' : entity.img_title, 'img_description' : entity.img_description, 'img_blob_url' : entity.img_blob_url, 'create_datetime' : entity.create_datetime.strftime("%B %d, %Y")})
+            
+        ajax_response = {"imgs_detail_entities" : imgs_detail_list}
+        self.response.write(json.dumps(ajax_response))
+        
 
 # configuration
 config = dict_general.config_setting
@@ -78,7 +91,8 @@ config = dict_general.config_setting
 # app routing
 app = webapp2.WSGIApplication([
     webapp2.Route(r'/data_retrieving/gps_module', GPSDataRetrievingDispatcher, name='data_retrieving_gps_module'),
-    webapp2.Route(r'/data_retrieving/upload_img', ImagesDataDownloadDispatcher, name='data_retrieving_upload_img')
+    webapp2.Route(r'/data_retrieving/upload_img', ImagesDataUploadDispatcher, name='data_retrieving_upload_img'),
+    webapp2.Route(r'/data_retrieving/download_img', ImagesDataDownloadDispatcher, name='data_retrieving_download_img')
 ], debug=True, config=config)
 
 # log info.

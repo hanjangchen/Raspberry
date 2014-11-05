@@ -156,7 +156,7 @@ dictionaries.__init__|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dictiona
 dictionaries.dict_keys_values|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dictionaries\dict_keys_values.py
 dispatchers.__init__|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\__init__.py
 dispatchers.dispatchers_base|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\dispatchers_base.py
-dispatchers.dispatchers_data_analysis|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\dispatchers_data_analysis.py
+dispatchers.dispatchers_data_management|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\dispatchers_data_management.py
 distutils.__init__|C:\Program Files (x86)\Google\google_appengine\lib\distutils\distutils\__init__.py
 distutils.archive_util|C:\Program Files (x86)\Google\google_appengine\lib\distutils\distutils\archive_util.py
 distutils.bcppcompiler|C:\Program Files (x86)\Google\google_appengine\lib\distutils\distutils\bcppcompiler.py
