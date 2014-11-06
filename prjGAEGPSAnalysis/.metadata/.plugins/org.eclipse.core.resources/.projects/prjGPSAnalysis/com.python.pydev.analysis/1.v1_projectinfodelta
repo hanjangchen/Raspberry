@@ -1,16 +1,1 @@
-INSTUPdispatchers.dispatchers_base
-D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\dispatchers_base.py
-INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&1|5|2|0&&2|6|2|5&&1|7|2|0&&2|6|2|7&&1|8|2|7&&2|6|2|9&&1|10|2|7&&2|6|2|11&&3|12|2|7&&3|13|2|7
-app=13
-__author__=1
-get=6
-jinja_environment=4
-FaultImgURLDispatcher=8
-IndexPageDispatcher=7
-IndexPageDispatcher.RegxTestDispatcher=11
-dispatchers.dispatchers_base=2
-IndexPageDispatcher.FaultImgURLDispatcher=9
-FrontPageDispatcher=5
-RegxTestDispatcher=10
-dict_general=3
-config=12
+DELSTRmodels.models_gps_data

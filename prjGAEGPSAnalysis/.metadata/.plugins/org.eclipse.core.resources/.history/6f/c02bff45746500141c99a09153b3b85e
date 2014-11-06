@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+__author__ = 'Alan Tai'
 '''
 Created on Jun 24, 2014
 
@@ -7,17 +8,18 @@ Created on Jun 24, 2014
 from models.models_gps_data import GPSData
 from google.appengine.ext import blobstore
 from google.appengine.api import users
+
+
 from handlers.handler_webapp2_extra_auth import BaseHandler
 import logging
 import jinja2
 import webapp2
 import json
-
 # dictionaries
+
 from dictionaries.dict_keys_values import KeysVaulesGeneral
 dict_general = KeysVaulesGeneral()
 
-__author__ = 'Alan Tai'
 # jinja environment
 jinja_environment = jinja2.Environment(loader=jinja2.FileSystemLoader('static/templates'))
 

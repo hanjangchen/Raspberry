@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+__author__ = 'Alan Tai'
 '''
 Created on Oct 3, 2014
 
@@ -6,7 +7,6 @@ Created on Oct 3, 2014
 '''
 from google.appengine.ext import ndb
 
-__author__ = 'Alan Tai'
 class GPSData(ndb.Model):
     gps_data_id = ndb.StringProperty()
     gps_data = ndb.JsonProperty()
