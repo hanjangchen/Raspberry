@@ -10,9 +10,17 @@ var index_page_app, device;
 	// Angular.js
 	// declare app level module which depends on filters, and services, and
 	// modify $interpolateProvider to avoid the conflict with jinja2' symbol
-	index_page_app = angular.module('index_page_app', [ 'angular-responsive',
-			'ui.router', 'myGpsDataDirective',
-			'myIndexAdminImagesUploadDirective' ], function(
+	var injected_module = [];
+	if (is_admin){
+		injected_module = [ 'angular-responsive',
+		        			'ui.router', 'myGpsDataDirective',
+		        			'myIndexAdminImagesUploadDirective' ];
+	}
+	else{
+		injected_module = [ 'angular-responsive',
+		        			'ui.router', 'myGpsDataDirective' ];
+	}
+	index_page_app = angular.module('index_page_app', injected_module , function(
 			$interpolateProvider) {
 		$interpolateProvider.startSymbol('[[');
 		$interpolateProvider.endSymbol(']]');
@@ -164,14 +172,13 @@ var index_page_app, device;
 		
 		// ng-pagination
 		$scope.currentPage = 1;
-		$scope.pageSize = 3;
+		$scope.pageSize = 1;
 		// end of ng-pagination
 	}
 	indexImagesDetailListController.$inject = [ 'myIndexTwoService',
 			'GLOBAL_VALUES', '$scope' ];
 	index_page_app.controller('indexImagesDetailListCtrl', indexImagesDetailListController);
 	
-	//
 	/* pagination controller */
 	var indexImagesDetailListPaginationController = function($scope) {
 		$scope.pageChangeHandler = function(num) {
@@ -180,7 +187,8 @@ var index_page_app, device;
 	}
 	indexImagesDetailListPaginationController.$inject = ['$scope'];
 	index_page_app.controller('indexImagesDetailListPaginationCtrl', indexImagesDetailListPaginationController);
-
+	
+	
 	/* JQuery */
 
 })();

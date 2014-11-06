@@ -16,11 +16,22 @@
 <!-- js -->
 <!-- get data from back-end by jinja2 -->
 <script type="text/javascript">
+/**/
 var data_backend = {
 		upload_url : '{{upload_url}}',
 }
 
+/**/
+
+var is_admin = false;
+{% if is_admin %}
+is_admin = true;
+{% endif %}
+
+/**/
 var upload_url = '{{upload_url}}';
+
+/**/
 {% if gps_data_dict %}
 var gps_data_set = '{{gps_data_dict}}';
 
