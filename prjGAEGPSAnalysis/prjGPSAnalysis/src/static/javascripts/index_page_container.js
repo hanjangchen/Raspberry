@@ -145,25 +145,41 @@ var index_page_app, device;
 	index_page_app.controller('myIndexTwoCtrl', indexTwoController);
 
 	//
-	var indexImagesDetailListController = function(myIndexTwoService,
-			GLOBAL_VALUES, $scope) {
+	var indexImagesDetailListController = function(myIndexTwoService,GLOBAL_VALUES, $scope) {
 		//
+		var current_obj = this;
+		current_obj.imgs_detail = [];
+		
 		var download_imgs_detail = function() {
-			var imgs_detail;
+			
 			myIndexTwoService.dowload_imgs_detail().success(function(response) {
-				imgs_detail = response.imgs_detail_entities;
-				console.log(imgs_detail);
+				console.log(JSON.stringify(response,2,2));
+				current_obj.imgs_detail = response.imgs_detail_entities;
 			}).error(function(response) {
 				console.log('fail to download images detail');
 			});
 		}
-		this.download_imgs_detail = download_imgs_detail;
-		this.download_imgs_detail();
+		download_imgs_detail();
+		console.log(JSON.stringify(current_obj.imgs_detail,2,2));
+		
+		// ng-pagination
+		$scope.currentPage = 1;
+		$scope.pageSize = 3;
+		// end of ng-pagination
 	}
 	indexImagesDetailListController.$inject = [ 'myIndexTwoService',
 			'GLOBAL_VALUES', '$scope' ];
-	index_page_app.controller('indexImagesDetailListCtrl',
-			indexImagesDetailListController);
+	index_page_app.controller('indexImagesDetailListCtrl', indexImagesDetailListController);
+	
+	//
+	/* pagination controller */
+	var indexImagesDetailListPaginationController = function($scope) {
+		$scope.pageChangeHandler = function(num) {
+			console.log('page changed to ' + num);
+		};
+	}
+	indexImagesDetailListPaginationController.$inject = ['$scope'];
+	index_page_app.controller('indexImagesDetailListPaginationCtrl', indexImagesDetailListPaginationController);
 
 	/* JQuery */
 

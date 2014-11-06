@@ -1,0 +1,19 @@
+<!-- sub-template for admin to upload images and related information -->
+<my-index-admin-images-upload></my-index-admin-images-upload>
+
+<!-- information details for visitors -->
+<div ng-controller="indexImagesDetailListCtrl as ctrl">
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<!-- ng-paginator control panel -->
+			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h5>Control Panel</h5>
+			</div>
+			
+			<!-- ng-pagination list -->
+			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h5>List</h5>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,1 +1,13 @@
-DELSTRdispatchers.dispatchers_base
+INSTUPdispatchers.dispatchers_data_management
+D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dispatchers\dispatchers_data_management.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&1|5|2|0&&2|6|2|5&&1|7|2|0&&2|6|2|7&&1|8|2|0&&2|6|2|8&&3|9|2|0&&3|10|2|0
+ImagesDataDownloadDispatcher=8
+app=10
+post=6
+dispatchers.dispatchers_data_management=2
+__author__=1
+jinja_environment=4
+config=9
+dict_general=3
+ImagesDataUploadDispatcher=7
+GPSDataRetrievingDispatcher=5

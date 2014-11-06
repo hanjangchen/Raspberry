@@ -17,7 +17,7 @@
 
 
 //replace the original app
-kp_app.directive(
+index_page_app.directive(
 				'dirPaginate',
 				[
 						'$compile',

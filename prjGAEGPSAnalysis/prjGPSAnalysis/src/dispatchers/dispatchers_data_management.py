@@ -75,9 +75,7 @@ class ImagesDataDownloadDispatcher(BaseHandler):
     def post(self):
         imgs_detail_entities = ImageDetail().query()
         imgs_detail_list = []
-        if imgs_detail_entities.count() <= 0:
-            imgs_detail_entities = None
-        else:
+        if imgs_detail_entities.count() > 0:
             for entity in imgs_detail_entities:
                 imgs_detail_list.append({'img_title' : entity.img_title, 'img_description' : entity.img_description, 'img_blob_url' : entity.img_blob_url, 'create_datetime' : entity.create_datetime.strftime("%B %d, %Y")})
             

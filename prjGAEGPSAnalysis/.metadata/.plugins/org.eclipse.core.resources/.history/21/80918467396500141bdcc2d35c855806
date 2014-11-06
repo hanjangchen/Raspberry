@@ -1,0 +1,7 @@
+<!-- sub-template for admin to upload images and related information -->
+<my-index-admin-images-upload></my-index-admin-images-upload>
+
+<!-- information details for visitors -->
+<div ng-controller = "indexImagesDetailListCtrl as ctrl">
+<!-- ng-paginator control panel -->
+</div>

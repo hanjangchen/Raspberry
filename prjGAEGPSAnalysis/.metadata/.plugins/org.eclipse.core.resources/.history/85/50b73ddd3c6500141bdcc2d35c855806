@@ -1,0 +1,36 @@
+{% extends "/base.html"%}
+
+<!-- sub-css block -->
+{% block css_content %}
+{% endblock %}
+
+<!-- main content -->
+{% block main_content %}
+<div ng-app="index_page_app" ng-controller="indexPageDispatchCtrl" ui-view></div>
+
+{% endblock %}
+
+<!-- sub-js block -->
+{% block js_content %}
+
+<!-- js -->
+<script type="text/javascript">
+var data_backend = {
+		upload_url : '{{upload_url}}',
+}
+
+var upload_url = '{{upload_url}}';
+{% if gps_data_dict %}
+var gps_data_set = '{{gps_data_dict}}';
+
+{% for data in gps_data_set %}
+	console.log("{{data.gps_data}}");
+{% endfor %}
+
+{% endif %}
+</script>
+
+<script type="text/javascript" src="/js/index_page_container.js"></script>
+<!-- this pagination is for images detail list use -->
+<script type="text/javascript" src="/js/plugin_mis/dir-pagination.js"></script>
+{% endblock %}
