@@ -7,6 +7,7 @@ Created on Jun 24, 2014
 '''
 from models.models_gps_data import GPSData
 from google.appengine.ext import blobstore
+from google.appengine.api import users
 
 
 from handlers.handler_webapp2_extra_auth import BaseHandler
@@ -44,14 +45,27 @@ class IndexPageDispatcher(BaseHandler):
             for data_entity in gps_module_data_set:
                 gps_data_dict.update({"gps_data" : data_entity.gps_data})
             
-        # admin filter factor
+        # admin filter factor ; han.jang.chen@gmail.com, gogistics.tw@gmail
+        
         is_admin = False
+        user = users.get_current_user()
+        if user:
+            if user.nickname() == 'han.jang.chen' or user.nickname() == 'gogistics.tw':
+                is_admin = True
+        else:
+            self.redirect(users.create_login_url('/'))
         
             
         # create blob upload path
         upload_url = blobstore.create_upload_url('/data_retrieving/upload_img')
         template_values.update({'title':dict_general.web_title_index_page, 'gps_data_dict': json.dumps(gps_data_dict), 'upload_url' : upload_url, 'is_admin' : is_admin})
         self.render_template(dict_general.index_page, template_values)
+        
+
+class FaultImgURLDispatcher(BaseHandler):
+    def get(self):
+        """ temp solution """
+        pass
         
 class RegxTestDispatcher(BaseHandler):
     def get(self, regx_id):
@@ -67,10 +81,10 @@ config = dict_general.config_setting
 app = webapp2.WSGIApplication([
     webapp2.Route(r'/', FrontPageDispatcher, name='front_page'),
     webapp2.Route(r'/base/index', IndexPageDispatcher, name='index_page'),
+    webapp2.Route(r'/base/[[item.img_blob_url]]', FaultImgURLDispatcher, name='img_blob_page'),
     webapp2.Route(r'/base/test/<regx_id:\d+>', RegxTestDispatcher, name='regx_page')
 ], debug=True, config=config)
 
 # log
-logging.getLogger().setLevel(logging.DEBUG) 
-from google.appengine.api import users
+logging.getLogger().setLevel(logging.DEBUG)
     
