@@ -23,15 +23,18 @@
 			<h1>
 				Project-G<sup>2</sup>
 			</h1>
-			<br> <br>
+			<br>
+			<br>
 			<p style="color: #555; margin: 50px auto;">
 				The aim is <span style="color: #f00;">Internet of Things</span>
 			</p>
 			<p style="font-size: 14px; letter-spacing: 2px;">
-				<span>Short-Term: Building GPS module, collecting data
+				<span>Short-Term: we're building GPS module, collecting data
 					from satellites, and then analyze the data with AI algorithms</span> <br>
-				<span>Mid-Term: Integrate the prototype module with other interesting gadgets to </span> <br>
-				<span>Long-Term: Build the Internet of Things with the devices we build</span> <br>
+				<span>Mid-Term: we're building GPS module, collecting data
+					from satellites, and then analyze the data with AI algorithms</span> <br>
+				<span>Long-Term: we're building GPS module, collecting data
+					from satellites, and then analyze the data with AI algorithms</span> <br>
 			</p>
 			<div style="width: 400px; height: 50px; margin: 50px auto;">
 				<script>
@@ -98,7 +101,8 @@
 			style="border: none; border-bottom: dotted 1px #bbb;">
 			<h2>Hardware</h2>
 			<br>
-			<div class="row">
+			<div>
+
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 					<h3>Raspberry PI</h3>
 					<p style="font-size: 13px; text-align: justify; color: #888;">The
@@ -185,14 +189,14 @@
 						point and multi-point networks are supported.</p>
 					<p>
 						<a href="https://www.sparkfun.com/products/11215" target="_blank"
-							class="btn btn-info" title="Xbee Information">More Device
-							Info. &raquo;</a>
+							class="btn btn-info" title="Xbee Information">More Info.
+							&raquo;</a>
 					</p>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			
+			<div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 					<h3>Bluetooth (HC-05)</h3>
 					<p style="font-size: 13px; text-align: justify; color: #888;">The
 						Internet of Things is not about just connecting devices. It's
@@ -200,10 +204,9 @@
 						costs, build efficiencies and improve overall customer engagement.
 						XBee and Device Cloud let the data be the differentiator...</p>
 					<p>
-						<a
-							href="http://www.exp-tech.de/service/datasheet/HC-Serial-Bluetooth-Products.pdf"
-							target="_blank" class="btn btn-primary"
-							title="Bluetooth HC-05 Introduction">Learn More &raquo;</a>
+						<a href="http://www.exp-tech.de/service/datasheet/HC-Serial-Bluetooth-Products.pdf" target="_blank"
+							class="btn btn-primary" title="Raspberry PI Introduction">Learn
+							More &raquo;</a>
 					</p>
 
 					<br>
@@ -211,10 +214,9 @@
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 						The HC-05 we utilize is remote control purpose.</p>
 					<p>
-						<a
-							href="http://developer.mbed.org/users/edodm85/notebook/HC-05-bluetooth/"
-							target="_blank" class="btn btn-info"
-							title="Bluetooth HC-05 Information">More Device Info. &raquo;</a>
+						<a href="https://www.sparkfun.com/products/11215" target="_blank"
+							class="btn btn-info" title="Xbee Information">More Device Info.
+							&raquo;</a>
 					</p>
 				</div>
 			</div>
@@ -224,62 +226,58 @@
 			<h2>Software Development Tools & Skills</h2>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Platform</h3>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<h4>Google App Engine</h4>
-						<p style="font-size: 13px; text-align: justify;">Run your
-							applications on a fully-managed Platform-as-a-Service (PaaS)
-							using built-in services that make you more productive. Just
-							download the SDK and start building immediately...</p>
-						<p>
-							<a href="https://cloud.google.com/appengine/docs" target="_blank"
-								class="btn btn-primary" title="Google App Engine Introduction">Learn
-								More &raquo;</a>
-						</p>
-					</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h4>Google App Engine</h4>
+					<p style="font-size: 13px; text-align: justify;">Run your
+						applications on a fully-managed Platform-as-a-Service (PaaS) using
+						built-in services that make you more productive. Just download the
+						SDK and start building immediately...</p>
+					<p>
+						<a href="https://cloud.google.com/appengine/docs" target="_blank"
+							class="btn btn-primary" title="Google App Engine Introduction">Learn
+							More &raquo;</a>
+					</p>
 				</div>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
 				style="border: none; border-bottom: dotted 1px #bbb;">
 				<h3>Languages</h3>
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h4>Python</h4>
-						<p style="font-size: 13px; text-align: justify;">Python is a
-							programming language that lets you work more quickly and
-							integrate your systems more effectively. You can learn to use
-							Python and see almost immediate gains in productivity and lower
-							maintenance costs....</p>
-						<p>
-							<a href="https://www.python.org/" target="_blank"
-								class="btn btn-primary" title="Python Official Website">Learn
-								More &raquo;</a>
-						</p>
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h4>JavaScript</h4>
-						<p style="font-size: 13px; text-align: justify;">JavaScript is
-							a dynamic computer programming language. It is most commonly used
-							as part of web browsers, whose implementations allow client-side
-							scripts to interact with the user, control the browser,
-							communicate asynchronously, and alter the document content that
-							is displayed. It is also used in server-side network programming
-							with frameworks such as Node.js, game development and the
-							creation of desktop and mobile applications....</p>
-						<p>
-							<a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank"
-								class="btn btn-primary" title="Google App Engine Introduction">Learn
-								More &raquo;</a>
-						</p>
-					</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h4>Python</h4>
+					<p style="font-size: 13px; text-align: justify;">Python is a
+						programming language that lets you work more quickly and integrate
+						your systems more effectively. You can learn to use Python and see
+						almost immediate gains in productivity and lower maintenance
+						costs....</p>
+					<p>
+						<a href="https://www.python.org/" target="_blank"
+							class="btn btn-primary" title="Python Official Website">Learn
+							More &raquo;</a>
+					</p>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h4>JavaScript</h4>
+					<p style="font-size: 13px; text-align: justify;">JavaScript is
+						a dynamic computer programming language. It is most commonly used
+						as part of web browsers, whose implementations allow client-side
+						scripts to interact with the user, control the browser,
+						communicate asynchronously, and alter the document content that is
+						displayed. It is also used in server-side network programming with
+						frameworks such as Node.js, game development and the creation of
+						desktop and mobile applications....</p>
+					<p>
+						<a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank"
+							class="btn btn-primary" title="Google App Engine Introduction">Learn
+							More &raquo;</a>
+					</p>
 				</div>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
 				style="border: none; border-bottom: dotted 1px #bbb;">
 				<h3>Libraries/Frameworks</h3>
-				<div class="row">
+				<div>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Angular.js</h4>
 						<p style="font-size: 13px; text-align: justify;">AngularJS is
@@ -325,7 +323,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="row">
+				<div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>Numeric.js</h4>
 						<p style="font-size: 13px; text-align: justify;">Numeric
@@ -358,32 +356,29 @@
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Algorithms</h3>
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h4>Particle Swarm Optimization</h4>
-						<p style="font-size: 13px; text-align: justify;">Particle
-							swarm optimization (PSO) is a population based stochastic
-							optimization technique developed by Dr. Eberhart and Dr. Kennedy
-							in 1995, inspired by social behavior of bird flocking or fish
-							schooling...</p>
-						<p>
-							<a href="http://www.swarmintelligence.org/" target="_blank"
-								class="btn btn-primary" title="Neural Network Introduction">Learn
-								More &raquo;</a>
-						</p>
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h4>Neural Network</h4>
-						<p style="font-size: 13px; text-align: justify;">A neural
-							network is mans crude way of trying to simulate the brain
-							electronically. So to understand how a neural net works we first
-							must have a look at how the old grey matter does its business...</p>
-						<p>
-							<a href="http://www.ai-junkie.com/" target="_blank"
-								class="btn btn-primary" title="Neural Network Introduction">Learn
-								More &raquo;</a>
-						</p>
-					</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h4>Particle Swarm Optimization</h4>
+					<p style="font-size: 13px; text-align: justify;">Particle swarm
+						optimization (PSO) is a population based stochastic optimization
+						technique developed by Dr. Eberhart and Dr. Kennedy in 1995,
+						inspired by social behavior of bird flocking or fish schooling...</p>
+					<p>
+						<a href="http://www.swarmintelligence.org/" target="_blank"
+							class="btn btn-primary" title="Neural Network Introduction">Learn
+							More &raquo;</a>
+					</p>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h4>Neural Network</h4>
+					<p style="font-size: 13px; text-align: justify;">A neural
+						network is mans crude way of trying to simulate the brain
+						electronically. So to understand how a neural net works we first
+						must have a look at how the old grey matter does its business...</p>
+					<p>
+						<a href="http://www.ai-junkie.com/" target="_blank"
+							class="btn btn-primary" title="Neural Network Introduction">Learn
+							More &raquo;</a>
+					</p>
 				</div>
 			</div>
 		</div>

@@ -28,10 +28,12 @@
 				The aim is <span style="color: #f00;">Internet of Things</span>
 			</p>
 			<p style="font-size: 14px; letter-spacing: 2px;">
-				<span>Short-Term: Building GPS module, collecting data
+				<span>Short-Term: we're building GPS module, collecting data
 					from satellites, and then analyze the data with AI algorithms</span> <br>
-				<span>Mid-Term: Integrate the prototype module with other interesting gadgets to </span> <br>
-				<span>Long-Term: Build the Internet of Things with the devices we build</span> <br>
+				<span>Mid-Term: we're building GPS module, collecting data
+					from satellites, and then analyze the data with AI algorithms</span> <br>
+				<span>Long-Term: we're building GPS module, collecting data
+					from satellites, and then analyze the data with AI algorithms</span> <br>
 			</p>
 			<div style="width: 400px; height: 50px; margin: 50px auto;">
 				<script>
@@ -325,7 +327,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="row">
+				<div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>Numeric.js</h4>
 						<p style="font-size: 13px; text-align: justify;">Numeric
@@ -358,32 +360,29 @@
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Algorithms</h3>
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h4>Particle Swarm Optimization</h4>
-						<p style="font-size: 13px; text-align: justify;">Particle
-							swarm optimization (PSO) is a population based stochastic
-							optimization technique developed by Dr. Eberhart and Dr. Kennedy
-							in 1995, inspired by social behavior of bird flocking or fish
-							schooling...</p>
-						<p>
-							<a href="http://www.swarmintelligence.org/" target="_blank"
-								class="btn btn-primary" title="Neural Network Introduction">Learn
-								More &raquo;</a>
-						</p>
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h4>Neural Network</h4>
-						<p style="font-size: 13px; text-align: justify;">A neural
-							network is mans crude way of trying to simulate the brain
-							electronically. So to understand how a neural net works we first
-							must have a look at how the old grey matter does its business...</p>
-						<p>
-							<a href="http://www.ai-junkie.com/" target="_blank"
-								class="btn btn-primary" title="Neural Network Introduction">Learn
-								More &raquo;</a>
-						</p>
-					</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h4>Particle Swarm Optimization</h4>
+					<p style="font-size: 13px; text-align: justify;">Particle swarm
+						optimization (PSO) is a population based stochastic optimization
+						technique developed by Dr. Eberhart and Dr. Kennedy in 1995,
+						inspired by social behavior of bird flocking or fish schooling...</p>
+					<p>
+						<a href="http://www.swarmintelligence.org/" target="_blank"
+							class="btn btn-primary" title="Neural Network Introduction">Learn
+							More &raquo;</a>
+					</p>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h4>Neural Network</h4>
+					<p style="font-size: 13px; text-align: justify;">A neural
+						network is mans crude way of trying to simulate the brain
+						electronically. So to understand how a neural net works we first
+						must have a look at how the old grey matter does its business...</p>
+					<p>
+						<a href="http://www.ai-junkie.com/" target="_blank"
+							class="btn btn-primary" title="Neural Network Introduction">Learn
+							More &raquo;</a>
+					</p>
 				</div>
 			</div>
 		</div>

@@ -1,1 +1,15 @@
-DELSTRmodels.models_gps_data
+INSTUPmodels.models_gps_data
+D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\models\models_gps_data.py
+INFOS:&&3|1|2|0&&1|3|2|0&&3|4|2|3&&3|5|2|3&&3|6|2|3&&3|7|2|3&&1|8|2|0&&3|9|2|8&&3|10|2|8&&3|11|2|8&&3|12|2|8&&3|6|2|8&&3|7|2|8
+ImageDetail=8
+__author__=1
+update_datetime=7
+img_id=9
+img_description=12
+gps_data_id=4
+gps_data=5
+models.models_gps_data=2
+GPSData=3
+create_datetime=6
+img_title=10
+img_blob_url=11

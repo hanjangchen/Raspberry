@@ -28,10 +28,12 @@
 				The aim is <span style="color: #f00;">Internet of Things</span>
 			</p>
 			<p style="font-size: 14px; letter-spacing: 2px;">
-				<span>Short-Term: Building GPS module, collecting data
+				<span>Short-Term: we're building GPS module, collecting data
 					from satellites, and then analyze the data with AI algorithms</span> <br>
-				<span>Mid-Term: Integrate the prototype module with other interesting gadgets to </span> <br>
-				<span>Long-Term: Build the Internet of Things with the devices we build</span> <br>
+				<span>Mid-Term: we're building GPS module, collecting data
+					from satellites, and then analyze the data with AI algorithms</span> <br>
+				<span>Long-Term: we're building GPS module, collecting data
+					from satellites, and then analyze the data with AI algorithms</span> <br>
 			</p>
 			<div style="width: 400px; height: 50px; margin: 50px auto;">
 				<script>
@@ -384,6 +386,7 @@
 								More &raquo;</a>
 						</p>
 					</div>
+
 				</div>
 			</div>
 		</div>
