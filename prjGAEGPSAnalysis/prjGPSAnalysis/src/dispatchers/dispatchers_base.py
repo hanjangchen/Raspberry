@@ -34,14 +34,14 @@ class IndexPageDispatcher(BaseHandler):
     def get(self):
         """ front page dispatcher """
         template_values = {}
-        gps_data_dict = {}
+        gps_data_list = []
         # retrieve data
         gps_module_data_set = GPSData.query()
         if gps_module_data_set.count() <=0:
             gps_module_data_set = None
         else:
             for data_entity in gps_module_data_set:
-                gps_data_dict.update({"gps_data" : data_entity.gps_data})
+                gps_data_list.append(json.loads(data_entity.gps_data))
             
         # admin filter factor ; han.jang.chen@gmail.com, gogistics.tw@gmail
         
@@ -50,14 +50,14 @@ class IndexPageDispatcher(BaseHandler):
         if user:
             if user.nickname() == 'han.jang.chen' or user.nickname() == 'gogistics.tw':
                 is_admin = True
-        else:
-            self.redirect(users.create_login_url('/'))
-        
+                
+            # create blob upload path
+            upload_url = blobstore.create_upload_url('/data_retrieving/upload_img')
+            template_values.update({'title':dict_general.web_title_index_page, 'gps_data_list': json.dumps(gps_data_list), 'upload_url' : upload_url, 'is_admin' : is_admin})
+            self.render_template(dict_general.index_page, template_values)
             
-        # create blob upload path
-        upload_url = blobstore.create_upload_url('/data_retrieving/upload_img')
-        template_values.update({'title':dict_general.web_title_index_page, 'gps_data_dict': json.dumps(gps_data_dict), 'upload_url' : upload_url, 'is_admin' : is_admin})
-        self.render_template(dict_general.index_page, template_values)
+        else:
+            self.redirect(users.create_login_url())
         
 
 class FaultImgURLDispatcher(BaseHandler):

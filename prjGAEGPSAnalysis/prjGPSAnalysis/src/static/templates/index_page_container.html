@@ -32,13 +32,14 @@ is_admin = true;
 var upload_url = '{{upload_url}}';
 
 /**/
-{% if gps_data_dict %}
-var gps_data_set = '{{gps_data_dict}}';
+{% if gps_data_list %}
 
-{% for data in gps_data_set %}
-	console.log("{{data.gps_data}}");
-{% endfor %}
-
+var gps_data_list = {{gps_data_list|safe}};
+gps_data_list.forEach(function(entry){
+	entry.forEach(function(sub_entry){
+		console.log(JSON.stringify(sub_entry,2,2));
+	});
+});
 {% endif %}
 </script>
 

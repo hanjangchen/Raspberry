@@ -34,7 +34,7 @@ class GPSDataRetrievingDispatcher(BaseHandler):
         time_stamp = int(round(time.time())).__str__()
         gps_data_id = 'GOGIS-GPS-' + time_stamp
          
-        json_obj = self.request.get('data') #from raspberry pi and data format already in json format
+        json_obj = json.loads(self.request.get('data')) #from raspberry pi and data format already in json format
         new_gps_data = GPSData()
         new_gps_data.gps_data_id = gps_data_id
         new_gps_data.gps_data = json_obj
