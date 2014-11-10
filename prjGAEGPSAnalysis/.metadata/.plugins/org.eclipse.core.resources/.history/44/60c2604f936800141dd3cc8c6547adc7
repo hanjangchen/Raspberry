@@ -177,35 +177,36 @@
 						Info. &raquo;</a>
 				</p>
 			</div>
+			
+			<div>
+					<h3>Bluetooth (HC-05)</h3>
+					<p style="font-size: 13px; text-align: justify; color: #888;">The
+						Internet of Things is not about just connecting devices. It's
+						about gathering data and putting that data to work to drive down
+						costs, build efficiencies and improve overall customer engagement.
+						XBee and Device Cloud let the data be the differentiator...</p>
+					<p>
+						<a
+							href="http://www.exp-tech.de/service/datasheet/HC-Serial-Bluetooth-Products.pdf"
+							target="_blank" class="btn btn-primary"
+							title="Bluetooth HC-05 Introduction">Learn More &raquo;</a>
+					</p>
+
+					<br>
+
+					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
+						The HC-05 we utilize is remote control purpose.</p>
+					<p>
+						<a
+							href="http://developer.mbed.org/users/edodm85/notebook/HC-05-bluetooth/"
+							target="_blank" class="btn btn-info"
+							title="Bluetooth HC-05 Information">More Device Info. &raquo;</a>
+					</p>
+				</div>
+
 
 			<div>
-				<h3>Bluetooth (HC-05)</h3>
-				<p style="font-size: 13px; text-align: justify; color: #888;">The
-					Internet of Things is not about just connecting devices. It's about
-					gathering data and putting that data to work to drive down costs,
-					build efficiencies and improve overall customer engagement. XBee
-					and Device Cloud let the data be the differentiator...</p>
-				<p>
-					<a
-						href="http://www.exp-tech.de/service/datasheet/HC-Serial-Bluetooth-Products.pdf"
-						target="_blank" class="btn btn-primary"
-						title="Bluetooth HC-05 Introduction">Learn More &raquo;</a>
-				</p>
-
-				<br>
-
-				<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-					The HC-05 we utilize is remote control purpose.</p>
-				<p>
-					<a
-						href="http://developer.mbed.org/users/edodm85/notebook/HC-05-bluetooth/"
-						target="_blank" class="btn btn-info"
-						title="Bluetooth HC-05 Information">More Device Info. &raquo;</a>
-				</p>
-			</div>
-
-			<div>
-				<h3>Humidity & Temperature Sensor (RHT03)</h3>
+				<h3>Humidity & Temperature Sensor RHT03</h3>
 				<p style="font-size: 13px; text-align: justify; color: #888;">RHT03
 					output calibrated digital signal. It utilizes exclusive
 					digital-signal-collecting-technique and humidity sensing

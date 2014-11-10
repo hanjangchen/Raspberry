@@ -16,9 +16,7 @@
 	<div class="container-fluid">
 		<div class="jumbotron"
 			style="border: none; border-bottom: dotted 1px #bbb; padding-bottom: 50px;">
-			<h2>
-				Project-G<sup>2</sup>
-			</h2>
+			<h2>Project-G<sup>2</sup></h2>
 			<p style="color: #555; margin: 50px auto;">
 				The aim is <span style="color: #f00;">Internet of Things</span>
 			</p>
@@ -177,64 +175,13 @@
 						Info. &raquo;</a>
 				</p>
 			</div>
-
-			<div>
-				<h3>Bluetooth (HC-05)</h3>
-				<p style="font-size: 13px; text-align: justify; color: #888;">The
-					Internet of Things is not about just connecting devices. It's about
-					gathering data and putting that data to work to drive down costs,
-					build efficiencies and improve overall customer engagement. XBee
-					and Device Cloud let the data be the differentiator...</p>
-				<p>
-					<a
-						href="http://www.exp-tech.de/service/datasheet/HC-Serial-Bluetooth-Products.pdf"
-						target="_blank" class="btn btn-primary"
-						title="Bluetooth HC-05 Introduction">Learn More &raquo;</a>
-				</p>
-
-				<br>
-
-				<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-					The HC-05 we utilize is remote control purpose.</p>
-				<p>
-					<a
-						href="http://developer.mbed.org/users/edodm85/notebook/HC-05-bluetooth/"
-						target="_blank" class="btn btn-info"
-						title="Bluetooth HC-05 Information">More Device Info. &raquo;</a>
-				</p>
-			</div>
-
-			<div>
-				<h3>Humidity & Temperature Sensor (RHT03)</h3>
-				<p style="font-size: 13px; text-align: justify; color: #888;">RHT03
-					output calibrated digital signal. It utilizes exclusive
-					digital-signal-collecting-technique and humidity sensing
-					technology, assuring its reliability and stability. Its sensing
-					elements is connected with 8-bit single-chip computer...</p>
-				<p>
-					<a
-						href="http://humiditysensor1.en.ecplaza.net/digital-humidity-temperature-sensor-module--238974-1635379.html"
-						target="_blank" class="btn btn-primary"
-						title="Bluetooth HC-05 Introduction">Learn More &raquo;</a>
-				</p>
-
-				<br>
-
-				<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-					The RHT03 we utilize is for collecting data of humidity and
-					temperature.</p>
-				<p>
-					<a href="http://www.humiditycn.com/cp22.html" target="_blank"
-						class="btn btn-info" title="Bluetooth HC-05 Information">More
-						Device Info. &raquo;</a>
-				</p>
-			</div>
 		</div>
 
 		<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"
 			style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
 			<h2>Software Development Tools & Skills</h2>
-			<div style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
+			<div
+				style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
 				<h3>Platform</h3>
 				<div>
 					<h4>Google App Engine</h4>
@@ -251,7 +198,8 @@
 			</div>
 
 
-			<div style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
+			<div
+				style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
 				<h3>Languages</h3>
 				<div>
 					<h4>Python</h4>
@@ -284,7 +232,8 @@
 				</div>
 			</div>
 
-			<div style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
+			<div
+				style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
 				<h3>Libraries/Frameworks</h3>
 				<div>
 					<div>

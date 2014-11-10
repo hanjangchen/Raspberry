@@ -236,10 +236,10 @@
 					<br>
 
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						The RHT03 we utilize is for collecting data of humidity and temperature.</p>
+						The HC-05 we utilize is remote control purpose.</p>
 					<p>
 						<a
-							href="http://www.humiditycn.com/cp22.html"
+							href="http://developer.mbed.org/users/edodm85/notebook/HC-05-bluetooth/"
 							target="_blank" class="btn btn-info"
 							title="Bluetooth HC-05 Information">More Device Info. &raquo;</a>
 					</p>

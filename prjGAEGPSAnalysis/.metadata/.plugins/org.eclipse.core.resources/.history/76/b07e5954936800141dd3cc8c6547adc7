@@ -204,8 +204,9 @@
 				</p>
 			</div>
 
+
 			<div>
-				<h3>Humidity & Temperature Sensor (RHT03)</h3>
+				<h3>Humidity & Temperature Sensor RHT03</h3>
 				<p style="font-size: 13px; text-align: justify; color: #888;">RHT03
 					output calibrated digital signal. It utilizes exclusive
 					digital-signal-collecting-technique and humidity sensing

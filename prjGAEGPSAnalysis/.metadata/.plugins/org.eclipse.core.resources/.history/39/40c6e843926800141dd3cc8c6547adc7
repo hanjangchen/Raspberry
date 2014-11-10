@@ -28,11 +28,10 @@
 				The aim is <span style="color: #f00;">Internet of Things</span>
 			</p>
 			<p style="font-size: 14px; letter-spacing: 2px;">
-				<span>Short-Term: Building GPS module, collecting data from
-					satellites, and then analyze the data with AI algorithms</span> <br>
-				<span>Mid-Term: Integrate the prototype module with other
-					interesting gadgets to </span> <br> <span>Long-Term: Build the
-					Internet of Things with the devices we build</span> <br>
+				<span>Short-Term: Building GPS module, collecting data
+					from satellites, and then analyze the data with AI algorithms</span> <br>
+				<span>Mid-Term: Integrate the prototype module with other interesting gadgets to </span> <br>
+				<span>Long-Term: Build the Internet of Things with the devices we build</span> <br>
 			</p>
 			<div style="width: 400px; height: 50px; margin: 50px auto;">
 				<script>
@@ -218,14 +217,14 @@
 							title="Bluetooth HC-05 Information">More Device Info. &raquo;</a>
 					</p>
 				</div>
-
+				
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 					<h3>Humidity & Temperature Sensor RHT03</h3>
-					<p style="font-size: 13px; text-align: justify; color: #888;">RHT03
-						output calibrated digital signal. It utilizes exclusive
-						digital-signal-collecting-technique and humidity sensing
-						technology, assuring its reliability and stability. Its sensing
-						elements is connected with 8-bit single-chip computer...</p>
+					<p style="font-size: 13px; text-align: justify; color: #888;">The
+						Internet of Things is not about just connecting devices. It's
+						about gathering data and putting that data to work to drive down
+						costs, build efficiencies and improve overall customer engagement.
+						XBee and Device Cloud let the data be the differentiator...</p>
 					<p>
 						<a
 							href="http://humiditysensor1.en.ecplaza.net/digital-humidity-temperature-sensor-module--238974-1635379.html"
@@ -236,15 +235,15 @@
 					<br>
 
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						The RHT03 we utilize is for collecting data of humidity and temperature.</p>
+						The HC-05 we utilize is remote control purpose.</p>
 					<p>
 						<a
-							href="http://www.humiditycn.com/cp22.html"
+							href="http://developer.mbed.org/users/edodm85/notebook/HC-05-bluetooth/"
 							target="_blank" class="btn btn-info"
 							title="Bluetooth HC-05 Information">More Device Info. &raquo;</a>
 					</p>
 				</div>
-
+				
 			</div>
 		</div>
 
