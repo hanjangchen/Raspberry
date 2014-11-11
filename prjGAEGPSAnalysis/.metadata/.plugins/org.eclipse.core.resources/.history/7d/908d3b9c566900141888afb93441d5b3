@@ -36,7 +36,9 @@ var upload_url = '{{upload_url}}';
 
 var gps_data_list = {{gps_data_list|safe}};
 gps_data_list.forEach(function(entry){
-		console.log(JSON.stringify(entry,2,2));
+	entry.forEach(function(sub_entry){
+		console.log(JSON.stringify(sub_entry,2,2));
+	});
 });
 {% endif %}
 </script>

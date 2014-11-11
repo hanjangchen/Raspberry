@@ -60,7 +60,7 @@ class IndexPageDispatcher(BaseHandler):
             self.render_template(dict_general.index_page, template_values)
             
         else:
-            self.redirect(users.create_login_url('/base/index'))
+            self.redirect(users.create_login_url())
         
 
 class FaultImgURLDispatcher(BaseHandler):

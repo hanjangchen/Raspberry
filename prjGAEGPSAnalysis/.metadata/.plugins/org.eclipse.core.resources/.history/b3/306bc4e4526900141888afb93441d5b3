@@ -43,8 +43,6 @@ class IndexPageDispatcher(BaseHandler):
             for data_entity in gps_module_data_set:
                 if isinstance(data_entity.gps_data, str):
                     gps_data_list.append(json.loads(data_entity.gps_data))
-                else:
-                    gps_data_list.append(data_entity.gps_data)
             
         # admin filter factor ; han.jang.chen@gmail.com, gogistics.tw@gmail
         
@@ -60,7 +58,7 @@ class IndexPageDispatcher(BaseHandler):
             self.render_template(dict_general.index_page, template_values)
             
         else:
-            self.redirect(users.create_login_url('/base/index'))
+            self.redirect(users.create_login_url())
         
 
 class FaultImgURLDispatcher(BaseHandler):
