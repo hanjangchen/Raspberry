@@ -34,6 +34,7 @@ var upload_url = '{{upload_url}}';
 /**/
 {% if gps_data_list %}
 
+
 var gps_data_list = {{gps_data_list|safe}};
 try{
 	gps_data_list.forEach(function(entry){

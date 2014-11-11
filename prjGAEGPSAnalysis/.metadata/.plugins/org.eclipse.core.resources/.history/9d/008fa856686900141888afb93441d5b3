@@ -1,12 +1,12 @@
 {% extends "/base.html"%}
 
 <!-- sub-css block -->
-{% block css_content %} {% endblock %}
+{% block css_content %}
+{% endblock %}
 
 <!-- main content -->
 {% block main_content %}
-<div ng-app="index_page_app" ng-controller="indexPageDispatchCtrl"
-	ui-view></div>
+<div ng-app="index_page_app" ng-controller="indexPageDispatchCtrl" ui-view></div>
 
 {% endblock %}
 
@@ -34,14 +34,16 @@ var upload_url = '{{upload_url}}';
 /**/
 {% if gps_data_list %}
 
+
 var gps_data_list = {{gps_data_list|safe}};
 try{
-	gps_data_list.forEach(function(entry){
-			console.log(JSON.stringify(entry,2,2));
-	});
+	
 }catch(e){
 	console.log(e.message);
 }
+gps_data_list.forEach(function(entry){
+		console.log(JSON.stringify(entry,2,2));
+});
 
 {% endif %}
 </script>
