@@ -48,6 +48,9 @@ handlers:
 - url: /data_retrieving/.*
   script: dispatchers.dispatchers_data_management.app
 
+- url: /protortc/message_service/.*
+  script: dispatchers.dispatchers_protortc_services.app
+
 inbound_services:
 - channel_presence
 

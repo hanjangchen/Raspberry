@@ -1,0 +1,9 @@
+'''
+Created on Nov 12, 2014
+
+@author: alantai
+'''
+from protorpc import messages
+
+class MessageRequest(messages.Message):
+    my_message = messages.StringField(1, required = True)
