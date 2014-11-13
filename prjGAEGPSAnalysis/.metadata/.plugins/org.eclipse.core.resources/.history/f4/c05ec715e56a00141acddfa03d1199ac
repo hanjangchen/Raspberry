@@ -111,8 +111,5 @@ var yAxis = d3.svg.axis()
 var line = d3.svg.line()
 .x(function(d) { return x(d.date); })
 .y(function(d) { return y(d.close); });
-
-
-var svg_body = d3.select("#d3_charts");
 //-->
 </script>
