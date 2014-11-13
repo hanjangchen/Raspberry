@@ -20,9 +20,6 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
-#d3_charts{
-font-size: 10px;
-}
 
 -->
 </style>
@@ -92,7 +89,7 @@ font-size: 10px;
 
 <script type="text/javascript">
 <!--
-var margin = {top: 20, right: 100, bottom: 30, left: 50},
+var margin = {top: 20, right: 80, bottom: 30, left: 50},
 width = 960 - margin.left - margin.right,
 height = 500 - margin.top - margin.bottom;
 
@@ -126,7 +123,7 @@ var svg = d3.select("#d3_charts").append("svg")
 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-d3.tsv("/mis/data.tsv", function(error, data) {
+d3.tsv("data.tsv", function(error, data) {
 	  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
 	  data.forEach(function(d) {
@@ -159,8 +156,8 @@ d3.tsv("/mis/data.tsv", function(error, data) {
 	      .call(yAxis)
 	    .append("text")
 	      .attr("transform", "rotate(-90)")
-	      .attr("y", -50)
-	      .attr("dy", ".8em")
+	      .attr("y", 6)
+	      .attr("dy", ".71em")
 	      .style("text-anchor", "end")
 	      .text("Temperature (ºF)");
 

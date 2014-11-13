@@ -20,9 +20,6 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
-#d3_charts{
-font-size: 10px;
-}
 
 -->
 </style>

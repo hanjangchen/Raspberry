@@ -20,9 +20,6 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
-#d3_charts{
-font-size: 10px;
-}
 
 -->
 </style>
@@ -92,7 +89,7 @@ font-size: 10px;
 
 <script type="text/javascript">
 <!--
-var margin = {top: 20, right: 100, bottom: 30, left: 50},
+var margin = {top: 20, right: 10, bottom: 30, left: 50},
 width = 960 - margin.left - margin.right,
 height = 500 - margin.top - margin.bottom;
 
