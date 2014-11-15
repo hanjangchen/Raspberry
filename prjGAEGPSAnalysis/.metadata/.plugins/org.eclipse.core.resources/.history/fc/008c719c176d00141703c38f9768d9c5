@@ -274,8 +274,8 @@
 							infrastructure. Choose a VM that fits your needs and gain the
 							performance of Google’s worldwide fiber network....</p>
 						<p>
-							<a href="https://cloud.google.com/compute/" target="_blank"
-								class="btn btn-primary" title="Google Compute Engine Introduction">Learn
+							<a href="https://cloud.google.com/appengine/docs" target="_blank"
+								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
 					</div>

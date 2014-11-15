@@ -126,8 +126,8 @@
 						world how to program.</p>
 					<p>
 						<a href="https://www.sparkfun.com/products/12994" target="_blank"
-							class="btn btn-info" title="Raspberry PI B+ Information">More
-							Device Info. &raquo;</a>
+							class="btn btn-info" title="Raspberry PI B+ Information">More Device
+							Info. &raquo;</a>
 					</p>
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -174,8 +174,9 @@
 							More &raquo;</a>
 					</p>
 
-					<br> <img alt="xbee_module" src="/img/xbee_module_1.jpg"
-						class="img-responsive"> <br>
+					<br>
+					<img alt="xbee_module" src="/img/xbee_module_1.jpg" class="img-responsive">
+					<br>
 
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 						The Xbee we utilize is XBee 1mW Trace Antenna - Series 1. This is
@@ -233,17 +234,18 @@
 							target="_blank" class="btn btn-primary"
 							title="Bluetooth HC-05 Introduction">Learn More &raquo;</a>
 					</p>
-
-					<br> <img alt="rht03" src="/img/rht03.jpg"
-						class="img-responsive"> <br>
+					
+					<br>
+					<img alt="rht03" src="/img/rht03.jpg" class="img-responsive">
+					<br>
 
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						The RHT03 we utilize is for collecting data of humidity and
-						temperature.</p>
+						The RHT03 we utilize is for collecting data of humidity and temperature.</p>
 					<p>
-						<a href="http://www.humiditycn.com/cp22.html" target="_blank"
-							class="btn btn-info" title="Bluetooth HC-05 Information">More
-							Device Info. &raquo;</a>
+						<a
+							href="http://www.humiditycn.com/cp22.html"
+							target="_blank" class="btn btn-info"
+							title="Bluetooth HC-05 Information">More Device Info. &raquo;</a>
 					</p>
 				</div>
 
@@ -269,13 +271,10 @@
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>Google Compute Engine</h4>
-						<p style="font-size: 13px; text-align: justify;">Run
-							large-scale workloads on virtual machines hosted on Google's
-							infrastructure. Choose a VM that fits your needs and gain the
-							performance of Google’s worldwide fiber network....</p>
+						<p style="font-size: 13px; text-align: justify;">Run large-scale workloads on virtual machines hosted on Google's infrastructure. Choose a VM that fits your needs and gain the performance of Google’s worldwide fiber network....</p>
 						<p>
-							<a href="https://cloud.google.com/compute/" target="_blank"
-								class="btn btn-primary" title="Google Compute Engine Introduction">Learn
+							<a href="https://cloud.google.com/appengine/docs" target="_blank"
+								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
 					</div>
