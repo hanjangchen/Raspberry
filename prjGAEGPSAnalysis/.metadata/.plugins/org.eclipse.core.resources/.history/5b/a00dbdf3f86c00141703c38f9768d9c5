@@ -31,7 +31,6 @@ font-size: 10px;
 		<div class="jumbotron">
 			<!-- ng-paginator control panel -->
 			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h4>Images List</h4>
 				<br>
 				<h4>Control Panel</h4>
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -49,6 +48,7 @@ font-size: 10px;
 			<!-- ng-pagination list -->
 			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<br>
+				<h4>Images List</h4>
 				<table class="table table-striped">
 					<tbody>
 						<tr

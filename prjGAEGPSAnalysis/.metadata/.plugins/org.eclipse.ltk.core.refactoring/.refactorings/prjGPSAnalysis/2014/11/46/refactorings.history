@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;prjGPSAnalysis/src/static/images/xbee_module_1.JPG&apos; to &apos;xbee_module_1.jpg&apos;" description="Rename resource &apos;xbee_module_1.JPG&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/static/images/xbee_module_1.JPG" name="xbee_module_1.jpg" stamp="1416077188106" updateReferences="true"/>
+</session>
