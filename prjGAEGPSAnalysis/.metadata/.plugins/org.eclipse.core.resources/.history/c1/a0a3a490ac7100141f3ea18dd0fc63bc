@@ -31,7 +31,7 @@
 				<span>Short-Term: Building GPS module, collecting data from
 					satellites, and then analyze the data with AI algorithms</span> <br>
 				<span>Mid-Term: Integrate the prototype module with other
-					interesting gadgets</span> <br> <span>Long-Term: Build the
+					interesting gadgets to </span> <br> <span>Long-Term: Build the
 					Internet of Things with the devices we build</span> <br>
 			</p>
 			<div style="width: 400px; height: 50px; margin: 50px auto;">
@@ -325,9 +325,11 @@
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>OpenStreetMap</h4>
-						<p style="font-size: 13px; text-align: justify;">OpenStreetMap
-							is a map of the world, created by people like you and free to use
-							under an open license...</p>
+						<p style="font-size: 13px; text-align: justify;">Python is a
+							programming language that lets you work more quickly and
+							integrate your systems more effectively. You can learn to use
+							Python and see almost immediate gains in productivity and lower
+							maintenance costs....</p>
 						<p>
 							<a href="http://www.openstreetmap.org/" target="_blank"
 								class="btn btn-primary" title="OpenStreetMap Introduction">Learn
@@ -336,13 +338,17 @@
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>Google Map</h4>
-						<p style="font-size: 13px; text-align: justify;">Provides
-							directions, interactive maps, and satellite/aerial imagery of
-							many countries. Can also search by keyword such as type of
-							business...</p>
+						<p style="font-size: 13px; text-align: justify;">JavaScript is
+							a dynamic computer programming language. It is most commonly used
+							as part of web browsers, whose implementations allow client-side
+							scripts to interact with the user, control the browser,
+							communicate asynchronously, and alter the document content that
+							is displayed. It is also used in server-side network programming
+							with frameworks such as Node.js, game development and the
+							creation of desktop and mobile applications....</p>
 						<p>
 							<a href="https://maps.google.com/" target="_blank"
-								class="btn btn-primary" title="Google Map Introduction">Learn
+								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
 					</div>
@@ -401,15 +407,16 @@
 				<div class="row">
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Leaflet.js</h4>
-						<p style="font-size: 13px; text-align: justify;">Leaflet is a
-							modern open-source JavaScript library for mobile-friendly
-							interactive maps. It is developed by Vladimir Agafonkin with a
-							team of dedicated contributors. Weighing just about 33 KB of JS,
-							it has all the features most developers ever need for online
-							maps....</p>
+						<p style="font-size: 13px; text-align: justify;">Bootstrap is
+							a free collection of tools for creating websites and web
+							applications. It contains HTML and CSS-based design templates for
+							typography, forms, buttons, navigation and other interface
+							components, as well as optional JavaScript extensions. In June
+							2014 it was the No.1 project on GitHub with over 73,000 stars and
+							more than 27,000 forks...</p>
 						<p>
 							<a href="http://leafletjs.com/" target="_blank"
-								class="btn btn-primary" title="Leaflet Introduction">Learn
+								class="btn btn-primary" title="OpenStreetMap Introduction">Learn
 								More &raquo;</a>
 						</p>
 					</div>
