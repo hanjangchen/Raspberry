@@ -334,10 +334,6 @@
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>Google App Engine</h4>
-						
-						<br> <img alt="app_engine" src="/img/app-engine.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">Run your
 							applications on a fully-managed Platform-as-a-Service (PaaS)
 							using built-in services that make you more productive. Just
@@ -348,13 +344,12 @@
 								More &raquo;</a>
 						</p>
 						
+						<br> <img alt="app_engine" src="/img/app-engine.png"
+						class="img-responsive icon"> <br>
+						
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>Google Compute Engine</h4>
-						
-						<br> <img alt="compute_engine" src="/img/compute-engine.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">Run
 							large-scale workloads on virtual machines hosted on Google's
 							infrastructure. Choose a VM that fits your needs and gain the
@@ -365,6 +360,10 @@
 								title="Google Compute Engine Introduction">Learn More
 								&raquo;</a>
 						</p>
+						
+						<br> <img alt="compute_engine" src="/img/compute-engine.png"
+						class="img-responsive icon"> <br>
+						
 					</div>
 				</div>
 			</div>
@@ -374,9 +373,6 @@
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>Python</h4>
-						<br> <img alt="python" src="/img/python.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">Python is a
 							programming language that lets you work more quickly and
 							integrate your systems more effectively. You can learn to use
@@ -387,12 +383,13 @@
 								class="btn btn-primary" title="Python Official Website">Learn
 								More &raquo;</a>
 						</p>
+						
+						<br> <img alt="python" src="/img/python.png"
+						class="img-responsive icon"> <br>
+						
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>JavaScript</h4>
-						<br> <img alt="javascript" src="/img/javascript.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">JavaScript is
 							a dynamic computer programming language. It is most commonly used
 							as part of web browsers, whose implementations allow client-side
@@ -406,6 +403,10 @@
 								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
+						
+						<br> <img alt="javascript" src="/img/javascript.png"
+						class="img-responsive icon"> <br>
+						
 					</div>
 				</div>
 			</div>
@@ -415,9 +416,6 @@
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>OpenStreetMap</h4>
-						<br> <img alt="javascript" src="/img/openstreetmap.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">OpenStreetMap
 							is a map of the world, created by people like you and free to use
 							under an open license...</p>
@@ -426,13 +424,14 @@
 								class="btn btn-primary" title="OpenStreetMap Introduction">Learn
 								More &raquo;</a>
 						</p>
+						
+						<br> <img alt="javascript" src="/img/openstreetmap.png"
+						class="img-responsive icon"> <br>
+						
 					</div>
 					
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>Google Map</h4>
-						<br> <img alt="javascript" src="/img/google_map.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">Provides
 							directions, interactive maps, and satellite/aerial imagery of
 							many countries. Can also search by keyword such as type of
@@ -442,6 +441,8 @@
 								class="btn btn-primary" title="Google Map Introduction">Learn
 								More &raquo;</a>
 						</p>
+						<br> <img alt="javascript" src="/img/google_map.png"
+						class="img-responsive icon"> <br>
 					</div>
 				</div>
 			</div>
@@ -451,9 +452,6 @@
 				<div class="row">
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Angular.js</h4>
-						<br> <img alt="javascript" src="/img/javascript.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">AngularJS is
 							a toolset for building the framework most suited to your
 							application development. It is fully extensible and works well
@@ -465,13 +463,13 @@
 								class="btn btn-primary" title="Python Official Website">Learn
 								More &raquo;</a>
 						</p>
+						
+						<br> <img alt="javascript" src="/img/javascript.png"
+						class="img-responsive icon"> <br>
 					</div>
 					
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>JQuery</h4>
-						<br> <img alt="javascript" src="/img/jquery.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">jQuery is a
 							fast, small, and feature-rich JavaScript library. It makes things
 							like HTML document traversal and manipulation, event handling,
@@ -484,13 +482,13 @@
 								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
+						
+						<br> <img alt="javascript" src="/img/jquery.png"
+						class="img-responsive icon"> <br>
 					</div>
 					
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Bootstrap</h4>
-						<br> <img alt="javascript" src="/img/bootstrap.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">Bootstrap is
 							a free collection of tools for creating websites and web
 							applications. It contains HTML and CSS-based design templates for
@@ -503,14 +501,13 @@
 								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
+						<br> <img alt="javascript" src="/img/bootstrap.png"
+						class="img-responsive icon"> <br>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Leaflet.js</h4>
-						<br> <img alt="leaflet.js" src="/img/leaflet.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">Leaflet is a
 							modern open-source JavaScript library for mobile-friendly
 							interactive maps. It is developed by Vladimir Agafonkin with a
@@ -522,13 +519,12 @@
 								class="btn btn-primary" title="Leaflet Introduction">Learn
 								More &raquo;</a>
 						</p>
+						<br> <img alt="leaflet.js" src="/img/leaflet.png"
+						class="img-responsive icon"> <br>
 					</div>
 					
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Numeric.js</h4>
-						<br> <img alt="javascript" src="/img/numeric-js.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">Numeric
 							Javascript is library that provides many useful functions for
 							numerical calculations, particularly for linear algebra (vectors
@@ -538,12 +534,11 @@
 								target="_blank" class="btn btn-primary"
 								title="Google App Engine Introduction">Learn More &raquo;</a>
 						</p>
+						<br> <img alt="javascript" src="/img/numeric-js.png"
+						class="img-responsive icon"> <br>
 					</div>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>D3.js</h4>
-						<br> <img alt="javascript" src="/img/d3.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">D3 allows you
 							to bind arbitrary data to a Document Object Model (DOM), and then
 							apply data-driven transformations to the document. For example,
@@ -555,6 +550,8 @@
 								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
+						<br> <img alt="javascript" src="/img/d3.png"
+						class="img-responsive icon"> <br>
 					</div>
 				</div>
 			</div>

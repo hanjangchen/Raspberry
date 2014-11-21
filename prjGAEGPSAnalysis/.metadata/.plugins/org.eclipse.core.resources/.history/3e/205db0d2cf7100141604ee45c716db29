@@ -508,9 +508,6 @@
 				<div class="row">
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Leaflet.js</h4>
-						<br> <img alt="leaflet.js" src="/img/leaflet.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">Leaflet is a
 							modern open-source JavaScript library for mobile-friendly
 							interactive maps. It is developed by Vladimir Agafonkin with a
@@ -522,13 +519,12 @@
 								class="btn btn-primary" title="Leaflet Introduction">Learn
 								More &raquo;</a>
 						</p>
+						<br> <img alt="leaflet.js" src="/img/leaflet.png"
+						class="img-responsive icon"> <br>
 					</div>
 					
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Numeric.js</h4>
-						<br> <img alt="javascript" src="/img/numeric-js.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">Numeric
 							Javascript is library that provides many useful functions for
 							numerical calculations, particularly for linear algebra (vectors
@@ -538,12 +534,11 @@
 								target="_blank" class="btn btn-primary"
 								title="Google App Engine Introduction">Learn More &raquo;</a>
 						</p>
+						<br> <img alt="javascript" src="/img/numeric-js.png"
+						class="img-responsive icon"> <br>
 					</div>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>D3.js</h4>
-						<br> <img alt="javascript" src="/img/d3.png"
-						class="img-responsive icon"> <br>
-						
 						<p style="font-size: 13px; text-align: justify;">D3 allows you
 							to bind arbitrary data to a Document Object Model (DOM), and then
 							apply data-driven transformations to the document. For example,
@@ -555,6 +550,8 @@
 								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
+						<br> <img alt="javascript" src="/img/d3.png"
+						class="img-responsive icon"> <br>
 					</div>
 				</div>
 			</div>
