@@ -130,32 +130,6 @@
 							Device Info. &raquo;</a>
 					</p>
 				</div>
-
-
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<h3>Arduino</h3>
-					<p style="font-size: 13px; text-align: justify; color: #888;">Arduino
-						is an open-source electronics platform based on easy-to-use
-						hardware and software. It's intended for anyone making interactive
-						projects....</p>
-					<p>
-						<a href="http://arduino.cc/" target="_blank"
-							class="btn btn-primary" title="Arduino Introduction">Learn
-							More &raquo;</a>
-					</p>
-
-					<br> <img alt="xbee_module" src="/img/xbee_module_1.jpg"
-						class="img-responsive"> <br>
-
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						The Arduino we utilize is for controling and monitoring power system.</p>
-					<p>
-						<a href="http://arduino.cc/en/Main/ArduinoBoardNano" target="_blank"
-							class="btn btn-info" title="Arduino Information">More Device
-							Info. &raquo;</a>
-					</p>
-				</div>
-
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 					<h3>GPS Module</h3>
 					<p style="font-size: 13px; text-align: justify; color: #888;">The
@@ -187,6 +161,36 @@
 					</p>
 				</div>
 
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<h3>Xbee</h3>
+					<p style="font-size: 13px; text-align: justify; color: #888;">The
+						Internet of Things is not about just connecting devices. It's
+						about gathering data and putting that data to work to drive down
+						costs, build efficiencies and improve overall customer engagement.
+						XBee and Device Cloud let the data be the differentiator...</p>
+					<p>
+						<a href="http://www.digi.com/xbee/" target="_blank"
+							class="btn btn-primary" title="Raspberry PI Introduction">Learn
+							More &raquo;</a>
+					</p>
+
+					<br> <img alt="xbee_module" src="/img/xbee_module_1.jpg"
+						class="img-responsive"> <br>
+
+					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
+						The Xbee we utilize is XBee 1mW Trace Antenna - Series 1. This is
+						the very popular 2.4GHz XBee module from Digi. These modules take
+						the 802.15.4 stack (the basis for Zigbee) and wrap it into a
+						simple to use serial command set. These modules allow very
+						reliable and simple communication between microcontrollers,
+						computers, systems, really anything with a serial port! Point to
+						point and multi-point networks are supported.</p>
+					<p>
+						<a href="https://www.sparkfun.com/products/11215" target="_blank"
+							class="btn btn-info" title="Xbee Information">More Device
+							Info. &raquo;</a>
+					</p>
+				</div>
 			</div>
 
 			<div class="row">
@@ -243,38 +247,6 @@
 					</p>
 				</div>
 
-
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<h3>Xbee</h3>
-					<p style="font-size: 13px; text-align: justify; color: #888;">The
-						Internet of Things is not about just connecting devices. It's
-						about gathering data and putting that data to work to drive down
-						costs, build efficiencies and improve overall customer engagement.
-						XBee and Device Cloud let the data be the differentiator...</p>
-					<p>
-						<a href="http://www.digi.com/xbee/" target="_blank"
-							class="btn btn-primary" title="Raspberry PI Introduction">Learn
-							More &raquo;</a>
-					</p>
-
-					<br> <img alt="xbee_module" src="/img/xbee_module_1.jpg"
-						class="img-responsive"> <br>
-
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						The Xbee we utilize is XBee 1mW Trace Antenna - Series 1. This is
-						the very popular 2.4GHz XBee module from Digi. These modules take
-						the 802.15.4 stack (the basis for Zigbee) and wrap it into a
-						simple to use serial command set. These modules allow very
-						reliable and simple communication between microcontrollers,
-						computers, systems, really anything with a serial port! Point to
-						point and multi-point networks are supported.</p>
-					<p>
-						<a href="https://www.sparkfun.com/products/11215" target="_blank"
-							class="btn btn-info" title="Xbee Information">More Device
-							Info. &raquo;</a>
-					</p>
-				</div>
-
 			</div>
 		</div>
 
@@ -311,7 +283,8 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+				style="border: none; border-bottom: dotted 1px #bbb;">
 				<h3>Languages</h3>
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -346,7 +319,8 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+				style="border: none; border-bottom: dotted 1px #bbb;">
 				<h3>Maps</h3>
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -375,7 +349,8 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+				style="border: none; border-bottom: dotted 1px #bbb;">
 				<h3>Libraries/Frameworks</h3>
 				<div class="row">
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">

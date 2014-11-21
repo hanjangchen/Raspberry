@@ -150,8 +150,8 @@
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 						The Arduino we utilize is for controling and monitoring power system.</p>
 					<p>
-						<a href="http://arduino.cc/en/Main/ArduinoBoardNano" target="_blank"
-							class="btn btn-info" title="Arduino Information">More Device
+						<a href="https://www.sparkfun.com/products/11215" target="_blank"
+							class="btn btn-info" title="Xbee Information">More Device
 							Info. &raquo;</a>
 					</p>
 				</div>
