@@ -4,7 +4,6 @@
 .row {
 	margin: 100px auto;
 }
-
 .gsc-control-cse,.gsc-control-cse-en {
 	background-color: transparent !important;
 	border: none !important;
@@ -15,7 +14,7 @@
 	border-radius: 2px !important;
 }
 
-.img-responsive {
+.img-responsive{
 	border-radius: 3px !important;
 	-o-border-radius: 3px !important;
 	-moz-border-radius: 3px !important;
@@ -155,30 +154,24 @@
 						class="img-responsive"> <br>
 
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						The Arduino we utilize is for controling and monitoring power
-						system.</p>
+						The Arduino we utilize is for controling and monitoring power system.</p>
 					<p>
-						<a href="http://arduino.cc/en/Main/ArduinoBoardNano"
-							target="_blank" class="btn btn-info" title="Arduino Information">More
-							Device Info. &raquo;</a>
+						<a href="http://arduino.cc/en/Main/ArduinoBoardNano" target="_blank"
+							class="btn btn-info" title="Arduino Information">More Device
+							Info. &raquo;</a>
 					</p>
 				</div>
 
 			</div>
-
+			
 			<div class="row">
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 					<h3>Smart Phone Module</h3>
-					<p style="font-size: 13px; text-align: justify; color: #888;">Spreadtrum
-						GSM/GPRS module SM5100 incorporates all base band, radio frequency
-						hardware and software needed for a full feature GSM/GPRS terminal.
-						It offers all-in-one voice communication and high-speed data
-						transmission via GPRS class 10. It provides wireless
-						communications for a variety of different markets. The new
-						GSM/GPRS module has one of the smallest form factors in the
-						market. With its small dimension and cost advantage, it can be
-						used in almost any wireless applications, especially in handsets
-						and PDAs...</p>
+					<p style="font-size: 13px; text-align: justify; color: #888;">The
+						Internet of Things is not about just connecting devices. It's
+						about gathering data and putting that data to work to drive down
+						costs, build efficiencies and improve overall customer engagement.
+						XBee and Device Cloud let the data be the differentiator...</p>
 					<p>
 						<a
 							href="http://www.spreadtrum.com/en/news/press-releases/pr2003-08-19"
@@ -186,22 +179,19 @@
 							title="Bluetooth HC-05 Introduction">Learn More &raquo;</a>
 					</p>
 
-					<br> <img alt="xbee_module"
-						src="/img/smart_phone_module_1.jpg" class="img-responsive">
-					<br>
+					<br> <img alt="xbee_module" src="/img/smart_phone_module_1.jpg"
+						class="img-responsive"> <br>
 
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						The Spreadtrum SM5100B-D we utilize is for data transfering and
-						communication</p>
+						The Spreadtrum SM5100B-D we utilize is for data transfering and communication</p>
 					<p>
 						<a
 							href="https://www.sparkfun.com/datasheets/CellularShield/SM5100B%20Datasheet.pdf"
 							target="_blank" class="btn btn-info"
-							title="Spreadtrum SM5100B-D Information">More Device Info.
-							&raquo;</a>
+							title="Spreadtrum SM5100B-D Information">More Device Info. &raquo;</a>
 					</p>
 				</div>
-
+				
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
 					<h3>GPS Module</h3>
 					<p style="font-size: 13px; text-align: justify; color: #888;">The
