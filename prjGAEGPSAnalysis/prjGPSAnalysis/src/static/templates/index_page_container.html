@@ -31,13 +31,51 @@ is_admin = true;
 var upload_url = '{{upload_url}}';
 
 /**/
-{% if gps_data_list %}
 
+var data_set_ary = [];
+{% if gps_data_list %}
 var gps_data_list = {{gps_data_list|safe}};
 try{
 	gps_data_list.forEach(function(entry){
-			console.log(JSON.stringify(entry,2,2));
+			// console.log(JSON.stringify(entry,2,2));
+			var temp_data_ary;
+			var temp_time_ary;
+			var temp_model;
+			var temp_date;
+			
+			if('RSSI' in entry){
+				temp_data_ary = entry['RSSI'];
+				temp_time_ary = entry['Time'];
+				temp_model = entry['Model'];
+				temp_date = entry['Date'];
+			}
+			else if('Temperature' in entry){
+				temp_data_ary = entry['Temperature'];
+				temp_time_ary = entry['Time'];
+				temp_model = entry['Model'];
+				temp_date = entry['Date'];
+			}
+			else if('DS18B20' in entry){
+				temp_data_ary = entry['DS18B20'];
+				temp_time_ary = entry['Time'];
+				temp_model = entry['Model'];
+				temp_date = entry['Date'];
+			}
+			
+			//
+			var length_data = temp_data_ary.length;
+			var length_time = temp_time_ary.length;
+			var min_length = Math.min(length_data, length_time);
+			var temp_sub_data_ary = [];
+			// console.log('test');
+			for (ith = 0; ith < min_length ; ith++){
+				// console.log('test');
+				temp_sub_data_ary.push({'date' : temp_time_ary[ith], 'sensor' : temp_data_ary[ith]});
+			}
+			data_set_ary.push({'sub_time' : temp_date, 'sub_model': temp_model, 'sub_date' : temp_date, 'sub_data' : temp_sub_data_ary});
 	});
+	
+	// console.log(JSON.stringify(data_set_ary,2,2));
 }catch(e){
 	console.log(e.message);
 }

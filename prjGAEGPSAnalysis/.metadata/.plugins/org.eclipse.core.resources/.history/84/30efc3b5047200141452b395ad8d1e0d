@@ -1,0 +1,54 @@
+{% extends "/base.html"%}
+
+<!-- sub-css block -->
+{% block css_content %} {% endblock %}
+
+<!-- main content -->
+{% block main_content %}
+<div ng-app="index_page_app" ng-controller="indexPageDispatchCtrl"
+	ui-view></div>
+
+{% endblock %}
+
+<!-- sub-js block -->
+{% block js_content %}
+
+<!-- js -->
+<!-- get data from back-end by jinja2 -->
+<script type="text/javascript">
+/**/
+var data_backend = {
+		upload_url : '{{upload_url}}',
+}
+
+/**/
+var is_admin = false;
+{% if is_admin %}
+is_admin = true;
+{% endif %}
+
+/**/
+var upload_url = '{{upload_url}}';
+
+/**/
+
+var data_set;
+{% if gps_data_list %}
+
+var gps_data_list = {{gps_data_list|safe}};
+try{
+	gps_data_list.forEach(function(entry){
+			console.log(JSON.stringify(entry,2,2));
+			
+	});
+}catch(e){
+	console.log(e.message);
+}
+
+{% endif %}
+</script>
+
+<script type="text/javascript" src="/js/index_page_container.js"></script>
+<!-- this pagination is for images detail list use -->
+<script type="text/javascript" src="/js/plugin_mis/dir-pagination.js"></script>
+{% endblock %}

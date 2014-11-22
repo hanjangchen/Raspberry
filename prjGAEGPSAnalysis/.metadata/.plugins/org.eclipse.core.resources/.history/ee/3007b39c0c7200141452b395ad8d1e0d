@@ -1,0 +1,254 @@
+<!-- sub-template for admin to upload images and related information -->
+<my-index-admin-images-upload></my-index-admin-images-upload>
+
+<!-- information details for visitors -->
+<style>
+<!--
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+#d3_charts{
+font-size: 10px;
+}
+
+-->
+</style>
+<div ng-controller="indexImagesDetailListCtrl as ctrl">
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<!-- ng-paginator control panel -->
+			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h4>Images List</h4>
+				<br>
+				<h4>Control Panel</h4>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<label for="search" style="color: #000;">Filter</label> <input
+						ng-model="q" id="search" class="form-control"
+						placeholder="Filter by Keywords">
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<label style="color: #000;">Max-Pages on Each List</label> <input
+						type="number" min="1" max="10" class="form-control"
+						ng-model="pageSize">
+				</div>
+			</div>
+
+			<!-- ng-pagination list -->
+			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<br>
+				<table class="table table-striped">
+					<tbody>
+						<tr
+							dir-paginate="item in ctrl.imgs_detail | filter:q | itemsPerPage: pageSize"
+							current-page="currentPage">
+							<td>
+								<h3>Image Title [[item.img_title]]</h3>
+								<p style="font-size: 14px;">
+									<span>Publish Time-</span> [[item.create_datetime]]
+								</p>
+								<h4>Description</h4>
+								<p style="font-size: 14px;">[[item.img_description]]</p> <img
+								alt="analysis_img" src="[[item.img_blob_url]]">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- pagination controller block -->
+			<div ng-controller="indexImagesDetailListPaginationCtrl"
+				class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"
+				style="border: none; border-bottom: #aaa dotted 1px; margin: 1px auto;">
+				<div class="text-center">
+					<dir-pagination-controls boundary-links="true"
+						on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-controls>
+				</div>
+			</div>
+		</div>
+
+		<!--  -->
+		<div class="jumbotron">
+			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h4>Data Analysis List</h4>
+				<div id="d3_charts"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+<!--
+
+//
+(function(){
+	function visulaize_data(data){
+		//
+		var margin = {top: 20, right: 100, bottom: 30, left: 50},
+		width = 960 - margin.left - margin.right,
+		height = 500 - margin.top - margin.bottom;
+
+		var parseDate = d3.time.format("%Y%m%d").parse;
+		var parseDateTime =d3.time.format("%Y-%m-%d_%H-%M-%S").parse;
+
+		var x = d3.time.scale()
+		.range([0, width]);
+
+		var y = d3.scale.linear()
+		.range([height, 0]);
+
+		var color = d3.scale.category10();
+
+		var xAxis = d3.svg.axis()
+		.scale(x)
+		.orient("bottom");
+
+		var yAxis = d3.svg.axis()
+		.scale(y)
+		.orient("left");
+
+		var line = d3.svg.line()
+		.interpolate("basis")
+		.x(function(d) { return x(d.date); })
+		.y(function(d) { return y(d.temperature); });
+
+		var svg = d3.select("#d3_charts").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+		
+		if(data_set_ary.length !== 0){
+			data_set_ary.forEach(function(temp_data_set){
+				data = temp_data_set['data'];
+				color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+				  console.log(JSON.stringify(data, 2, 2));
+				  data.forEach(function(d) {
+				    d.date = parseDateTime(d.date);
+				  });
+
+				  var cities = color.domain().map(function(name) {
+				    return {
+				      name: name,
+				      values: data.map(function(d) {
+				        return {date: d.date, temperature: +d[name]};
+				      })
+				    };
+				  });
+
+				  x.domain(d3.extent(data, function(d) { return d.date; }));
+
+				  y.domain([
+				    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
+				    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
+				  ]);
+
+				  svg.append("g")
+				      .attr("class", "x axis")
+				      .attr("transform", "translate(0," + height + ")")
+				      .call(xAxis);
+
+				  svg.append("g")
+				      .attr("class", "y axis")
+				      .call(yAxis)
+				    .append("text")
+				      .attr("transform", "rotate(-90)")
+				      .attr("y", -50)
+				      .attr("dy", ".8em")
+				      .style("text-anchor", "end")
+				      .text("Temperature (ºF)");
+
+				  var city = svg.selectAll(".city")
+				      .data(cities)
+				    .enter().append("g")
+				      .attr("class", "city");
+
+				  city.append("path")
+				      .attr("class", "line")
+				      .attr("d", function(d) { return line(d.values); })
+				      .style("stroke", function(d) { return color(d.name); });
+
+				  city.append("text")
+				      .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+				      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
+				      .attr("x", 3)
+				      .attr("dy", ".35em")
+				      .text(function(d) { return d.name; });
+			});
+		}
+		
+		d3.tsv("/mis/data.tsv", function(error, data) {
+			color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+			  console.log(JSON.stringify(data, 2, 2));
+			  data.forEach(function(d) {
+			    d.date = parseDate(d.date);
+			  });
+
+			  var cities = color.domain().map(function(name) {
+			    return {
+			      name: name,
+			      values: data.map(function(d) {
+			        return {date: d.date, temperature: +d[name]};
+			      })
+			    };
+			  });
+
+			  x.domain(d3.extent(data, function(d) { return d.date; }));
+
+			  y.domain([
+			    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
+			    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
+			  ]);
+
+			  svg.append("g")
+			      .attr("class", "x axis")
+			      .attr("transform", "translate(0," + height + ")")
+			      .call(xAxis);
+
+			  svg.append("g")
+			      .attr("class", "y axis")
+			      .call(yAxis)
+			    .append("text")
+			      .attr("transform", "rotate(-90)")
+			      .attr("y", -50)
+			      .attr("dy", ".8em")
+			      .style("text-anchor", "end")
+			      .text("Temperature (ºF)");
+
+			  var city = svg.selectAll(".city")
+			      .data(cities)
+			    .enter().append("g")
+			      .attr("class", "city");
+
+			  city.append("path")
+			      .attr("class", "line")
+			      .attr("d", function(d) { return line(d.values); })
+			      .style("stroke", function(d) { return color(d.name); });
+
+			  city.append("text")
+			      .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+			      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
+			      .attr("x", 3)
+			      .attr("dy", ".35em")
+			      .text(function(d) { return d.name; });
+		});
+	}
+	
+	//start rendering
+	visulaize_data();
+})();
+//-->
+</script>
