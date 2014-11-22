@@ -123,7 +123,7 @@
 
 							var color = d3.scale.category10();
 
-							var xAxis = d3.svg.axis().scale(x).ticks(d3.time.minute, 60).tickFormat(
+							var xAxis = d3.svg.axis().scale(x).ticks(d3.time.minute, 15).tickFormat(
 									d3.time.format("%H:%M")).orient("bottom");
 
 							var yAxis = d3.svg.axis().scale(y).orient("left");

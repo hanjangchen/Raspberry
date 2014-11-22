@@ -61,7 +61,7 @@ try{
 				temp_model = entry['Model'];
 				temp_date = entry['Date'];
 			}
-			console.log(temp_model);
+			
 			//
 			var length_data = temp_data_ary.length;
 			var length_time = temp_time_ary.length;
@@ -69,7 +69,7 @@ try{
 			var temp_sub_data_ary = [];
 			
 			for (ith = 0; ith < min_length ; ith++){
-				temp_sub_data_ary.push({'date' : temp_time_ary[ith], 'sensor' : temp_data_ary[ith]});
+				temp_sub_data_ary.push({'date' : temp_time_ary[ith], entry['Model'] : temp_data_ary[ith]});
 			}
 			data_set_ary.push({'sub_time' : temp_date, 'sub_model': temp_model, 'sub_date' : temp_date, 'sub_data' : temp_sub_data_ary});
 	});

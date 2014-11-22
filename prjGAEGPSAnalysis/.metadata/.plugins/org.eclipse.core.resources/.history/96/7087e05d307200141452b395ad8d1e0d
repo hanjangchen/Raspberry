@@ -120,7 +120,6 @@ font-size: 10px;
 
 				var xAxis = d3.svg.axis()
 				.scale(x)
-				.ticks(d3.time.minute, 30)
 				.tickFormat(d3.time.format("%X"))
 				.orient("bottom");
 

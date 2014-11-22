@@ -110,17 +110,14 @@ font-size: 10px;
 				var parseDate = d3.time.format("%Y%m%d").parse;
 				var parseDateTime =d3.time.format("%Y-%m-%d_%H-%M-%S").parse;
 
-				var x = d3.time.scale()
-				.range([0, width]);
+				var x = d3.time.scale().ticks(d3.time.minute, 15).range([0, width]);
 
-				var y = d3.scale.linear()
-				.range([height, 0]);
+				var y = d3.scale.linear().range([height, 0]);
 
 				var color = d3.scale.category10();
 
 				var xAxis = d3.svg.axis()
 				.scale(x)
-				.ticks(d3.time.minute, 30)
 				.tickFormat(d3.time.format("%X"))
 				.orient("bottom");
 
