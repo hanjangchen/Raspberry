@@ -19,18 +19,22 @@
 
                 isMobile: function () {
                     var width = $window['outerWidth'];
+                    var height = $window['outerHeight'];
+                    var min_val = Math.min(width, height);
 
                     var smartDevice = helper.isSmartDevice();
 
-                    return smartDevice && width <= 767;
+                    return smartDevice && min_val <= 767;
                 },
 
                 isTablet: function () {
                     var width = $window['outerWidth'];
+                    var height = $window['outerHeight'];
+                    var min_val = Math.min(width, height);
 
                     var smartDevice = helper.isSmartDevice();
 
-                    return smartDevice && width >= 768;
+                    return smartDevice && min_val >= 768;
                 },
 
                 isDesktop: function () {
