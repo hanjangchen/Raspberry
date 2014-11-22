@@ -18,7 +18,7 @@
 }
 
 .icon {
-	height: 50px;
+	height: 80px;
 	margin: 5px auto;
 }
 -->
@@ -307,10 +307,10 @@
 				<h3>Platform</h3>
 				<div>
 					<h4>Google App Engine</h4>
-
+					
 					<br> <img alt="app_engine" src="/img/app-engine.png"
 						class="img-responsive icon"> <br>
-
+						
 					<p style="font-size: 13px; text-align: justify;">Run your
 						applications on a fully-managed Platform-as-a-Service (PaaS) using
 						built-in services that make you more productive. Just download the
@@ -321,24 +321,6 @@
 							More &raquo;</a>
 					</p>
 				</div>
-
-				<div>
-					<h4>Google Compute Engine</h4>
-
-					<br> <img alt="compute_engine" src="/img/compute-engine.png"
-						class="img-responsive icon"> <br>
-
-					<p style="font-size: 13px; text-align: justify;">Run
-						large-scale workloads on virtual machines hosted on Google's
-						infrastructure. Choose a VM that fits your needs and gain the
-						performance of Google’s worldwide fiber network....</p>
-					<p>
-						<a href="https://cloud.google.com/compute/" target="_blank"
-							class="btn btn-primary"
-							title="Google Compute Engine Introduction">Learn More &raquo;</a>
-					</p>
-				</div>
-
 			</div>
 
 
@@ -346,9 +328,6 @@
 				<h3>Languages</h3>
 				<div>
 					<h4>Python</h4>
-					<br> <img alt="python" src="/img/python.png"
-						class="img-responsive icon"> <br>
-
 					<p style="font-size: 13px; text-align: justify;">Python is a
 						programming language that lets you work more quickly and integrate
 						your systems more effectively. You can learn to use Python and see
@@ -362,8 +341,6 @@
 				</div>
 				<div>
 					<h4>JavaScript</h4>
-					<br> <img alt="javascript" src="/img/javascript.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">JavaScript is
 						a dynamic computer programming language. It is most commonly used
 						as part of web browsers, whose implementations allow client-side
@@ -380,139 +357,82 @@
 				</div>
 			</div>
 
-			<div>
-				<h3>Maps</h3>
-				<div>
-					<h4>OpenStreetMap</h4>
-					<br> <img alt="javascript" src="/img/openstreetmap.png"
-						class="img-responsive icon"> <br>
-
-					<p style="font-size: 13px; text-align: justify;">OpenStreetMap
-						is a map of the world, created by people like you and free to use
-						under an open license...</p>
-					<p>
-						<a href="http://www.openstreetmap.org/" target="_blank"
-							class="btn btn-primary" title="OpenStreetMap Introduction">Learn
-							More &raquo;</a>
-					</p>
-				</div>
-
-				<div>
-					<h4>Google Map</h4>
-					<br> <img alt="javascript" src="/img/google_map.png"
-						class="img-responsive icon"> <br>
-
-					<p style="font-size: 13px; text-align: justify;">Provides
-						directions, interactive maps, and satellite/aerial imagery of many
-						countries. Can also search by keyword such as type of business...</p>
-					<p>
-						<a href="https://maps.google.com/" target="_blank"
-							class="btn btn-primary" title="Google Map Introduction">Learn
-							More &raquo;</a>
-					</p>
-				</div>
-			</div>
-
 			<div style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
 				<h3>Libraries/Frameworks</h3>
 				<div>
-					<h4>Angular.js</h4>
-						<br> <img alt="javascript" src="/img/javascript.png"
-						class="img-responsive icon"> <br>
-					<p style="font-size: 13px; text-align: justify;">AngularJS is a
-						toolset for building the framework most suited to your application
-						development. It is fully extensible and works well with other
-						libraries. Every feature can be modified or replaced to suit your
-						unique development workflow and feature needs. Read on to find out
-						how....</p>
-					<p>
-						<a href="https://angularjs.org/" target="_blank"
-							class="btn btn-primary" title="Python Official Website">Learn
-							More &raquo;</a>
-					</p>
-				</div>
-				<div>
-					<h4>JQuery</h4>
-						<br> <img alt="javascript" src="/img/jquery.png"
-						class="img-responsive icon"> <br>
-					<p style="font-size: 13px; text-align: justify;">jQuery is a
-						fast, small, and feature-rich JavaScript library. It makes things
-						like HTML document traversal and manipulation, event handling,
-						animation, and Ajax much simpler with an easy-to-use API that
-						works across a multitude of browsers. With a combination of
-						versatility and extensibility, jQuery has changed the way that
-						millions of people write JavaScript...</p>
-					<p>
-						<a href="http://jquery.com/" target="_blank"
-							class="btn btn-primary" title="Google App Engine Introduction">Learn
-							More &raquo;</a>
-					</p>
-				</div>
-				<div>
-					<h4>Bootstrap</h4>
-						<br> <img alt="javascript" src="/img/bootstrap.png"
-						class="img-responsive icon"> <br>
-					<p style="font-size: 13px; text-align: justify;">Bootstrap is a
-						free collection of tools for creating websites and web
-						applications. It contains HTML and CSS-based design templates for
-						typography, forms, buttons, navigation and other interface
-						components, as well as optional JavaScript extensions. In June
-						2014 it was the No.1 project on GitHub with over 73,000 stars and
-						more than 27,000 forks...</p>
-					<p>
-						<a href="http://getbootstrap.com/" target="_blank"
-							class="btn btn-primary" title="Google App Engine Introduction">Learn
-							More &raquo;</a>
-					</p>
+					<div>
+						<h4>Angular.js</h4>
+						<p style="font-size: 13px; text-align: justify;">AngularJS is
+							a toolset for building the framework most suited to your
+							application development. It is fully extensible and works well
+							with other libraries. Every feature can be modified or replaced
+							to suit your unique development workflow and feature needs. Read
+							on to find out how....</p>
+						<p>
+							<a href="https://angularjs.org/" target="_blank"
+								class="btn btn-primary" title="Python Official Website">Learn
+								More &raquo;</a>
+						</p>
+					</div>
+					<div>
+						<h4>JQuery</h4>
+						<p style="font-size: 13px; text-align: justify;">jQuery is a
+							fast, small, and feature-rich JavaScript library. It makes things
+							like HTML document traversal and manipulation, event handling,
+							animation, and Ajax much simpler with an easy-to-use API that
+							works across a multitude of browsers. With a combination of
+							versatility and extensibility, jQuery has changed the way that
+							millions of people write JavaScript...</p>
+						<p>
+							<a href="http://jquery.com/" target="_blank"
+								class="btn btn-primary" title="Google App Engine Introduction">Learn
+								More &raquo;</a>
+						</p>
+					</div>
+					<div>
+						<h4>Bootstrap</h4>
+						<p style="font-size: 13px; text-align: justify;">Bootstrap is
+							a free collection of tools for creating websites and web
+							applications. It contains HTML and CSS-based design templates for
+							typography, forms, buttons, navigation and other interface
+							components, as well as optional JavaScript extensions. In June
+							2014 it was the No.1 project on GitHub with over 73,000 stars and
+							more than 27,000 forks...</p>
+						<p>
+							<a href="http://getbootstrap.com/" target="_blank"
+								class="btn btn-primary" title="Google App Engine Introduction">Learn
+								More &raquo;</a>
+						</p>
+					</div>
 				</div>
 
 				<div>
-					<h4>Leaflet.js</h4>
-					<br> <img alt="leaflet.js" src="/img/leaflet.png"
-						class="img-responsive icon"> <br>
-
-					<p style="font-size: 13px; text-align: justify;">Leaflet is a
-						modern open-source JavaScript library for mobile-friendly
-						interactive maps. It is developed by Vladimir Agafonkin with a
-						team of dedicated contributors. Weighing just about 33 KB of JS,
-						it has all the features most developers ever need for online
-						maps....</p>
-					<p>
-						<a href="http://leafletjs.com/" target="_blank"
-							class="btn btn-primary" title="Leaflet Introduction">Learn
-							More &raquo;</a>
-					</p>
-				</div>
-
-				<div>
-					<h4>Numeric.js</h4>
-						<br> <img alt="javascript" src="/img/numeric-js.png"
-						class="img-responsive icon"> <br>
-						
-					<p style="font-size: 13px; text-align: justify;">Numeric
-						Javascript is library that provides many useful functions for
-						numerical calculations, particularly for linear algebra (vectors
-						and matrices)...</p>
-					<p>
-						<a href="http://www.numericjs.com/documentation.html"
-							target="_blank" class="btn btn-primary"
-							title="Google App Engine Introduction">Learn More &raquo;</a>
-					</p>
-				</div>
-				<div>
-					<h4>D3.js</h4>
-						<br> <img alt="javascript" src="/img/d3.png"
-						class="img-responsive icon"> <br>
-					<p style="font-size: 13px; text-align: justify;">D3 allows you
-						to bind arbitrary data to a Document Object Model (DOM), and then
-						apply data-driven transformations to the document. For example,
-						you can use D3 to generate an HTML table from an array of numbers.
-						Or, use the same data to create an interactive SVG bar chart with
-						smooth transitions and interaction...</p>
-					<p>
-						<a href="http://d3js.org/" target="_blank" class="btn btn-primary"
-							title="Google App Engine Introduction">Learn More &raquo;</a>
-					</p>
+					<div>
+						<h4>Numeric.js</h4>
+						<p style="font-size: 13px; text-align: justify;">Numeric
+							Javascript is library that provides many useful functions for
+							numerical calculations, particularly for linear algebra (vectors
+							and matrices)...</p>
+						<p>
+							<a href="http://www.numericjs.com/documentation.html"
+								target="_blank" class="btn btn-primary"
+								title="Google App Engine Introduction">Learn More &raquo;</a>
+						</p>
+					</div>
+					<div>
+						<h4>D3.js</h4>
+						<p style="font-size: 13px; text-align: justify;">D3 allows you
+							to bind arbitrary data to a Document Object Model (DOM), and then
+							apply data-driven transformations to the document. For example,
+							you can use D3 to generate an HTML table from an array of
+							numbers. Or, use the same data to create an interactive SVG bar
+							chart with smooth transitions and interaction...</p>
+						<p>
+							<a href="http://d3js.org/" target="_blank"
+								class="btn btn-primary" title="Google App Engine Introduction">Learn
+								More &raquo;</a>
+						</p>
+					</div>
 				</div>
 			</div>
 
@@ -546,7 +466,7 @@
 		</div>
 	</div>
 
-	<!-- 
+
 	<div>
 		<script>
 			(function() {
@@ -563,5 +483,5 @@
 		</script>
 		<gcse:search></gcse:search>
 	</div>
- -->
+
 </div>

@@ -417,8 +417,6 @@
 				<h3>Libraries/Frameworks</h3>
 				<div>
 					<h4>Angular.js</h4>
-						<br> <img alt="javascript" src="/img/javascript.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">AngularJS is a
 						toolset for building the framework most suited to your application
 						development. It is fully extensible and works well with other
@@ -433,8 +431,6 @@
 				</div>
 				<div>
 					<h4>JQuery</h4>
-						<br> <img alt="javascript" src="/img/jquery.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">jQuery is a
 						fast, small, and feature-rich JavaScript library. It makes things
 						like HTML document traversal and manipulation, event handling,
@@ -486,9 +482,6 @@
 
 				<div>
 					<h4>Numeric.js</h4>
-						<br> <img alt="javascript" src="/img/numeric-js.png"
-						class="img-responsive icon"> <br>
-						
 					<p style="font-size: 13px; text-align: justify;">Numeric
 						Javascript is library that provides many useful functions for
 						numerical calculations, particularly for linear algebra (vectors
@@ -501,8 +494,6 @@
 				</div>
 				<div>
 					<h4>D3.js</h4>
-						<br> <img alt="javascript" src="/img/d3.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">D3 allows you
 						to bind arbitrary data to a Document Object Model (DOM), and then
 						apply data-driven transformations to the document. For example,

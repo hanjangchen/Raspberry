@@ -501,8 +501,6 @@
 				</div>
 				<div>
 					<h4>D3.js</h4>
-						<br> <img alt="javascript" src="/img/d3.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">D3 allows you
 						to bind arbitrary data to a Document Object Model (DOM), and then
 						apply data-driven transformations to the document. For example,

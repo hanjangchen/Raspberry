@@ -488,7 +488,6 @@
 					<h4>Numeric.js</h4>
 						<br> <img alt="javascript" src="/img/numeric-js.png"
 						class="img-responsive icon"> <br>
-						
 					<p style="font-size: 13px; text-align: justify;">Numeric
 						Javascript is library that provides many useful functions for
 						numerical calculations, particularly for linear algebra (vectors
@@ -501,8 +500,6 @@
 				</div>
 				<div>
 					<h4>D3.js</h4>
-						<br> <img alt="javascript" src="/img/d3.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">D3 allows you
 						to bind arbitrary data to a Document Object Model (DOM), and then
 						apply data-driven transformations to the document. For example,

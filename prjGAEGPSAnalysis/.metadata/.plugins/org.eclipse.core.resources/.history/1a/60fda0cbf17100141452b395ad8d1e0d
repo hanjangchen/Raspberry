@@ -417,8 +417,6 @@
 				<h3>Libraries/Frameworks</h3>
 				<div>
 					<h4>Angular.js</h4>
-						<br> <img alt="javascript" src="/img/javascript.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">AngularJS is a
 						toolset for building the framework most suited to your application
 						development. It is fully extensible and works well with other
@@ -433,8 +431,6 @@
 				</div>
 				<div>
 					<h4>JQuery</h4>
-						<br> <img alt="javascript" src="/img/jquery.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">jQuery is a
 						fast, small, and feature-rich JavaScript library. It makes things
 						like HTML document traversal and manipulation, event handling,
@@ -450,8 +446,6 @@
 				</div>
 				<div>
 					<h4>Bootstrap</h4>
-						<br> <img alt="javascript" src="/img/bootstrap.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">Bootstrap is a
 						free collection of tools for creating websites and web
 						applications. It contains HTML and CSS-based design templates for
@@ -465,30 +459,11 @@
 							More &raquo;</a>
 					</p>
 				</div>
+			</div>
 
-				<div>
-					<h4>Leaflet.js</h4>
-					<br> <img alt="leaflet.js" src="/img/leaflet.png"
-						class="img-responsive icon"> <br>
-
-					<p style="font-size: 13px; text-align: justify;">Leaflet is a
-						modern open-source JavaScript library for mobile-friendly
-						interactive maps. It is developed by Vladimir Agafonkin with a
-						team of dedicated contributors. Weighing just about 33 KB of JS,
-						it has all the features most developers ever need for online
-						maps....</p>
-					<p>
-						<a href="http://leafletjs.com/" target="_blank"
-							class="btn btn-primary" title="Leaflet Introduction">Learn
-							More &raquo;</a>
-					</p>
-				</div>
-
+			<div>
 				<div>
 					<h4>Numeric.js</h4>
-						<br> <img alt="javascript" src="/img/numeric-js.png"
-						class="img-responsive icon"> <br>
-						
 					<p style="font-size: 13px; text-align: justify;">Numeric
 						Javascript is library that provides many useful functions for
 						numerical calculations, particularly for linear algebra (vectors
@@ -501,8 +476,6 @@
 				</div>
 				<div>
 					<h4>D3.js</h4>
-						<br> <img alt="javascript" src="/img/d3.png"
-						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">D3 allows you
 						to bind arbitrary data to a Document Object Model (DOM), and then
 						apply data-driven transformations to the document. For example,
@@ -546,7 +519,7 @@
 		</div>
 	</div>
 
-	<!-- 
+<!-- 
 	<div>
 		<script>
 			(function() {
