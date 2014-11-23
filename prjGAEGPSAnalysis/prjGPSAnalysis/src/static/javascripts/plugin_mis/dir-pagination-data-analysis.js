@@ -23,28 +23,28 @@ index_page_app.directive(
 						'$compile',
 						'$parse',
 						'$timeout',
-						'paginationService',
-						function($compile, $parse, $timeout, paginationService) {
+						'paginationDataAnalysisService',
+						function($compile, $parse, $timeout, paginationDataAnalysisService) {
 							return {
 								priority : 5000, // High priority means it
 													// will execute first
 								terminal : true,
 								compile : function(element, attrs) {
-									attrs.$set('ngRepeat', attrs.dirPaginate); // Add
+									attrs.$set('ngRepeat', attrs.dirPaginateDataAnalysis); // Add
 																				// ng-repeat
 																				// to
 																				// the
 																				// dom
 
-									var expression = attrs.dirPaginate;
+									var expression = attrs.dirPaginateDataAnalysis;
 									// regex taken directly from
 									// https://github.com/angular/angular.js/blob/master/src/ng/directive/ngRepeat.js#L211
 									var match = expression
 											.match(/^\s*([\s\S]+?)\s+in\s+([\s\S]+?)(?:\s+track\s+by\s+([\s\S]+?))?\s*$/);
 
-									var filterPattern = /\|\s*itemsPerPage:[^|]*/;
+									var filterPattern = /\|\s*itemsPerPageDataAnalysis:[^|]*/;
 									if (match[2].match(filterPattern) === null) {
-										throw "pagination directive: the 'itemsPerPage' filter must be set.";
+										throw "pagination directive: the 'itemsPerPageDataAnalysis' filter must be set.";
 									}
 									var itemsPerPageFilterRemoved = match[2]
 											.replace(filterPattern, '');
@@ -62,7 +62,7 @@ index_page_app.directive(
 										var paginationId;
 										paginationId = attrs.paginationId
 												|| "__default";
-										paginationService
+										paginationDataAnalysisService
 												.registerInstance(paginationId);
 
 										var currentPageGetter;
@@ -76,12 +76,12 @@ index_page_app.directive(
 											scope[defaultCurrentPage] = 1;
 											currentPageGetter = $parse(defaultCurrentPage);
 										}
-										paginationService.setCurrentPageParser(
+										paginationDataAnalysisService.setCurrentPageParser(
 												paginationId,
 												currentPageGetter, scope);
 
 										if (typeof attrs.totalItems !== 'undefined') {
-											paginationService
+											paginationDataAnalysisService
 													.setAsyncModeTrue(paginationId);
 											scope
 													.$watch(
@@ -92,7 +92,7 @@ index_page_app.directive(
 															},
 															function(result) {
 																if (0 < result) {
-																	paginationService
+																	paginationDataAnalysisService
 																			.setCollectionLength(
 																					paginationId,
 																					result);
@@ -106,7 +106,7 @@ index_page_app.directive(
 															},
 															function(collection) {
 																if (collection) {
-																	paginationService
+																	paginationDataAnalysisService
 																			.setCollectionLength(
 																					paginationId,
 																					collection.length);
@@ -123,10 +123,10 @@ index_page_app.directive(
 						} ])
 
 		.directive(
-				'dirPaginationControls',
+				'dirPaginationDataAnalysisControls',
 				[
-						'paginationService',
-						function(paginationService) {
+						'paginationDataAnalysisService',
+						function(paginationDataAnalysisService) {
 							/**
 							 * Generate an array of page numbers (or the '...'
 							 * string) which is used in an ng-repeat to generate
@@ -229,7 +229,7 @@ index_page_app.directive(
 											.$eval(attrs.boundaryLinks)
 											: false;
 
-									if (paginationService
+									if (paginationDataAnalysisService
 											.isRegistered(paginationId) === false) {
 										throw "pagination directive: the pagination controls cannot be used without the corresponding pagination directive.";
 									}
@@ -245,9 +245,9 @@ index_page_app.directive(
 									scope
 											.$watch(
 													function() {
-														return (paginationService
+														return (paginationDataAnalysisService
 																.getCollectionLength(paginationId) + 1)
-																* paginationService
+																* paginationDataAnalysisService
 																		.getItemsPerPage(paginationId);
 													},
 													function(length) {
@@ -257,7 +257,7 @@ index_page_app.directive(
 													});
 
 									scope.$watch(function() {
-										return paginationService
+										return paginationDataAnalysisService
 												.getCurrentPage(paginationId);
 									}, function(currentPage) {
 										scope.setCurrent(currentPage);
@@ -267,15 +267,15 @@ index_page_app.directive(
 										if (/^\d+$/.test(num)) {
 											if (0 < num
 													&& num <= scope.pagination.last) {
-												paginationService
+												paginationDataAnalysisService
 														.setCurrentPage(
 																paginationId,
 																num);
 												scope.pages = generatePagesArray(
 														num,
-														paginationService
+														paginationDataAnalysisService
 																.getCollectionLength(paginationId),
-														paginationService
+																paginationDataAnalysisService
 																.getItemsPerPage(paginationId),
 														paginationRange);
 												scope.pagination.current = num;
@@ -295,9 +295,9 @@ index_page_app.directive(
 									function generatePagination() {
 										scope.pages = generatePagesArray(
 												1,
-												paginationService
+												paginationDataAnalysisService
 														.getCollectionLength(paginationId),
-												paginationService
+														paginationDataAnalysisService
 														.getItemsPerPage(paginationId),
 												paginationRange);
 										scope.pagination.last = scope.pages[scope.pages.length - 1];
@@ -311,11 +311,11 @@ index_page_app.directive(
 						} ])
 
 		.filter(
-				'itemsPerPage',
+				'itemsPerPageDataAnalysis',
 				[
-						'paginationService',
-						function(paginationService) {
-							return function(collection, itemsPerPage,
+						'paginationDataAnalysisService',
+						function(paginationDataAnalysisService) {
+							return function(collection, itemsPerPageDataAnalysis,
 									paginationId) {
 								if (typeof (paginationId) === 'undefined') {
 									paginationId = "__default";
@@ -323,18 +323,18 @@ index_page_app.directive(
 								var end;
 								var start;
 								if (collection instanceof Array) {
-									itemsPerPage = itemsPerPage || 9999999999;
-									if (paginationService
+									itemsPerPageDataAnalysis = itemsPerPageDataAnalysis || 9999999999;
+									if (paginationDataAnalysisService
 											.isAsyncMode(paginationId)) {
 										start = 0;
 									} else {
-										start = (paginationService
+										start = (paginationDataAnalysisService
 												.getCurrentPage(paginationId) - 1)
-												* itemsPerPage;
+												* itemsPerPageDataAnalysis;
 									}
-									end = start + itemsPerPage;
-									paginationService.setItemsPerPage(
-											paginationId, itemsPerPage);
+									end = start + itemsPerPageDataAnalysis;
+									paginationDataAnalysisService.setItemsPerPage(
+											paginationId, itemsPerPageDataAnalysis);
 
 									return collection.slice(start, end);
 								} else {
@@ -344,7 +344,7 @@ index_page_app.directive(
 						} ])
 
 		.service(
-				'paginationService',
+				'paginationDataAnalysisService',
 				function() {
 					var instances = {};
 					var lastRegisteredInstance;
@@ -381,10 +381,10 @@ index_page_app.directive(
 					};
 
 					this.setItemsPerPage = function(instanceId, val) {
-						instances[instanceId].itemsPerPage = val;
+						instances[instanceId].itemsPerPageDataAnalysis = val;
 					};
 					this.getItemsPerPage = function(instanceId) {
-						return instances[instanceId].itemsPerPage;
+						return instances[instanceId].itemsPerPageDataAnalysis;
 					};
 
 					this.setCollectionLength = function(instanceId, val) {

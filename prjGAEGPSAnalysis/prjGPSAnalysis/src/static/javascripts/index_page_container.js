@@ -193,178 +193,160 @@ var index_page_app, device;
 			indexImagesDetailListPaginationController);
 	/* end of index page images list controller */
 
+	
 	/* index page data visualization chart */
 	var indexDataAnalysisListController = function(myIndexDataAnalysisService,
 			GLOBAL_VALUES, $scope) {
 		// set data array
 		var current_obj = this;
 		current_obj.data_ary = [];
-
-		//
-		function visulaize_data() {
-			// data for testing
-			/*
-			 data_set_ary = [{'sub_time' : '', 'sub_model': '', 'sub_date' :
-			 '', 'sub_data' : [{'date' : '2014-11-1_09-12-2', 'sensor' :
-			 '53'},{'date' : '2014-11-1_09-12-23', 'sensor' : '19'},{'date' :
-			 '2014-11-1_09-12-25', 'sensor' : '24'}]}, {'sub_time' : '',
-			 'sub_model': '', 'sub_date' : '', 'sub_data' : [{'date' :
-			 '2014-11-1_09-12-2', 'sensor' : '23'},{'date' :
-			 '2014-11-1_09-12-23', 'sensor' : '29'},{'date' :
-			 '2014-11-1_09-12-25', 'sensor' : '24'}]}, {'sub_time' : '',
-			 'sub_model': '', 'sub_date' : '', 'sub_data' : [{'date' :
-			 '2014-11-1_09-12-2', 'sensor' : -83},{'date' :
-			 '2014-11-1_09-12-23', 'sensor' : -49},{'date' :
-			 '2014-11-1_09-12-25', 'sensor' : -74}]}];*/
-			 
-			if (data_set_ary.length !== 0) {
-				data_set_ary
-						.forEach(function(temp_data_set) {
-							// device size
-							var device_width = screen.width;
-		                    var device_height = screen.height;
-		                    var min_val = Math.min(device_width, device_height);
-		                    var chart_width, chart_height, xAxis_format;
-		                    if(min_val <= 767){
-		                    	chart_width = 275;
-		                    	chart_height = 130;
-		                    	xAxis_format = "%H:%M";
-		                    }
-		                    else{
-		                    	chart_width = 960;
-		                    	chart_height = 500;
-		                    	xAxis_format = "%X";
-		                    }
-							
-							// basic setting
-							var margin = {
-								top : 10,
-								right : 50,
-								bottom : 50,
-								left : 30
-							},
-							width = chart_width - margin.left - margin.right,
-							height = chart_height - margin.top - margin.bottom;
-
-							var parseDate = d3.time.format("%Y%m%d").parse;
-							var parseDateTime = d3.time
-									.format("%Y-%m-%d_%H-%M-%S").parse;
-
-							var x = d3.time.scale().range([ 0, width ]);
-
-							var y = d3.scale.linear().range([ height, 0 ]);
-
-							var color = d3.scale.category10();
-
-							var xAxis = d3.svg.axis().scale(x).ticks(
-									d3.time.minute, 60).tickFormat(
-									d3.time.format(xAxis_format)).orient("bottom");
-
-							var yAxis = d3.svg.axis().scale(y).orient("left");
-
-							var line = d3.svg.line().interpolate("basis").x(
-									function(d) {
-										return x(d.date);
-									}).y(function(d) {
-								return y(d.temperature);
-							});
-
-							var svg = d3
-									.select("#d3_charts")
-									.append("svg")
-									.attr("width",
-											width + margin.left + margin.right)
-									.attr("height",
-											height + margin.top + margin.bottom)
-									.append("g").attr(
-											"transform",
-											"translate(" + margin.left + ","
-													+ margin.top + ")");
-
-							var data = temp_data_set['sub_data'];
-							color.domain(d3.keys(data[0]).filter(function(key) {
-								return key !== "date";
-							}));
-							// console.log(JSON.stringify(data, 2, 2));
-
-							try {
-								data.forEach(function(d) {
-									d.date = +parseDateTime(d.date);
-								});
-							} catch (e) {
-								console.log(e);
-							}
-							console.log(JSON.stringify(data, 2, 2));
-
-							var cities = color.domain().map(function(name) {
-								return {
-									name : name,
-									values : data.map(function(d) {
-										return {
-											date : d.date,
-											temperature : +d[name]
-										};
-									})
-								};
-							});
-
-							x.domain(d3.extent(data, function(d) {
-								return d.date;
-							}));
-
-							y.domain([ d3.min(cities, function(c) {
-								return d3.min(c.values, function(v) {
-									return v.temperature;
-								});
-							}), d3.max(cities, function(c) {
-								return d3.max(c.values, function(v) {
-									return v.temperature;
-								});
-							}) ]);
-
-							svg.append("g").attr("class", "x axis").attr(
-									"transform", "translate(0," + height + ")")
-									.call(xAxis);
-
-							svg.append("g").attr("class", "y axis").call(yAxis)
-									.append("text").attr("transform",
-											"rotate(-90)").attr("y", -50).attr(
-											"dy", ".8em").style("text-anchor",
-											"end").text("Temperature (ºF)");
-
-							var city = svg.selectAll(".city").data(cities)
-									.enter().append("g").attr("class", "city");
-
-							city.append("path").attr("class", "line").attr("d",
-									function(d) {
-										return line(d.values);
-									}).style("stroke", function(d) {
-								return color(d.name);
-							});
-
-							city.append("text").datum(function(d) {
-								return {
-									name : d.name,
-									value : d.values[d.values.length - 1]
-								};
-							}).attr(
-									"transform",
-									function(d) {
-										return "translate(" + x(d.value.date)
-												+ "," + y(d.value.temperature)
-												+ ")";
-									}).attr("x", 3).attr("dy", ".35em").text(
-									function(d) {
-										return d.name;
-									});
-						});
-			}
+		if(data_set_ary.length > 0){
+			current_obj.data_ary = data_set_ary;
 		}
-		visulaize_data();
-		// end
+		// data for testing
+		
+		/*current_obj.data_ary = [
+		 {'id' : 'DATA-0','sub_time' : '', 'sub_model': '',
+		 'sub_date' : '', 'sub_data' : [{'date' : '2014-11-1_09-12-2',
+		 'sensor' : '53'},{'date' : '2014-11-1_09-12-23', 'sensor' :
+		 '19'},{'date' : '2014-11-1_09-12-25', 'sensor' : '24'}]},
+		 {'id' : 'DATA-1','sub_time' : '', 'sub_model': '', 'sub_date' : '', 'sub_data' : [{'date' : '2014-11-1_09-12-2', 'sensor' : '23'},{'date' :
+		 '2014-11-1_09-12-23', 'sensor' : '29'},{'date' :
+		 '2014-11-1_09-12-25', 'sensor' : '24'}]},
+		 {'id' : 'DATA-2', 'sub_time' : '','sub_model': '', 'sub_date' : '', 'sub_data' : [{'date' :
+		 '2014-11-1_09-12-2', 'sensor' : -83},{'date' : '2014-11-1_09-12-23',
+		 'sensor' : -49},{'date' : '2014-11-1_09-12-25', 'sensor' : -74}]}];*/
+		 
+		 current_obj.visulaize_data = function(arg_id, arg_data_set) {
+			var elem_id = '#' + arg_id;
+			if ( $(elem_id).children().length > 0 ) {
+				alert('Chart already exists!');
+			     return false;
+			}
+			// device size
+			var device_width = screen.width;
+			var device_height = screen.height;
+			var min_val = Math.min(device_width, device_height);
+			var chart_width, chart_height, xAxis_format;
+			if (min_val <= 767) {
+				chart_width = 275;
+				chart_height = 130;
+				xAxis_format = "%H:%M";
+			} else {
+				chart_width = 960;
+				chart_height = 500;
+				xAxis_format = "%X";
+			}
 
-		$scope.currentPage = 2;
-		$scope.pageSize = 2;
+			// basic setting
+			var margin = {
+				top : 10,
+				right : 50,
+				bottom : 50,
+				left : 30
+			}, width = chart_width - margin.left - margin.right, height = chart_height
+					- margin.top - margin.bottom;
+
+			var parseDate = d3.time.format("%Y%m%d").parse;
+			var parseDateTime = d3.time.format("%Y-%m-%d_%H-%M-%S").parse;
+
+			var x = d3.time.scale().range([ 0, width ]);
+
+			var y = d3.scale.linear().range([ height, 0 ]);
+
+			var color = d3.scale.category10();
+
+			var xAxis = d3.svg.axis().scale(x).ticks(d3.time.minute, 60)
+					.tickFormat(d3.time.format(xAxis_format)).orient("bottom");
+
+			var yAxis = d3.svg.axis().scale(y).orient("left");
+
+			var line = d3.svg.line().interpolate("basis").x(function(d) {
+				return x(d.date);
+			}).y(function(d) {
+				return y(d.temperature);
+			});
+
+			var svg = d3.select("[id='" + arg_id + "']").append("svg").attr("width",
+					width + margin.left + margin.right).attr("height",
+					height + margin.top + margin.bottom).append("g").attr(
+					"transform",
+					"translate(" + margin.left + "," + margin.top + ")");
+
+			var data = arg_data_set[0][0];
+			color.domain(d3.keys(data[0]).filter(function(key) {
+				return key !== "date";
+			}));
+
+			try {
+				data.forEach(function(d) {
+					d.date = +parseDateTime(d.date);
+				});
+			} catch (e) {
+				console.log(e);
+			}
+			console.log(JSON.stringify(data, 2, 2));
+
+			var cities = color.domain().map(function(name) {
+				return {
+					name : name,
+					values : data.map(function(d) {
+						return {
+							date : d.date,
+							temperature : +d[name]
+						};
+					})
+				};
+			});
+
+			x.domain(d3.extent(data, function(d) {
+				return d.date;
+			}));
+
+			y.domain([ d3.min(cities, function(c) {
+				return d3.min(c.values, function(v) {
+					return v.temperature;
+				});
+			}), d3.max(cities, function(c) {
+				return d3.max(c.values, function(v) {
+					return v.temperature;
+				});
+			}) ]);
+
+			svg.append("g").attr("class", "x axis").attr("transform",
+					"translate(0," + height + ")").call(xAxis);
+
+			svg.append("g").attr("class", "y axis").call(yAxis).append("text")
+					.attr("transform", "rotate(-90)").attr("y", -50).attr("dy",
+							".8em").style("text-anchor", "end").text(
+							"Temperature (ºF)");
+
+			var city = svg.selectAll(".city").data(cities).enter().append("g")
+					.attr("class", "city");
+
+			city.append("path").attr("class", "line").attr("d", function(d) {
+				return line(d.values);
+			}).style("stroke", function(d) {
+				return color(d.name);
+			});
+
+			city.append("text").datum(function(d) {
+				return {
+					name : d.name,
+					value : d.values[d.values.length - 1]
+				};
+			}).attr(
+					"transform",
+					function(d) {
+						return "translate(" + x(d.value.date) + ","
+								+ y(d.value.temperature) + ")";
+					}).attr("x", 3).attr("dy", ".35em").text(function(d) {
+				return d.name;
+			});
+		}
+
+		$scope.currentPage = 1;
+		$scope.pageSize = 1;
 	}
 	indexDataAnalysisListController.$inject = [ 'myIndexDataAnalysisService',
 			'GLOBAL_VALUES', '$scope' ];

@@ -36,7 +36,7 @@ var data_set_ary = [];
 {% if gps_data_list %}
 var gps_data_list = {{gps_data_list|safe}};
 try{
-	gps_data_list.forEach(function(entry){
+	gps_data_list.forEach(function(entry, ith){
 			// console.log(JSON.stringify(entry,2,2));
 			var temp_data_ary;
 			var temp_time_ary;
@@ -61,7 +61,7 @@ try{
 				temp_model = entry['Model'];
 				temp_date = entry['Date'];
 			}
-			console.log(temp_model);
+			
 			//
 			var length_data = temp_data_ary.length;
 			var length_time = temp_time_ary.length;
@@ -71,10 +71,10 @@ try{
 			for (ith = 0; ith < min_length ; ith++){
 				temp_sub_data_ary.push({'date' : temp_time_ary[ith], 'sensor' : temp_data_ary[ith]});
 			}
-			data_set_ary.push({'sub_time' : temp_date, 'sub_model': temp_model, 'sub_date' : temp_date, 'sub_data' : temp_sub_data_ary});
+			data_set_ary.push({'id' : ith.toString(), 'sub_model': temp_model, 'sub_date' : temp_date, 'sub_data' : temp_sub_data_ary});
 	});
 	
-	// console.log(JSON.stringify(data_set_ary,2,2));
+	console.log(JSON.stringify(data_set_ary,2,2));
 }catch(e){
 	console.log(e.message);
 }
@@ -85,4 +85,5 @@ try{
 <script type="text/javascript" src="/js/index_page_container.js"></script>
 <!-- this pagination is for images detail list use -->
 <script type="text/javascript" src="/js/plugin_mis/dir-pagination.js"></script>
+<script type="text/javascript" src="/js/plugin_mis/dir-pagination-data-analysis.js"></script>
 {% endblock %}
