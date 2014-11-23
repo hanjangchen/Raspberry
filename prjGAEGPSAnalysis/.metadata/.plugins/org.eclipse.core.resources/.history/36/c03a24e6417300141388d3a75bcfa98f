@@ -63,7 +63,7 @@ try{
 			}
 			
 			//
-			if(temp_data_ary.length !== 0 && temp_time_ary.length !== 0){
+			if(temp_data_ary.length !== 0 and temp_time_ary.length !== 0){
 
 				var length_data = temp_data_ary.length;
 				var length_time = temp_time_ary.length;

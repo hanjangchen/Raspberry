@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="79" version="2.0">
+<workbench progressCount="83" version="2.0">
 <workbenchAdvisor/>
-<window height="608" width="1246" x="142" y="68">
+<window height="608" maximized="true" width="1246" x="68" y="60">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -20,7 +20,7 @@
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -40,48 +40,33 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.internal.EditorStack@1280bb6" ratio="0.8672397" ratioLeft="908" ratioRight="139" relationship="2" relative="org.eclipse.ui.internal.EditorStack@7ac249">
+<info part="org.eclipse.ui.internal.EditorStack@1d9da44" ratio="0.5662139" ratioLeft="667" ratioRight="511" relationship="2" relative="org.eclipse.ui.internal.EditorStack@7ac249">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.wst.html.core.htmlsource.source" name="index_introduction.html" partName="index_introduction.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop/index_introduction.html" title="index_introduction.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/index_introduction.html" workbook="org.eclipse.ui.internal.EditorStack@7ac249">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/index_introduction.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="22451" selectionTopPixel="6279"/>
-</editor>
-<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_page_container.js" partName="index_page_container.js" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts/index_page_container.js" title="index_page_container.js" tooltip="prjGPSAnalysis/src/static/javascripts/index_page_container.js" workbook="org.eclipse.ui.internal.EditorStack@7ac249">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/javascripts/index_page_container.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="2258"/>
+<editor activePart="true" focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="index_data_analysis.html" partName="index_data_analysis.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop/index_data_analysis.html" title="index_data_analysis.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/index_data_analysis.html" workbook="org.eclipse.ui.internal.EditorStack@7ac249">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/index_data_analysis.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3330" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_data_analysis.js" partName="index_data_analysis.js" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts/index_data_analysis.js" title="index_data_analysis.js" tooltip="prjGPSAnalysis/src/static/javascripts/index_data_analysis.js" workbook="org.eclipse.ui.internal.EditorStack@7ac249">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/javascripts/index_data_analysis.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1253"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="653"/>
 </editor>
-<editor id="org.eclipse.wst.html.core.htmlsource.source" name="index_page_container.html" partName="index_page_container.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/templates/index_page_container.html" title="index_page_container.html" tooltip="prjGPSAnalysis/src/static/templates/index_page_container.html" workbook="org.eclipse.ui.internal.EditorStack@7ac249">
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="index_page_container.html" partName="index_page_container.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/templates/index_page_container.html" title="index_page_container.html" tooltip="prjGPSAnalysis/src/static/templates/index_page_container.html" workbook="org.eclipse.ui.internal.EditorStack@1d9da44">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/templates/index_page_container.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1427" selectionTopPixel="589"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1784" selectionTopPixel="758"/>
 </editor>
-<editor id="org.eclipse.wst.html.core.htmlsource.source" name="index_data_analysis.html" partName="index_data_analysis.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop/index_data_analysis.html" title="index_data_analysis.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/index_data_analysis.html" workbook="org.eclipse.ui.internal.EditorStack@7ac249">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/index_data_analysis.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3948" selectionTopPixel="1545"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="index_data_analysis.html" partName="index_data_analysis.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile/index_data_analysis.html" title="index_data_analysis.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/mobile/index_data_analysis.html" workbook="org.eclipse.ui.internal.EditorStack@7ac249">
+<editor focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="index_data_analysis.html" partName="index_data_analysis.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile/index_data_analysis.html" title="index_data_analysis.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/mobile/index_data_analysis.html" workbook="org.eclipse.ui.internal.EditorStack@1d9da44">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index_data_analysis.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3757" selectionTopPixel="1650"/>
-</editor>
-<editor focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="index_introduction.html" partName="index_introduction.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile/index_introduction.html" title="index_introduction.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/mobile/index_introduction.html" workbook="org.eclipse.ui.internal.EditorStack@1280bb6">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index_introduction.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="19593" selectionTopPixel="7268"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2499" selectionTopPixel="1253"/>
 </editor>
 </editors>
 <views>
@@ -109,15 +94,16 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/dispatchers"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts"/>
-<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts/plugin_ng"/>
-<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/mis"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts/plugin_mis"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/shared"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/templates"/>
-<selected IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts/plugin_ng"/>
+<selected IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/dir_pagination_tpl.html"/>
 </viewState>
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
@@ -296,7 +282,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.21575062" ratioLeft="263" ratioRight="956" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.12453669" ratioLeft="168" ratioRight="1181" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.74958813" ratioLeft="455" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
@@ -313,161 +299,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/templates/index_page_container.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/index_data_analysis.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/prjGPSAnalysis/src/static/javascripts/index_page_container.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/templates/index_page_container.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/admin_images_upload.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index_data_analysis.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/templates/base.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/prjGPSAnalysis/src/static/javascripts/index_data_analysis.js"/>
 </editors>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="1885" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="4686" y="0"/>
-</item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="1903" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="4903" y="0"/>
-</item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="1903" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="4903" y="0"/>
-</item>
-<item historyLabel="index_page_container.html" index="0">
+<item historyLabel="index_page_container.js" index="1">
 <position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="3347" y="12"/>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3459" y="0"/>
 </item>
-<item historyLabel="index_page_container.html" index="0">
+<item historyLabel="index_page_container.js" index="1">
 <position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="3347" y="12"/>
-</item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="1763" y="125"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="4903" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="4903" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="4903" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="2">
+<item historyLabel="index_data_analysis.html" index="0">
 <position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
+<item historyLabel="index_page_container.js" index="1">
 <position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="2">
+<item historyLabel="index_data_analysis.html" index="0">
 <position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="2637" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="6922" y="5"/>
 </item>
-<item historyLabel="index_data_analysis.html" index="2">
+<item historyLabel="index_data_analysis.html" index="0">
 <position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="2637" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="7007" y="0"/>
 </item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="1212" y="0"/>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3345" y="0"/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="6616" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="7024" y="14"/>
 </item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="732" y="0"/>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3291" y="0"/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="3374" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="8759" y="0"/>
 </item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="1287" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="2628" y="0"/>
-</item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="732" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="2634" y="706"/>
-</item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="732" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="2634" y="706"/>
-</item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="732" y="0"/>
-</item>
-<item historyLabel="base.html" index="3">
-<position info="not_deleted" x="2324" y="0"/>
-</item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="732" y="0"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="2634" y="706"/>
-</item>
-<item historyLabel="index_data_analysis.html" index="2">
+<item historyLabel="index_data_analysis.html" index="0">
 <position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="3985" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position/>
 </item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="1661" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="3985" y="0"/>
+<item historyLabel="index_page_container.html" index="2">
+<position info="not_deleted" x="2288" y="0"/>
 </item>
-<item historyLabel="index_data_analysis.js" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position/>
 </item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="1728" y="0"/>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3300" y="0"/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="2583" y="4112"/>
+<item historyLabel="index_page_container.js" index="1">
+<position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="2">
-<position info="not_deleted" x="6329" y="0"/>
+<item historyLabel="index_data_analysis.html" index="0">
+<position/>
 </item>
-<item historyLabel="index_page_container.html" index="0">
-<position info="not_deleted" x="1427" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="8570" y="0"/>
 </item>
-<item historyLabel="index_data_analysis.html" index="2">
-<position info="not_deleted" x="3564" y="26"/>
+<item historyLabel="index_data_analysis.html" index="0">
+<position/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="3743" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="8449" y="0"/>
 </item>
-<item historyLabel="index_data_analysis.html" index="2">
-<position info="not_deleted" x="3733" y="26"/>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3390" y="5"/>
 </item>
-<item historyLabel="index_data_analysis.html" index="1">
-<position info="not_deleted" x="3948" y="0"/>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="6141" y="0"/>
 </item>
-<item active="true" historyLabel="index_data_analysis.html" index="2">
-<position info="not_deleted" x="3733" y="26"/>
+<item historyLabel="index_page_container.html" index="2">
+<position info="not_deleted" x="1744" y="12"/>
+</item>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="10625" y="0"/>
+</item>
+<item historyLabel="index_page_container.html" index="2">
+<position info="not_deleted" x="1786" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3390" y="5"/>
+</item>
+<item historyLabel="index_page_container.html" index="2">
+<position info="not_deleted" x="1408" y="0"/>
+</item>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="10625" y="0"/>
+</item>
+<item historyLabel="index_page_container.html" index="2">
+<position info="not_deleted" x="1812" y="8"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3459" y="0"/>
+</item>
+<item historyLabel="index_page_container.html" index="2">
+<position info="not_deleted" x="1784" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3426" y="0"/>
+</item>
+<item historyLabel="index_page_container.js" index="1">
+<position info="not_deleted" x="8490" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3426" y="0"/>
+</item>
+<item historyLabel="admin_images_upload.html" index="3">
+<position info="not_deleted" x="223" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3426" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="4">
+<position info="not_deleted" x="2208" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="3426" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="4">
+<position info="not_deleted" x="2208" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="2346" y="1628"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="4">
+<position info="not_deleted" x="2261" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="2735" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="4">
+<position info="not_deleted" x="2493" y="0"/>
+</item>
+<item historyLabel="index_page_container.html" index="2">
+<position info="not_deleted" x="1784" y="0"/>
+</item>
+<item historyLabel="index_data_analysis.html" index="4">
+<position info="not_deleted" x="2499" y="0"/>
+</item>
+<item active="true" historyLabel="index_data_analysis.html" index="0">
+<position info="not_deleted" x="382" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -475,6 +461,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -488,50 +477,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="data.tsv" tooltip="prjGPSAnalysis/src/static/mis/data.tsv">
-<persistable path="/prjGPSAnalysis/src/static/mis/data.tsv"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index_data_analysis.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/mobile/index_data_analysis.html">
-<persistable path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index_data_analysis.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index_data_analysis.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/index_data_analysis.html">
-<persistable path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/index_data_analysis.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="dir_pagination_tpl.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/dir_pagination_tpl.html">
+<persistable path="/prjGPSAnalysis/src/static/my_ng_templates/dir_pagination_tpl.html"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index_page_container.html" tooltip="prjGPSAnalysis/src/static/templates/index_page_container.html">
 <persistable path="/prjGPSAnalysis/src/static/templates/index_page_container.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_data_analysis.js" tooltip="prjGPSAnalysis/src/static/javascripts/index_data_analysis.js">
-<persistable path="/prjGPSAnalysis/src/static/javascripts/index_data_analysis.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_page_container.js" tooltip="prjGPSAnalysis/src/static/javascripts/index_page_container.js">
-<persistable path="/prjGPSAnalysis/src/static/javascripts/index_page_container.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index_introduction.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/mobile/index_introduction.html">
-<persistable path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index_introduction.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index_introduction.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/index_introduction.html">
-<persistable path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/index_introduction.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="xbee_module_1.jpg" tooltip="prjGPSAnalysis/src/static/images/xbee_module_1.jpg">
-<persistable path="/prjGPSAnalysis/src/static/images/xbee_module_1.jpg"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="base.html" tooltip="prjGPSAnalysis/src/static/templates/base.html">
 <persistable path="/prjGPSAnalysis/src/static/templates/base.html"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="app.yaml" tooltip="prjGPSAnalysis/src/app.yaml">
-<persistable path="/prjGPSAnalysis/src/app.yaml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="dir-pagination-data-analysis.js" tooltip="prjGPSAnalysis/src/static/javascripts/plugin_mis/dir-pagination-data-analysis.js">
+<persistable path="/prjGPSAnalysis/src/static/javascripts/plugin_mis/dir-pagination-data-analysis.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="dispatchers_protortc_services.py" tooltip="prjGPSAnalysis/src/dispatchers/dispatchers_protortc_services.py">
-<persistable path="/prjGPSAnalysis/src/dispatchers/dispatchers_protortc_services.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="responsive-directive.js" tooltip="prjGPSAnalysis/src/static/javascripts/plugin_mis/responsive-directive.js">
+<persistable path="/prjGPSAnalysis/src/static/javascripts/plugin_mis/responsive-directive.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="dir-pagination.js" tooltip="prjGPSAnalysis/src/static/javascripts/plugin_mis/dir-pagination.js">
+<persistable path="/prjGPSAnalysis/src/static/javascripts/plugin_mis/dir-pagination.js"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="dispatchers_base.py" tooltip="prjGPSAnalysis/src/dispatchers/dispatchers_base.py">
 <persistable path="/prjGPSAnalysis/src/dispatchers/dispatchers_base.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="dispatchers_data_management.py" tooltip="prjGPSAnalysis/src/dispatchers/dispatchers_data_management.py">
-<persistable path="/prjGPSAnalysis/src/dispatchers/dispatchers_data_management.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="admin_images_upload.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/mobile/admin_images_upload.html">
+<persistable path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/admin_images_upload.html"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="users.py" tooltip="C:\Program Files (x86)\Google\google_appengine\google\appengine\api\users.py">
-<persistable uri="file:/C:/Program%20Files%20(x86)/Google/google_appengine/google/appengine/api/users.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_admin_upload_images_directive.js" tooltip="prjGPSAnalysis/src/static/javascripts/my_ng_directives/index_admin_upload_images_directive.js">
+<persistable path="/prjGPSAnalysis/src/static/javascripts/my_ng_directives/index_admin_upload_images_directive.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="admin_images_upload.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/admin_images_upload.html">
+<persistable path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/admin_images_upload.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="gps_data.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/shared/gps_data.html">
+<persistable path="/prjGPSAnalysis/src/static/my_ng_templates/shared/gps_data.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_page_directives.js" tooltip="prjGPSAnalysis/src/static/javascripts/my_ng_directives/index_page_directives.js">
+<persistable path="/prjGPSAnalysis/src/static/javascripts/my_ng_directives/index_page_directives.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_page_container.js" tooltip="prjGPSAnalysis/src/static/javascripts/index_page_container.js">
+<persistable path="/prjGPSAnalysis/src/static/javascripts/index_page_container.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_data_analysis.js" tooltip="prjGPSAnalysis/src/static/javascripts/index_data_analysis.js">
+<persistable path="/prjGPSAnalysis/src/static/javascripts/index_data_analysis.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="data.tsv" tooltip="prjGPSAnalysis/src/static/mis/data.tsv">
+<persistable path="/prjGPSAnalysis/src/static/mis/data.tsv"/>
 </file>
 </mruList>
 </workbench>

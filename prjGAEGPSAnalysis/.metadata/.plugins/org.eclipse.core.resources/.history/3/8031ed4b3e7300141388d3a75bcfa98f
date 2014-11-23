@@ -115,6 +115,7 @@ var index_page_app, device;
 	var indexDataAnalysisService = function($http, GLOBAL_VALUES) {
 		// upload imgs
 		this.upload_imgs = function(arg_data) {
+			alert('test');
 			console.log(arg_data);
 		}
 

@@ -37,7 +37,7 @@ var data_set_ary = [];
 var gps_data_list = {{gps_data_list|safe}};
 try{
 	gps_data_list.forEach(function(entry, ith){
-			console.log(JSON.stringify(entry,2,2));
+			// console.log(JSON.stringify(entry,2,2));
 			var temp_data_ary = [];
 			var temp_time_ary = [];
 			var temp_model = '';
@@ -63,21 +63,18 @@ try{
 			}
 			
 			//
-			if(temp_data_ary.length !== 0 && temp_time_ary.length !== 0){
-
-				var length_data = temp_data_ary.length;
-				var length_time = temp_time_ary.length;
-				var min_length = Math.min(length_data, length_time);
-				var temp_sub_data_ary = [];
-				
-				for (ith = 0; ith < min_length ; ith++){
-					temp_sub_data_ary.push({'date' : temp_time_ary[ith], 'sensor' : temp_data_ary[ith]});
-				}
-				data_set_ary.push({'id' : ith.toString(), 'sub_model': temp_model, 'sub_date' : temp_date, 'sub_data' : temp_sub_data_ary});
+			var length_data = temp_data_ary.length;
+			var length_time = temp_time_ary.length;
+			var min_length = Math.min(length_data, length_time);
+			var temp_sub_data_ary = [];
+			
+			for (ith = 0; ith < min_length ; ith++){
+				temp_sub_data_ary.push({'date' : temp_time_ary[ith], 'sensor' : temp_data_ary[ith]});
 			}
+			data_set_ary.push({'id' : ith.toString(), 'sub_model': temp_model, 'sub_date' : temp_date, 'sub_data' : temp_sub_data_ary});
 	});
 	
-	// console.log(JSON.stringify(data_set_ary,2,2));
+	console.log(JSON.stringify(data_set_ary,2,2));
 }catch(e){
 	console.log(e.message);
 }
