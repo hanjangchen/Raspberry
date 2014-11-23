@@ -21,7 +21,7 @@
 	stroke-width: 1.5px;
 }
 
-.d3_chart {
+#d3_charts {
 	font-size: 6px;
 }
 
@@ -91,26 +91,34 @@
 					<br>
 					<h4>Control Panel</h4>
 					<div>
-						<label>Max-Pages on Each List</label> <input type="number" min="1"
-							max="10" class="form-control" ng-model="pageSize">
+						<label for="search">Filter</label> <input
+							ng-model="q" id="search" class="form-control"
+							placeholder="Filter by Keywords">
 					</div>
 					<div>
-						<label for="search">Filter</label> <input ng-model="q" id="search"
-							class="form-control" placeholder="Filter by Keywords">
+						<label>Max-Pages on Each List</label> <input
+							type="number" min="1" max="10" class="form-control"
+							ng-model="pageSize">
 					</div>
 				</div>
-				<br>
+
 				<!-- ng-pagination list -->
 				<div>
-					<div
-						dir-paginate-data-analysis="item in ctrl.data_ary | filter:q | itemsPerPageDataAnalysis: pageSize"
-						current-page="currentPage">
-						<div id="[[item.id]]"></div>
-						<input type="button" value="Show Chart"
-							ng-click="ctrl.visulaize_data([[item.id]], [[item.sub_data]])">
+					<br>
+					<table class="table table-striped">
+						<tbody>
+							<tr
+								dir-paginate-data-analysis="item in ctrl.data_ary | filter:q | itemsPerPageDataAnalysis: pageSize"
+								current-page="currentPage">
+								<td>
+									<div id="[[item.id]]"></div> <input type="button"
+									value="Show Chart"
+									ng-click="ctrl.visulaize_data([[item.id]], [[item.sub_data]])">
 
-
-					</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 
 				<!-- pagination controller block -->
