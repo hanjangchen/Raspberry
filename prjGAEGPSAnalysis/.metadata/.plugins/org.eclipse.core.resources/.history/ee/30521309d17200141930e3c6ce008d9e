@@ -105,11 +105,11 @@
 					<div
 						dir-paginate-data-analysis="item in ctrl.data_ary | filter:q | itemsPerPageDataAnalysis: pageSize"
 						current-page="currentPage">
-						<div id="[[item.id]]" class="d3_chart"></div>
+						<div id="[[item.id]]"></div>
 						<input type="button" value="Show Chart"
 							ng-click="ctrl.visulaize_data([[item.id]], [[item.sub_data]])">
-							
-						<hr style="border: none; border-bottom: solid 1px #bbb;">
+
+
 					</div>
 				</div>
 

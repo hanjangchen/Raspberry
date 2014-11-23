@@ -108,8 +108,8 @@
 						<div id="[[item.id]]" class="d3_chart"></div>
 						<input type="button" value="Show Chart"
 							ng-click="ctrl.visulaize_data([[item.id]], [[item.sub_data]])">
-							
-						<hr style="border: none; border-bottom: solid 1px #bbb;">
+
+
 					</div>
 				</div>
 

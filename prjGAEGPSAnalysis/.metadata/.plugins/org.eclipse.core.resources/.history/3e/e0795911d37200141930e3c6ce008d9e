@@ -20,7 +20,7 @@
 	stroke-width: 1.5px;
 }
 
-.d3_charts {
+#d3_charts {
 	font-size: 10px;
 }
 -->
@@ -106,7 +106,7 @@
 					<tr dir-paginate-data-analysis = "item in ctrl.data_ary | filter:q | itemsPerPageDataAnalysis: pageSize"
 						current-page = "currentPage">
 						<td>
-							<div id= "[[item.id]]" class="d3_charts"></div>
+							<div id= "[[item.id]]"></div>
 							<input type="button" value="Show Chart" ng-click="ctrl.visulaize_data([[item.id]], [[item.sub_data]])">
 							
 						</td>
