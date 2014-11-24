@@ -625,9 +625,7 @@
 								More &raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Particles Swarm Optimiaztion is utilized for stochastic
-							optmization; in our case, we will use it for finding out the
-							optimal weights of neural-network</p>
+							Particles Swarm Optimiaztion is utilized for stochastic optmization; in our case, we will use it for finding out the optimal weights of neural-network</p>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4>Neural Network</h4>
@@ -640,9 +638,6 @@
 								class="btn btn-primary" title="Neural Network Introduction">Learn
 								More &raquo;</a>
 						</p>
-						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Neural Network is utilized for constructuring the modules'
-							patterns</p>
 					</div>
 				</div>
 			</div>

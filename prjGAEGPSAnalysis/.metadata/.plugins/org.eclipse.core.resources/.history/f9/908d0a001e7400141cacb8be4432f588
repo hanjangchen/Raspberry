@@ -641,8 +641,9 @@
 								More &raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Neural Network is utilized for constructuring the modules'
-							patterns</p>
+							Neural Network is utilized for stochastic
+							optmization; in our case, we will use it for finding out the
+							optimal weights of neural-network</p>
 					</div>
 				</div>
 			</div>
