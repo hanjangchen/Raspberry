@@ -434,10 +434,6 @@
 							class="btn btn-primary" title="Google Map Introduction">Learn
 							More &raquo;</a>
 					</p>
-					
-					
-						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Google Map would be utilized for searching geo-information</p>
 				</div>
 			</div>
 
@@ -458,10 +454,6 @@
 							class="btn btn-primary" title="Python Official Website">Learn
 							More &raquo;</a>
 					</p>
-					
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Angular.js is utilized mainly for front-end data-binding and
-							templates routing</p>
 				</div>
 				<div>
 					<h4>JQuery</h4>
@@ -479,11 +471,6 @@
 							class="btn btn-primary" title="Google App Engine Introduction">Learn
 							More &raquo;</a>
 					</p>
-					
-					
-						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							jQuery is utilized mainly for implementing the simple animation,
-							handling ajax, and the auxiliary of Angulr.js</p>
 				</div>
 				<div>
 					<h4>Bootstrap</h4>
@@ -501,10 +488,6 @@
 							class="btn btn-primary" title="Google App Engine Introduction">Learn
 							More &raquo;</a>
 					</p>
-					
-					
-						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Bootstrap is utilized for implementing responsive web design</p>
 				</div>
 
 				<div>
@@ -523,9 +506,6 @@
 							class="btn btn-primary" title="Leaflet Introduction">Learn
 							More &raquo;</a>
 					</p>
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Leaflet.js is utilized for implementing the features on
-							OpenStreetMap</p>
 				</div>
 
 				<div>
@@ -542,9 +522,6 @@
 							target="_blank" class="btn btn-primary"
 							title="Google App Engine Introduction">Learn More &raquo;</a>
 					</p>
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Numeric.js is utilized mainly for manipulating the linear algebra
-							and matrix operation</p>
 				</div>
 				<div>
 					<h4>D3.js</h4>
@@ -560,8 +537,6 @@
 						<a href="http://d3js.org/" target="_blank" class="btn btn-primary"
 							title="Google App Engine Introduction">Learn More &raquo;</a>
 					</p>
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							D3.js is utilized for data visualization</p>
 				</div>
 			</div>
 
@@ -578,10 +553,6 @@
 							class="btn btn-primary" title="Neural Network Introduction">Learn
 							More &raquo;</a>
 					</p>
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Particles Swarm Optimiaztion is utilized for stochastic
-							optmization; in our case, we will use it for finding out the
-							optimal weights of neural-network</p>
 				</div>
 				<div>
 					<h4>Neural Network</h4>
@@ -594,9 +565,6 @@
 							class="btn btn-primary" title="Neural Network Introduction">Learn
 							More &raquo;</a>
 					</p>
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Neural Network is utilized for constructuring the modules'
-							patterns</p>
 				</div>
 			</div>
 		</div>

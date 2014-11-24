@@ -371,6 +371,7 @@
 								title="Google Compute Engine Introduction">Learn More
 								&raquo;</a>
 						</p>
+
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 							We build up the distributed systems on Google Compute Engine for
 							handling the analysis of machine data</p>
