@@ -21,20 +21,6 @@
 	height: 50px;
 	margin: 5px auto;
 }
-
-.intro_title{
-	font-weight: bold;
-}
-.intro_content, .intro_content>span{
-	color: #555;
-	font-size: 14px;
-	letter-spacing: 2px;
-}
-.intro_content>a{
-	color: #3296fd;
-	font-size: 13px;
-	letter-spacing: 2px;
-}
 -->
 </style>
 <div>
@@ -45,28 +31,24 @@
 			<h2>
 				Project-G<sup>2</sup>
 			</h2>
-			<br>
-			<h4 class="intro_title">Goal</h4>
-			<p class="intro_content">
-				<span>The aim is <span style="color: #f00;">Internet of Things</span></span>
+			<p style="color: #555; margin: 50px auto;">
+				The aim is <span style="color: #f00;">Internet of Things</span>
 			</p>
-			<br>
-			<h4 class="intro_title">Plans</h4>
-			<p class="intro_content">
-				<span>Short-Term: Building GPS module, collecting data from
-					satellites, and then analyze the data with AI algorithms</span> <br>
-				<span>Mid-Term: Integrate the prototype module with other
-					interesting gadgets</span> <br> <span>Long-Term: Build the
-					Internet of Things with the devices we build</span> <br>
+			<p style="font-size: 14px; letter-spacing: 2px;">
+				<span>Short-Term:<br>Building GPS module, collecting
+					data from satellites, and then analyze the data with AI algorithms
+				</span> <br> <br> <span>Mid-Term:<br>Integrate the
+					prototype module with other interesting gadgets
+				</span> <br> <br> <span>Long-Term:<br>Build the
+					Internet of Things with the devices we build
+				</span> <br>
 			</p>
+			
+			<div>
+			<a href="https://github.com/hanjangchen/Raspberry">Github Repository of Main Project</a>
 			<br>
-			<h4 class="intro_title">Repositories</h4>
-			<p class="intro_content">
-				<a href="https://github.com/hanjangchen/Raspberry">Github
-					Repository of Main Project</a> <br> <a
-					href="https://github.com/Gogistics/prjDjangoMongoOnGCE">Github
-					Repository of Development on Google Compute Engine</a>
-			</p>
+			<a href="https://github.com/Gogistics/prjDjangoMongoOnGCE">Github Repository of Development on Google Compute Engine</a>
+			</div>
 		</div>
 
 
@@ -344,11 +326,11 @@
 							class="btn btn-primary" title="Google App Engine Introduction">Learn
 							More &raquo;</a>
 					</p>
-
+					
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						We build up the web apps on Google App Engine; the functions of
-						apps are for storing data, interacting with users, analyzing data,
-						and working together to be a apps swarm</p>
+							We build up the web apps on Google App Engine; the functions of
+							apps are for storing data, interacting with users, analyzing
+							data, and working together to be a apps swarm</p>
 				</div>
 
 				<div>
@@ -366,115 +348,35 @@
 							class="btn btn-primary"
 							title="Google Compute Engine Introduction">Learn More &raquo;</a>
 					</p>
-
+					
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						We build up the distributed systems on Google Compute Engine for
-						handling the analysis of machine data</p>
+							We build up the distributed systems on Google Compute Engine for
+							handling the analysis of machine data</p>
 				</div>
-
+				
 				<div>
-					<h4>Google Container Engine</h4>
-					<br> <img alt="compute_engine" src="/img/compute-engine.png"
-						class="img-responsive icon"> <br>
+						<h4>Google Container Engine</h4>
 
-					<p style="font-size: 13px; text-align: justify;">Google
-						Container Engine is a hosted container management platform, that
-						runs and manages Docker containers on Google Compute Engine
-						virtual machines. It's powered by the open source technology
-						Kubernetes...</p>
-					<p>
-						<a href="https://cloud.google.com/compute/docs/containers"
-							target="_blank" class="btn btn-primary"
-							title="Google Container Engine Introduction">Learn More
-							&raquo;</a>
-					</p>
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						We build up the clster on Google Conatiner Engine for handling the
-						data analysis</p>
-				</div>
+						<br> <img alt="compute_engine" src="/img/compute-engine.png"
+							class="img-responsive icon"> <br>
+
+						<p style="font-size: 13px; text-align: justify;">Google
+							Container Engine is a hosted container management platform, that
+							runs and manages Docker containers on Google Compute Engine
+							virtual machines. It's powered by the open source technology
+							Kubernetes...</p>
+						<p>
+							<a href="https://cloud.google.com/compute/docs/containers" target="_blank"
+								class="btn btn-primary"
+								title="Google Container Engine Introduction">Learn More
+								&raquo;</a>
+						</p>
+						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
+							We build up the clster on Google Conatiner Engine for
+							handling the data analysis</p>
+					</div>
+
 			</div>
-
-
-
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-			style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
-				<h3>Database</h3>
-				<div>
-					<h4>Google Datastore</h4>
-					<br> <img alt="app_engine" src="/img/datastore_icon.png"
-						class="img-responsive icon"> <br>
-
-					<p style="font-size: 13px; text-align: justify;">Use a managed,
-						NoSQL, schemaless database for storing non-relational data. Cloud
-						Datastore automatically scales as you need it and supports
-						transactions as well as robust, SQL-like queries...</p>
-					<p>
-						<a href="https://cloud.google.com/appengine/docs" target="_blank"
-							class="btn btn-primary" title="Google Datastore Introduction">Learn
-							More &raquo;</a>
-					</p>
-
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						We use Google Datastore for storing data</p>
-				</div>
-
-				<div>
-					<h4>Google Blobstore</h4>
-					<br> <img alt="compute_engine" src="/img/datastore_icon.png"
-						class="img-responsive icon"> <br>
-
-					<p style="font-size: 13px; text-align: justify;">The Blobstore
-						API allows your application to serve data objects, called blobs,
-						that are much larger than the size allowed for objects in the
-						Datastore service. Blobs are useful for serving large files, such
-						as video or image files, and for allowing users to upload large
-						data files. Blobs are created by uploading a file through an HTTP
-						request. Typically, your applications will do this by presenting a
-						form with a file upload field to the user. When the form is
-						submitted, the Blobstore creates a blob from the file's contents
-						and returns an opaque reference to the blob, called a blob key,
-						which you can later use to serve the blob. The application can
-						serve the complete blob value in response to a user request, or it
-						can read the value directly using a streaming file-like
-						interface...</p>
-					<p>
-						<a
-							href="https://cloud.google.com/appengine/docs/python/blobstore/"
-							target="_blank" class="btn btn-primary"
-							title="Google Blobstore Introduction">Learn More &raquo;</a>
-					</p>
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						We use blobstore for storing images and videos</p>
-
-				</div>
-
-				<div>
-					<h4>MongoDB</h4>
-					<br> <img alt="compute_engine" src="/img/mongodb_icon.png"
-						class="img-responsive icon"> <br>
-
-					<p style="font-size: 13px; text-align: justify;">MongoDB (from
-						"humongous") is a cross-platform document-oriented database.
-						Classified as a NoSQL database, MongoDB eschews the traditional
-						table-based relational database structure in favor of JSON-like
-						documents with dynamic schemas (MongoDB calls the format BSON),
-						making the integration of data in certain types of applications
-						easier and faster. Released under a combination of the GNU Affero
-						General Public License and the Apache License, MongoDB is free and
-						open-source software...</p>
-					<p>
-						<a href="http://www.mongodb.org/"
-							target="_blank" class="btn btn-primary"
-							title="Google Container Engine Introduction">Learn More
-							&raquo;</a>
-					</p>
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						We use MongoDB with Django on Compute Engine; mongoengine is used
-						as document-object mapper</p>
-				</div>
-			</div>
-
-
 
 
 			<div style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
@@ -494,10 +396,10 @@
 							class="btn btn-primary" title="Python Official Website">Learn
 							More &raquo;</a>
 					</p>
-
+					
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						Python is utilized for constructing back-end architecture and
-						parts of data manipulation</p>
+							Python is utilized for constructing back-end architecture and
+							parts of data manipulation</p>
 				</div>
 				<div>
 					<h4>JavaScript</h4>
@@ -516,11 +418,11 @@
 							class="btn btn-primary" title="Google App Engine Introduction">Learn
 							More &raquo;</a>
 					</p>
-
+					
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						Javascript is utilized for building up the front-end applications,
-						including data analysis, data visualization, templates routing,
-						etc.</p>
+							Javascript is utilized for building up the front-end
+							applications, including data analysis, data visualization,
+							templates routing, etc.</p>
 				</div>
 			</div>
 
@@ -539,12 +441,12 @@
 							class="btn btn-primary" title="OpenStreetMap Introduction">Learn
 							More &raquo;</a>
 					</p>
-
+					
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						OpenStreetMap is utilized for visulaizing the geo-information;
-						it's really user-friendly so that you can edit the geo-information
-						anytime online, create the animation on map, and visualize the
-						analysis result on the map.</p>
+							OpenStreetMap is utilized for visulaizing the geo-information;
+							it's really user-friendly so that you can edit the
+							geo-information anytime online, create the animation on map, and
+							visualize the analysis result on the map.</p>
 				</div>
 
 				<div>
@@ -560,10 +462,10 @@
 							class="btn btn-primary" title="Google Map Introduction">Learn
 							More &raquo;</a>
 					</p>
-
-
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						Google Map would be utilized for searching geo-information</p>
+					
+					
+						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
+							Google Map would be utilized for searching geo-information</p>
 				</div>
 			</div>
 
@@ -571,7 +473,7 @@
 				<h3>Libraries/Frameworks</h3>
 				<div>
 					<h4>Angular.js</h4>
-					<br> <img alt="javascript" src="/img/angularjs.png"
+						<br> <img alt="javascript" src="/img/angularjs.png"
 						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">AngularJS is a
 						toolset for building the framework most suited to your application
@@ -584,14 +486,14 @@
 							class="btn btn-primary" title="Python Official Website">Learn
 							More &raquo;</a>
 					</p>
-
+					
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						Angular.js is utilized mainly for front-end data-binding and
-						templates routing</p>
+							Angular.js is utilized mainly for front-end data-binding and
+							templates routing</p>
 				</div>
 				<div>
 					<h4>JQuery</h4>
-					<br> <img alt="javascript" src="/img/jquery.png"
+						<br> <img alt="javascript" src="/img/jquery.png"
 						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">jQuery is a
 						fast, small, and feature-rich JavaScript library. It makes things
@@ -605,15 +507,15 @@
 							class="btn btn-primary" title="Google App Engine Introduction">Learn
 							More &raquo;</a>
 					</p>
-
-
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						jQuery is utilized mainly for implementing the simple animation,
-						handling ajax, and the auxiliary of Angulr.js</p>
+					
+					
+						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
+							jQuery is utilized mainly for implementing the simple animation,
+							handling ajax, and the auxiliary of Angulr.js</p>
 				</div>
 				<div>
 					<h4>Bootstrap</h4>
-					<br> <img alt="javascript" src="/img/bootstrap.png"
+						<br> <img alt="javascript" src="/img/bootstrap.png"
 						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">Bootstrap is a
 						free collection of tools for creating websites and web
@@ -627,10 +529,10 @@
 							class="btn btn-primary" title="Google App Engine Introduction">Learn
 							More &raquo;</a>
 					</p>
-
-
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						Bootstrap is utilized for implementing responsive web design</p>
+					
+					
+						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
+							Bootstrap is utilized for implementing responsive web design</p>
 				</div>
 
 				<div>
@@ -650,15 +552,15 @@
 							More &raquo;</a>
 					</p>
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						Leaflet.js is utilized for implementing the features on
-						OpenStreetMap</p>
+							Leaflet.js is utilized for implementing the features on
+							OpenStreetMap</p>
 				</div>
 
 				<div>
 					<h4>Numeric.js</h4>
-					<br> <img alt="javascript" src="/img/numeric-js.png"
+						<br> <img alt="javascript" src="/img/numeric-js.png"
 						class="img-responsive icon"> <br>
-
+						
 					<p style="font-size: 13px; text-align: justify;">Numeric
 						Javascript is library that provides many useful functions for
 						numerical calculations, particularly for linear algebra (vectors
@@ -669,12 +571,12 @@
 							title="Google App Engine Introduction">Learn More &raquo;</a>
 					</p>
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						Numeric.js is utilized mainly for manipulating the linear algebra
-						and matrix operation</p>
+							Numeric.js is utilized mainly for manipulating the linear algebra
+							and matrix operation</p>
 				</div>
 				<div>
 					<h4>D3.js</h4>
-					<br> <img alt="javascript" src="/img/d3.png"
+						<br> <img alt="javascript" src="/img/d3.png"
 						class="img-responsive icon"> <br>
 					<p style="font-size: 13px; text-align: justify;">D3 allows you
 						to bind arbitrary data to a Document Object Model (DOM), and then
@@ -687,7 +589,7 @@
 							title="Google App Engine Introduction">Learn More &raquo;</a>
 					</p>
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						D3.js is utilized for data visualization</p>
+							D3.js is utilized for data visualization</p>
 				</div>
 			</div>
 
@@ -705,9 +607,9 @@
 							More &raquo;</a>
 					</p>
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						Particles Swarm Optimiaztion is utilized for stochastic
-						optmization; in our case, we will use it for finding out the
-						optimal weights of neural-network</p>
+							Particles Swarm Optimiaztion is utilized for stochastic
+							optmization; in our case, we will use it for finding out the
+							optimal weights of neural-network</p>
 				</div>
 				<div>
 					<h4>Neural Network</h4>
@@ -721,8 +623,8 @@
 							More &raquo;</a>
 					</p>
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						Neural Network is utilized for constructuring the modules'
-						patterns</p>
+							Neural Network is utilized for constructuring the modules'
+							patterns</p>
 				</div>
 			</div>
 		</div>

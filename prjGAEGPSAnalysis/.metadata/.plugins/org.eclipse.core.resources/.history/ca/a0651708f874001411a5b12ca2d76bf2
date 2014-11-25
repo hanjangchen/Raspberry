@@ -30,7 +30,7 @@
 .intro_title{
 	font-weight: bold;
 }
-.intro_content, .intro_content>span{
+.intro_content, .intro_content>span,{
 	color: #555;
 	font-size: 14px;
 	letter-spacing: 2px;
@@ -46,17 +46,17 @@
 	<!-- introduction -->
 	<div class="container-fluid">
 		<div class="jumbotron" style="border-bottom: dotted 1px #bbb;">
-			<h1 class="intro_title">
+			<h1>
 				Project-G<sup>2</sup>
 			</h1>
 			<br><br>
 			
-			<h4 class="intro_title">Goal</h4>
+			<h4>Goal</h4>
 			<p class="intro_content">
 				<span>The aim is <span style="color: #f00;">Internet of Things</span></span>
 			</p>
 			<br>
-			<h4 class="intro_title">Plans</h4>
+			<h4>Brief Schedule</h4>
 			<p class="intro_content">
 				<span>Short-Term: Building GPS module, collecting data from
 					satellites, and then analyze the data with AI algorithms</span> <br>
@@ -65,7 +65,7 @@
 					Internet of Things with the devices we build</span> <br>
 			</p>
 			<br>
-			<h4 class="intro_title">Repositories</h4>
+			<h4>Repositories</h4>
 			<p class="intro_content">
 				<a href="https://github.com/hanjangchen/Raspberry">Github
 					Repository of Main Project</a> <br> <a

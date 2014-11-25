@@ -26,52 +26,33 @@
 	height: 80px;
 	margin: 5px auto;
 }
-
-.intro_title{
-	font-weight: bold;
-}
-.intro_content, .intro_content>span{
-	color: #555;
-	font-size: 14px;
-	letter-spacing: 2px;
-}
-.intro_content>a{
-	color: #3296fd;
-	font-size: 13px;
-	letter-spacing: 2px;
-}
 -->
 </style>
 <div>
 	<!-- introduction -->
 	<div class="container-fluid">
 		<div class="jumbotron" style="border-bottom: dotted 1px #bbb;">
-			<h1 class="intro_title">
+			<h1>
 				Project-G<sup>2</sup>
 			</h1>
-			<br><br>
-			
-			<h4 class="intro_title">Goal</h4>
-			<p class="intro_content">
-				<span>The aim is <span style="color: #f00;">Internet of Things</span></span>
+			<br> <br>
+			<p style="color: #555; margin: 50px auto;">
+				The aim is <span style="color: #f00;">Internet of Things</span>
 			</p>
-			<br>
-			<h4 class="intro_title">Plans</h4>
-			<p class="intro_content">
+			<p style="font-size: 14px; letter-spacing: 2px;">
 				<span>Short-Term: Building GPS module, collecting data from
 					satellites, and then analyze the data with AI algorithms</span> <br>
 				<span>Mid-Term: Integrate the prototype module with other
 					interesting gadgets</span> <br> <span>Long-Term: Build the
 					Internet of Things with the devices we build</span> <br>
 			</p>
-			<br>
-			<h4 class="intro_title">Repositories</h4>
-			<p class="intro_content">
+
+			<div>
 				<a href="https://github.com/hanjangchen/Raspberry">Github
 					Repository of Main Project</a> <br> <a
 					href="https://github.com/Gogistics/prjDjangoMongoOnGCE">Github
 					Repository of Development on Google Compute Engine</a>
-			</p>
+			</div>
 
 
 			<div style="width: 400px; height: 50px; margin: 50px auto;">
@@ -434,7 +415,7 @@
 				<div class="row">
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Google Datastore</h4>
-						<br> <img alt="app_engine" src="/img/datastore_icon.png"
+						<br> <img alt="app_engine" src="/img/app-engine.png"
 							class="img-responsive icon"> <br>
 
 						<p style="font-size: 13px; text-align: justify;">Use a
@@ -443,7 +424,7 @@
 							supports transactions as well as robust, SQL-like queries...</p>
 						<p>
 							<a href="https://cloud.google.com/appengine/docs" target="_blank"
-								class="btn btn-primary" title="Google Datastore Introduction">Learn
+								class="btn btn-primary" title="Google App Engine Introduction">Learn
 								More &raquo;</a>
 						</p>
 
@@ -454,7 +435,7 @@
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>Google Blobstore</h4>
 
-						<br> <img alt="compute_engine" src="/img/datastore_icon.png"
+						<br> <img alt="compute_engine" src="/img/compute-engine.png"
 							class="img-responsive icon"> <br>
 
 						<p style="font-size: 13px; text-align: justify;">The Blobstore
@@ -472,10 +453,10 @@
 							it can read the value directly using a streaming file-like
 							interface...</p>
 						<p>
-							<a
-								href="http://www.mongodb.org/"
-								target="_blank" class="btn btn-primary"
-								title="Google Blobstore Introduction">Learn More &raquo;</a>
+							<a href="https://cloud.google.com/appengine/docs/python/blobstore/" target="_blank"
+								class="btn btn-primary"
+								title="Google Blobstore Introduction">Learn More
+								&raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 							We use blobstore for storing images and videos</p>
@@ -485,18 +466,14 @@
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<h4>MongoDB</h4>
 
-						<br> <img alt="compute_engine" src="/img/mongodb_icon.png"
+						<br> <img alt="compute_engine" src="/img/compute-engine.png"
 							class="img-responsive icon"> <br>
 
-						<p style="font-size: 13px; text-align: justify;">MongoDB (from
-							"humongous") is a cross-platform document-oriented database.
-							Classified as a NoSQL database, MongoDB eschews the traditional
-							table-based relational database structure in favor of JSON-like
-							documents with dynamic schemas (MongoDB calls the format BSON),
-							making the integration of data in certain types of applications
-							easier and faster. Released under a combination of the GNU Affero
-							General Public License and the Apache License, MongoDB is free
-							and open-source software...</p>
+						<p style="font-size: 13px; text-align: justify;">Google
+							Container Engine is a hosted container management platform, that
+							runs and manages Docker containers on Google Compute Engine
+							virtual machines. It's powered by the open source technology
+							Kubernetes...</p>
 						<p>
 							<a href="https://cloud.google.com/compute/docs/containers"
 								target="_blank" class="btn btn-primary"
@@ -504,8 +481,8 @@
 								&raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							We use MongoDB with Django on Compute Engine; mongoengine is used
-							as document-object mapper</p>
+							We build up the clster on Google Conatiner Engine for handling
+							the data analysis</p>
 					</div>
 				</div>
 			</div>

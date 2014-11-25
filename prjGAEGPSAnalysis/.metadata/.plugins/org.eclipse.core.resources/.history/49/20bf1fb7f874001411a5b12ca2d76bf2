@@ -45,28 +45,25 @@
 			<h2>
 				Project-G<sup>2</sup>
 			</h2>
-			<br>
-			<h4 class="intro_title">Goal</h4>
-			<p class="intro_content">
-				<span>The aim is <span style="color: #f00;">Internet of Things</span></span>
+			<p style="color: #555; margin: 50px auto;">
+				The aim is <span style="color: #f00;">Internet of Things</span>
 			</p>
-			<br>
-			<h4 class="intro_title">Plans</h4>
-			<p class="intro_content">
-				<span>Short-Term: Building GPS module, collecting data from
-					satellites, and then analyze the data with AI algorithms</span> <br>
-				<span>Mid-Term: Integrate the prototype module with other
-					interesting gadgets</span> <br> <span>Long-Term: Build the
-					Internet of Things with the devices we build</span> <br>
+			<p style="font-size: 14px; letter-spacing: 2px;">
+				<span>Short-Term:<br>Building GPS module, collecting
+					data from satellites, and then analyze the data with AI algorithms
+				</span> <br> <br> <span>Mid-Term:<br>Integrate the
+					prototype module with other interesting gadgets
+				</span> <br> <br> <span>Long-Term:<br>Build the
+					Internet of Things with the devices we build
+				</span> <br>
 			</p>
-			<br>
-			<h4 class="intro_title">Repositories</h4>
-			<p class="intro_content">
+
+			<div>
 				<a href="https://github.com/hanjangchen/Raspberry">Github
 					Repository of Main Project</a> <br> <a
 					href="https://github.com/Gogistics/prjDjangoMongoOnGCE">Github
 					Repository of Development on Google Compute Engine</a>
-			</p>
+			</div>
 		</div>
 
 

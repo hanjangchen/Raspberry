@@ -1,5 +1,1 @@
 INDEX VERSION 1.122+D:\Raspberry\prjGAEGPSAnalysis\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3874725779.index
-2631182528.index
-1034609835.index
-2378870649.index
