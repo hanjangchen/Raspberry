@@ -733,7 +733,7 @@
 								More &raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							D3.js is utilized for data visualization and interaction with the online maps</p>
+							D3.js is utilized for data visualization and interaction with online map</p>
 					</div>
 				</div>
 			</div>
@@ -771,7 +771,8 @@
 								More &raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Neural Network is utilized for patterns' modeling</p>
+							Neural Network is utilized for constructuring the modules'
+							patterns</p>
 					</div>
 				</div>
 			</div>
