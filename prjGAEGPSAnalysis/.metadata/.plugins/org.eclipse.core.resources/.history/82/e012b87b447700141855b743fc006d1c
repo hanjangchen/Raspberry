@@ -23,15 +23,6 @@
 .d3_charts {
 	font-size: 10px;
 }
-
-.grid .tick{
-	stroke: lightgrey;
-	stroke-opacity: 0.6;
-	shape-rendering: crispEdges;
-}
-.grid path{
-	stroke-width: 0;
-}
 -->
 </style>
 <div class="container">

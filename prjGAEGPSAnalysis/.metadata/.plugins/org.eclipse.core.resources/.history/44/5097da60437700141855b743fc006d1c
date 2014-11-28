@@ -2,6 +2,7 @@
 <my-index-admin-images-upload></my-index-admin-images-upload>
 
 <!-- information details for visitors -->
+<!-- information details for visitors -->
 <style>
 <!--
 .axis path,.axis line {
@@ -26,15 +27,6 @@
 
 .form-control {
 	width: 100% !important;
-}
-
-.grid .tick{
-	stroke: lightgrey;
-	stroke-opacity: 0.6;
-	shape-rendering: crispEdges;
-}
-.grid path{
-	stroke-width: 0;
 }
 -->
 </style>
