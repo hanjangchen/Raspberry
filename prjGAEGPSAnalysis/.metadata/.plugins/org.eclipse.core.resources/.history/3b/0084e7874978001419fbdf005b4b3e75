@@ -71,7 +71,6 @@ var index_page_app, device;
 
 	});
 
-	
 	/* controllers */
 	// for routing to default content on index page
 	var indexPageDispatchController = function($state, $scope, GLOBAL_VALUES) {

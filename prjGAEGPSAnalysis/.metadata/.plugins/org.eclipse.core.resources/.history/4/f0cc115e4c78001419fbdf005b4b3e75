@@ -78,7 +78,7 @@
 
 .inactive:hover {
 	cursor: pointer !important;
-	color: #000 !important;
+	font-weight: bold !important;
 }
 -->
 </style>

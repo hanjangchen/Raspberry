@@ -50,7 +50,6 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin: 5px auto;
-	display: inline-block;
 }
 
 .collapse.in {
@@ -63,22 +62,22 @@
 }
 
 
+<!--  -->
 .active {
-	color: #f00 !important;
-	font-weight: bold !important;
+	color: #333;
 }
 
 .active:hover {
 	cursor: pointer;
+	font-weight: bold;
 }
 
 .inactive {
-	color: #888 !important;
+	color: #fff;
 }
 
 .inactive:hover {
-	cursor: pointer !important;
-	color: #000 !important;
+	cursor: pointer;
 }
 -->
 </style>
@@ -106,10 +105,6 @@
 					ng-class="is_selected('index_introduction') ? 'active' : 'inactive' "
 					ng-click="select_topic('index_introduction')"
 					ui-sref="index_introduction">Introduction</a></li>
-				<li><a
-					ng-class="is_selected('tutorial_google_app_engine') ? 'active' : 'inactive' ">Tutorial of Development on Google App Engine</a>
-				    <a
-				    ng-class="is_selected('tutorial_google_compute_engine') ? 'active' : 'inactive' ">Tutorial of Development on Google Compute Engine</a></li>
 				<li><a
 					ng-class="is_selected('index_data_analysis') ? 'active' : 'inactive' "
 					ng-click="select_topic('index_data_analysis')"

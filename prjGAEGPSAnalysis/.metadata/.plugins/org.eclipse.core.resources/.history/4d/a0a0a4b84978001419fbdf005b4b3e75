@@ -50,7 +50,10 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin: 5px auto;
-	display: inline-block;
+}
+
+.navbar-nav>li>a:hover{
+	font-weight: bold;
 }
 
 .collapse.in {
@@ -60,25 +63,6 @@
 .topic_icon {
 	height: 30px;
 	margin-left: 20px;
-}
-
-
-.active {
-	color: #f00 !important;
-	font-weight: bold !important;
-}
-
-.active:hover {
-	cursor: pointer;
-}
-
-.inactive {
-	color: #888 !important;
-}
-
-.inactive:hover {
-	cursor: pointer !important;
-	color: #000 !important;
 }
 -->
 </style>
@@ -102,14 +86,10 @@
 
 		<div id="menu_list" class="collapse navbar-collapse navHeaderCollapse">
 			<ul class="nav navbar-nav navbar-right text-center">
-				<li><a
+				<li><a 
 					ng-class="is_selected('index_introduction') ? 'active' : 'inactive' "
 					ng-click="select_topic('index_introduction')"
 					ui-sref="index_introduction">Introduction</a></li>
-				<li><a
-					ng-class="is_selected('tutorial_google_app_engine') ? 'active' : 'inactive' ">Tutorial of Development on Google App Engine</a>
-				    <a
-				    ng-class="is_selected('tutorial_google_compute_engine') ? 'active' : 'inactive' ">Tutorial of Development on Google Compute Engine</a></li>
 				<li><a
 					ng-class="is_selected('index_data_analysis') ? 'active' : 'inactive' "
 					ng-click="select_topic('index_data_analysis')"

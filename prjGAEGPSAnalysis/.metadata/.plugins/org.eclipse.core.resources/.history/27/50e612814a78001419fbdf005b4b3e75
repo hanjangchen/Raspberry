@@ -90,6 +90,7 @@ var index_page_app, device;
 
 		$scope.select_topic = function(section) {
 			$scope.selected = section;
+			alert(section);
 		}
 
 		$scope.is_selected = function(section) {
