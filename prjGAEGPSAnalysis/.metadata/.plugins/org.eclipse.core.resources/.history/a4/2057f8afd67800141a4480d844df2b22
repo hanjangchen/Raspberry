@@ -223,11 +223,11 @@ var index_page_app, device;
 			if (min_val <= 767) {
 				chart_width = 275;
 				chart_height = 130;
-				xAxis_format = "%H:%M"; // current format is not correct and should change
+				xAxis_format = "%H:%M";
 			} else {
 				chart_width = 960;
 				chart_height = 500;
-				xAxis_format = "%X"; // current format is not correct and should change
+				xAxis_format = "%X";
 			}
 
 			// basic setting

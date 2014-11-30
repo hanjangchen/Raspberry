@@ -158,7 +158,7 @@ rect.pane {
 
 		<!-- D3 feature testing -->
 	<div class="row" style="margin-bottom: 60px;">
-		<div id="chart_testing" style="font-size: 10px; background-color: #eee; padding: 10px"></div>
+		<div id="chart_testing" style="font-size: 10px; background-color: #bbb; padding: 10px"></div>
 		<div id="footer">
 			<span>…</span>
 			<div class="hint">(mousewheel to zoom, drag to pan)</div>
@@ -187,7 +187,7 @@ rect.pane {
 
 		var m = {
 			top : 5,
-			right : 30,
+			right : 40,
 			bottom : 20,
 			left : 0
 		}, w = chart_width - m.left - m.right, h = chart_height - m.top

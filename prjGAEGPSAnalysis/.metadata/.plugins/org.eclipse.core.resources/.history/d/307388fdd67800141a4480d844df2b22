@@ -235,7 +235,7 @@ var index_page_app, device;
 				top : 10,
 				right : 50,
 				bottom : 50,
-				left : 30
+				left : 50
 			}, width = chart_width - margin.left - margin.right, height = chart_height
 					- margin.top - margin.bottom;
 
