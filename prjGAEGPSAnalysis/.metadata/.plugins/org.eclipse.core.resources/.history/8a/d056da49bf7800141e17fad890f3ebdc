@@ -112,25 +112,6 @@
 					</p>
 				</div>
 			</div>
-			
-			<div>
-				<div>
-					<img alt="randy_huang" src="/img/randy_huang_profile.png"
-						style="height: 150px; border-radius: 50%;">
-				</div>
-				<br>
-				<div>
-					<h4 style="font-weight: 800; font-style: italic;">
-						Randy Huang (Software)<span><a
-							class="glyphicon glyphicon-envelope" href="mailto:[[email]]"
-							title="Contact Alan Tai"
-							style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
-					</h4>
-					<p style="font-size: 13px; text-align: center; font-weight: 400;">
-						Open data open government
-					</p>
-				</div>
-			</div>
 		</div>
 
 		<!-- content -->
