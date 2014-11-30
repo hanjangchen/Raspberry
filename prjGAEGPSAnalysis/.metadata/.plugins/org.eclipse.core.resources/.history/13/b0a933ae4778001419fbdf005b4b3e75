@@ -37,7 +37,7 @@
 }
 
 .navbar-nav {
-	margin-top: 20px;
+	margin-top: 60px;
 	width: 100%;
 }
 
@@ -52,17 +52,12 @@
 	margin: 5px auto;
 }
 
-.navbar-nav>li>a:hover{
-	font-weight: bold;
-}
-
 .collapse.in {
 	display: block !important;
 }
 
-.topic_icon {
-	height: 30px;
-	margin-left: 20px;
+.topic_icon{
+
 }
 -->
 </style>
@@ -72,8 +67,8 @@
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<!-- company icon -->
-			<a class="navbar-brand" href="/" title="Go to Front Page"><img
-				alt="icon_gps" src="/img/icon_gps.png" class="topic_icon"></a>
+			<a class="navbar-brand topic_icon" href="/" title="Go to Front Page"><img
+				alt="icon_gps" src="/img/icon_gps.png" style="height: 30px; margin-left: 20px;"></a>
 
 			<!-- list icon -->
 			<button id="list_icon" type="button" class="navbar-toggle"
@@ -86,13 +81,13 @@
 
 		<div id="menu_list" class="collapse navbar-collapse navHeaderCollapse">
 			<ul class="nav navbar-nav navbar-right text-center">
-				<li><a 
+				<li
 					ng-class="is_selected('index_introduction') ? 'active' : 'inactive' "
-					ng-click="select_topic('index_introduction')"
+					ng-click="select_topic('index_introduction')"><a
 					ui-sref="index_introduction">Introduction</a></li>
-				<li><a
+				<li
 					ng-class="is_selected('index_data_analysis') ? 'active' : 'inactive' "
-					ng-click="select_topic('index_data_analysis')"
+					ng-click="select_topic('index_data_analysis')"><a
 					ui-sref="index_data_analysis">Data Analysis</a></li>
 			</ul>
 		</div>

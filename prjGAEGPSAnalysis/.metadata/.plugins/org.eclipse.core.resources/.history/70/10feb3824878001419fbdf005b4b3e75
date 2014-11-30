@@ -52,10 +52,6 @@
 	margin: 5px auto;
 }
 
-.navbar-nav>li>a:hover{
-	font-weight: bold;
-}
-
 .collapse.in {
 	display: block !important;
 }

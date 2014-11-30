@@ -67,7 +67,7 @@ var index_page_app, device;
 							+ '/index_data_analysis.html',
 				});
 
-		$urlRouterProvider.otherwise('/index_introduction'); // default page
+		$urlRouterProvider.otherwise('/index_introduction'); // defualt page
 
 	});
 
