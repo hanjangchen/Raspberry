@@ -118,5 +118,4 @@
 	function handle_failed_ajax(response){
 		console.log(JSON.stringify(response,2,2));
 	}
-
 })();

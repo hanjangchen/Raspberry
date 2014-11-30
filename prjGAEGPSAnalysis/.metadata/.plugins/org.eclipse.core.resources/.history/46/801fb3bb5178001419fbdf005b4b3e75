@@ -1,0 +1,136 @@
+<!-- sub-template for admin to upload images and related information -->
+<my-index-admin-images-upload></my-index-admin-images-upload>
+
+<!-- information details for visitors -->
+<style>
+<!--
+.axis path,.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.x.axis path {
+	display: none;
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 1.5px;
+}
+
+.d3_chart {
+	font-size: 6px;
+}
+
+.form-control {
+	width: 100% !important;
+}
+
+.grid .tick{
+	stroke: lightgrey;
+	stroke-opacity: 0.6;
+	shape-rendering: crispEdges;
+}
+.grid path{
+	stroke-width: 0;
+}
+-->
+</style>
+<div ng-controller="indexImagesDetailListCtrl as ctrl">
+	<div class="container">
+		<div class="row">
+			<!-- ng-paginator control panel -->
+			<div>
+				<br>
+				<h4>Control Panel</h4>
+				<div>
+
+					<div>
+						<label>Max-Pages</label> <input type="number" min="1" max="10"
+							class="form-control" ng-model="pageSize">
+					</div>
+					<label>Filter</label> <input ng-model="q" id="search"
+						class="form-control" placeholder="Filter by Keywords">
+				</div>
+			</div>
+
+			<!-- ng-pagination list -->
+			<div>
+				<br>
+				<h4>Images List</h4>
+				<table class="table table-striped">
+					<tbody>
+						<tr
+							dir-paginate="item in ctrl.imgs_detail | filter:q | itemsPerPage: pageSize"
+							current-page="currentPage">
+							<td>
+								<h3>Image Title [[item.img_title]]</h3>
+								<p style="font-size: 14px;">
+									<span>Publish Time-</span> [[item.create_datetime]]
+								</p>
+								<h4>Description</h4>
+								<p style="font-size: 14px;">[[item.img_description]]</p> <img
+								alt="analysis_img" src="[[item.img_blob_url]]"
+								class="img-responsive">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- pagination controller block -->
+			<div ng-controller="indexImagesDetailListPaginationCtrl"
+				style="border: none; border-bottom: #aaa dotted 1px; margin: 1px auto;">
+				<div class="text-center">
+					<dir-pagination-controls boundary-links="true"
+						on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-controls>
+				</div>
+			</div>
+		</div>
+
+		<!--  -->
+		<div class="row">
+			<div ng-controller="indexDataAnalysisListCtrl as ctrl">
+				<!-- ng-paginator control panel -->
+				<div>
+					<h4>Data Analysis List</h4>
+					<br>
+					<h4>Control Panel</h4>
+					<div>
+						<label>Max-Pages on Each List</label> <input type="number" min="1"
+							max="10" class="form-control" ng-model="pageSize">
+					</div>
+					<div>
+						<label for="search">Filter</label> <input ng-model="q" id="search"
+							class="form-control" placeholder="Filter by Keywords">
+					</div>
+				</div>
+				<br>
+				<!-- ng-pagination list -->
+				<div>
+					<div
+						dir-paginate-data-analysis="item in ctrl.data_ary | filter:q | itemsPerPageDataAnalysis: pageSize"
+						current-page="currentPage">
+						<div id="[[item.id]]" class="d3_chart"></div>
+						<input type="button" value="Show Chart"
+							ng-click="ctrl.visulaize_data([[item.id]], [[item.sub_data]])">
+							
+						<hr style="border: none; border-bottom: solid 1px #bbb;">
+					</div>
+				</div>
+
+				<!-- pagination controller block -->
+				<div ng-controller="indexDataAnalysisListPaginationCtrl"
+					style="border: none; border-bottom: #aaa dotted 1px; margin: 1px auto;">
+					<div class="text-center">
+						<dir-pagination-data-analysis-controls boundary-links="true"
+							on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-data-analysis-controls>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
