@@ -64,7 +64,7 @@ var index_page_app, device;
 					url : '/index_data_analysis',
 					parent : 'index_page',
 					templateUrl : '/ng_templates/' + device
-							+ '/data_analysis/data_analysis.html',
+							+ '/data_analysis.html',
 				});
 
 		$urlRouterProvider.otherwise('/index_introduction'); // default page

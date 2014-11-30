@@ -1,8 +1,5 @@
 <!-- front page template -->
 <style>
-.front_page_block{
-	height: 100%
-}
 .vertical-center {
 	min-height: 100% !important;
 	min-height: 100vh !important;
@@ -15,8 +12,9 @@
 	background-color: transparent !important;
 }
 </style>
-<div class="front_page_block">
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 jumbotron vertical-center text-center">
+<div style="height: 100%">
+	<div
+		class="col-xs-12 col-sm-12 col-md-12 col-lg-12 jumbotron vertical-center text-center">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div>
 				<a href="/base/index" target="_blank" title="Go to GPS Analysis Index Page"><img alt="topic_logo" src="/img/icon_gps.png" style="height: 60px;"></a>
