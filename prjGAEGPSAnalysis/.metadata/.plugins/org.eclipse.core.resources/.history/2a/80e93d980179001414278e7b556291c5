@@ -170,7 +170,7 @@ rect.pane {
 
 <script type="text/javascript">
 	(function() {
-		// init svg defulat size and the formats of axis' label based on device size
+		// device size
 		var device_width = screen.width;
 		var device_height = screen.height;
 		var min_val = Math.min(device_width, device_height);
@@ -185,7 +185,6 @@ rect.pane {
 			xAxis_format = "%X";
 		}
 
-		// defualt size of svg element
 		var m = {
 			top : 5,
 			right : 30,
@@ -196,10 +195,10 @@ rect.pane {
 				.format("%Y");
 
 		// Scales. Note the inverted domain for the y-scale: bigger is up!
-		var x = d3.time.scale().range([ 0, w ]),
-			y = d3.scale.linear().range([ h, 0 ]),
-			xAxis = d3.svg.axis().scale(x).orient("bottom").tickSize(-h, 0).ticks(4).tickPadding(10),
-			yAxis = d3.svg.axis().scale(y).tickFormat(d3.format("s")).orient("left"); // d3.format("s") for mobile version
+		var x = d3.time.scale().range([ 0, w ]), y = d3.scale.linear().range(
+				[ h, 0 ]), xAxis = d3.svg.axis().scale(x).orient("bottom")
+				.tickSize(-h, 0).ticks(4).tickPadding(10), yAxis = d3.svg.axis().scale(y).tickFormat(d3.format("s"))
+				.orient("left");
 
 		// An area generator.
 		var area = d3.svg.area().interpolate("step-after").x(function(d) {

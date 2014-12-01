@@ -199,7 +199,7 @@ rect.pane {
 		var x = d3.time.scale().range([ 0, w ]),
 			y = d3.scale.linear().range([ h, 0 ]),
 			xAxis = d3.svg.axis().scale(x).orient("bottom").tickSize(-h, 0).ticks(4).tickPadding(10),
-			yAxis = d3.svg.axis().scale(y).tickFormat(d3.format("s")).orient("left"); // d3.format("s") for mobile version
+			yAxis = d3.svg.axis().scale(y).tickFormat(d3.format("s")).orient("left"); // d3.format("s") for mobile versio
 
 		// An area generator.
 		var area = d3.svg.area().interpolate("step-after").x(function(d) {
