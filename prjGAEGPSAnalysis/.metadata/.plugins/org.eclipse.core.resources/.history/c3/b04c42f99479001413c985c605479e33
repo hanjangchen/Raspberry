@@ -27,17 +27,15 @@
 	margin: 5px auto;
 }
 
-.intro_title {
+.intro_title{
 	font-weight: bold;
 }
-
-.intro_content,.intro_content>span {
+.intro_content, .intro_content>span{
 	color: #555;
 	font-size: 14px;
 	letter-spacing: 2px;
 }
-
-.intro_content>a {
+.intro_content>a{
 	color: #3296fd;
 	font-size: 13px;
 	letter-spacing: 2px;
@@ -51,8 +49,8 @@
 			<h1 class="intro_title">
 				Project-G<sup>2</sup>
 			</h1>
-			<br> <br>
-
+			<br><br>
+			
 			<h4 class="intro_title">Goal</h4>
 			<p class="intro_content">
 				<span style="color: #f00;">Internet of Things</span>
@@ -76,7 +74,6 @@
 			</p>
 
 
-			<!-- 
 			<div style="width: 400px; height: 50px; margin: 50px auto;">
 				<script>
 					(function() {
@@ -93,7 +90,6 @@
 				</script>
 				<gcse:search></gcse:search>
 			</div>
-		 	-->
 		</div>
 
 		<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"
@@ -102,8 +98,7 @@
 			<br>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 				<div>
-					<img alt="han_jang_chen"
-						src="/img/contributors/han_jang_chen_profile.png"
+					<img alt="han_jang_chen" src="/img/contributors/han_jang_chen_profile.png"
 						style="height: 150px; border-radius: 50%;">
 				</div>
 				<br>
@@ -138,7 +133,7 @@
 					</p>
 				</div>
 			</div>
-
+			
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 				<div>
 					<img alt="alan_tai" src="/img/contributors/randy_huang_profile.png"
@@ -153,7 +148,8 @@
 							style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
 					</h4>
 					<p style="font-size: 13px; text-align: center; font-weight: 400;">
-						Open data, open government</p>
+						Open data, open government
+					</p>
 				</div>
 			</div>
 		</div>
@@ -359,9 +355,10 @@
 					</p>
 
 					<br> <img alt="xbee_module" src="/img/xbee_module_1.jpg"
-						class="img-responsive"> <br> <br> <img
-						alt="xbee_module" src="/img/xbee_pro_s3b.jpg"
 						class="img-responsive"> <br>
+						
+					<br> <img alt="xbee_module" src="/img/xbee_pro_s3b.jpg"
+					class="img-responsive"> <br>
 
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 						The Xbee we utilize is XBee 1mW Trace Antenna - Series 1. This is
@@ -497,9 +494,10 @@
 							it can read the value directly using a streaming file-like
 							interface...</p>
 						<p>
-							<a href="http://www.mongodb.org/" target="_blank"
-								class="btn btn-primary" title="Google Blobstore Introduction">Learn
-								More &raquo;</a>
+							<a
+								href="http://www.mongodb.org/"
+								target="_blank" class="btn btn-primary"
+								title="Google Blobstore Introduction">Learn More &raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 							We use blobstore for storing images and videos</p>
@@ -757,8 +755,7 @@
 								More &raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							D3.js is utilized for data visualization and interaction with the
-							online maps</p>
+							D3.js is utilized for data visualization and interaction with the online maps</p>
 					</div>
 				</div>
 			</div>

@@ -86,11 +86,11 @@ var index_page_app, device;
 		else{
 		    $state.transitionTo('index_introduction');
 		}
-		/*
+		
 		
 		if ($state.current.name !== 'index_introduction') {
 			$state.transitionTo('index_introduction');
-		}*/
+		}
 	}
 	indexPageDispatchController.$inject = [ '$state', '$scope', 'GLOBAL_VALUES' ];
 	index_page_app.controller('indexPageDispatchCtrl', indexPageDispatchController);
