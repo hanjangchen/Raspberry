@@ -12,6 +12,7 @@
 		top: 0px;
 		left: 0px;
 		font-family: 微軟正黑體, segoe ui;
+		
 	}
 	html{
 		width: 100%;
