@@ -36,7 +36,7 @@
 	letter-spacing: 2px;
 }
 
-<!-- project calendar -->
+
 #project_calendar {
   font: 10px sans-serif;
   shape-rendering: crispEdges;
@@ -803,3 +803,17 @@
 	</div>
  -->
 </div>
+
+<style>
+<!--
+
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+/* project calendar */
+ 
+ 
+//-->
+</script>
