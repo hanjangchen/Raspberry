@@ -108,8 +108,8 @@
 			<div id="project_calendar"></div>
 			<br>
 			<div>
-			<h4 class="intro_title">Project Daily Schedule</h4>
-			<span id="project_daily_schedule" class="intro_content">Daily Schedule Detail...</span>
+			<h3>Project Daily Schedule</h3>
+			<p id="project_daily_schedule" class="intro_content">Daily Schedule Detail...</p>
 			</div>
 			<br>
 			
