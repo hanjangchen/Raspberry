@@ -891,7 +891,7 @@ var rect = svg.selectAll(".day")
     .attr("height", cellSize)
     .attr("x", function(d) { return week(d) * cellSize; })
     .attr("y", function(d) { return day(d) * cellSize; })
-    .datum(format).on("mousehover", mousehover).on("mouseup", mouseup);
+    .datum(format).on("mousehover", mousehover);
 
 rect.append("title")
     .text(function(d) { return d; });
@@ -927,11 +927,11 @@ function monthPath(t0) {
 
 //
 function mousehover(d, i){
-	alert(d.Open);
+	alert(d);
 }
 
 function mouseup(d, i){
-	$("#project_daily_schedule").text(d);
+	dailySchedule.text(d);
 }
 //
 

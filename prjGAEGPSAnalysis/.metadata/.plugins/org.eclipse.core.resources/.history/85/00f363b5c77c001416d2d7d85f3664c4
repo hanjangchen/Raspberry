@@ -927,7 +927,7 @@ function monthPath(t0) {
 
 //
 function mousehover(d, i){
-	alert(d.Open);
+	alert(d);
 }
 
 function mouseup(d, i){

@@ -56,9 +56,6 @@
   fill: #fff;
   stroke: #ccc;
 }
-.day:hover{
-	cursor: pointer;
-}
 
 .month {
   fill: none;
@@ -107,12 +104,7 @@
 			<br>
 			<div id="project_calendar"></div>
 			<br>
-			<div>
-			<p id="project_daily_schedule">Project Daily Schedule</p>
-			</div>
-			<br>
 			
-			<!-- repositories -->
 			<h4 class="intro_title">Repositories</h4>
 			<p class="intro_content">
 				<a href="https://github.com/hanjangchen/Raspberry">&#64;Github
@@ -891,7 +883,7 @@ var rect = svg.selectAll(".day")
     .attr("height", cellSize)
     .attr("x", function(d) { return week(d) * cellSize; })
     .attr("y", function(d) { return day(d) * cellSize; })
-    .datum(format).on("mousehover", mousehover).on("mouseup", mouseup);
+    .datum(format);
 
 rect.append("title")
     .text(function(d) { return d; });
@@ -926,15 +918,11 @@ function monthPath(t0) {
 }
 
 //
-function mousehover(d, i){
-	alert(d.Open);
-}
-
-function mouseup(d, i){
-	$("#project_daily_schedule").text(d);
+function mousehover(d, ith){
+	
 }
 //
 
-// d3.select(self.frameElement).style("height", "2910px");
+d3.select(self.frameElement).style("height", "2910px");
 //-->
 </script>

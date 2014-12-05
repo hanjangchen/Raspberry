@@ -90,6 +90,11 @@
 					Internet of Things with the devices we build</span> <br>
 			</p>
 			
+			<!-- project calendar -->
+			<br>
+			<div id="project_calendar"></div>
+			<br>
+			
 			<h4 class="intro_title">Repositories</h4>
 			<p class="intro_content">
 				<a href="https://github.com/hanjangchen/Raspberry">Github

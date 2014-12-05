@@ -108,7 +108,7 @@
 			<div id="project_calendar"></div>
 			<br>
 			<div>
-			<p id="project_daily_schedule">Project Daily Schedule</p>
+			<p>Project Schedule</p>
 			</div>
 			<br>
 			
@@ -891,7 +891,7 @@ var rect = svg.selectAll(".day")
     .attr("height", cellSize)
     .attr("x", function(d) { return week(d) * cellSize; })
     .attr("y", function(d) { return day(d) * cellSize; })
-    .datum(format).on("mousehover", mousehover).on("mouseup", mouseup);
+    .datum(format).on("mousehover", mousehover);
 
 rect.append("title")
     .text(function(d) { return d; });
@@ -927,11 +927,7 @@ function monthPath(t0) {
 
 //
 function mousehover(d, i){
-	alert(d.Open);
-}
-
-function mouseup(d, i){
-	$("#project_daily_schedule").text(d);
+	alert(d);
 }
 //
 
