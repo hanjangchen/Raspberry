@@ -977,12 +977,14 @@ project calendar -->#project_calendar {
 	 console.log(data);
 	 }); */
 
-	 $.getJSON( "https://spreadsheets.google.com/feeds/list/0AkUH5y_KfI3DdE9Qa19OWmNhMklTampRdVJiSDlDaHc/od6/public/values?alt=json-in-script&callback=?",
-
-				function (data) {
-		 $.each(data.feed.entry, function(i,entry) {
-			 console.log(entry);
-		 });
-	 });
+	var mySpreadsheet = 'https://docs.google.com/spreadsheet/ccc?key=0AkUH5y_KfI3DdE9Qa19OWmNhMklTampRdVJiSDlDaHc#gid=1';
+	$("#topics").sheetrock({
+		url : mySpreadsheet,
+		formatting : false,
+		dataHandler : handleData(this)
+	});
+	function handleData(theData) {
+		console.log(JSON.stringify(theData,2,2));
+	}
 //-->
 </script>

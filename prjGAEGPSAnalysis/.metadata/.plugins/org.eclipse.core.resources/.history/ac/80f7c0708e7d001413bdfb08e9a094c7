@@ -979,10 +979,7 @@ project calendar -->#project_calendar {
 
 	 $.getJSON( "https://spreadsheets.google.com/feeds/list/0AkUH5y_KfI3DdE9Qa19OWmNhMklTampRdVJiSDlDaHc/od6/public/values?alt=json-in-script&callback=?",
 
-				function (data) {
-		 $.each(data.feed.entry, function(i,entry) {
-			 console.log(entry);
-		 });
+				function (data) {	
 	 });
 //-->
 </script>
