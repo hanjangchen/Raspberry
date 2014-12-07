@@ -878,7 +878,7 @@ project calendar -->#project_calendar {
 		return d;
 	});
 	
-	// not done yet
+	//
 	svg.append("text").attr("class", "month");
 	scg.append("text").attr("class", "wday").style("text-anchor", "middle");
 	//

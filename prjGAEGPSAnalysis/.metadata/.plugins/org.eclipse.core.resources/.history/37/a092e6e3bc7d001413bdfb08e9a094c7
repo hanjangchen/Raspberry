@@ -64,19 +64,49 @@ project calendar -->#project_calendar {
 	stroke-width: 2px;
 }
 
-.RdYlGn .q0-11{fill:rgb(165,0,38)}
-.RdYlGn .q1-11{fill:rgb(215,48,39)}
-.RdYlGn .q2-11{fill:rgb(244,109,67)}
-.RdYlGn .q3-11{fill:rgb(253,174,97)}
-.RdYlGn .q4-11{fill:rgb(254,224,139)}
-.RdYlGn .q5-11{fill:rgb(255,255,191)}
-.RdYlGn .q6-11{fill:rgb(217,239,139)}
-.RdYlGn .q7-11{fill:rgb(166,217,106)}
-.RdYlGn .q8-11{fill:rgb(102,189,99)}
-.RdYlGn .q9-11{fill:rgb(26,152,80)}
-.RdYlGn .q10-11{fill:rgb(0,104,55)}
+.RdYlGn .q0-11 {
+	fill: rgb(165, 0, 38)
+}
 
+.RdYlGn .q1-11 {
+	fill: rgb(215, 48, 39)
+}
 
+.RdYlGn .q2-11 {
+	fill: rgb(244, 109, 67)
+}
+
+.RdYlGn .q3-11 {
+	fill: rgb(253, 174, 97)
+}
+
+.RdYlGn .q4-11 {
+	fill: rgb(254, 224, 139)
+}
+
+.RdYlGn .q5-11 {
+	fill: rgb(255, 255, 191)
+}
+
+.RdYlGn .q6-11 {
+	fill: rgb(217, 239, 139)
+}
+
+.RdYlGn .q7-11 {
+	fill: rgb(166, 217, 106)
+}
+
+.RdYlGn .q8-11 {
+	fill: rgb(102, 189, 99)
+}
+
+.RdYlGn .q9-11 {
+	fill: rgb(26, 152, 80)
+}
+
+.RdYlGn .q10-11 {
+	fill: rgb(0, 104, 55)
+}
 -->
 </style>
 <div>
@@ -849,6 +879,9 @@ project calendar -->#project_calendar {
 					</div>
 				</div>
 			</div>
+
+			<!-- google calendar -->
+			<div id="agenda"></div>
 		</div>
 	</div>
 </div>
@@ -856,14 +889,16 @@ project calendar -->#project_calendar {
 <script type="text/javascript">
 <!--
 	/* project calendar */
+
 	var width = 960, height = 136, cellSize = 17; // cell size
 
 	var day = d3.time.format("%w"), week = d3.time.format("%U"), percent = d3
 			.format(".1%"), format = d3.time.format("%Y-%m-%d");
 
-	var color = d3.scale.quantize()
-    .domain([-.05, .05])
-    .range(d3.range(11).map(function(d) { return "q" + d + "-11"; }));
+	var color = d3.scale.quantize().domain([ -.05, .05 ]).range(
+			d3.range(11).map(function(d) {
+				return "q" + d + "-11";
+			}));
 
 	var svg = d3.select("#project_calendar").selectAll("svg").data([ 2010 ])
 			.enter().append("svg").attr("width", width).attr("height", height)
@@ -877,11 +912,6 @@ project calendar -->#project_calendar {
 			"text-anchor", "middle").text(function(d) {
 		return d;
 	});
-	
-	// not done yet
-	svg.append("text").attr("class", "month");
-	scg.append("text").attr("class", "wday").style("text-anchor", "middle");
-	//
 
 	var rect = svg.selectAll(".day").data(function(d) {
 		return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1));
@@ -900,20 +930,23 @@ project calendar -->#project_calendar {
 		return d3.time.months(new Date(d, 0, 1), new Date(d + 1, 0, 1));
 	}).enter().append("path").attr("class", "month").attr("d", monthPath);
 
-	var data;
 	d3.csv("/mis/dji.csv", function(error, csv) {
-		data = d3.nest().key(function(d) {
+		var data = d3.nest().key(function(d) {
 			return d.Date;
 		}).rollup(function(d) {
-			console.log(d);
 			return (d[0].Close - d[0].Open) / d[0].Open;
 		}).map(csv);
 		
-		
-		rect.filter(function(d) { return d in data; })
-	      .attr("class", function(d) { return "day " + color(data[d]); })
-	    .select("title")
-	      .text(function(d) { return d + ": " + percent(data[d]); });
+		//
+		console.log(JSON.stringify(csv,2,2));
+
+		rect.filter(function(d) {
+			return d in data;
+		}).attr("class", function(d) {
+			return "day " + color(data[d]);
+		}).select("title").text(function(d) {
+			return d + ": " + percent(data[d]);
+		});
 	});
 
 	function monthPath(t0) {
@@ -924,18 +957,13 @@ project calendar -->#project_calendar {
 				+ "H" + (w0 + 1) * cellSize + "Z";
 	}
 
-	// mouse events; 
+	// mouse events
 	function mouseover(d, i) {
 		// alert(d);
 	}
 
 	function mouseup(d, i) {
-		if(!isNaN(data[d])){
-			$("#project_daily_schedule").text(d + ": " + percent(data[d]));
-		}
-		else{
-			alert("Selected value is not a number!");
-		}
+		$("#project_daily_schedule").text(d);
 	}
 	// end of mouse events
 
@@ -947,6 +975,7 @@ project calendar -->#project_calendar {
 <script type="text/javascript">
 <!--
 	$.getJSON("https://spreadsheets.google.com/feeds/list/0AkUH5y_KfI3DdE9Qa19OWmNhMklTampRdVJiSDlDaHc/od6/public/values?alt=json-in-script&callback=?",
+
 					function(data) {
 						$.each(data.feed.entry, function(i, entry) {
 							console.log(entry.gsx$name.$t);

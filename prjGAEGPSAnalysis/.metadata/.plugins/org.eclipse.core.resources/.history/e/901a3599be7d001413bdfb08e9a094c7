@@ -849,6 +849,9 @@ project calendar -->#project_calendar {
 					</div>
 				</div>
 			</div>
+
+			<!-- google calendar -->
+			<div id="agenda"></div>
 		</div>
 	</div>
 </div>
@@ -856,6 +859,7 @@ project calendar -->#project_calendar {
 <script type="text/javascript">
 <!--
 	/* project calendar */
+
 	var width = 960, height = 136, cellSize = 17; // cell size
 
 	var day = d3.time.format("%w"), week = d3.time.format("%U"), percent = d3
@@ -877,11 +881,6 @@ project calendar -->#project_calendar {
 			"text-anchor", "middle").text(function(d) {
 		return d;
 	});
-	
-	// not done yet
-	svg.append("text").attr("class", "month");
-	scg.append("text").attr("class", "wday").style("text-anchor", "middle");
-	//
 
 	var rect = svg.selectAll(".day").data(function(d) {
 		return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1));
@@ -900,20 +899,21 @@ project calendar -->#project_calendar {
 		return d3.time.months(new Date(d, 0, 1), new Date(d + 1, 0, 1));
 	}).enter().append("path").attr("class", "month").attr("d", monthPath);
 
-	var data;
 	d3.csv("/mis/dji.csv", function(error, csv) {
-		data = d3.nest().key(function(d) {
+		var data = d3.nest().key(function(d) {
 			return d.Date;
 		}).rollup(function(d) {
-			console.log(d);
 			return (d[0].Close - d[0].Open) / d[0].Open;
 		}).map(csv);
-		
-		
-		rect.filter(function(d) { return d in data; })
-	      .attr("class", function(d) { return "day " + color(data[d]); })
-	    .select("title")
-	      .text(function(d) { return d + ": " + percent(data[d]); });
+
+		//
+		rect.filter(function(d) {
+			return d in data;
+		}).attr("class", function(d) {
+			return "day " + color(data[d]);
+		}).select("title").text(function(d) {
+			return d + ": " + percent(data[d]);
+		});
 	});
 
 	function monthPath(t0) {
@@ -924,18 +924,13 @@ project calendar -->#project_calendar {
 				+ "H" + (w0 + 1) * cellSize + "Z";
 	}
 
-	// mouse events; 
+	// mouse events
 	function mouseover(d, i) {
 		// alert(d);
 	}
 
 	function mouseup(d, i) {
-		if(!isNaN(data[d])){
-			$("#project_daily_schedule").text(d + ": " + percent(data[d]));
-		}
-		else{
-			alert("Selected value is not a number!");
-		}
+		$("#project_daily_schedule").text(d);
 	}
 	// end of mouse events
 
