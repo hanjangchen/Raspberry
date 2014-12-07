@@ -64,7 +64,7 @@
 }
 
 .month_text, .wday{
-	font-size: 10px;
+	font-size: 12px;
 }
 
 
@@ -860,7 +860,7 @@
 <script type="text/javascript">
 <!--
 	/* project calendar */
-	var width = 990, height = 136, cellSize = 17; // cell size
+	var width = 980, height = 136, cellSize = 17; // cell size
 
 	var day = d3.time.format("%w"), week = d3.time.format("%U"), percent = d3
 			.format(".1%"), format = d3.time.format("%Y-%m-%d");
@@ -869,7 +869,7 @@
     .domain([-.05, .05])
     .range(d3.range(11).map(function(d) { return "q" + d + "-11"; }));
 
-	var svg = d3.select("#project_calendar").selectAll("svg").data([ 2010, 2009 ])
+	var svg = d3.select("#project_calendar").selectAll("svg").data([ 2010 ])
 			.enter().append("svg").attr("width", width).attr("height", height)
 			.attr("class", "RdYlGn").append("g").attr(
 					"transform",
@@ -877,15 +877,15 @@
 							+ (height - cellSize * 7 - 1) + ")");
 
 	svg.append("text").attr("transform",
-			"translate(-30," + cellSize * 3.5 + ")rotate(-90)").style(
+			"translate(-20," + cellSize * 3.5 + ")rotate(-90)").style(
 			"text-anchor", "middle").text(function(d) {
 		return d;
 	});
 	
 	// not done yet
 	svg.append("text").attr("class", "month_text").attr("x", 0).attr("y", -5).text("Jan");
-	svg.append("text").attr("class", "wday").style("text-anchor", "middle").attr("x", -12).attr("y", 10).text("M");
-	// not done yet
+	svg.append("text").attr("class", "wday").style("text-anchor", "middle").attr("x", -10).attr("y", 10).text("M");
+	//
 
 	var rect = svg.selectAll(".day").data(function(d) {
 		return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1));
@@ -909,6 +909,7 @@
 		data = d3.nest().key(function(d) {
 			return d.Date;
 		}).rollup(function(d) {
+			console.log(d);
 			return (d[0].Close - d[0].Open) / d[0].Open;
 		}).map(csv);
 		
