@@ -976,10 +976,13 @@ project calendar -->#project_calendar {
 	console.log(data);
 	}); */
 
-	$.getJSON("https://spreadsheets.google.com/feeds/list/0AkUH5y_KfI3DdE9Qa19OWmNhMklTampRdVJiSDlDaHc/od6/public/values?alt=json-in-script&callback=?",
+	$
+			.getJSON(
+					"https://spreadsheets.google.com/feeds/list/0AkUH5y_KfI3DdE9Qa19OWmNhMklTampRdVJiSDlDaHc/od6/public/values?alt=json-in-script&callback=?",
 
 					function(data) {
 						$.each(data.feed.entry, function(i, entry) {
+							// console.log(entry.content.$t);
 							console.log(entry.gsx$name.$t);
 						});
 					});
@@ -992,7 +995,7 @@ project calendar -->#project_calendar {
 							// console.log(entry.content.$t);
 							console.log(entry);
 						});
-					});
+					}); */
 
 	function listEvents(root) {
 		var feed = root.feed;
@@ -1010,9 +1013,7 @@ project calendar -->#project_calendar {
 
 		html.push('</ul>');
 		document.getElementById("agenda").innerHTML = html.join("");
-	} */
+	}
 //-->
 </script>
-<!--
 <script type="text/javascript" src="https://www.google.com/calendar/feeds/gogistics%40gogistics-tw.com/public/basic?alt=json-in-script&callback=listEvents"></script>
- -->

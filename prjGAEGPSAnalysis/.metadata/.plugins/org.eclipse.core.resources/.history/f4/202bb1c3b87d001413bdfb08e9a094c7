@@ -880,7 +880,8 @@ project calendar -->#project_calendar {
 				</div>
 			</div>
 
-			<!-- google calendar -->
+
+
 			<div id="agenda"></div>
 		</div>
 	</div>
@@ -976,15 +977,17 @@ project calendar -->#project_calendar {
 	console.log(data);
 	}); */
 
-	$.getJSON("https://spreadsheets.google.com/feeds/list/0AkUH5y_KfI3DdE9Qa19OWmNhMklTampRdVJiSDlDaHc/od6/public/values?alt=json-in-script&callback=?",
+	$.getJSON(
+					"https://spreadsheets.google.com/feeds/list/0AkUH5y_KfI3DdE9Qa19OWmNhMklTampRdVJiSDlDaHc/od6/public/values?alt=json-in-script&callback=?",
 
 					function(data) {
 						$.each(data.feed.entry, function(i, entry) {
+							// console.log(entry.content.$t);
 							console.log(entry.gsx$name.$t);
 						});
 					});
 
-	/* $.getJSON(
+	$.getJSON(
 					"https://www.google.com/calendar/feeds/gogistics%40gogistics-tw.com/public/basic?alt=json-in-script&callback=listEvents",
 
 					function(data) {
@@ -993,26 +996,22 @@ project calendar -->#project_calendar {
 							console.log(entry);
 						});
 					});
-
+	
 	function listEvents(root) {
-		var feed = root.feed;
-		var entries = feed.entry || [];
-		var html = [ '<ul>' ];
+	    var feed = root.feed;
+	    var entries = feed.entry || [];
+	    var html = ['<ul>'];
 
-		for ( var i = 0; i < entries.length; ++i) {
-			var entry = entries[i];
-			var title = (entry.title.type == 'html') ? entry.title.$t
-					: escape(entry.title.$t);
-			var start = (entry['gd$when']) ? entry['gd$when'][0].startTime : "";
+	    for (var i = 0; i < entries.length; ++i) {
+	      var entry = entries[i];
+	      var title = (entry.title.type == 'html') ? entry.title.$t : escape(entry.title.$t);
+	      var start = (entry['gd$when']) ? entry['gd$when'][0].startTime : "";	
 
-			html.push('<li>', start, ' ', title, '</li>');
-		}
+	      html.push('<li>', start, ' ', title, '</li>');
+	    }
 
-		html.push('</ul>');
-		document.getElementById("agenda").innerHTML = html.join("");
-	} */
+	    html.push('</ul>');
+	    document.getElementById("agenda").innerHTML = html.join("");
+	  }
 //-->
 </script>
-<!--
-<script type="text/javascript" src="https://www.google.com/calendar/feeds/gogistics%40gogistics-tw.com/public/basic?alt=json-in-script&callback=listEvents"></script>
- -->
