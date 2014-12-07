@@ -982,7 +982,7 @@ project calendar -->#project_calendar {
 				function (data) {
 		 $.each(data.feed.entry, function(i,entry) {
 			 // console.log(entry.content.$t);
-			 console.log(entry.gsx$name.$t);
+			 console.log(entry.gsx$name);
 		 });
 	 });
 //-->
