@@ -201,8 +201,8 @@
 				<div>
 					<h4 style="font-weight: 800; font-style: italic;">
 						Randy Huang (Software)<span><a
-							class="glyphicon glyphicon-envelope" href="mailto:randyh0329@gmail.com"
-							title="Contact Randy Huang"
+							class="glyphicon glyphicon-envelope" href="mailto:[[email]]"
+							title="Contact Alan Tai"
 							style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
 					</h4>
 					<p style="font-size: 13px; text-align: center; font-weight: 400;">
@@ -949,7 +949,7 @@
 
 <script type="text/javascript">
 <!--
-// https://docs.google.com/spreadsheets/d/1SWwXdVpeFWi1cHcF5sUHj47qXunqCo5i1D2jeGhzHaE/pubhtml?gid=0&single=true ; spreadsheet on Gogistics Cloud
+// https://docs.google.com/spreadsheets/d/1SWwXdVpeFWi1cHcF5sUHj47qXunqCo5i1D2jeGhzHaE/pubhtml?gid=0&single=true
 	$.getJSON("https://spreadsheets.google.com/feeds/list/0AkUH5y_KfI3DdE9Qa19OWmNhMklTampRdVJiSDlDaHc/od6/public/values?alt=json-in-script&callback=?",
 					function(data) {
 						$.each(data.feed.entry, function(i, entry) {
