@@ -860,7 +860,7 @@
 <script type="text/javascript">
 <!--
 	/* project calendar */
-	var width = 990, height = 145, cellSize = 17; // cell size
+	var width = 990, height = 136, cellSize = 17; // cell size
 
 	var day = d3.time.format("%w"), week = d3.time.format("%U"), current_month = d3.time.format("%m"), percent = d3
 			.format(".1%"), format = d3.time.format("%Y-%m-%d");
@@ -881,16 +881,15 @@
 			"text-anchor", "middle").text(function(d) { return d; });
 	
 	// not done yet
-	var months = [], months_index = [], years = [2010, 2009], days = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
-	// svg.selectAll(".month_text").data([0,1,2,3,4,5,6,7,8,9,10,11]).enter().append("text").attr("class", "month_text").attr("x", function(d){ return d * (d == 2 ? 80 : 90)}).attr("y", -5).text("Jan");
-	svg.selectAll(".month_text").data(function(d) {return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1));}).enter().append("text").attr("class", "month_text").attr("x", function(d){if(months_index.indexOf(current_month(d)) === -1){ return week(d) * cellSize }; if(months_index.length === 12){months_index = []}}).attr("y", -5).text(function(d){ if(months.indexOf(current_month(d)) === -1){ months.push(current_month(d)); return current_month(d)}; if(months.length === 12){months = []} });
-	svg.selectAll(".wday").data([0,1,2,3,4,5,6]).enter().append("text").attr("class", "wday").style("text-anchor", "middle").attr("x", -12).attr("y", function(d){ return (d + 1) * 17 - 8}).text(function(d){return days[d]});
+	svg.selectAll(".month_text").data([0,1,2,3,4,5,6,7,8,9,10,11]).enter().append("text").attr("class", "month_text").attr("x", function(d){ return d * (d == 2 ? 80 : 90)}).attr("y", -5).text("Jan");
+	svg.append("text").attr("class", "wday").style("text-anchor", "middle").attr("x", -12).attr("y", 10).text("M");
 	// not done yet
 
 	var rect = svg.selectAll(".day").data(function(d) {
 		return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1));
 	}).enter().append("rect").attr("class", "day").attr("width", cellSize)
 			.attr("height", cellSize).attr("x", function(d) {
+				console.log(current_month(d));
 				return week(d) * cellSize;
 			}).attr("y", function(d) {
 				return day(d) * cellSize;
