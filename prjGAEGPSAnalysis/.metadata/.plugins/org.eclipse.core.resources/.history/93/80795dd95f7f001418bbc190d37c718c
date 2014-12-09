@@ -182,7 +182,7 @@
 			style="border: none; border-bottom: dotted 1px #bbb; padding-bottom: 50px;">
 			<h2>Contributors Profile</h2>
 			<br>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 				<div>
 					<img alt="han_jang_chen"
 						src="/img/contributors/han_jang_chen_profile.png"
@@ -201,7 +201,7 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 				<div>
 					<img alt="alan_tai" src="/img/contributors/alan_tai_profile.png"
 						style="height: 150px; border-radius: 50%;">
@@ -221,7 +221,7 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 				<div>
 					<img alt="alan_tai" src="/img/contributors/randy_huang_profile.png"
 						style="height: 150px; border-radius: 50%;">
@@ -916,11 +916,11 @@
 											if (!(datetime in spreadsheet_data)) {
 												spreadsheet_data[datetime] = {};
 												spreadsheet_data[datetime]['count'] = 1;
-												spreadsheet_data[datetime]['detail'] = [ entry.gsx$schedule.$t + " ; Owners => " + entry.gsx$owners.$t ];
+												spreadsheet_data[datetime]['detail'] = [ entry.gsx$schedule.$t + " => " + entry.gsx$owners.$t ];
 											} else {
 												spreadsheet_data[datetime]['count'] += 1;
 												spreadsheet_data[datetime]['detail']
-														.push(entry.gsx$schedule.$t + " ; Owners => " + entry.gsx$owners.$t);
+														.push(entry.gsx$schedule.$t);
 											}
 											console.log("Datetime-"
 													+ entry.gsx$datetime.$t
