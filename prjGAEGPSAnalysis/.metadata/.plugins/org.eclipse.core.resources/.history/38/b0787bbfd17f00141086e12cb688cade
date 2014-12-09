@@ -22,82 +22,49 @@
 	margin: 5px auto;
 }
 
-.intro_title {
+.intro_title{
 	font-weight: bold;
 }
-
-.intro_content,.intro_content>span {
+.intro_content, .intro_content>span{
 	color: #555;
 	font-size: 14px;
 	letter-spacing: 2px;
 }
-
-.intro_content>a {
+.intro_content>a{
 	color: #3296fd;
 	font-size: 13px;
 	letter-spacing: 2px;
 }
 
-<!--
-project calendar -->#project_calendar {
-	font: 10px sans-serif;
-	shape-rendering: crispEdges;
+<!-- project calendar -->
+#project_calendar {
+  font: 10px sans-serif;
+  shape-rendering: crispEdges;
 }
 
 .day {
-	fill: #fff;
-	stroke: #ccc;
+  fill: #fff;
+  stroke: #ccc;
 }
 
 .month {
-	fill: none;
-	stroke: #000;
-	stroke-width: 2px;
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
 }
 
-.RdYlGn .q0-11 {
-	fill: rgb(165, 0, 38)
-}
+.RdYlGn .q0-11{fill:rgb(165,0,38)}
+.RdYlGn .q1-11{fill:rgb(215,48,39)}
+.RdYlGn .q2-11{fill:rgb(244,109,67)}
+.RdYlGn .q3-11{fill:rgb(253,174,97)}
+.RdYlGn .q4-11{fill:rgb(254,224,139)}
+.RdYlGn .q5-11{fill:rgb(255,255,191)}
+.RdYlGn .q6-11{fill:rgb(217,239,139)}
+.RdYlGn .q7-11{fill:rgb(166,217,106)}
+.RdYlGn .q8-11{fill:rgb(102,189,99)}
+.RdYlGn .q9-11{fill:rgb(26,152,80)}
+.RdYlGn .q10-11{fill:rgb(0,104,55)}
 
-.RdYlGn .q1-11 {
-	fill: rgb(215, 48, 39)
-}
-
-.RdYlGn .q2-11 {
-	fill: rgb(244, 109, 67)
-}
-
-.RdYlGn .q3-11 {
-	fill: rgb(253, 174, 97)
-}
-
-.RdYlGn .q4-11 {
-	fill: rgb(254, 224, 139)
-}
-
-.RdYlGn .q5-11 {
-	fill: rgb(255, 255, 191)
-}
-
-.RdYlGn .q6-11 {
-	fill: rgb(217, 239, 139)
-}
-
-.RdYlGn .q7-11 {
-	fill: rgb(166, 217, 106)
-}
-
-.RdYlGn .q8-11 {
-	fill: rgb(102, 189, 99)
-}
-
-.RdYlGn .q9-11 {
-	fill: rgb(26, 152, 80)
-}
-
-.RdYlGn .q10-11 {
-	fill: rgb(0, 104, 55)
-}
 -->
 </style>
 <div>
@@ -122,7 +89,7 @@ project calendar -->#project_calendar {
 					interesting gadgets</span> <br> <span>Long-Term: Build the
 					Internet of Things with the devices we build</span> <br>
 			</p>
-
+			
 			<h4 class="intro_title">Repositories</h4>
 			<p class="intro_content">
 				<a href="https://github.com/hanjangchen/Raspberry">Github
@@ -140,8 +107,7 @@ project calendar -->#project_calendar {
 			<br>
 			<div>
 				<div>
-					<img alt="han_jang_chen"
-						src="/img/contributors/han_jang_chen_profile.png"
+					<img alt="han_jang_chen" src="/img/contributors/han_jang_chen_profile.png"
 						style="height: 150px; border-radius: 50%;">
 				</div>
 				<br>
@@ -176,23 +142,23 @@ project calendar -->#project_calendar {
 					</p>
 				</div>
 			</div>
-
+			
 			<div>
 				<div>
-					<img alt="randy_huang"
-						src="/img/contributors/randy_huang_profile.png"
+					<img alt="randy_huang" src="/img/contributors/randy_huang_profile.png"
 						style="height: 150px; border-radius: 50%;">
 				</div>
 				<br>
 				<div>
 					<h4 style="font-weight: 800; font-style: italic;">
 						Randy Huang (Software)<span><a
-							class="glyphicon glyphicon-envelope"
-							href="mailto:randyh0329@gmail.com" title="Contact Randy Huang"
+							class="glyphicon glyphicon-envelope" href="mailto:randyh0329@gmail.com"
+							title="Contact Randy Huang"
 							style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
 					</h4>
 					<p style="font-size: 13px; text-align: center; font-weight: 400;">
-						Open data, open government</p>
+						Open data, open government
+					</p>
 				</div>
 			</div>
 		</div>
@@ -336,8 +302,9 @@ project calendar -->#project_calendar {
 				</p>
 
 				<br> <img alt="xbee_module" src="/img/xbee_module_1.jpg"
-					class="img-responsive"> <br> <br> <img
-					alt="xbee_module" src="/img/xbee_pro_s3b.jpg"
+					class="img-responsive"> <br>
+					
+				<br> <img alt="xbee_module" src="/img/xbee_pro_s3b.jpg"
 					class="img-responsive"> <br>
 
 				<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
@@ -482,8 +449,8 @@ project calendar -->#project_calendar {
 
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-				style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
-				<h3>Database/Data Storage</h3>
+			style="border-bottom: dotted 1px #bbb; margin: 5px auto;">
+				<h3>Database</h3>
 				<div>
 					<h4>Google Datastore</h4>
 					<br> <img alt="app_engine" src="/img/datastore_icon.png"
@@ -530,25 +497,7 @@ project calendar -->#project_calendar {
 					</p>
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 						We use blobstore for storing images and videos</p>
-				</div>
 
-				<div>
-					<h4>Google Drive</h4>
-					<br> <img alt="compute_engine" src="/img/datastore_icon.png"
-						class="img-responsive icon"> <br>
-
-					<p style="font-size: 13px; text-align: justify;">Google Drive
-						is a file storage and synchronization service provided by Google,
-						released on April 24, 2012 which enables user cloud
-						storage, file sharing and collaborative editing...</p>
-					<p>
-						<a
-							href="https://www.google.com/drive/"
-							target="_blank" class="btn btn-primary"
-							title="Google Drive Introduction">Learn More &raquo;</a>
-					</p>
-					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						We use Google spreadsheet to manage the project schedule and integrate spreadsheet data with D3.js calendar feature</p>
 				</div>
 
 				<div>
@@ -566,8 +515,8 @@ project calendar -->#project_calendar {
 						General Public License and the Apache License, MongoDB is free and
 						open-source software...</p>
 					<p>
-						<a href="http://www.mongodb.org/" target="_blank"
-							class="btn btn-primary"
+						<a href="http://www.mongodb.org/"
+							target="_blank" class="btn btn-primary"
 							title="Google Container Engine Introduction">Learn More
 							&raquo;</a>
 					</p>
@@ -790,8 +739,7 @@ project calendar -->#project_calendar {
 							title="Google App Engine Introduction">Learn More &raquo;</a>
 					</p>
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						D3.js is utilized for data visualization and interaction with the
-						online maps</p>
+						D3.js is utilized for data visualization and interaction with the online maps</p>
 				</div>
 			</div>
 

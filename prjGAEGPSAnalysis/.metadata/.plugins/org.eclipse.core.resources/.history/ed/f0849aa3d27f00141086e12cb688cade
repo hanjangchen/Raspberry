@@ -539,7 +539,7 @@ project calendar -->#project_calendar {
 
 					<p style="font-size: 13px; text-align: justify;">Google Drive
 						is a file storage and synchronization service provided by Google,
-						released on April 24, 2012 which enables user cloud
+						released on April 24, 2012,[2][3] which enables user cloud
 						storage, file sharing and collaborative editing...</p>
 					<p>
 						<a
@@ -548,7 +548,7 @@ project calendar -->#project_calendar {
 							title="Google Drive Introduction">Learn More &raquo;</a>
 					</p>
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-						We use Google spreadsheet to manage the project schedule and integrate spreadsheet data with D3.js calendar feature</p>
+						We use blobstore for storing images and videos</p>
 				</div>
 
 				<div>

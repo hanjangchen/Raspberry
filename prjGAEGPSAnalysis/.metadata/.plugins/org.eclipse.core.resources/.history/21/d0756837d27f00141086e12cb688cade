@@ -145,8 +145,7 @@
 			<!-- project daily schedule -->
 			<div>
 				<span id="project_daily_schedule" class="intro_content">Daily
-					Schedule Detail...(Please click the cell above to see the daily
-					schedule)</span>
+					Schedule Detail...(Please click the cell above to see the daily schedule)</span>
 			</div>
 			<br>
 
@@ -588,25 +587,34 @@
 							We use blobstore for storing images and videos</p>
 
 					</div>
-
+					
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>Google Drive</h4>
 
-						<br> <img alt="compute_engine"
-							src="/img/google_drive_icon.png" class="img-responsive icon">
-						<br>
+						<br> <img alt="compute_engine" src="/img/google_drive_icon.png"
+							class="img-responsive icon"> <br>
 
-						<p style="font-size: 13px; text-align: justify;">Google Drive
-							is a file storage and synchronization service provided by Google,
-							released on April 24, 2012 which enables user cloud
-							storage, file sharing and collaborative editing...</p>
+						<p style="font-size: 13px; text-align: justify;">The Blobstore
+							API allows your application to serve data objects, called blobs,
+							that are much larger than the size allowed for objects in the
+							Datastore service. Blobs are useful for serving large files, such
+							as video or image files, and for allowing users to upload large
+							data files. Blobs are created by uploading a file through an HTTP
+							request. Typically, your applications will do this by presenting
+							a form with a file upload field to the user. When the form is
+							submitted, the Blobstore creates a blob from the file's contents
+							and returns an opaque reference to the blob, called a blob key,
+							which you can later use to serve the blob. The application can
+							serve the complete blob value in response to a user request, or
+							it can read the value directly using a streaming file-like
+							interface...</p>
 						<p>
-							<a href="https://www.google.com/drive/" target="_blank"
-								class="btn btn-primary" title="Google Drive Introduction">Learn
+							<a href="http://www.mongodb.org/" target="_blank"
+								class="btn btn-primary" title="Google Blobstore Introduction">Learn
 								More &raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							We use Google spreadsheet to manage the project schedule and integrate spreadsheet data with D3.js calendar feature</p>
+							We use blobstore for storing images and videos</p>
 
 					</div>
 
@@ -913,29 +921,19 @@
 	/* shcedule data from google spradsheet */
 	spreadsheet_data = {};
 	spreadsheet_data_years = [];
-	$
-			.getJSON(
-					"https://spreadsheets.google.com/feeds/list/1SWwXdVpeFWi1cHcF5sUHj47qXunqCo5i1D2jeGhzHaE/od6/public/values?alt=json-in-script&callback=?",
+	$.getJSON("https://spreadsheets.google.com/feeds/list/1SWwXdVpeFWi1cHcF5sUHj47qXunqCo5i1D2jeGhzHaE/od6/public/values?alt=json-in-script&callback=?",
 					function(data) {
-						$
-								.each(
-										data.feed.entry,
+						$.each(data.feed.entry,
 										function(i, entry) {
 											var datetime = entry.gsx$datetime.$t;
 											var date = new Date(datetime);
 											var year = date.getFullYear();
-											var month = (1 + date.getMonth())
-													.toString();
-											month = month.length > 1 ? month
-													: '0' + month;
+											var month = (1 + date.getMonth()).toString();
+											month = month.length > 1 ? month : '0' + month;
 											var day = date.getDate().toString();
-											day = day.length > 1 ? day : '0'
-													+ day;
-											datetime = month + "/" + day + "/"
-													+ year;
-											var year = entry.gsx$datetime.$t
-													.slice(entry.gsx$datetime.$t
-															.lastIndexOf("/") + 1);
+											day = day.length > 1 ? day : '0' + day;
+											datetime = month + "/" + day + "/" + year;
+											var year = entry.gsx$datetime.$t.slice(entry.gsx$datetime.$t.lastIndexOf("/") + 1);
 											year = Number(year);
 											//
 											if (spreadsheet_data_years
@@ -948,15 +946,11 @@
 											if (!(datetime in spreadsheet_data)) {
 												spreadsheet_data[datetime] = {};
 												spreadsheet_data[datetime]['count'] = 1;
-												spreadsheet_data[datetime]['detail'] = [ entry.gsx$schedule.$t
-														+ " ; Owners => "
-														+ entry.gsx$owners.$t ];
+												spreadsheet_data[datetime]['detail'] = [ entry.gsx$schedule.$t + " ; Owners => " + entry.gsx$owners.$t ];
 											} else {
 												spreadsheet_data[datetime]['count'] += 1;
 												spreadsheet_data[datetime]['detail']
-														.push(entry.gsx$schedule.$t
-																+ " ; Owners => "
-																+ entry.gsx$owners.$t);
+														.push(entry.gsx$schedule.$t + " ; Owners => " + entry.gsx$owners.$t);
 											}
 											console.log("Datetime-"
 													+ entry.gsx$datetime.$t
@@ -1061,8 +1055,7 @@
 								.attr("class", "month").attr("d", monthPath);
 
 						var data = spreadsheet_data;
-						rect
-								.filter(function(d) {
+						rect.filter(function(d) {
 									return d in data;
 								})
 								.attr("class", function(d) {
@@ -1095,24 +1088,22 @@
 						}
 
 						function mouseup(d, i) {
-							try {
+							try{
 
 								if (data[d]['detail'] !== undefined) {
 									$("#project_daily_schedule").empty();
 
 									for ( var item in data[d]['detail']) {
-										$("#project_daily_schedule")
-												.append(
-														"<span class='intro_content'>*Date-"
-																+ d
-																+ " ; Schedule-"
-																+ data[d]['detail'][item]
-																+ "</span><br>");
+										$("#project_daily_schedule").append(
+												"<span class='intro_content'>*Date-"
+														+ d + " ; Schedule-"
+														+ data[d]['detail'][item]
+														+ "</span><br>");
 									}
 								} else {
 									alert("No Schedule is on the selected day!");
 								}
-							} catch (e) {
+							}catch(e){
 								console.log(e);
 							}
 						}
