@@ -1068,23 +1068,18 @@
 						}
 
 						function mouseup(d, i) {
-							try{
+							if (data[d]['detail'] !== undefined) {
+								$("#project_daily_schedule").empty();
 
-								if (data[d]['detail'] !== undefined) {
-									$("#project_daily_schedule").empty();
-
-									for ( var item in data[d]['detail']) {
-										$("#project_daily_schedule").append(
-												"<span class='intro_content'>*Date-"
-														+ d + " ; Schedule-"
-														+ data[d]['detail'][item]
-														+ "</span><br>");
-									}
-								} else {
-									alert("No Schedule is on the selected day!");
+								for ( var item in data[d]['detail']) {
+									$("#project_daily_schedule").append(
+											"<span class='intro_content'>*Date-"
+													+ d + " ; Schedule-"
+													+ data[d]['detail'][item]
+													+ "</span><br>");
 								}
-							}catch(e){
-								console.log(e);
+							} else {
+								alert("No Schedule is on the selected day!");
 							}
 						}
 

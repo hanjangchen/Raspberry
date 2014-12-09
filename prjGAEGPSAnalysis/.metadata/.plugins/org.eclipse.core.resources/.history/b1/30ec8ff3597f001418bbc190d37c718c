@@ -145,7 +145,7 @@
 			<!-- project daily schedule -->
 			<div>
 				<span id="project_daily_schedule" class="intro_content">Daily
-					Schedule Detail...(Please click the cell above to see the daily schedule)</span>
+					Schedule Detail...</span>
 			</div>
 			<br>
 
@@ -1035,10 +1035,12 @@
 								.attr("class", "month").attr("d", monthPath);
 
 						var data = spreadsheet_data;
-						rect.filter(function(d) {
+						rect
+								.filter(function(d) {
 									return d in data;
 								})
 								.attr("class", function(d) {
+									console.log(d);
 									return "day " + color(data[d]['count']);
 								})
 								.select("title")
@@ -1068,23 +1070,18 @@
 						}
 
 						function mouseup(d, i) {
-							try{
+							if (data[d]['detail'] !== undefined) {
+								$("#project_daily_schedule").empty();
 
-								if (data[d]['detail'] !== undefined) {
-									$("#project_daily_schedule").empty();
-
-									for ( var item in data[d]['detail']) {
-										$("#project_daily_schedule").append(
-												"<span class='intro_content'>*Date-"
-														+ d + " ; Schedule-"
-														+ data[d]['detail'][item]
-														+ "</span><br>");
-									}
-								} else {
-									alert("No Schedule is on the selected day!");
+								for ( var item in data[d]['detail']) {
+									$("#project_daily_schedule").append(
+											"<span class='intro_content'>*Date-"
+													+ d + " ; Schedule-"
+													+ data[d]['detail'][item]
+													+ "</span><br>");
 								}
-							}catch(e){
-								console.log(e);
+							} else {
+								alert("No Schedule is on the selected day!");
 							}
 						}
 

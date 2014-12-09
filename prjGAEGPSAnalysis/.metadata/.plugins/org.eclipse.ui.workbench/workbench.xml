@@ -55,11 +55,11 @@
 </editorArea>
 <editor id="org.eclipse.wst.html.core.htmlsource.source" name="index_introduction.html" partName="index_introduction.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile/index/index_introduction.html" title="index_introduction.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/mobile/index/index_introduction.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index/index_introduction.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2022" selectionTopPixel="150"/>
+<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="4212" selectionTopPixel="2055"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="index_introduction.html" partName="index_introduction.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop/index/index_introduction.html" title="index_introduction.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/index/index_introduction.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/index/index_introduction.html"/>
-<editorState selectionHorizontalPixel="434" selectionLength="0" selectionOffset="34652" selectionTopPixel="13110"/>
+<editorState selectionHorizontalPixel="203" selectionLength="0" selectionOffset="38726" selectionTopPixel="13994"/>
 </editor>
 <editor id="org.eclipse.wst.html.core.htmlsource.source" name="base.html" partName="base.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/templates/base.html" title="base.html" tooltip="prjGPSAnalysis/src/static/templates/base.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/templates/base.html"/>
@@ -317,19 +317,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/index/index_introduction.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/templates/base.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/templates/base.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index/index_introduction.html"/>
 </editors>
-<item historyLabel="data_analysis.html" index="0">
-<position info="not_deleted" x="7648" y="0"/>
-</item>
-<item historyLabel="index_page_container.js" index="2">
-<position info="not_deleted" x="7621" y="0"/>
-</item>
-<item historyLabel="data_analysis.html" index="1">
-<position info="not_deleted" x="5542" y="0"/>
-</item>
-<item historyLabel="index_page_container.js" index="2">
-<position info="not_deleted" x="7851" y="0"/>
-</item>
 <item historyLabel="data_analysis.html" index="0">
 <position info="not_deleted" x="5401" y="0"/>
 </item>
@@ -465,8 +454,20 @@
 <item historyLabel="base.html" index="18">
 <position info="not_deleted" x="1671" y="0"/>
 </item>
-<item active="true" historyLabel="index_introduction.html" index="16">
+<item historyLabel="index_introduction.html" index="16">
 <position/>
+</item>
+<item historyLabel="index_introduction.html" index="19">
+<position info="not_deleted" x="4212" y="20"/>
+</item>
+<item historyLabel="index_introduction.html" index="16">
+<position info="not_deleted" x="33846" y="0"/>
+</item>
+<item historyLabel="index_introduction.html" index="19">
+<position info="not_deleted" x="4212" y="20"/>
+</item>
+<item active="true" historyLabel="index_introduction.html" index="16">
+<position info="not_deleted" x="33846" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
