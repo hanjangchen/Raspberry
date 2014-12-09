@@ -104,11 +104,18 @@ var index_page_app, device;
 		$scope.select_topic = function(section) {
 			$scope.selected = section;
 			if ($('#list_icon').is(":visible")) {
-				$(".navbar-collapse").collapse('hide');
+				$("#processing_cover").toggle("slow", function(){
+					$(".navbar-collapse").collapse('hide');
+				});
 				
 				// toggle topic content
 				setTimeout(function(){
 					$state.transitionTo(section);
+					
+					setTimeout(function(){
+						$("#processing_cover").toggle("slow");
+					}, 2000);
+					
 				}, 2000);
 			}
 		}

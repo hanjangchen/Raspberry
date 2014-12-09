@@ -103,13 +103,9 @@ var index_page_app, device;
 
 		$scope.select_topic = function(section) {
 			$scope.selected = section;
-			if ($('#list_icon').is(":visible")) {
-				$(".navbar-collapse").collapse('hide');
-				
-				// toggle topic content
-				setTimeout(function(){
-					$state.transitionTo(section);
-				}, 2000);
+			$state.transitionTo(section);
+			if(selected_template !== ''){
+				$scope.toggle_topic_list();
 			}
 		}
 

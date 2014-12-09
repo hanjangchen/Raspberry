@@ -103,14 +103,7 @@ var index_page_app, device;
 
 		$scope.select_topic = function(section) {
 			$scope.selected = section;
-			if ($('#list_icon').is(":visible")) {
-				$(".navbar-collapse").collapse('hide');
-				
-				// toggle topic content
-				setTimeout(function(){
-					$state.transitionTo(section);
-				}, 2000);
-			}
+			$state.transitionTo(section);
 		}
 
 		$scope.is_selected = function(section) {
@@ -119,7 +112,10 @@ var index_page_app, device;
 		
 		$scope.toggle_topic_list = function(){
 			if ($('#list_icon').is(":visible")) {
-				$(".navbar-collapse").collapse('hide');
+				// $(".navbar-collapse").collapse('hide');
+				$(".navbar-collapse").slideToggle("slow", function(){
+					alert("done");
+				});
 			}
 		}
 

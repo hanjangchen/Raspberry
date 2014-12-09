@@ -104,14 +104,16 @@
 			<ul class="nav navbar-nav navbar-right text-center">
 				<li><a
 					ng-class="is_selected('index_introduction') ? 'active' : 'inactive' "
-					ng-click="select_topic('index_introduction')">Introduction</a></li>
+					ng-click="select_topic('index_introduction')"
+					ui-sref="index_introduction">Introduction</a></li>
 				<li><a
 					ng-class="is_selected('tutorial_google_app_engine') ? 'active' : 'inactive' ">Tutorial of Development on Google App Engine</a>
 				    <a
 				    ng-class="is_selected('tutorial_google_compute_engine') ? 'active' : 'inactive' ">Tutorial of Development on Google Compute Engine</a></li>
 				<li><a
 					ng-class="is_selected('index_data_analysis') ? 'active' : 'inactive' "
-					ng-click="select_topic('index_data_analysis')">Data Analysis</a></li>
+					ng-click="select_topic('index_data_analysis')"
+					ui-sref="index_data_analysis">Data Analysis</a></li>
 			</ul>
 		</div>
 	</div>

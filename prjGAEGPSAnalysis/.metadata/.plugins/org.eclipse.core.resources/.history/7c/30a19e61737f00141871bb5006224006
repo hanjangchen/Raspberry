@@ -96,21 +96,23 @@ var index_page_app, device;
 	index_page_app.controller('indexPageDispatchCtrl', indexPageDispatchController);
 
 	// page controllers
-	var myIndexController = function($state, $scope, GLOBAL_VALUES) {
+	var myIndexController = function($q, $state, $scope, GLOBAL_VALUES) {
 		$scope.email = GLOBAL_VALUES.EMAIL;
 		var selected_template = $state.current.name;
 		console.log(selected_template);
 
 		$scope.select_topic = function(section) {
 			$scope.selected = section;
-			if ($('#list_icon').is(":visible")) {
-				$(".navbar-collapse").collapse('hide');
+			
+			function toggle_list(){
+				var deferred = $q.defer();
+
+				$scope.toggle_topic_list();
 				
-				// toggle topic content
-				setTimeout(function(){
-					$state.transitionTo(section);
-				}, 2000);
+				return deferred.promise;
 			}
+			
+			$state.transitionTo(section);
 		}
 
 		$scope.is_selected = function(section) {
@@ -131,7 +133,7 @@ var index_page_app, device;
 			$scope.select_topic('index_introduction');
 		}
 	}
-	myIndexController.$inject = ['$state', '$scope', 'GLOBAL_VALUES' ];
+	myIndexController.$inject = ['$q', '$state', '$scope', 'GLOBAL_VALUES' ];
 	index_page_app.controller('myIndexCtrl', myIndexController);
 
 	

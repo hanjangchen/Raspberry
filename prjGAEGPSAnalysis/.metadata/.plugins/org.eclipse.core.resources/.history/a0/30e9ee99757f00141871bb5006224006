@@ -33,7 +33,6 @@
 }
 
 .navbar-collapse.collapse {
-	display: none !important;
 }
 
 .navbar-nav {
