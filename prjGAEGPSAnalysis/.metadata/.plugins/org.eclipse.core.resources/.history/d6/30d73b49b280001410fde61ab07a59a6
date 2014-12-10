@@ -120,12 +120,12 @@
 				Project-G<sup>2</sup>
 			</h1>
 			<br>
-			<br>
+			
 			
 			<!--  -->
 			<div class="navbar-form">
 				<div class="input-group">
-					<input auto-complete ui-items="topics_keywords" ng-model="searched_keyword"
+					<input auto-complete ui-items="names" ng-model="searched_keyword"
 						class="form-control" placeholder="Search Topic Keyword" /> <span class="input-group-btn">
 						<button class="btn btn-default" type="button">Go</button>
 					</span>
@@ -133,7 +133,7 @@
 				
 			</div>
 			
-			<br>
+			
 			<br>
 
 			<h4 class="intro_title">Goal</h4>

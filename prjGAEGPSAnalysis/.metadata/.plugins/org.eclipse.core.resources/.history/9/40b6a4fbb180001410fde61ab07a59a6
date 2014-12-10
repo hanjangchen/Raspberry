@@ -16,6 +16,7 @@
 
 .navbar-toggle {
 	display: block;
+	margin: 0px 20px;
 }
 
 .navbar-collapse {

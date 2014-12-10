@@ -76,11 +76,6 @@ var index_page_app, device;
 	// for routing to default content on index page
 	var indexPageDispatchController = function($state, $scope, GLOBAL_VALUES) {
 		$scope.email = GLOBAL_VALUES.EMAIL;
-		$scope.topics_keywords = ["john", "bill", "charlie", "robert", "alban", "oscar", "marie", "celine", "brad", "drew", "rebecca", "michel", "francis", "jean", "paul", "pierre", "nicolas", "alfred", "gerard", "louis", "albert", "edouard", "benoit", "guillaume", "nicolas", "joseph"];
-		
-		
-		
-		
 		var selected_template = $state.current.name;
 		console.log(selected_template);
 
@@ -103,9 +98,8 @@ var index_page_app, device;
 	// page controllers
 	var myIndexController = function($state, $scope, GLOBAL_VALUES) {
 		$scope.email = GLOBAL_VALUES.EMAIL;
-		
-		// select topic
 		var selected_template = $state.current.name;
+		console.log(selected_template);
 
 		$scope.select_topic = function(section) {
 			$scope.selected = section;
@@ -140,7 +134,7 @@ var index_page_app, device;
 	myIndexController.$inject = ['$state', '$scope', 'GLOBAL_VALUES' ];
 	index_page_app.controller('myIndexCtrl', myIndexController);
 	
-	// auto-complete field
+	//
 	index_page_app.directive('autoComplete', function($timeout) {
 	    return function(scope, iElement, iAttrs) {
 	            iElement.autocomplete({

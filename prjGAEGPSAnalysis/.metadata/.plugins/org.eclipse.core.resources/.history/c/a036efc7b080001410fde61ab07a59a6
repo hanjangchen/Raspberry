@@ -16,6 +16,10 @@
 
 .navbar-toggle {
 	display: block;
+	margin: 0px 20px;
+}
+
+.navbar-form{
 }
 
 .navbar-collapse {
@@ -79,7 +83,6 @@
 	cursor: pointer !important;
 	color: #000 !important;
 }
-
 -->
 </style>
 
@@ -91,6 +94,15 @@
 			<a class="navbar-brand" href="/" title="Go to Front Page"><img
 				alt="icon_gps" src="/img/icon_gps.png" class="topic_icon"></a>
 
+			<!--  -->
+			<div class="navbar-form">
+				<div class="input-group">
+					<input auto-complete ui-items="names" ng-model="selected_keyword"
+						class="form-control" /> <span class="input-group-btn">
+						<button class="btn btn-default" type="button">Go!</button>
+					</span>
+				</div>
+				
 			<!-- list icon -->
 			<button id="list_icon" type="button" class="navbar-toggle"
 				ng-click="toggle_topic_list()" data-toggle="collapse"
@@ -98,6 +110,7 @@
 				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
+			</div>
 
 		</div>
 

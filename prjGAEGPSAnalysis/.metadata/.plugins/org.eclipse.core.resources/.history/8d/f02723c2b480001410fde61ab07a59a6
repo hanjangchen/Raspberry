@@ -76,11 +76,6 @@ var index_page_app, device;
 	// for routing to default content on index page
 	var indexPageDispatchController = function($state, $scope, GLOBAL_VALUES) {
 		$scope.email = GLOBAL_VALUES.EMAIL;
-		$scope.topics_keywords = ["john", "bill", "charlie", "robert", "alban", "oscar", "marie", "celine", "brad", "drew", "rebecca", "michel", "francis", "jean", "paul", "pierre", "nicolas", "alfred", "gerard", "louis", "albert", "edouard", "benoit", "guillaume", "nicolas", "joseph"];
-		
-		
-		
-		
 		var selected_template = $state.current.name;
 		console.log(selected_template);
 
