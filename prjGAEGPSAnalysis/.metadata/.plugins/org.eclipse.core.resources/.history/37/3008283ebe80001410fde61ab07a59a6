@@ -956,10 +956,10 @@
 											if (!(datetime in spreadsheet_data)) {
 												spreadsheet_data[datetime] = {};
 												spreadsheet_data[datetime]['count'] = 1;
-												spreadsheet_data[datetime]['detail'] = [ "Schedule => " + entry.gsx$schedule.$t + " ; Owners => " + entry.gsx$owners.$t + " ; Status => " + entry.gsx$status.$t];
+												spreadsheet_data[datetime]['detail'] = [ entry.gsx$schedule.$t + " ; Owners => " + entry.gsx$owners.$t + " ; Status => " + entry.gsx$status.$t];
 											} else {
 												spreadsheet_data[datetime]['count'] += 1;
-												spreadsheet_data[datetime]['detail'].push( "Schedule => " + entry.gsx$schedule.$t + " ; Owners => " + entry.gsx$owners.$t + " ; Status => " + entry.gsx$status.$t);
+												spreadsheet_data[datetime]['detail'].push(entry.gsx$schedule.$t + " ; Owners => " + entry.gsx$owners.$t + " ; Status => " + entry.gsx$status.$t);
 											}
 											
 											//console.log("Datetime-" + entry.gsx$datetime.$t + " ; Schedule-" + entry.gsx$schedule.$t);
@@ -1106,7 +1106,7 @@
 												.append(
 														"<span class='intro_content'>*Date-"
 																+ d
-																+ " ; "
+																+ " ; Schedule-"
 																+ data[d]['detail'][item]
 																+ "</span><br>");
 									}
