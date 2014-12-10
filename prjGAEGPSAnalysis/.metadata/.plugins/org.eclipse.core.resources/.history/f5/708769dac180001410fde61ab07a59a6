@@ -98,12 +98,11 @@ var index_page_app, device;
 		}
 		else{
 		    $state.transitionTo('index_introduction');
-		};
+		}
 		
 		$scope.scroll_to_top = function(){
-			$("body, html").animate({
-						scrollTop : $("#search_field").offset().top - 300}, 800);
-		};
+			
+		}
 	}
 	indexPageDispatchController.$inject = [ '$state', '$scope', 'GLOBAL_VALUES' ];
 	index_page_app.controller('indexPageDispatchCtrl', indexPageDispatchController);

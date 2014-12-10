@@ -132,7 +132,7 @@
 
 			<div class="navbar-form">
 				<div class="form-group">
-					<input id="search_field" auto-complete ui-items="topics_keywords"
+					<input auto-complete ui-items="topics_keywords"
 						ng-model="searched_keyword" class="form-control"
 						placeholder="Search Topic Keyword" />
 				</div>
@@ -203,7 +203,7 @@
 			class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"
 			style="border: none; border-bottom: dotted 1px #bbb; padding-bottom: 50px;">
 			<br> <span><a
-				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = ""></a></span>
 			<br>
 			<h2>Contributors Profile</h2>
 			<br>

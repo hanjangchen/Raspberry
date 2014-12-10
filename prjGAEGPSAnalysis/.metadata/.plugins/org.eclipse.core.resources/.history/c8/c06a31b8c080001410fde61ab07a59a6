@@ -1,15 +1,6 @@
 <!-- sub-template for index page -->
 <style>
 <!--
-.scroll_to_top_arrow {
-	color: #ccc;
-	font-size: 2em;
-}
-.scroll_to_top_arrow:hover{
-	cursor: pointer;
-	color: #888;
-}
-
 .row {
 	margin: 100px auto;
 }
@@ -128,18 +119,20 @@
 			<h1 class="intro_title">
 				Project-G<sup>2</sup>
 			</h1>
-			<br> <br>
-
+			<br>
+			<br>
+			
+			<!--  -->
 			<div class="navbar-form">
 				<div class="form-group">
-					<input id="search_field" auto-complete ui-items="topics_keywords"
-						ng-model="searched_keyword" class="form-control"
-						placeholder="Search Topic Keyword" />
+					<input auto-complete ui-items="topics_keywords" ng-model="searched_keyword"
+						class="form-control" placeholder="Search Topic Keyword" />
 				</div>
-
+				
 			</div>
-
-			<br> <br>
+			
+			<br>
+			<br>
 
 			<h4 class="intro_title">Goal</h4>
 			<p class="intro_content">
@@ -147,7 +140,7 @@
 			</p>
 			<br>
 			<h4 class="intro_title">Plans</h4>
-			<p id="plans" class="intro_content">
+			<p id= "plans" class="intro_content">
 				<span>Short-Term: Building GPS module, collecting data from
 					satellites, and then analyze the data with AI algorithms</span> <br>
 				<span>Mid-Term: Integrate the prototype module with other
@@ -199,13 +192,11 @@
 		 	-->
 		</div>
 
-		<div id="contributors_profile"
-			class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"
+		<div id="contributors_profile" class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"
 			style="border: none; border-bottom: dotted 1px #bbb; padding-bottom: 50px;">
-			<br> <span><a
-				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
-			<br>
 			<h2>Contributors Profile</h2>
+			<br>
+			<span><a class="glyphicon glyphicon-circle-arrow-up" style="color: #999; font-size: 2em;"></a></span>
 			<br>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<div>
@@ -617,16 +608,15 @@
 
 						<p style="font-size: 13px; text-align: justify;">Google Drive
 							is a file storage and synchronization service provided by Google,
-							released on April 24, 2012 which enables user cloud storage, file
-							sharing and collaborative editing...</p>
+							released on April 24, 2012 which enables user cloud
+							storage, file sharing and collaborative editing...</p>
 						<p>
 							<a href="https://www.google.com/drive/" target="_blank"
 								class="btn btn-primary" title="Google Drive Introduction">Learn
 								More &raquo;</a>
 						</p>
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							We use Google spreadsheet to manage the project schedule and
-							integrate spreadsheet data with D3.js calendar feature</p>
+							We use Google spreadsheet to manage the project schedule and integrate spreadsheet data with D3.js calendar feature</p>
 
 					</div>
 

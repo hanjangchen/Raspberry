@@ -132,7 +132,7 @@
 
 			<div class="navbar-form">
 				<div class="form-group">
-					<input id="search_field" auto-complete ui-items="topics_keywords"
+					<input auto-complete ui-items="topics_keywords"
 						ng-model="searched_keyword" class="form-control"
 						placeholder="Search Topic Keyword" />
 				</div>
