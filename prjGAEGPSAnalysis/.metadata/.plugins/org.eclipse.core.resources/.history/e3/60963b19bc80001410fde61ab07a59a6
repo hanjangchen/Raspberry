@@ -76,16 +76,11 @@ var index_page_app, device;
 	// for routing to default content on index page
 	var indexPageDispatchController = function($state, $scope, GLOBAL_VALUES) {
 		$scope.email = GLOBAL_VALUES.EMAIL;
-		$scope.topics_keywords = ["Plans",
-		                          "Project Calendar",
-		                          "Github Repositories",
-		                          "Contributors Profile",
-		                          "Raspberry PI"];
-		$scope.dict_topics_keywords = {"Plans" : "plans",
-				                       "Project Calendar" : "project_calendar",
-									   "Github Repositories" : "github_repositories",
-									   "Contributors Profile" : "contributors_profile",
-									   "Raspberry PI" : "raspberry_pi"};
+		$scope.topics_keywords = ["Plans","Project Calendar","Github Repositories"];
+		$scope.dict_topics_keywords = {"Github Repositories" : "github_repositories",
+									   "Project Calendar" : "project_calendar"
+									   "PLans" : "plans",
+									   "Contributors Profile" : "contributors_profile"};
 		
 		
 		

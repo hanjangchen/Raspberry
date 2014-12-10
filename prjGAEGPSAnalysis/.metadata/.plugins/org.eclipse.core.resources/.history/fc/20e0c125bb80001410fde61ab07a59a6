@@ -76,16 +76,8 @@ var index_page_app, device;
 	// for routing to default content on index page
 	var indexPageDispatchController = function($state, $scope, GLOBAL_VALUES) {
 		$scope.email = GLOBAL_VALUES.EMAIL;
-		$scope.topics_keywords = ["Plans",
-		                          "Project Calendar",
-		                          "Github Repositories",
-		                          "Contributors Profile",
-		                          "Raspberry PI"];
-		$scope.dict_topics_keywords = {"Plans" : "plans",
-				                       "Project Calendar" : "project_calendar",
-									   "Github Repositories" : "github_repositories",
-									   "Contributors Profile" : "contributors_profile",
-									   "Raspberry PI" : "raspberry_pi"};
+		$scope.topics_keywords = ["github_repositories"];
+		
 		
 		
 		
@@ -159,10 +151,10 @@ var index_page_app, device;
 	                      
 	                      // keyword searching mechanism
 	                      try {
-								var elemId = scope.dict_topics_keywords[scope.searched_keyword];
+								var searched_keyword = scope.searched_keyword;
 								$('html, body').animate(
 												{
-													scrollTop : $("#" + elemId).offset().top - 200
+													scrollTop : $("#" + searched_keyword).offset().top - 200
 												}, 800);
 							} catch (e) {
 								console.log('No such information in the SUDA tracking numbers\' array; Error Message: ' + e);
