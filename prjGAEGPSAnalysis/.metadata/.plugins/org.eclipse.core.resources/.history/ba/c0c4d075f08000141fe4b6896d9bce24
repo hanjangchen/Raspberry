@@ -120,7 +120,7 @@ var index_page_app, device;
 									   "Javascript" : "javascript",
 									   "OpenStreetMap" : "openstreetmap",
 									   "Google Map" : "google_map",
-									   "Angularjs" : "angular",
+									   "Angularjs" : "angularjs",
 									   "jQuery" : "jquery",
 									   "Bootstrap" : "bootstrap",
 									   "Leaflet.js" : "leaflet",
@@ -150,7 +150,7 @@ var index_page_app, device;
 	indexPageDispatchController.$inject = [ '$state', '$scope', 'GLOBAL_VALUES' ];
 	index_page_app.controller('indexPageDispatchCtrl', indexPageDispatchController);
 
-	// index page controllers
+	// page controllers
 	var myIndexController = function($state, $scope, GLOBAL_VALUES) {
 		$scope.email = GLOBAL_VALUES.EMAIL;
 		
@@ -189,7 +189,6 @@ var index_page_app, device;
 	}
 	myIndexController.$inject = ['$state', '$scope', 'GLOBAL_VALUES' ];
 	index_page_app.controller('myIndexCtrl', myIndexController);
-	// end of index page controllers
 	
 	// auto-complete field
 	index_page_app.directive('autoComplete', function($timeout) {
@@ -242,10 +241,7 @@ var index_page_app, device;
 	indexDataAnalysisService.$inject = [ '$http', 'GLOBAL_VALUES' ];
 	index_page_app.service('myIndexDataAnalysisService',
 			indexDataAnalysisService);
-	// end of ng-services of index_data_analysis
 
-	
-	
 	// index (not done)
 	var indexImagesInformationUploadController = function() {
 

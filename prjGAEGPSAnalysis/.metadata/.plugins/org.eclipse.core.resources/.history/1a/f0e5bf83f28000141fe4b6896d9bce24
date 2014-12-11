@@ -324,6 +324,11 @@
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 						The Arduino we utilize is for controling and monitoring power
 						system.</p>
+					<p>
+						<a href="http://arduino.cc/en/Main/ArduinoBoardNano"
+							target="_blank" class="btn btn-info" title="Arduino Information">More
+							Device Info. &raquo;</a>
+					</p>
 				</div>
 
 			</div>
@@ -358,6 +363,13 @@
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 						The Spreadtrum SM5100B-D we utilize is for data transfering and
 						communication</p>
+					<p>
+						<a
+							href="https://www.sparkfun.com/datasheets/CellularShield/SM5100B%20Datasheet.pdf"
+							target="_blank" class="btn btn-info"
+							title="Spreadtrum SM5100B-D Information">More Device Info.
+							&raquo;</a>
+					</p>
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
@@ -384,6 +396,11 @@
 						fast TTFF in weak signal environments, the EM-406a comes with a
 						header cable. When ordering the EM-406a extra header cables can be
 						ordered (Part No. 11-0EM406CA)</p>
+					<p>
+						<a href="https://www.sparkfun.com/products/retired/465"
+							target="_blank" class="btn btn-info"
+							title="GPS Receiver Information">More Device Info. &raquo;</a>
+					</p>
 				</div>
 			</div>
 
@@ -404,9 +421,17 @@
 							target="_blank" class="btn btn-primary"
 							title="Bluetooth HC-05 Introduction">Learn More &raquo;</a>
 					</p>
+
 					<br>
+
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 						The HC-05 we utilize is remote control purpose.</p>
+					<p>
+						<a
+							href="http://developer.mbed.org/users/edodm85/notebook/HC-05-bluetooth/"
+							target="_blank" class="btn btn-info"
+							title="Bluetooth HC-05 Information">More Device Info. &raquo;</a>
+					</p>
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -429,6 +454,11 @@
 					<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 						The RHT03 we utilize is for collecting data of humidity and
 						temperature.</p>
+					<p>
+						<a href="http://www.humiditycn.com/cp22.html" target="_blank"
+							class="btn btn-info" title="Bluetooth HC-05 Information">More
+							Device Info. &raquo;</a>
+					</p>
 				</div>
 
 
@@ -458,7 +488,13 @@
 						reliable and simple communication between microcontrollers,
 						computers, systems, really anything with a serial port! Point to
 						point and multi-point networks are supported.</p>
+					<p>
+						<a href="https://www.sparkfun.com/products/11215" target="_blank"
+							class="btn btn-info" title="Xbee Information">More Device
+							Info. &raquo;</a>
+					</p>
 				</div>
+
 			</div>
 		</div>
 
@@ -602,6 +638,7 @@
 					<div id="google_drive"
 						class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>Google Drive</h4>
+
 						<br> <img alt="compute_engine"
 							src="/img/google_drive_icon.png" class="img-responsive icon">
 						<br>
@@ -623,6 +660,7 @@
 
 					<div id="mongodb" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>MongoDB</h4>
+
 						<br> <img alt="compute_engine" src="/img/mongodb_icon.png"
 							class="img-responsive icon"> <br>
 
@@ -674,7 +712,6 @@
 							Python is utilized for constructing back-end architecture and
 							parts of data manipulation</p>
 					</div>
-					
 					<div id="javascript" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>JavaScript</h4>
 						<br> <img alt="javascript" src="/img/javascript.png"
@@ -757,7 +794,7 @@
 					<br> <span><a
 						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
 						ng-click="scroll_to_top()"></a></span> <br>
-					<div id="angular" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div id="angularjs" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Angular.js</h4>
 						<br> <img alt="javascript" src="/img/angularjs.png"
 							class="img-responsive icon"> <br>

@@ -120,7 +120,7 @@ var index_page_app, device;
 									   "Javascript" : "javascript",
 									   "OpenStreetMap" : "openstreetmap",
 									   "Google Map" : "google_map",
-									   "Angularjs" : "angular",
+									   "Angularjs" : "angularjs",
 									   "jQuery" : "jquery",
 									   "Bootstrap" : "bootstrap",
 									   "Leaflet.js" : "leaflet",
@@ -242,10 +242,7 @@ var index_page_app, device;
 	indexDataAnalysisService.$inject = [ '$http', 'GLOBAL_VALUES' ];
 	index_page_app.service('myIndexDataAnalysisService',
 			indexDataAnalysisService);
-	// end of ng-services of index_data_analysis
 
-	
-	
 	// index (not done)
 	var indexImagesInformationUploadController = function() {
 

@@ -757,7 +757,7 @@
 					<br> <span><a
 						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
 						ng-click="scroll_to_top()"></a></span> <br>
-					<div id="angular" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div id="angularjs" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Angular.js</h4>
 						<br> <img alt="javascript" src="/img/angularjs.png"
 							class="img-responsive icon"> <br>

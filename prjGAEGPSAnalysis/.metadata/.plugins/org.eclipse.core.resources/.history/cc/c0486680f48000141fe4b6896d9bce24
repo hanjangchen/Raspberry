@@ -120,7 +120,7 @@ var index_page_app, device;
 									   "Javascript" : "javascript",
 									   "OpenStreetMap" : "openstreetmap",
 									   "Google Map" : "google_map",
-									   "Angularjs" : "angular",
+									   "Angularjs" : "angularjs",
 									   "jQuery" : "jquery",
 									   "Bootstrap" : "bootstrap",
 									   "Leaflet.js" : "leaflet",
