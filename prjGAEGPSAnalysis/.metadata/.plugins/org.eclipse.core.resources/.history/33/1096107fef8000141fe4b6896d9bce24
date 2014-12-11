@@ -96,12 +96,7 @@ var index_page_app, device;
 		                          "Google Map",
 		                          "Angularjs",
 		                          "jQuery",
-		                          "Bootstrap",
-		                          "Leaflet.js",
-		                          "Numeric.js",
-		                          "D3.js",
-		                          "Particle Swarm Optimization",
-		                          "Neural Network"];
+		                          "Bootstrap"];
 		
 		$scope.dict_topics_keywords = {"Plans" : "plans",
 				                       "Project Calendar" : "project_calendar",
@@ -122,12 +117,7 @@ var index_page_app, device;
 									   "Google Map" : "google_map",
 									   "Angularjs" : "angularjs",
 									   "jQuery" : "jquery",
-									   "Bootstrap" : "bootstrap",
-									   "Leaflet.js" : "leaflet",
-									   "Numeric.js" : "numeric",
-									   "D3.js" : "d3",
-									   "Particle Swarm Optimization" : "particle_swarm_optimization",
-									   "Neural Network" : "neural_network"};
+									   "Bootstrap" : "bootstrap"};
 		
 		
 		
@@ -144,7 +134,7 @@ var index_page_app, device;
 		
 		$scope.scroll_to_top = function(){
 			$("body, html").animate({
-						scrollTop : $("#search_field").offset().top - 300}, 1500);
+						scrollTop : $("#search_field").offset().top - 300}, 800);
 		};
 	}
 	indexPageDispatchController.$inject = [ '$state', '$scope', 'GLOBAL_VALUES' ];

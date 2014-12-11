@@ -144,7 +144,7 @@ var index_page_app, device;
 		
 		$scope.scroll_to_top = function(){
 			$("body, html").animate({
-						scrollTop : $("#search_field").offset().top - 300}, 1500);
+						scrollTop : $("#search_field").offset().top - 300}, 1000);
 		};
 	}
 	indexPageDispatchController.$inject = [ '$state', '$scope', 'GLOBAL_VALUES' ];

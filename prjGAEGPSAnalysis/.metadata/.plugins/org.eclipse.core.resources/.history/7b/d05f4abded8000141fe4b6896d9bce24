@@ -5,8 +5,7 @@
 	color: #ccc;
 	font-size: 2em;
 }
-
-.scroll_to_top_arrow:hover {
+.scroll_to_top_arrow:hover{
 	cursor: pointer;
 	color: #888;
 }
@@ -146,9 +145,10 @@
 			<p class="intro_content">
 				<span style="color: #f00;">Internet of Things</span>
 			</p>
-			<br> <br> <span><a
-				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-				ng-click="scroll_to_top()"></a></span> <br>
+			<br>
+			<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
 			<h4 class="intro_title">Plans</h4>
 			<p id="plans" class="intro_content">
 				<span>Short-Term: Building GPS module, collecting data from
@@ -159,9 +159,10 @@
 			</p>
 
 			<!-- project calendar -->
-			<br> <br> <span><a
-				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-				ng-click="scroll_to_top()"></a></span> <br>
+			<br>
+			<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
 			<h4 class="intro_title">Project Daily Schedule</h4>
 			<br>
 			<div id="project_calendar"></div>
@@ -173,9 +174,11 @@
 					Schedule Detail...(Please click the cell above to see the daily
 					schedule)</span>
 			</div>
-			<br> <br> <span><a
-				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-				ng-click="scroll_to_top()"></a></span> <br>
+			<br>
+			<br>
+			<span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
 			<!-- repositories -->
 			<h4 class="intro_title">Repositories</h4>
 			<div id="github_repositories" class="intro_content">
@@ -209,8 +212,8 @@
 			class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"
 			style="border: none; border-bottom: dotted 1px #bbb; padding-bottom: 50px;">
 			<br> <span><a
-				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-				ng-click="scroll_to_top()"></a></span> <br>
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
 			<h2>Contributors Profile</h2>
 			<br>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -276,9 +279,9 @@
 			<h2>Hardware</h2>
 			<br>
 			<div class="row">
-				<br> <span><a
-					class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-					ng-click="scroll_to_top()"></a></span> <br>
+			<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
 				<div id="raspberry_pi" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<h3>Raspberry PI</h3>
 					<p style="font-size: 13px; text-align: justify; color: #888;">The
@@ -334,9 +337,9 @@
 			</div>
 
 			<div class="row">
-				<br> <span><a
-					class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-					ng-click="scroll_to_top()"></a></span> <br>
+			<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<h3>Smart Phone Module</h3>
 					<p style="font-size: 13px; text-align: justify; color: #888;">Spreadtrum
@@ -405,9 +408,9 @@
 			</div>
 
 			<div class="row">
-				<br> <span><a
-					class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-					ng-click="scroll_to_top()"></a></span> <br>
+			<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<h3>Bluetooth (HC-05)</h3>
 					<p style="font-size: 13px; text-align: justify; color: #888;">The
@@ -503,11 +506,10 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Platform</h3>
 				<div class="row">
-					<br> <span><a
-						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-						ng-click="scroll_to_top()"></a></span> <br>
-					<div id="google_app_engine"
-						class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
+					<div id="google_app_engine" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Google App Engine</h4>
 
 						<br> <img alt="app_engine" src="/img/app-engine.png"
@@ -529,8 +531,7 @@
 							data, and working together to be a apps swarm</p>
 					</div>
 
-					<div id="google_compute_engine"
-						class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div id="google_compute_engine" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Google Compute Engine</h4>
 
 						<br> <img alt="compute_engine" src="/img/compute-engine.png"
@@ -552,8 +553,7 @@
 
 					</div>
 
-					<div id="google_container_engine"
-						class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div id = "google_container_engine" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Google Container Engine</h4>
 						<br> <img alt="compute_engine" src="/img/compute-engine.png"
 							class="img-responsive icon"> <br>
@@ -579,15 +579,13 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Database/Data Storage</h3>
 				<div class="row">
-					<br> <span><a
-						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-						ng-click="scroll_to_top()"></a></span> <br>
-					<div id="google_datastore"
-						class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>Google Datastore</h4>
-						<br> <img alt="google_datastore"
-							src="/img/datastore_icon.png" class="img-responsive icon">
-						<br>
+						<br> <img alt="google_datastore" src="/img/datastore_icon.png"
+							class="img-responsive icon"> <br>
 
 						<p style="font-size: 13px; text-align: justify;">Use a
 							managed, NoSQL, schemaless database for storing non-relational
@@ -603,13 +601,11 @@
 							We use Google Datastore for storing data</p>
 					</div>
 
-					<div id="google_blobstore"
-						class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div id = "google_blobstore" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>Google Blobstore</h4>
 
-						<br> <img alt="google_blobstore"
-							src="/img/datastore_icon.png" class="img-responsive icon">
-						<br>
+						<br> <img alt="google_blobstore" src="/img/datastore_icon.png"
+							class="img-responsive icon"> <br>
 
 						<p style="font-size: 13px; text-align: justify;">The Blobstore
 							API allows your application to serve data objects, called blobs,
@@ -635,8 +631,7 @@
 
 					</div>
 
-					<div id="google_drive"
-						class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div id="google_drive" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>Google Drive</h4>
 
 						<br> <img alt="compute_engine"
@@ -689,10 +684,10 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Languages</h3>
 				<div class="row">
-					<br> <span><a
-						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-						ng-click="scroll_to_top()"></a></span> <br>
-					<div id="python" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>Python</h4>
 						<br> <img alt="python" src="/img/python.png"
 							class="img-responsive icon"> <br>
@@ -712,7 +707,7 @@
 							Python is utilized for constructing back-end architecture and
 							parts of data manipulation</p>
 					</div>
-					<div id="javascript" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>JavaScript</h4>
 						<br> <img alt="javascript" src="/img/javascript.png"
 							class="img-responsive icon"> <br>
@@ -742,11 +737,10 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Maps</h3>
 				<div class="row">
-					<br> <span><a
-						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-						ng-click="scroll_to_top()"></a></span> <br>
-					<div id="openstreetmap"
-						class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>OpenStreetMap</h4>
 						<br> <img alt="javascript" src="/img/openstreetmap.png"
 							class="img-responsive icon"> <br>
@@ -767,7 +761,7 @@
 							visualize the analysis result on the map.</p>
 					</div>
 
-					<div id="google_map" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>Google Map</h4>
 						<br> <img alt="javascript" src="/img/google_map.png"
 							class="img-responsive icon"> <br>
@@ -791,10 +785,10 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Libraries/Frameworks</h3>
 				<div class="row">
-					<br> <span><a
-						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-						ng-click="scroll_to_top()"></a></span> <br>
-					<div id="angularjs" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Angular.js</h4>
 						<br> <img alt="javascript" src="/img/angularjs.png"
 							class="img-responsive icon"> <br>
@@ -816,7 +810,7 @@
 							templates routing</p>
 					</div>
 
-					<div id="jquery" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>JQuery</h4>
 						<br> <img alt="javascript" src="/img/jquery.png"
 							class="img-responsive icon"> <br>
@@ -840,7 +834,7 @@
 
 					</div>
 
-					<div id="bootstrap" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Bootstrap</h4>
 						<br> <img alt="javascript" src="/img/bootstrap.png"
 							class="img-responsive icon"> <br>
@@ -862,13 +856,13 @@
 							Bootstrap is utilized for implementing responsive web design</p>
 					</div>
 				</div>
-
+				
 				<!--  -->
 				<div class="row">
-					<br> <span><a
-						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-						ng-click="scroll_to_top()"></a></span> <br>
-					<div id="leaflet" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Leaflet.js</h4>
 						<br> <img alt="leaflet.js" src="/img/leaflet.png"
 							class="img-responsive icon"> <br>
@@ -889,7 +883,7 @@
 							OpenStreetMap</p>
 					</div>
 
-					<div id="numeric" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Numeric.js</h4>
 						<br> <img alt="javascript" src="/img/numeric-js.png"
 							class="img-responsive icon"> <br>
@@ -907,7 +901,7 @@
 							Numeric.js is utilized mainly for manipulating the linear algebra
 							and matrix operation</p>
 					</div>
-					<div id="d3" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>D3.js</h4>
 						<br> <img alt="javascript" src="/img/d3.png"
 							class="img-responsive icon"> <br>
@@ -934,11 +928,10 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Algorithms</h3>
 				<div class="row">
-					<br> <span><a
-						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-						ng-click="scroll_to_top()"></a></span> <br>
-						
-					<div id="particle_swarm_optimization" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
+			<br>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>Particle Swarm Optimization</h4>
 						<p style="font-size: 13px; text-align: justify;">Particle
 							swarm optimization (PSO) is a population based stochastic
@@ -955,8 +948,7 @@
 							optmization; in our case, we will use it for finding out the
 							optimal weights of neural-network</p>
 					</div>
-					
-					<div id="neural_network" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<h4>Neural Network</h4>
 						<p style="font-size: 13px; text-align: justify;">A neural
 							network is mans crude way of trying to simulate the brain

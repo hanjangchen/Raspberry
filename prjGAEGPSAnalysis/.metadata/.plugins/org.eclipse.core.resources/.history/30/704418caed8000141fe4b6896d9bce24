@@ -85,24 +85,7 @@ var index_page_app, device;
 		                          "Arduino",
 		                          "Google App Engine",
 		                          "Google Compute Engine",
-		                          "Google Container Engine",
-		                          "Google Datastore",
-		                          "Google Blobstore",
-		                          "Google Drive",
-		                          "MongoDB",
-		                          "Python",
-		                          "Javascript",
-		                          "OpenStreetMap",
-		                          "Google Map",
-		                          "Angularjs",
-		                          "jQuery",
-		                          "Bootstrap",
-		                          "Leaflet.js",
-		                          "Numeric.js",
-		                          "D3.js",
-		                          "Particle Swarm Optimization",
-		                          "Neural Network"];
-		
+		                          "Google Container Engine"];
 		$scope.dict_topics_keywords = {"Plans" : "plans",
 				                       "Project Calendar" : "project_calendar",
 									   "Github Repositories" : "github_repositories",
@@ -111,23 +94,7 @@ var index_page_app, device;
 									   "Arduino" : "arduino",
 									   "Google App Engine" : "google_app_engine",
 									   "Google Compute Engine" : "google_compute_engine",
-									   "Google Container Engine" : "google_container_engine",
-									   "Google Datastore" : "google_datastore",
-									   "Google Blobstore" : "google_blobstore",
-									   "Google Drive" : "google_drive",
-									   "MongoDB" : "mongodb",
-									   "Python" : "python",
-									   "Javascript" : "javascript",
-									   "OpenStreetMap" : "openstreetmap",
-									   "Google Map" : "google_map",
-									   "Angularjs" : "angularjs",
-									   "jQuery" : "jquery",
-									   "Bootstrap" : "bootstrap",
-									   "Leaflet.js" : "leaflet",
-									   "Numeric.js" : "numeric",
-									   "D3.js" : "d3",
-									   "Particle Swarm Optimization" : "particle_swarm_optimization",
-									   "Neural Network" : "neural_network"};
+									   "Google Container Engine" : "google_container_engine"};
 		
 		
 		
@@ -144,7 +111,7 @@ var index_page_app, device;
 		
 		$scope.scroll_to_top = function(){
 			$("body, html").animate({
-						scrollTop : $("#search_field").offset().top - 300}, 1500);
+						scrollTop : $("#search_field").offset().top - 300}, 800);
 		};
 	}
 	indexPageDispatchController.$inject = [ '$state', '$scope', 'GLOBAL_VALUES' ];
