@@ -76,7 +76,6 @@ var index_page_app, device;
 	/* controllers */
 	// for routing to default content on index page
 	var indexPageDispatchController = function($state, $scope, GLOBAL_VALUES) {
-		// set values
 		$scope.email = GLOBAL_VALUES.EMAIL;
 		$scope.topics_keywords = ["Plans",
 		                          "Project Calendar",
@@ -131,8 +130,11 @@ var index_page_app, device;
 									   "Neural Network" : "neural_network"};
 		
 		
-		// init page
+		
 		var selected_template = $state.current.name;
+		console.log(selected_template);
+
+		// front-end dispatcher
 		if($state.current.name !== ''){
 			$state.transitionTo(selected_template);
 		}
@@ -140,7 +142,6 @@ var index_page_app, device;
 		    $state.transitionTo('index_introduction');
 		};
 		
-		// scroll to search field
 		$scope.scroll_to_top = function(){
 			$("body, html").animate({
 						scrollTop : $("#search_field").offset().top - 300}, 1500);
@@ -246,12 +247,12 @@ var index_page_app, device;
 	// end of ng-services of index_data_analysis
 
 	
+	
 	// index (not done)
 	var indexImagesInformationUploadController = function() {
 
 	}
 
-	
 	/* index page images list controller; better to categorize lists */
 	var indexImagesDetailListController = function(myIndexDataAnalysisService,
 			GLOBAL_VALUES, $scope) {

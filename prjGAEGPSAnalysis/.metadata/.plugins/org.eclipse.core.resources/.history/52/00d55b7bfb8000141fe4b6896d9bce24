@@ -2,8 +2,8 @@
 <style>
 <!--
 .scroll_to_top_arrow {
-	color: #eee;
-	font-size: 1.8em;
+	color: #ccc;
+	font-size: 2em;
 }
 
 .scroll_to_top_arrow:hover {

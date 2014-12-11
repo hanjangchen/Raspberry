@@ -76,7 +76,6 @@ var index_page_app, device;
 	/* controllers */
 	// for routing to default content on index page
 	var indexPageDispatchController = function($state, $scope, GLOBAL_VALUES) {
-		// set values
 		$scope.email = GLOBAL_VALUES.EMAIL;
 		$scope.topics_keywords = ["Plans",
 		                          "Project Calendar",
@@ -246,12 +245,12 @@ var index_page_app, device;
 	// end of ng-services of index_data_analysis
 
 	
+	
 	// index (not done)
 	var indexImagesInformationUploadController = function() {
 
 	}
 
-	
 	/* index page images list controller; better to categorize lists */
 	var indexImagesDetailListController = function(myIndexDataAnalysisService,
 			GLOBAL_VALUES, $scope) {

@@ -752,7 +752,7 @@
 				</div>
 			</div>
 
-			<div class="content_block">
+			<div>
 				<h3>Algorithms</h3>
 				<div>
 					<h4>Particle Swarm Optimization</h4>
@@ -805,5 +805,5 @@
 		</script>
 		<gcse:search></gcse:search>
 	</div>
- 	-->
+ -->
 </div>

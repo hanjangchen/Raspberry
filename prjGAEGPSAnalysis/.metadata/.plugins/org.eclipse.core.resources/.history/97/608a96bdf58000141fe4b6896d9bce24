@@ -2,8 +2,8 @@
 <style>
 <!--
 .scroll_to_top_arrow {
-	color: #eee;
-	font-size: 1.8em;
+	color: #ccc;
+	font-size: 2em;
 }
 
 .scroll_to_top_arrow:hover {
@@ -208,67 +208,65 @@
 		<div id="contributors_profile"
 			class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"
 			style="border: none; border-bottom: dotted 1px #bbb; padding-bottom: 50px;">
+			<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
+				ng-click="scroll_to_top()"></a></span> <br>
 			<h2>Contributors Profile</h2>
-			<div class="row">
-				<br> <span><a
-					class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-					ng-click="scroll_to_top()"></a></span> <br>
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<div>
-						<img alt="han_jang_chen"
-							src="/img/contributors/han_jang_chen_profile.png"
-							style="height: 150px; border-radius: 50%;">
-					</div>
-					<br>
-					<div class="caption">
-						<h4 style="font-weight: 800; font-style: italic;">
-							Han-Jang Chen (Hardware)<span><a
-								class="glyphicon glyphicon-envelope"
-								href="mailto:han.jang.chen@icloud.com" title="Contact Han-Jang"
-								style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
-						</h4>
-						<p style="font-size: 13px; text-align: center; font-weight: 400;">The
-							man behind the hardware establishment</p>
-					</div>
+			<br>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<div>
+					<img alt="han_jang_chen"
+						src="/img/contributors/han_jang_chen_profile.png"
+						style="height: 150px; border-radius: 50%;">
 				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<div>
-						<img alt="alan_tai" src="/img/contributors/alan_tai_profile.png"
-							style="height: 150px; border-radius: 50%;">
-					</div>
-					<br>
-					<div>
-						<h4 style="font-weight: 800; font-style: italic;">
-							Alan Tai (Software)<span><a
-								class="glyphicon glyphicon-envelope" href="mailto:[[email]]"
-								title="Contact Alan Tai"
-								style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
-						</h4>
-						<p style="font-size: 13px; text-align: center; font-weight: 400;">
-							Sip the wine, taste the world<br>Learn the Tech., connect
-							the world
-						</p>
-					</div>
+				<br>
+				<div class="caption">
+					<h4 style="font-weight: 800; font-style: italic;">
+						Han-Jang Chen (Hardware)<span><a
+							class="glyphicon glyphicon-envelope"
+							href="mailto:han.jang.chen@icloud.com" title="Contact Han-Jang"
+							style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
+					</h4>
+					<p style="font-size: 13px; text-align: center; font-weight: 400;">The
+						man behind the hardware establishment</p>
 				</div>
+			</div>
 
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<div>
-						<img alt="alan_tai"
-							src="/img/contributors/randy_huang_profile.png"
-							style="height: 150px; border-radius: 50%;">
-					</div>
-					<br>
-					<div>
-						<h4 style="font-weight: 800; font-style: italic;">
-							Randy Huang (Software)<span><a
-								class="glyphicon glyphicon-envelope"
-								href="mailto:randyh0329@gmail.com" title="Contact Randy Huang"
-								style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
-						</h4>
-						<p style="font-size: 13px; text-align: center; font-weight: 400;">
-							Open data, open government</p>
-					</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<div>
+					<img alt="alan_tai" src="/img/contributors/alan_tai_profile.png"
+						style="height: 150px; border-radius: 50%;">
+				</div>
+				<br>
+				<div>
+					<h4 style="font-weight: 800; font-style: italic;">
+						Alan Tai (Software)<span><a
+							class="glyphicon glyphicon-envelope" href="mailto:[[email]]"
+							title="Contact Alan Tai"
+							style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
+					</h4>
+					<p style="font-size: 13px; text-align: center; font-weight: 400;">
+						Sip the wine, taste the world<br>Learn the Tech., connect the
+						world
+					</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<div>
+					<img alt="alan_tai" src="/img/contributors/randy_huang_profile.png"
+						style="height: 150px; border-radius: 50%;">
+				</div>
+				<br>
+				<div>
+					<h4 style="font-weight: 800; font-style: italic;">
+						Randy Huang (Software)<span><a
+							class="glyphicon glyphicon-envelope"
+							href="mailto:randyh0329@gmail.com" title="Contact Randy Huang"
+							style="color: #000; margin-left: 10px; font-size: 13px;"></a></span>
+					</h4>
+					<p style="font-size: 13px; text-align: center; font-weight: 400;">
+						Open data, open government</p>
 				</div>
 			</div>
 		</div>
@@ -600,12 +598,11 @@
 							We use blobstore for storing images and videos</p>
 
 					</div>
-				</div>
 
-				<div class="row">
 					<br> <span><a
 						class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
 						ng-click="scroll_to_top()"></a></span> <br>
+
 
 					<div id="google_drive"
 						class="col-xs-12 col-sm-12 col-md-6 col-lg-6">

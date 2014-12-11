@@ -2,8 +2,8 @@
 <style>
 <!--
 .scroll_to_top_arrow {
-	color: #eee;
-	font-size: 1.8em;
+	color: #ccc;
+	font-size: 2em;
 }
 
 .scroll_to_top_arrow:hover {
@@ -209,10 +209,13 @@
 			class="row col-xs-12 col-sm-12 col-md-12 col-lg-12"
 			style="border: none; border-bottom: dotted 1px #bbb; padding-bottom: 50px;">
 			<h2>Contributors Profile</h2>
+			<br> <span><a
+				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
+				ng-click="scroll_to_top()"></a></span> <br>
+
+
 			<div class="row">
-				<br> <span><a
-					class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow"
-					ng-click="scroll_to_top()"></a></span> <br>
+
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<div>
 						<img alt="han_jang_chen"

@@ -251,7 +251,6 @@ var index_page_app, device;
 
 	}
 
-	
 	/* index page images list controller; better to categorize lists */
 	var indexImagesDetailListController = function(myIndexDataAnalysisService,
 			GLOBAL_VALUES, $scope) {

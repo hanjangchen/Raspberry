@@ -3,7 +3,7 @@
 <!--
 .scroll_to_top_arrow {
 	color: #eee;
-	font-size: 1.8em;
+	font-size: 2em;
 }
 
 .scroll_to_top_arrow:hover {
