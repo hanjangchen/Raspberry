@@ -83,9 +83,7 @@ var index_page_app, device;
 		                          "Contributors Profile",
 		                          "Raspberry PI",
 		                          "Arduino",
-		                          "Google App Engine",
-		                          "Google Compute Engine",
-		                          "Google Container Engine"];
+		                          "Google App Engine"];
 		$scope.dict_topics_keywords = {"Plans" : "plans",
 				                       "Project Calendar" : "project_calendar",
 									   "Github Repositories" : "github_repositories",
@@ -93,8 +91,7 @@ var index_page_app, device;
 									   "Raspberry PI" : "raspberry_pi",
 									   "Arduino" : "arduino",
 									   "Google App Engine" : "google_app_engine",
-									   "Google Compute Engine" : "google_compute_engine",
-									   "Google Container Engine" : "google_container_engine"};
+									   "Google Compute Engine" : "google_compute_engine"};
 		
 		
 		

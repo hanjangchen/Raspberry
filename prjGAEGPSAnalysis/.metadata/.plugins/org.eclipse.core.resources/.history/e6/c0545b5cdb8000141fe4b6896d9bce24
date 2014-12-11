@@ -26,7 +26,7 @@ var is_admin = false;
 is_admin = true;
 {% endif %}
 
-/* temp (will be deleted) */
+/**/
 var upload_url = '{{upload_url}}';
 
 /**/

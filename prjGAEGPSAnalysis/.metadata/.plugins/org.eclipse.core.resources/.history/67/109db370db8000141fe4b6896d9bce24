@@ -6,7 +6,7 @@
  * */
 'use strict';
 var index_page_app, device;
-
+console.log(hubOfIndexPageContainer);
 (function() {
 	// Angular.js
 	// declare app level module which depends on filters, and services, and
@@ -81,20 +81,12 @@ var index_page_app, device;
 		                          "Project Calendar",
 		                          "Github Repositories",
 		                          "Contributors Profile",
-		                          "Raspberry PI",
-		                          "Arduino",
-		                          "Google App Engine",
-		                          "Google Compute Engine",
-		                          "Google Container Engine"];
+		                          "Raspberry PI"];
 		$scope.dict_topics_keywords = {"Plans" : "plans",
 				                       "Project Calendar" : "project_calendar",
 									   "Github Repositories" : "github_repositories",
 									   "Contributors Profile" : "contributors_profile",
-									   "Raspberry PI" : "raspberry_pi",
-									   "Arduino" : "arduino",
-									   "Google App Engine" : "google_app_engine",
-									   "Google Compute Engine" : "google_compute_engine",
-									   "Google Container Engine" : "google_container_engine"};
+									   "Raspberry PI" : "raspberry_pi"};
 		
 		
 		

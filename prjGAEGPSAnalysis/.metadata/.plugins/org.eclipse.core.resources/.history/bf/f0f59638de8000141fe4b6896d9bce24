@@ -509,7 +509,7 @@
 				<br> <span><a
 				class="glyphicon glyphicon-circle-arrow-up scroll_to_top_arrow" ng-click = "scroll_to_top()"></a></span>
 			<br>
-					<div id="google_app_engine" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Google App Engine</h4>
 
 						<br> <img alt="app_engine" src="/img/app-engine.png"
@@ -531,7 +531,7 @@
 							data, and working together to be a apps swarm</p>
 					</div>
 
-					<div id="google_compute_engine" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Google Compute Engine</h4>
 
 						<br> <img alt="compute_engine" src="/img/compute-engine.png"
@@ -553,8 +553,9 @@
 
 					</div>
 
-					<div id = "google_container_engine" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<h4>Google Container Engine</h4>
+
 						<br> <img alt="compute_engine" src="/img/compute-engine.png"
 							class="img-responsive icon"> <br>
 
