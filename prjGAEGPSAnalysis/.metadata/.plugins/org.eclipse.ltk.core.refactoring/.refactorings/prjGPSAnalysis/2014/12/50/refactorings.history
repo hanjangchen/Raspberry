@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;prjGPSAnalysis/src/static/javascripts/index_introduction.js&apos; to &apos;index_introduction_desktop.js&apos;" description="Rename resource &apos;index_introduction.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/static/javascripts/index_introduction.js" name="index_introduction_desktop.js" stamp="1418406657315" updateReferences="true"/>
+</session>

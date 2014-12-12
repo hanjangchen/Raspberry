@@ -78,47 +78,47 @@
 }
 
 .RdYlGn .q0-11 {
-	fill: #ebf4fd;
+	fill: #abd3ff;
 }
 
 .RdYlGn .q1-11 {
-	fill: #d6e9fd;
+	fill: #87b5e9;
 }
 
 .RdYlGn .q2-11 {
-	fill: #80b1e9;
+	fill: rgb(244, 109, 67)
 }
 
 .RdYlGn .q3-11 {
-	fill: #3d88db;
+	fill: rgb(253, 174, 97)
 }
 
 .RdYlGn .q4-11 {
-	fill: #337dd0;
+	fill: rgb(254, 224, 139)
 }
 
 .RdYlGn .q5-11 {
-	fill: #2c66a8;
+	fill: rgb(255, 255, 191)
 }
 
 .RdYlGn .q6-11 {
-	fill: #235185;
+	fill: rgb(217, 239, 139)
 }
 
 .RdYlGn .q7-11 {
-	fill: #16375d;
+	fill: rgb(166, 217, 106)
 }
 
 .RdYlGn .q8-11 {
-	fill: #0f2845;
+	fill: rgb(102, 189, 99)
 }
 
 .RdYlGn .q9-11 {
-	fill: #091b2f;
+	fill: rgb(26, 152, 80)
 }
 
 .RdYlGn .q10-11 {
-	fill: #030a11;
+	fill: rgb(0, 104, 55)
 }
 -->
 </style>
