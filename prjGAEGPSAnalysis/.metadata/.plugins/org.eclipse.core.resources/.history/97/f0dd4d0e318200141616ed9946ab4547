@@ -163,10 +163,9 @@
 
 			<!-- outline -->
 			<br>
-			<br>
 			<div>
 				<h4 class="intro_title">Outline of Hardware Establishment</h4>
-				<dl class="dl-vertical">
+				<dl class="dl-horizontal">
 					<dt>Introduction</dt>
 					<dd>Coming Soon...</dd>
 
@@ -174,25 +173,18 @@
 
 			</div>
 			<br>
-			<br>
 			<div>
 				<h4 class="intro_title">Outline of Software Development</h4>
-				<dl class="dl-vertical">
-					<dt>Introduction</dt>
-					<dd>Coming Soon...</dd>
-					
-					<dt>Applications</dt>
-					<dd>Project Calendar: Integration of Google Spreadsheet and D3.js</dd>
-					<dd>Data Analysis: D3.js</dd>
-					
-					<dt>Advance Development</dt>
-					<dd>Real-Time Monitoring: Google App Engine Channel
-					<p></p>
-					</dd>
-					<dd>App Swarm on Google App Engine
-					<p>ProtoRTC</p>
-					</dd>
-					
+				<dl class="dl-horizontal">
+					<dt>User Agent</dt>
+					<dd>An HTML user agent is any device that interprets HTML
+						documents.</dd>
+					<dt>Client-side Scripting</dt>
+					<dd>Client-side scripting generally refers to the category of
+						computer programs on the web that are executed client-side i.e. by
+						the user's web browser.</dd>
+					<dt>Document Tree</dt>
+					<dd>The tree of elements encoded in the source document.</dd>
 				</dl>
 
 			</div>

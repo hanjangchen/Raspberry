@@ -163,36 +163,23 @@
 
 			<!-- outline -->
 			<br>
-			<br>
 			<div>
 				<h4 class="intro_title">Outline of Hardware Establishment</h4>
-				<dl class="dl-vertical">
+				<dl class="dl-horizontal">
 					<dt>Introduction</dt>
+					<br>
 					<dd>Coming Soon...</dd>
 
 				</dl>
 
 			</div>
 			<br>
-			<br>
 			<div>
 				<h4 class="intro_title">Outline of Software Development</h4>
-				<dl class="dl-vertical">
+				<dl class="dl-horizontal">
 					<dt>Introduction</dt>
+					<br>
 					<dd>Coming Soon...</dd>
-					
-					<dt>Applications</dt>
-					<dd>Project Calendar: Integration of Google Spreadsheet and D3.js</dd>
-					<dd>Data Analysis: D3.js</dd>
-					
-					<dt>Advance Development</dt>
-					<dd>Real-Time Monitoring: Google App Engine Channel
-					<p></p>
-					</dd>
-					<dd>App Swarm on Google App Engine
-					<p>ProtoRTC</p>
-					</dd>
-					
 				</dl>
 
 			</div>
