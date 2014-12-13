@@ -4,7 +4,7 @@
  *  PS: Current test function is (0.007 * x_1 * (-x_2 -1)) * ( cos(x_1 + 0.3) - sin(x_2))+(1 - sin(x_1)) and the optimal value is around -1.798
  * */
 
-window.particles_swarm_optimization = window.particles_swarm_optimization || {
+var particles_swarm_optimization = {
 		
 		// configuration
 		config : {

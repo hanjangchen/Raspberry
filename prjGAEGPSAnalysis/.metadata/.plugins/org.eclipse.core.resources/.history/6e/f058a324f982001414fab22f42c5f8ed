@@ -57,12 +57,15 @@
 	<script type="text/javascript" src="/js/plugin_ng/angular-ui-router.js"></script>
 
 	<!-- ng directives -->
-	<script type="text/javascript" src="/js/my_ng_directives/index_page_directives.js"></script>
-	<script type="text/javascript" src="/js/my_ng_directives/index_admin_upload_images_directive.js"></script>
+	<script type="text/javascript"
+		src="/js/my_ng_directives/index_page_directives.js"></script>
+	<script type="text/javascript"
+		src="/js/my_ng_directives/index_admin_upload_images_directive.js"></script>
 
 
 	<!-- mis js -->
-	<script type="text/javascript" src="/js/plugin_mis/responsive-directive.js"></script>
+	<script type="text/javascript"
+		src="/js/plugin_mis/responsive-directive.js"></script>
 	<script type="text/javascript" src="/js/plugin_mis/cycle.js"></script>
 
 	<!-- d3 -->
@@ -70,7 +73,8 @@
 	<script type="text/javascript" src="/js/plugin_d3/d3_tips.js"></script>
 
 	<!-- bootstrap -->
-	<script type="text/javascript" src="/js/plugin_bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript"
+		src="/js/plugin_bootstrap/bootstrap.min.js"></script>
 
 	<!-- self-defined js -->
 	<script type="text/javascript" src="/js/base.js"></script>

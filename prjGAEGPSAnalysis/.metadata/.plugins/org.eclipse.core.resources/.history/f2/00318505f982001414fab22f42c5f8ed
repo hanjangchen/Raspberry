@@ -1,0 +1,118 @@
+<!-- particle swarm optimization -->
+<style>
+<!--
+.axis path, .axis line{
+	fill: none;
+	stroke: #333;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+.axis text{
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+.grid{
+	fill: none;
+	stroke: #eee;
+	stroke-width: 1px;
+	stroke-dasharray: 20, 5;
+}
+
+.grid path{
+stroke-width: 0;
+}
+-->
+</style>
+<div>
+	<div id="pso_animation"></div>
+</div>
+
+<script type="text/javascript">
+<!--
+(function(){
+	// basic dimension
+	var width = 950;
+	var height = 620;
+	var padding = 50;
+	
+	var dataSet = [];
+	
+	function generate_data(){
+		return [Math.random() * 30 -10, Math.random() * 30 - 10];
+	}
+	
+	for(var ith = 0; ith < 5; ith++){
+		dataSet.push(generate_data());
+	}
+	
+	// scale var
+	var xScale = d3.scale.linear().domain([d3.min(dataSet, function(d){ return d[0]}),
+	                                       d3.max(dataSet, function(d){ return d[0]})]).range([ padding, width - padding * 2]);
+	
+	var yScale = d3.scale.linear().domain([d3.min(dataSet, function(d){ return d[1]}),
+	                                       d3.max(dataSet, function(d){ return d[1]})]).range([ height - padding * 2, padding]);
+	
+	var rScale = d3.scale.linear().domain([d3.min(dataSet, function(d){ return d[1]}),
+	                                       d3.max(dataSet, function(d){ return d[1]})]).range([ 1, 5]);
+	
+	// axis
+	var xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(8);
+	var yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(6);
+	
+	var x = d3.scale.linear().range([ padding, width - padding * 2 ]);
+
+	var y = d3.scale.linear().range([ height - padding * 2, padding ]);
+	
+	// make grids
+	function make_x_axis(){
+		return d3.svg.axis().scale(xScale).orient("bottom").ticks(6);
+	}
+	function make_y_axis(){
+		return d3.svg.axis().scale(yScale).orient("left").ticks(6);
+	}
+	
+	// draw coordinate
+	var svg = d3.select("#pso_animation").append("svg").attr("width", width).attr("height", height);
+	
+
+	// create grid
+	svg.append("g").attr("class", "grid").attr("transform", "translate( 0, 50)").call(make_x_axis().tickSize(height - padding * 2 -50 , 0, 0).tickFormat(""));
+	svg.append("g").attr("class", "grid").attr("transform", "translate( 50, 0)").call(make_y_axis().tickSize(-(width - padding * 2 ), 0, 0).tickFormat(""));
+	
+	
+	// create X axis
+	svg.append("g").attr("class", "axis").attr("transform", "translate( 0, " + (height - padding * 2) + ")").call(xAxis);
+	
+	// create Y axis
+	svg.append("g").attr("class", "axis").attr("transform", "translate( " + padding + ", 0)").call(yAxis);
+	
+	// create circles
+	var circles = svg.selectAll("circle").data(dataSet).enter().append("circle").attr("cx", function(d){ return xScale(d[0])}).attr("cy", function(d){ return yScale(d[1])}).attr("r", function(d){ return rScale(d[1])});
+	
+	// animation
+	var count = 0;
+	var animation;
+	function doAnimation(){
+		console.log(count);
+		count ++;
+		if (count >= 50){
+			clearTimeout(animation);
+		}else{
+			// start anmation
+			animation = setTimeout(doAnimation, 500);
+		}
+		
+		var newData = [];
+		for (var kth = 0; kth < 5; kth++){
+			newData.push([Math.random() * 2 - 1, Math.random() * 2 - 1]);
+		}
+		
+		circles.transition().duration(1000).ease("linear").attr("cx", function(d){ return (xScale(d[0]) + Math.random() * 30)}).attr("cy", function(d){ return (yScale(d[1]) + Math.random() * 30)}).attr("r", function(d){ return rScale(d[1])});
+		
+	};
+	
+	doAnimation();
+})();
+//-->
+</script>

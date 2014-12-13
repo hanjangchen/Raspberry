@@ -70,7 +70,8 @@
 	<script type="text/javascript" src="/js/plugin_d3/d3_tips.js"></script>
 
 	<!-- bootstrap -->
-	<script type="text/javascript" src="/js/plugin_bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript"
+		src="/js/plugin_bootstrap/bootstrap.min.js"></script>
 
 	<!-- self-defined js -->
 	<script type="text/javascript" src="/js/base.js"></script>
