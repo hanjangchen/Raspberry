@@ -14,9 +14,9 @@
 
 .grid{
 	fill: none;
-	stroke: #eee;
+	stroke: #888;
 	stroke-width: 1px;
-	stroke-dasharray: 20, 5;
+	stroke-dasharray: 20, 10;
 }
 
 .grid path{

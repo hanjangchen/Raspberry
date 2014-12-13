@@ -13,14 +13,10 @@
 }
 
 .grid{
-	fill: none;
-	stroke: #eee;
-	stroke-width: 1px;
-	stroke-dasharray: 20, 5;
-}
-
-.grid path{
-stroke-width: 0;
+fill: none;
+	stroke: #888;
+	stroke-width: .5px;
+	stroke-dasharray: 20, 10;
 }
 -->
 </style>
@@ -74,8 +70,8 @@ stroke-width: 0;
 	
 
 	// create grid
-	svg.append("g").attr("class", "grid").attr("transform", "translate( 0, 50)").call(make_x_axis().tickSize(height - padding * 2 -50 , 0, 0).tickFormat(""));
-	svg.append("g").attr("class", "grid").attr("transform", "translate( 50, 0)").call(make_y_axis().tickSize(-(width - padding * 2 ), 0, 0).tickFormat(""));
+	svg.append("g").attr("class", "grid").attr("transform", "translate( 0, 0)").call(make_x_axis().tickSize(height - padding * 2, 0, 0).tickFormat(""));
+	svg.append("g").attr("class", "grid").call(make_y_axis().tickSize(-(width - padding * 2 ), 0, 0).tickFormat(""));
 	
 	
 	// create X axis
