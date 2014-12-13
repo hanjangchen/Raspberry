@@ -1,0 +1,16 @@
+<!-- particle swarm optimization -->
+
+<div>
+	<div id="pso_animation"></div>
+</div>
+
+<script type="text/javascript">
+<!--
+(function(){
+	var width = 950;
+	var height = 620;
+	
+	var svg = d3.select("#pso_animation")
+})();
+//-->
+</script>

@@ -54,7 +54,7 @@
 }
 
 .outline_title{
-	font-size: 16px;
+	font-size: 17px;
 }
 
 #project_calendar {

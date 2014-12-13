@@ -54,7 +54,7 @@
 }
 
 .outline_title{
-	font-size: 16px;
+	font-size: 15px;
 }
 
 #project_calendar {
@@ -196,7 +196,8 @@
 					<dd class="outline_title">
 					<p class="intro_content">
 					<span>App Swarm on Google App Engine</span>
-					</p>
+					<br>
+					<span>ProtoRTC</span></p>
 					</dd>
 					
 				</dl>

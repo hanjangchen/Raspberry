@@ -54,7 +54,7 @@
 }
 
 .outline_title{
-	font-size: 16px;
+	font-size: 15px;
 }
 
 #project_calendar {
@@ -194,9 +194,7 @@
 					<p class="intro_content"><span>Real-Time Monitoring: Google App Engine Channel</span></p>
 					</dd>
 					<dd class="outline_title">
-					<p class="intro_content">
-					<span>App Swarm on Google App Engine</span>
-					</p>
+					<p class="intro_content"><span>App Swarm on Google App Engine</span><span>ProtoRTC</span></p>
 					</dd>
 					
 				</dl>

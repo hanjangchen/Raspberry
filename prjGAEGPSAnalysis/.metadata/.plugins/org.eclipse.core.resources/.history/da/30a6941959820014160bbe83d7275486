@@ -53,10 +53,6 @@
 	letter-spacing: 2px;
 }
 
-.outline_title{
-	font-size: 16px;
-}
-
 #project_calendar {
 	font: 10px sans-serif;
 	shape-rendering: crispEdges;
@@ -182,21 +178,19 @@
 			<div>
 				<h4 class="intro_title">Outline of Software Development</h4>
 				<dl class="dl-vertical">
-					<dt class="outline_title">Introduction</dt>
-					<dd><p class="intro_content"><span>Coming Soon...</span></p></dd>
+					<dt>Introduction</dt>
+					<dd><span class="intro_content">Coming Soon...</span></dd>
 					
-					<dt class="outline_title">Applications</dt>
-					<dd><p class="intro_content"><span>Project Calendar: Integration of Google Spreadsheet and D3.js</span></p></dd>
-					<dd><p class="intro_content"><span>Data Analysis: D3.js</span></p></dd>
+					<dt>Applications</dt>
+					<dd>Project Calendar: Integration of Google Spreadsheet and D3.js</dd>
+					<dd><p class="intro_content">Data Analysis: D3.js</p></dd>
 					
-					<dt class="outline_title">Advance Development</dt>
-					<dd>
-					<p class="intro_content"><span>Real-Time Monitoring: Google App Engine Channel</span></p>
+					<dt>Advance Development</dt>
+					<dd>Real-Time Monitoring: Google App Engine Channel
+					<p class="intro_content"></p>
 					</dd>
-					<dd class="outline_title">
-					<p class="intro_content">
-					<span>App Swarm on Google App Engine</span>
-					</p>
+					<dd>App Swarm on Google App Engine
+					<p class="intro_content">ProtoRTC</p>
 					</dd>
 					
 				</dl>

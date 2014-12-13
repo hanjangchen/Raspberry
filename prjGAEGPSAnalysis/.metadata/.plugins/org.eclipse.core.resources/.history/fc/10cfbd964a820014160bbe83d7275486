@@ -1,7 +1,8 @@
 /* shcedule data from google spradsheet */
 spreadsheet_data = {};
 spreadsheet_data_years = [];
-$.getJSON(
+$
+		.getJSON(
 				"https://spreadsheets.google.com/feeds/list/1SWwXdVpeFWi1cHcF5sUHj47qXunqCo5i1D2jeGhzHaE/od6/public/values?alt=json-in-script&callback=?",
 				function(data) {
 					$

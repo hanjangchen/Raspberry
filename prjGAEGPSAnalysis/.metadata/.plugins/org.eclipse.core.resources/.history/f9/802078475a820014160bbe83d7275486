@@ -54,7 +54,7 @@
 }
 
 .outline_title{
-	font-size: 16px;
+	font-size: 15px;
 }
 
 #project_calendar {
@@ -191,12 +191,10 @@
 					
 					<dt class="outline_title">Advance Development</dt>
 					<dd>
-					<p class="intro_content"><span>Real-Time Monitoring: Google App Engine Channel</span></p>
+					<p class="intro_content"><span>Real-Time Monitoring: Google App Engine Channel</span>/</p>
 					</dd>
-					<dd class="outline_title">
-					<p class="intro_content">
-					<span>App Swarm on Google App Engine</span>
-					</p>
+					<dd class="outline_title">App Swarm on Google App Engine
+					<p class="intro_content"><span>ProtoRTC</span></p>
 					</dd>
 					
 				</dl>
