@@ -42,7 +42,7 @@ stroke-width: 0;
 		return [Math.random() * 30 -10, Math.random() * 30 - 10];
 	}
 	
-	for(var ith = 0; ith < 5; ith++){
+	for(var ith = 0; ith < 10; ith++){
 		dataSet.push(generate_data());
 	}
 	
@@ -108,7 +108,7 @@ stroke-width: 0;
 			newData.push([Math.random() * 2 - 1, Math.random() * 2 - 1]);
 		}
 		
-		circles.transition().duration(1000).ease("linear").attr("cx", function(d){ return (xScale(d[0]) + Math.random() * 30)}).attr("cy", function(d){ return (yScale(d[1]) + Math.random() * 30)}).attr("r", function(d){ return rScale(d[1])});
+		circles.transition().duration(1000).ease("linear").attr("cx", function(d){ return (xScale(d[0]) + Math.random() * 10 - 5)}).attr("cy", function(d){ return (yScale(d[1]) + Math.random() * 10 - 5)}).attr("r", function(d){ return rScale(d[1])});
 		
 	};
 	

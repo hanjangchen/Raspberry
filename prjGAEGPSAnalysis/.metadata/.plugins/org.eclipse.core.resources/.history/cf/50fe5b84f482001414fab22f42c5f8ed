@@ -112,7 +112,7 @@
 						of Development on Google App Engine</a></li>
 						
 				<li><a
-					ng-class="is_selected('particle_swarm_optimization') ? 'active' : 'inactive' "
+					ng-class="is_selected('animation_particle_swarm_optimization') ? 'active' : 'inactive' "
 					ng-click="select_topic('particle_swarm_optimization')">Animation
 						of Particle Swarm Optimization</a></li>
 						

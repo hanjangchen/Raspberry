@@ -42,7 +42,7 @@ stroke-width: 0;
 		return [Math.random() * 30 -10, Math.random() * 30 - 10];
 	}
 	
-	for(var ith = 0; ith < 5; ith++){
+	for(var ith = 0; ith < 10; ith++){
 		dataSet.push(generate_data());
 	}
 	
@@ -94,13 +94,9 @@ stroke-width: 0;
 	var count = 0;
 	var animation;
 	function doAnimation(){
-		console.log(count);
 		count ++;
-		if (count >= 50){
+		if (count === 50){
 			clearTimeout(animation);
-		}else{
-			// start anmation
-			animation = setTimeout(doAnimation, 500);
 		}
 		
 		var newData = [];
@@ -108,11 +104,11 @@ stroke-width: 0;
 			newData.push([Math.random() * 2 - 1, Math.random() * 2 - 1]);
 		}
 		
-		circles.transition().duration(1000).ease("linear").attr("cx", function(d){ return (xScale(d[0]) + Math.random() * 30)}).attr("cy", function(d){ return (yScale(d[1]) + Math.random() * 30)}).attr("r", function(d){ return rScale(d[1])});
-		
+		circles.data(newData).enter().transition().duration(1000).ease("linear").attr("x", function(d){ return xScale(d[0])}).attr("y", function(d){ return yScale(d[1])}).attr("r", function(d){ return rScale(d[1])});
 	};
 	
-	doAnimation();
+	// start anmation
+	// animation = setTimeout(doAnimation, 500);
 })();
 //-->
 </script>
