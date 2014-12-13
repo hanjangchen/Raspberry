@@ -269,7 +269,6 @@ stroke-width: 0;
 				clearTimeout(pso_calculation);
 			}
 			console.log(window.particles_swarm_optimization_d3.config.performance_index_set);
-			console.log(JSON.stringify(window.particles_swarm_optimization_d3.config.particles_values,2,2));
 			console.log(JSON.stringify(window.particles_swarm_optimization_d3.config.global_optimal,2,2));
 	}
 	doPSOAnimation();

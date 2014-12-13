@@ -260,7 +260,7 @@ stroke-width: 0;
 	var pso_calculation;
 	window.particles_swarm_optimization_d3.init_pso();
 	console.log(window.particles_swarm_optimization_d3.config.performance_initial_index_set);
-	console.log(window.particles_swarm_optimization_d3.config.particles_initial_values);
+	
 	function doPSOAnimation(){
 			if(window.particles_swarm_optimization_d3.go_iteration(iteration)){
 				iteration++;
@@ -269,7 +269,6 @@ stroke-width: 0;
 				clearTimeout(pso_calculation);
 			}
 			console.log(window.particles_swarm_optimization_d3.config.performance_index_set);
-			console.log(JSON.stringify(window.particles_swarm_optimization_d3.config.particles_values,2,2));
 			console.log(JSON.stringify(window.particles_swarm_optimization_d3.config.global_optimal,2,2));
 	}
 	doPSOAnimation();
