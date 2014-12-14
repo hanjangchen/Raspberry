@@ -973,7 +973,7 @@
 						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
 							Particles Swarm Optimiaztion is utilized for stochastic
 							optmization; in our case, we will use it for finding out the
-							optimal weights of neural-network<br><a ui-sref="particle_swarm_optimization" target="_blank">Online Animation</a></p>
+							optimal weights of neural-network<a href="/base/particle_swarm_optimization" target="_blank">Online Animation</a></p>
 					</div>
 
 					<div id="neural_network"
