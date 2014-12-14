@@ -402,7 +402,6 @@ stroke-width: 0;
 			}
 	}
 	
-	// bind click events
 	$("#btn_start_animation").on("click" , doPSOAnimation);
 })();
 </script>

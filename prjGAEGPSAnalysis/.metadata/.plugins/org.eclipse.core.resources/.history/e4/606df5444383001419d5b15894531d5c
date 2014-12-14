@@ -366,7 +366,7 @@ stroke-width: 0;
 
 	svg.append("text")
 	   .attr("class","label")
-	   .attr("x", width / 2 - padding + 24)
+	   .attr("x", width / 2 - padding + 22)
 	   .attr("y",height - padding)
 	   .attr("text-anchor","middle")
 	   .text("x");
@@ -402,7 +402,6 @@ stroke-width: 0;
 			}
 	}
 	
-	// bind click events
 	$("#btn_start_animation").on("click" , doPSOAnimation);
 })();
 </script>

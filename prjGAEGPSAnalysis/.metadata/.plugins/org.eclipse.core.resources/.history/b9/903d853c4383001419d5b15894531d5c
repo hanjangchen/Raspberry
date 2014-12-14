@@ -360,13 +360,13 @@ stroke-width: 0;
 				.attr("class", "label")
 				.attr("transform","rotate(-90)")
 				.attr("y", 0)
-				.attr("x", 0 - (height/2) + 20)
+				.attr("x", 0 - (height/2) + 10)
 				.attr("dy","1em")
 				.text("y");
 
 	svg.append("text")
 	   .attr("class","label")
-	   .attr("x", width / 2 - padding + 24)
+	   .attr("x", width / 2 - padding + 22)
 	   .attr("y",height - padding)
 	   .attr("text-anchor","middle")
 	   .text("x");
@@ -402,7 +402,6 @@ stroke-width: 0;
 			}
 	}
 	
-	// bind click events
 	$("#btn_start_animation").on("click" , doPSOAnimation);
 })();
 </script>
