@@ -34,12 +34,6 @@ color: #f00;
 stroke-width: 0;
 }
 
-.label{
-	color: #000;
-	font-style: italic;
-	font-size: 15px;
-	font-weight: bold;
-}
 -->
 </style>
 <div>
@@ -357,17 +351,16 @@ stroke-width: 0;
 	
 	//
 	svg.append("text")
-				.attr("class", "label")
 				.attr("transform","rotate(-90)")
-				.attr("y", 0)
-				.attr("x", 0 - (height/2) + 5)
+				.attr("y", 0 - 5)
+				.attr("x", 0 - (height/2))
 				.attr("dy","1em")
 				.text("y");
 
 	svg.append("text")
-	   .attr("class","label")
-	   .attr("x", width / 2 - padding + 22)
-	   .attr("y",height - padding)
+	   .attr("class","xtext")
+	   .attr("x",width /2 - padding.left)
+	   .attr("y",h - 5)
 	   .attr("text-anchor","middle")
 	   .text("x");
 	

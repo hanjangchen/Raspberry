@@ -359,14 +359,14 @@ stroke-width: 0;
 	svg.append("text")
 				.attr("class", "label")
 				.attr("transform","rotate(-90)")
-				.attr("y", 0)
-				.attr("x", 0 - (height/2) + 5)
+				.attr("y", 0 - 5)
+				.attr("x", 0 - (height/2))
 				.attr("dy","1em")
 				.text("y");
 
 	svg.append("text")
 	   .attr("class","label")
-	   .attr("x", width / 2 - padding + 22)
+	   .attr("x",width / 2 - padding)
 	   .attr("y",height - padding)
 	   .attr("text-anchor","middle")
 	   .text("x");

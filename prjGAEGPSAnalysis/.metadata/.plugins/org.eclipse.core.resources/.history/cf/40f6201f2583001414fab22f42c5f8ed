@@ -34,12 +34,6 @@ color: #f00;
 stroke-width: 0;
 }
 
-.label{
-	color: #000;
-	font-style: italic;
-	font-size: 15px;
-	font-weight: bold;
-}
 -->
 </style>
 <div>
@@ -355,23 +349,6 @@ stroke-width: 0;
 	
 	svg.append("a").attr("class", "btnStart").text("Start");
 	
-	//
-	svg.append("text")
-				.attr("class", "label")
-				.attr("transform","rotate(-90)")
-				.attr("y", 0)
-				.attr("x", 0 - (height/2) + 5)
-				.attr("dy","1em")
-				.text("y");
-
-	svg.append("text")
-	   .attr("class","label")
-	   .attr("x", width / 2 - padding + 22)
-	   .attr("y",height - padding)
-	   .attr("text-anchor","middle")
-	   .text("x");
-	
-	
 	// create circles
 	var circles = svg.selectAll("circle").data(dataSet).enter().append("circle").attr("cx", function(d){ return xScale(d['x'])}).attr("cy", function(d){ return yScale(d['y'])}).attr("r", 5);
 	
@@ -396,9 +373,9 @@ stroke-width: 0;
 			}else{
 				clearTimeout(pso_calculation);
 				var optimal = particles_swarm_optimization_d3.config.global_optimal;
-				var optimal_position = particles_swarm_optimization_d3.config.global_optimal_particles_set;
+				var optimal_position = particles_swarm_optimization_d3.config.global_optimal_value_set;
 				alert(optimal);
-				$("#optimal_result").text("Optimal: " + optimal + " ; Position: x => " + optimal_position[0][0] + ", y => " + optimal_position[0][1]);
+				$("#optimal_result").text("Optimal: " + optimal + " ; Position: " + optimal_position[0]);
 			}
 	}
 	
