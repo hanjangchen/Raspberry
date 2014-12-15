@@ -187,9 +187,7 @@
 					
 					<dt class="outline_title">Applications</dt>
 					<dd><p class="intro_content"><span>Project Calendar: Integration of Google Spreadsheet and D3.js</span></p></dd>
-					<dd><p class="intro_content"><span>Animations: Visualize Algorithms</span></p></dd>
-					<dd><p class="intro_content"><span>Pattern Modeling</span></p></dd>
-					<dd><p class="intro_content"><span>Data Analysis</span></p></dd>
+					<dd><p class="intro_content"><span>Data Analysis: D3.js</span></p></dd>
 					
 					<dt class="outline_title">Advance Development</dt>
 					<dd>
@@ -197,7 +195,7 @@
 					</dd>
 					<dd class="outline_title">
 					<p class="intro_content">
-					<span>Applications Swarm on Google App Engine</span>
+					<span>App Swarm on Google App Engine</span>
 					</p>
 					</dd>
 					
@@ -976,7 +974,7 @@
 							Particles Swarm Optimiaztion is utilized for stochastic
 							optmization; in our case, we will use it for finding out the
 							optimal weights of neural-network<br><br>
-							<a ui-sref="particle_swarm_optimization" target="_blank">*Online Animation of Particle Swarm Optimization</a></p>
+							<a ui-sref="particle_swarm_optimization" target="_blank">*Online Animation</a></p>
 					</div>
 
 					<div id="neural_network"
