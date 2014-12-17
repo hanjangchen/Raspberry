@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="77" version="2.0">
+<workbench progressCount="81" version="2.0">
 <workbenchAdvisor/>
 <window height="661" maximized="true" width="1251" x="17" y="22">
 <fastViewData fastViewLocation="1024"/>
@@ -61,7 +61,7 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.wst.html.core.htmlsource.source" name="index_introduction.html" partName="index_introduction.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop/index/index_introduction.html" title="index_introduction.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/index/index_introduction.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/index/index_introduction.html"/>
-<editorState selectionHorizontalPixel="312" selectionLength="0" selectionOffset="36701" selectionTopPixel="14156"/>
+<editorState selectionHorizontalPixel="247" selectionLength="0" selectionOffset="3678" selectionTopPixel="2610"/>
 </editor>
 <editor id="org.eclipse.wst.html.core.htmlsource.source" name="particle_swarm_optimization_animation.html" partName="particle_swarm_optimization_animation.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop/tutorials/particle_swarm_optimization_animation.html" title="particle_swarm_optimization_animation.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/tutorials/particle_swarm_optimization_animation.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/tutorials/particle_swarm_optimization_animation.html"/>
@@ -77,7 +77,7 @@
 </editor>
 <editor focus="true" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_page_container.js" partName="index_page_container.js" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts/index_page_container.js" title="index_page_container.js" tooltip="prjGPSAnalysis/src/static/javascripts/index_page_container.js" workbook="org.eclipse.ui.internal.EditorStack@3f88fd">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/javascripts/index_page_container.js"/>
-<editorState selectionHorizontalPixel="49" selectionLength="27" selectionOffset="2187" selectionTopPixel="555"/>
+<editorState selectionHorizontalPixel="28" selectionLength="0" selectionOffset="1888" selectionTopPixel="555"/>
 </editor>
 <editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="index_introduction_desktop.js" partName="index_introduction_desktop.js" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts/index_introduction_desktop.js" title="index_introduction_desktop.js" tooltip="prjGPSAnalysis/src/static/javascripts/index_introduction_desktop.js" workbook="org.eclipse.ui.internal.EditorStack@3f88fd">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/javascripts/index_introduction_desktop.js"/>
@@ -115,6 +115,7 @@
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop/tutorials"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile/data_analysis"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile/index"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/tablet"/>
@@ -299,7 +300,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.24610823" ratioLeft="332" ratioRight="1017" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.13417347" ratioLeft="181" ratioRight="1168" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.74958813" ratioLeft="455" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
@@ -333,13 +334,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index/index_introduction.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index/index.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/my_ng_templates/tablet/index/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/prjGPSAnalysis/src/static/javascripts/index_page_container.js"/>
 </editors>
-<item historyLabel="index_page_container.js" index="1">
-<position info="not_deleted" x="14516" y="33"/>
-</item>
-<item historyLabel="particle_swarm_optimization_animation.html" index="0">
-<position/>
-</item>
 <item historyLabel="index_page_container.js" index="1">
 <position info="not_deleted" x="14516" y="48"/>
 </item>
@@ -481,8 +477,14 @@
 <item historyLabel="index.html" index="16">
 <position info="not_deleted" x="1070" y="0"/>
 </item>
-<item active="true" historyLabel="index_introduction.html" index="12">
+<item historyLabel="index_introduction.html" index="12">
 <position info="not_deleted" x="36710" y="0"/>
+</item>
+<item historyLabel="index_page_container.js" index="17">
+<position info="not_deleted" x="1888" y="0"/>
+</item>
+<item active="true" historyLabel="index_introduction.html" index="12">
+<position info="not_deleted" x="35788" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
