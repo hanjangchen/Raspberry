@@ -63,7 +63,6 @@ class IndexPageDispatcher(BaseHandler):
             self.redirect(users.create_login_url('/base/index'))
         
 
-# temp solution for wrong img-url request
 class FaultImgURLDispatcher(BaseHandler):
     def get(self):
         """ temp solution """
