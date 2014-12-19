@@ -202,7 +202,7 @@
 
 		<!-- content -->
 
-		<div class="row content_block">
+		<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 content_block">
 			<h2>Hardware</h2>
 			<div>
 				<h3>Raspberry PI</h3>
@@ -442,7 +442,7 @@
 
 
 
-			<div class="content_block">
+			<div class=" content_block">
 				<h3>Database/Data Storage</h3>
 				<div>
 					<h4>Google Datastore</h4>
