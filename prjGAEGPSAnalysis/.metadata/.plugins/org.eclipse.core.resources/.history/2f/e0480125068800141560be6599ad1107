@@ -1,0 +1,12 @@
+'''
+Created on Dec 19, 2014
+
+@author: alantai
+'''
+import base64
+
+def encode(key, clear):
+    enc = []
+    for ith in range(len(clear)):
+        key_c = key[ith % len(key)]
+        enc_c = chr((ord(clear[ith]) + ord(key_c)) % 256)

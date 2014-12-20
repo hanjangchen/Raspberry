@@ -1,0 +1,11 @@
+'''
+Created on Dec 19, 2014
+
+@author: alantai
+'''
+import base64
+
+def encode(key, clear):
+    enc = []
+    for ith in range(len(clear)):
+        pass

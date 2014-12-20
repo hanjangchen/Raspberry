@@ -1,1 +1,14 @@
-DELSTRdispatchers.dispatchers_protortc_services
+INSTUPdictionaries.dict_keys_values
+D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis\src\dictionaries\dict_keys_values.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&3|8|2|5&&3|9|2|5&&3|10|2|5&&3|11|2|5
+__init__=3
+KeysVaulesGeneral=1
+dictionaries.dict_keys_values=2
+KeysVaulesGeneral.__init__=5
+web_title_front_page=7
+index_page=10
+web_title=6
+web_title_index_page=8
+brand_title=4
+config_setting=11
+front_page=9
