@@ -1,0 +1,93 @@
+{% extends "/base.html"%}
+
+<!-- sub-css block -->
+{% block css_content %} {% endblock %}
+
+<!-- main content -->
+{% block main_content %}
+<div ng-app="index_page_app" ng-controller="indexPageDispatchCtrl" ui-view></div>
+
+{% endblock %}
+
+<!-- sub-js block -->
+{% block js_content %}
+
+<!-- js -->
+<!-- get data from back-end by jinja2 -->
+<script type="text/javascript">
+
+var session_id = "{{session_id}}";
+
+/* hub */
+window.hubOfIndexPageContainer = window.hubOfIndexPageContainer || {
+		upload_url : '{{upload_url}}',
+}
+
+/* temp */
+var is_admin = false;
+{% if is_admin %}
+is_admin = true;
+{% endif %}
+
+/* temp (will be deleted) */
+var upload_url = '{{upload_url}}';
+
+/* temp data-set */
+var data_set_ary = [];
+{% if gps_data_list %}
+var gps_data_list = {{gps_data_list|safe}};
+try{
+	gps_data_list.forEach(function(entry, ith){
+			console.log(JSON.stringify(entry,2,2));
+			var temp_data_ary = [];
+			var temp_time_ary = [];
+			var temp_model = '';
+			var temp_date = '';
+			
+			if('RSSI' in entry){
+				temp_data_ary = entry['RSSI'];
+				temp_time_ary = entry['Time'];
+				temp_model = entry['Model'];
+				temp_date = entry['Date'];
+			}
+			else if('Temperature' in entry){
+				temp_data_ary = entry['Temperature'];
+				temp_time_ary = entry['Time'];
+				temp_model = entry['Model'];
+				temp_date = entry['Date'];
+			}
+			else if('DS18B20' in entry){
+				temp_data_ary = entry['DS18B20'];
+				temp_time_ary = entry['Time'];
+				temp_model = entry['Model'];
+				temp_date = entry['Date'];
+			}
+			
+			//
+			if(temp_data_ary.length !== 0 && temp_time_ary.length !== 0){
+
+				var length_data = temp_data_ary.length;
+				var length_time = temp_time_ary.length;
+				var min_length = Math.min(length_data, length_time);
+				var temp_sub_data_ary = [];
+				
+				for (ith = 0; ith < min_length ; ith++){
+					temp_sub_data_ary.push({'date' : temp_time_ary[ith], 'sensor' : temp_data_ary[ith]});
+				}
+				data_set_ary.push({'id' : ith.toString(), 'sub_model': temp_model, 'sub_date' : temp_date, 'sub_data' : temp_sub_data_ary});
+			}
+	});
+	
+	// console.log(JSON.stringify(data_set_ary,2,2));
+}catch(e){
+	console.log(e.message);
+}
+
+{% endif %}
+</script>
+
+<script type="text/javascript" src="/js/index_page_container.js"></script>
+<!-- this pagination is for images detail list use -->
+<script type="text/javascript" src="/js/plugin_mis/dir-pagination.js"></script>
+<script type="text/javascript" src="/js/plugin_mis/dir-pagination-data-analysis.js"></script>
+{% endblock %}

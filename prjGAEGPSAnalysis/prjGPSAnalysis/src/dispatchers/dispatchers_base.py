@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+__author__ = 'Alan Tai'
 '''
 Created on Jun 24, 2014
 
@@ -17,7 +18,6 @@ import json
 from dictionaries.dict_keys_values import KeysVaulesGeneral
 dict_general = KeysVaulesGeneral()
 
-__author__ = 'Alan Tai'
 # jinja environment
 jinja_environment = jinja2.Environment(loader=jinja2.FileSystemLoader('static/templates'))
 
@@ -25,14 +25,27 @@ jinja_environment = jinja2.Environment(loader=jinja2.FileSystemLoader('static/te
 class FrontPageDispatcher(BaseHandler):
     def get(self):
         """ front page dispatcher """
+        
+        # session test
+        self.set_session(arg_session_name = 'session', arg_backend_name = 'memcache')
+        self.response.headers['Set-Cookie'] = "{0}={1}; path=/".format("session_id", "gergwregh6565hetyjty")
+        
+        # self.session['client_id'] = "4223543%^UJjTyTYJ^%J^&u6&U^7i^&I.~-DQ5"
+        app_session = self.session
+        session_id = self.request.cookies.get("session_id")
+        # end of session test
+        
         template_values = {}
-        template_values.update({'title': dict_general.web_title_front_page})
+        template_values.update({'title': dict_general.web_title_front_page, "session" : app_session, "session_id" : session_id })
         self.render_template(dict_general.front_page, template_values)
         
 # dispatchers
 class IndexPageDispatcher(BaseHandler):
     def get(self):
-        """ front page dispatcher """
+        """ index page dispatcher """
+        # session_id from cookie
+        session_id = self.request.cookies.get("session_id")
+        
         template_values = {}
         gps_data_list = []
         # retrieve data
@@ -47,7 +60,6 @@ class IndexPageDispatcher(BaseHandler):
                     gps_data_list.append(data_entity.gps_data)
             
         # admin filter factor ; han.jang.chen@gmail.com, gogistics.tw@gmail
-        
         is_admin = False
         user = users.get_current_user()
         if user:
@@ -56,7 +68,7 @@ class IndexPageDispatcher(BaseHandler):
                 
             # create blob upload path
             upload_url = blobstore.create_upload_url('/data_retrieving/upload_img')
-            template_values.update({'title':dict_general.web_title_index_page, 'gps_data_list': json.dumps(gps_data_list), 'upload_url' : upload_url, 'is_admin' : is_admin})
+            template_values.update({'title':dict_general.web_title_index_page, 'gps_data_list': json.dumps(gps_data_list), 'upload_url' : upload_url, 'is_admin' : is_admin, "session_id" : session_id})
             self.render_template(dict_general.index_page, template_values)
             
         else:

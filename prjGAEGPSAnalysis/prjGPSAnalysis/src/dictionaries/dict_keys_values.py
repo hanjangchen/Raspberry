@@ -23,6 +23,10 @@ class KeysVaulesGeneral():
         #webapp2 config
         self.config_setting = {
                                'webapp2_extras.auth': {'user_model': 'models.models_people.User','user_attributes': ['name']},
-                               'webapp2_extras.sessions': {'secret_key': 'b4RiUe~53!kG-AqFB!.*^OHS$u2cNwOQGG'}  # secret key is just a combination of random character which is better to be unguessable; user can create whatever they want
+                               'webapp2_extras.sessions': {'secret_key': 'b4RiUe~53!kG-AqFB!.*^OHS$u2cNwOQGG',  # secret key is just a combination of random character which is better to be unguessable; user can create whatever they want
+                                                           'cookie_name' : 'gogistics-tw-session',
+                                                           'session_max_age' : 86400,
+                                                           'cookie_args' : {'max_age' : 86400,
+                                                                            'httponly' : True},} 
                                }
         

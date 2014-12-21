@@ -9,7 +9,7 @@ import base64
 
 class EncryptionTools(object):
     def __init__(self):
-        self._my_key = "csadcavrev43t24t45y54y356y65u56(*&*(UHY*T7_+_+O)O0-9i90i(I)(IU09u09u)U*(YR$&ER^%7EDRD~!E@@#R@#Rr2>:LPKBERBvdf756~BBFGBfgb"
+        self._my_key = "csadcavrev43t24t45y54y356y65u56(*&*(UHY*T7_+_+O)O0-9i90i(I)(IU09u09u)U*(YR$&ER^%7EDRD~!E@.87@#R@#Rr2>:LPKBERBvdf756~BBFGBfgb"
         
     def encode(self, key, clear):
         enc = []

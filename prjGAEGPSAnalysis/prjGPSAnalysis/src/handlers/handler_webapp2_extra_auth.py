@@ -38,7 +38,9 @@ def admin_required(handler):
     return admin_login
 
 
+# Basehandler
 class BaseHandler(webapp2.RequestHandler):
+    
     @webapp2.cached_property
     def auth(self):
         """ shortcut to access the auth instance """
@@ -65,7 +67,13 @@ class BaseHandler(webapp2.RequestHandler):
     @webapp2.cached_property
     def session(self):
         """ shortcut """
-        return self.session_store.get_session(backend='datastore')
+        if not self._backend_name:
+            self._backend_name = 'datastore'
+        return self.session_store.get_session(name = self._session_name, backend = self._backend_name)
+    
+    def set_session(self, arg_session_name = None, arg_backend_name = 'memcache'):
+        self._session_name = arg_session_name
+        self._backend_name = arg_backend_name
     
     def render_template(self, view_filename, params=None):
         if not params:
@@ -94,3 +102,6 @@ class BaseHandler(webapp2.RequestHandler):
             # save all session
             self.session_store.save_sessions(self.response)
             
+    # get user' info
+    def get_user_info(self):
+        return self.auth.get_user_by_session()

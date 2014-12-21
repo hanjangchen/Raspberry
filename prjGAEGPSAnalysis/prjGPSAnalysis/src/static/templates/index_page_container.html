@@ -15,12 +15,15 @@
 <!-- js -->
 <!-- get data from back-end by jinja2 -->
 <script type="text/javascript">
+
 /* hub */
 window.hubOfIndexPageContainer = window.hubOfIndexPageContainer || {
 		upload_url : '{{upload_url}}',
+		is_admin : false,
+		ary_data_set : []
 }
 
-/**/
+/* temp */
 var is_admin = false;
 {% if is_admin %}
 is_admin = true;
@@ -29,7 +32,7 @@ is_admin = true;
 /* temp (will be deleted) */
 var upload_url = '{{upload_url}}';
 
-/**/
+/* temp data-set */
 var data_set_ary = [];
 {% if gps_data_list %}
 var gps_data_list = {{gps_data_list|safe}};
