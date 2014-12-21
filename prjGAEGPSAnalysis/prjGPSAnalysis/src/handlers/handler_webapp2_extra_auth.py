@@ -68,7 +68,7 @@ class BaseHandler(webapp2.RequestHandler):
     def session(self):
         """ shortcut """
         if not self._backend_name:
-            self._backend_name = 'datastore'
+            self._backend_name = 'memcache'
         return self.session_store.get_session(name = self._session_name, backend = self._backend_name)
     
     def set_session(self, arg_session_name = None, arg_backend_name = 'memcache'):

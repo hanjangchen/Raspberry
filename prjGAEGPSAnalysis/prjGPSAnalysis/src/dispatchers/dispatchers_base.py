@@ -9,10 +9,8 @@ from models.models_gps_data import GPSData
 from google.appengine.ext import blobstore
 from google.appengine.api import users
 from handlers.handler_webapp2_extra_auth import BaseHandler
-import logging
-import jinja2
-import webapp2
-import json
+from handlers.handler_general_functions import generate_random_id
+import logging, jinja2, webapp2, json, datetime, Cookie
 
 # dictionaries
 from dictionaries.dict_keys_values import KeysVaulesGeneral
@@ -27,12 +25,20 @@ class FrontPageDispatcher(BaseHandler):
         """ front page dispatcher """
         
         # session test
-        self.set_session(arg_session_name = 'session', arg_backend_name = 'memcache')
-        self.response.headers['Set-Cookie'] = "{0}={1}; path=/".format("session_id", "gergwregh6565hetyjty")
-        
+        self.set_session(arg_session_name = 'client-4', arg_backend_name = 'memcache')
+        expire_timespan = (datetime.datetime.now() - datetime.timedelta(days = 2)).strftime('%a, %d-%b-%Y %H:%M:%S')
+        expire_timespan = expire_timespan
+        random_id = generate_random_id(50)
+#         cookie_content = "session_id_test_8={cookie_random_id}".format(cookie_random_id = random_id)
+#         my_cookie = Cookie.SimpleCookie()
+#         my_cookie["session_id_test_15"] = random_id
+#         self.response.headers.add_header("Set-Cookie", my_cookie.output(header=''))
+        # self.response.headers.add_header("Set-Cookie", "test_cookie=hello_world; expires=Thu, 25-Dec-2014 12:21:43 GMT")
+        self.response.headers['Set-Cookie'] = "{session_id_title}={session_id_val}; path=/".format( session_id_title = "session_id_20", session_id_val = random_id)
+        self.response.headers['Expires'] = expire_timespan
         # self.session['client_id'] = "4223543%^UJjTyTYJ^%J^&u6&U^7i^&I.~-DQ5"
         app_session = self.session
-        session_id = self.request.cookies.get("session_id")
+        session_id = self.request.cookies.get("session_id_20")
         # end of session test
         
         template_values = {}

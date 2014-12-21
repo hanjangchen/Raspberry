@@ -1,0 +1,20 @@
+{% extends "/base.html"%}
+
+<!-- sub-css block -->
+{% block css_content %}
+{% endblock %}
+
+<!-- main content -->
+{% block main_content %}
+<div ng-app="front_page_app" ng-controller="frontPageDispatchCtrl"  ui-view></div>
+<script type="text/javascript">
+<!--
+var expires = "{{session}}";
+//-->
+</script>
+{% endblock %}
+
+<!-- sub-js block -->
+{% block js_content %}
+<script type="text/javascript" src="/js/front_page_container.js"></script>
+{% endblock %}
