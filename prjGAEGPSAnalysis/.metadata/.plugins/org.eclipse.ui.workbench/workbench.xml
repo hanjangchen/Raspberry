@@ -49,33 +49,33 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.wst.html.core.htmlsource.source" name="particle_swarm_optimization_animation.html" partName="particle_swarm_optimization_animation.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop/tutorials/particle_swarm_optimization_animation.html" title="particle_swarm_optimization_animation.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/desktop/tutorials/particle_swarm_optimization_animation.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/my_ng_templates/desktop/tutorials/particle_swarm_optimization_animation.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1222" selectionTopPixel="525"/>
-</editor>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="dispatchers_base.py" partName="dispatchers_base" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/dispatchers/dispatchers_base.py" title="dispatchers_base" tooltip="prjGPSAnalysis/src/dispatchers/dispatchers_base.py" workbook="DefaultEditorWorkbook">
+<editor id="org.python.pydev.editor.PythonEditor" name="dispatchers_base.py" partName="dispatchers_base" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/dispatchers/dispatchers_base.py" title="dispatchers_base" tooltip="prjGPSAnalysis/src/dispatchers/dispatchers_base.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/dispatchers/dispatchers_base.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1118" selectionTopPixel="63"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1504" selectionTopPixel="180"/>
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="dict_keys_values.py" partName="dict_keys_values" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/dictionaries/dict_keys_values.py" title="dict_keys_values" tooltip="prjGPSAnalysis/src/dictionaries/dict_keys_values.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/dictionaries/dict_keys_values.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1277" selectionTopPixel="0"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="handler_encryption.py" partName="handler_encryption" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/handlers/handler_encryption.py" title="handler_encryption" tooltip="prjGPSAnalysis/src/handlers/handler_encryption.py" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="handler_encryption.py" partName="handler_encryption" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/handlers/handler_encryption.py" title="handler_encryption" tooltip="prjGPSAnalysis/src/handlers/handler_encryption.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/handlers/handler_encryption.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="308" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="233" selectionTopPixel="0"/>
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="handler_webapp2_extra_auth.py" partName="handler_webapp2_extra_auth" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/handlers/handler_webapp2_extra_auth.py" title="handler_webapp2_extra_auth" tooltip="prjGPSAnalysis/src/handlers/handler_webapp2_extra_auth.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/handlers/handler_webapp2_extra_auth.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2053" selectionTopPixel="753"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2052" selectionTopPixel="765"/>
 </editor>
 <editor id="org.eclipse.wst.html.core.htmlsource.source" name="front_page_container.html" partName="front_page_container.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/templates/front_page_container.html" title="front_page_container.html" tooltip="prjGPSAnalysis/src/static/templates/front_page_container.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/templates/front_page_container.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="227" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="291" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.wst.html.core.htmlsource.source" name="index_page_container.html" partName="index_page_container.html" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/templates/index_page_container.html" title="index_page_container.html" tooltip="prjGPSAnalysis/src/static/templates/index_page_container.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/static/templates/index_page_container.html"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="383" selectionTopPixel="15"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="handler_general_functions.py" partName="handler_general_functions" path="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/handlers/handler_general_functions.py" title="handler_general_functions" tooltip="prjGPSAnalysis/src/handlers/handler_general_functions.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/prjGPSAnalysis/src/handlers/handler_general_functions.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="148" selectionOffset="103" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -108,6 +108,7 @@
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/libs_encryption"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/javascripts"/>
+<expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/desktop"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/mobile/data_analysis"/>
@@ -115,7 +116,7 @@
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/tablet"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/my_ng_templates/tablet/index"/>
 <expanded IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/static/templates"/>
-<selected IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/app.yaml"/>
+<selected IMemento.internal.id="D:/Raspberry/prjGAEGPSAnalysis/prjGPSAnalysis/src/handlers/handler_general_functions.py"/>
 </viewState>
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
@@ -294,7 +295,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19199407" ratioLeft="259" ratioRight="1090" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.07857672" ratioLeft="106" ratioRight="1243" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.74958813" ratioLeft="455" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
@@ -311,164 +312,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/prjGPSAnalysis/src/handlers/handler_encryption.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/prjGPSAnalysis/src/handlers/handler_webapp2_extra_auth.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/prjGPSAnalysis/src/dispatchers/dispatchers_base.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/templates/front_page_container.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/prjGPSAnalysis/src/handlers/handler_encryption.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/prjGPSAnalysis/src/handlers/handler_general_functions.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/prjGPSAnalysis/src/dictionaries/dict_keys_values.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/templates/index_page_container.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/prjGPSAnalysis/src/libs_encryption/__init__.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" path="/prjGPSAnalysis/src/static/templates/base.html"/>
 </editors>
-<item historyLabel="handler_webapp2_extra_auth" index="1">
-<position info="not_deleted" x="2217" y="16"/>
+<item historyLabel="front_page_container.html" index="1">
+<position info="not_deleted" x="295" y="0"/>
 </item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="788" y="0"/>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="1350" y="0"/>
 </item>
-<item historyLabel="handler_encryption" index="0">
-<position info="not_deleted" x="308" y="0"/>
+<item historyLabel="handler_general_functions" index="3">
+<position info="not_deleted" x="193" y="0"/>
 </item>
-<item historyLabel="handler_webapp2_extra_auth" index="1">
-<position info="not_deleted" x="2217" y="16"/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1318" y="0"/>
-</item>
-<item historyLabel="index_page_container.html" index="5">
-<position info="not_deleted" x="383" y="0"/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
+<item historyLabel="dispatchers_base" index="0">
 <position/>
 </item>
-<item historyLabel="dispatchers_base" index="2">
+<item historyLabel="handler_general_functions" index="3">
+<position info="not_deleted" x="193" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="892" y="0"/>
+</item>
+<item historyLabel="handler_general_functions" index="3">
+<position info="not_deleted" x="193" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
 <position/>
 </item>
-<item historyLabel="front_page_container.html" index="3">
+<item historyLabel="front_page_container.html" index="1">
+<position info="not_deleted" x="293" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="2242" y="0"/>
+</item>
+<item historyLabel="front_page_container.html" index="1">
+<position info="not_deleted" x="291" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="1391" y="0"/>
+</item>
+<item historyLabel="handler_general_functions" index="3">
+<position info="not_deleted" x="138" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="1391" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="1429" y="0"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
 <position/>
 </item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="2767" y="0"/>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="854" y="0"/>
 </item>
-<item historyLabel="index_page_container.html" index="5">
-<position info="not_deleted" x="383" y="0"/>
+<item historyLabel="handler_general_functions" index="3">
+<position info="not_deleted" x="103" y="148"/>
 </item>
-<item historyLabel="front_page_container.html" index="3">
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="854" y="0"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
 <position/>
 </item>
-<item historyLabel="index_page_container.html" index="5">
-<position info="not_deleted" x="383" y="0"/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
-<position/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
-<position/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
-<position/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="913" y="0"/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
-<position info="not_deleted" x="328" y="0"/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1149" y="0"/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
-<position/>
-</item>
-<item historyLabel="handler_webapp2_extra_auth" index="1">
-<position info="not_deleted" x="2217" y="16"/>
-</item>
-<item historyLabel="handler_encryption" index="0">
-<position info="not_deleted" x="308" y="0"/>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="854" y="0"/>
 </item>
 <item historyLabel="dict_keys_values" index="4">
 <position info="not_deleted" x="1277" y="0"/>
 </item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1149" y="0"/>
-</item>
-<item historyLabel="handler_webapp2_extra_auth" index="1">
-<position info="not_deleted" x="2053" y="0"/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1317" y="0"/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
+<item historyLabel="handler_encryption" index="2">
 <position/>
 </item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1149" y="0"/>
-</item>
-<item historyLabel="handler_webapp2_extra_auth" index="1">
-<position info="not_deleted" x="2053" y="0"/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1149" y="0"/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
+<item historyLabel="dispatchers_base" index="0">
 <position/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="2767" y="0"/>
-</item>
-<item historyLabel="index_page_container.html" index="5">
-<position info="not_deleted" x="539" y="0"/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
-<position/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1551" y="0"/>
-</item>
-<item historyLabel="libs_encryption" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1149" y="0"/>
-</item>
-<item historyLabel="handler_webapp2_extra_auth" index="1">
-<position info="not_deleted" x="2053" y="0"/>
-</item>
-<item historyLabel="base.html" index="7">
-<position info="not_deleted" x="364" y="0"/>
-</item>
-<item historyLabel="handler_webapp2_extra_auth" index="1">
-<position info="not_deleted" x="2053" y="0"/>
-</item>
-<item historyLabel="index_page_container.html" index="5">
-<position info="not_deleted" x="539" y="0"/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
-<position/>
-</item>
-<item historyLabel="index_page_container.html" index="5">
-<position info="not_deleted" x="383" y="0"/>
-</item>
-<item historyLabel="front_page_container.html" index="3">
-<position info="not_deleted" x="227" y="0"/>
-</item>
-<item historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1118" y="0"/>
 </item>
 <item historyLabel="dict_keys_values" index="4">
 <position info="not_deleted" x="1277" y="0"/>
 </item>
-<item active="true" historyLabel="dispatchers_base" index="2">
-<position info="not_deleted" x="1118" y="0"/>
+<item historyLabel="handler_encryption" index="2">
+<position/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="2431" y="10"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="187" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="1422" y="1"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="559" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="852" y="0"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="559" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="700" y="0"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="559" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="700" y="0"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="559" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="1534" y="0"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="204" y="353"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="1534" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="415" y="0"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="587" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="415" y="0"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="674" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="1533" y="0"/>
+</item>
+<item historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="674" y="0"/>
+</item>
+<item historyLabel="dispatchers_base" index="0">
+<position info="not_deleted" x="1504" y="0"/>
+</item>
+<item active="true" historyLabel="handler_encryption" index="2">
+<position info="not_deleted" x="674" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -489,6 +487,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="handler_general_functions.py" tooltip="prjGPSAnalysis/src/handlers/handler_general_functions.py">
+<persistable path="/prjGPSAnalysis/src/handlers/handler_general_functions.py"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="app.yaml" tooltip="prjGPSAnalysis/src/app.yaml">
 <persistable path="/prjGPSAnalysis/src/app.yaml"/>
 </file>
@@ -530,9 +531,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" tooltip="prjGPSAnalysis/src/static/my_ng_templates/mobile/index/index.html">
 <persistable path="/prjGPSAnalysis/src/static/my_ng_templates/mobile/index/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="particle_swarm_optimization.js" tooltip="prjGPSAnalysis/src/static/javascripts/plugin_mis/particle_swarm_optimization.js">
-<persistable path="/prjGPSAnalysis/src/static/javascripts/plugin_mis/particle_swarm_optimization.js"/>
 </file>
 </mruList>
 </workbench>
