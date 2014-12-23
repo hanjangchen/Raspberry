@@ -14,11 +14,13 @@ var index_page_app, device;
 	var injected_module = [];
 	if (is_admin) {
 		injected_module = [ 'angular-responsive', 'ui.router',
-				'myGpsDataDirective', 'myIndexAdminImagesUploadDirective' ];
+				'myGpsDataDirective', 'myIndexAdminImagesUploadDirective', 'ngAnimate' ];
 	} else {
 		injected_module = [ 'angular-responsive', 'ui.router',
-				'myGpsDataDirective' ];
+				'myGpsDataDirective', 'ngAnimate' ];
 	}
+	
+	// modify interpolateProvide to avoid the interpolating collision to jinja
 	index_page_app = angular.module('index_page_app', injected_module,
 			function($interpolateProvider) {
 				$interpolateProvider.startSymbol('[[');
@@ -74,8 +76,6 @@ var index_page_app, device;
 							templateUrl : '/ng_templates/' + device
 									+ '/tutorials/particle_swarm_optimization_animation.html',
 						});
-
-		// $urlRouterProvider.otherwise('/index_introduction'); // default page
 
 	});
 
@@ -173,7 +173,7 @@ var index_page_app, device;
 				// toggle topic content
 				setTimeout(function(){
 					$state.transitionTo(section);
-				}, 2000);
+				}, 1000);
 			}
 		}
 

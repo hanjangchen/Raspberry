@@ -25,7 +25,7 @@ dispatchers.__init__|1412633156250|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis
 11=dictionaries.dict_keys_values
 4=handlers.handler_webapp2_extra_auth
 15=BaseHandler.session
-30=ImagesDataDownloadDispatcher
+28=ImagesDataDownloadDispatcher
 12=KeysVaulesGeneral
 25=MessageService
 26=MessageResponse
@@ -50,7 +50,7 @@ dispatchers.__init__|1412633156250|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis
 10=libs_encryption.rsaKeysGenerator
 31=BaseHandler.dispatch
 17=BaseHandler
-28=GPSDataRetrievingDispatcher
+30=GPSDataRetrievingDispatcher
 -- END DICTIONARY
 -- START TREE 1
 26
@@ -69,12 +69,12 @@ gcd|1|gcd!58@
 gen|3|generate_random_id!66@generateLargePrime!74@generateKey!82@
 get|0|
 gps|2|GPSDataRetrievingDispatcher!17@GPSData!9@
-ima|3|ImageDetail!9@ImagesDataDownloadDispatcher!17@ImagesDataUploadDispatcher!17@
+ima|3|ImagesDataDownloadDispatcher!17@ImageDetail!9@ImagesDataUploadDispatcher!17@
 ind|1|IndexPageDispatcher!25@
 isp|1|isPrime!74@
-jin|3|jinja_environment!19@jinja_environment!35@jinja_environment!27@
+jin|3|jinja_environment!35@jinja_environment!19@jinja_environment!27@
 key|1|KeysVaulesGeneral!89@
-mes|3|MessageService!41@MessageResponse!41@MessageRequest!41@
+mes|3|MessageService!41@MessageRequest!41@MessageResponse!41@
 my_|0|
 rab|1|rabinMiller!74@
 reg|1|RegxTestDispatcher!25@

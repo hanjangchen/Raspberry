@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta name="author" content="Alan Tai">
+<meta name="company_name_english" content="Gogistics Ltd.">
+<meta name="company_name_mandarin" content="資雲科技有限公司">
+<meta name="topic" content="GPS module Analysis">
+<meta name="future_goal" content="Internet of Things">
+<meta name="title" content="{{title}}">
+<meta
+	content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
+	name='viewport' />
+
+<!-- icon -->
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+
+<!-- fav and touch icons for Apple devices -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+<link rel="apple-touch-icon-precomposed"
+	href="/apple-touch-icon-precomposed.png">
+	
+<!-- jquery -->
+<link rel="stylesheet"
+	href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+
+<!-- bootstrap Core CSS -->
+<link href="/css/plugin_bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="/css/base.css" rel="stylesheet">
+
+<!-- famous-angular -->
+<link href="/css/plugin_famous/famous-angular.min.css">
+
+{% block css_content %} {% endblock %}
+
+
+<title>{{ title|safe }}</title>
+</head>
+<body>
+
+	<!-- Processing Cover -->
+	<div id="processing_cover"
+		style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 10000; text-align: center; color: #f00; background-color: #fff; opacity: 0.9; display: none;">
+		<p
+			style="position: relative; opacity: 1; color: #f00; width: 100%; height: 100%; margin: 20% auto;">需求處理中</p>
+	</div>
+
+	<!-- main content -->
+	{% block main_content %}
+	<p>No Templates Found</p>
+	{% endblock %}
+
+	<!-- js files are placed at the end of the document so the pages load faster -->
+	<!-- jquery -->
+	<script type="text/javascript"
+		src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="/js/plugin_jq/jquery.sheetrock.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	
+	<!-- angularjs -->
+	<script type="text/javascript" src="/js/plugin_ng/angular.min.js"></script>
+	<script type="text/javascript" src="/js/plugin_ng/angular-route.js"></script>
+	<script type="text/javascript" src="/js/plugin_ng/angular-ui-router.js"></script>
+
+	<!-- ng directives -->
+	<script type="text/javascript" src="/js/my_ng_directives/index_page_directives.js"></script>
+	<script type="text/javascript" src="/js/my_ng_directives/index_admin_upload_images_directive.js"></script>
+	
+	<!-- famous-angularjs -->
+	<script type="text/javascript" src="https://code.famo.us/famous/global/0.2.2/famous.min.js"></script>
+	<script type="text/javascript" src="/js/plugin_famous/famous-angular.min.js"></script>
+
+	<!-- bootstrap -->
+	<script type="text/javascript" src="/js/plugin_bootstrap/bootstrap.min.js"></script>
+	
+	<!-- d3 -->
+	<script type="text/javascript" src="/js/plugin_d3/d3.js"></script>
+	<script type="text/javascript" src="/js/plugin_d3/d3_tips.js"></script>
+
+	<!-- mis js -->
+	<script type="text/javascript" src="/js/plugin_mis/responsive-directive.js"></script>
+	<script type="text/javascript" src="/js/plugin_mis/cycle.js"></script>
+
+	<!-- self-defined js -->
+	<script type="text/javascript" src="/js/base.js"></script>
+
+	<!-- sub-js -->
+	{% block js_content %} {% endblock %}
+</body>
+</html>
