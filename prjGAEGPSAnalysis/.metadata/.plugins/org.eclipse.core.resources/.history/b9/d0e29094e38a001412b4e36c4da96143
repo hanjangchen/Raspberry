@@ -167,15 +167,21 @@ var index_page_app, device;
 
 		$scope.select_topic = function(section) {
 			$scope.selected = section;
-			if ($('#list_icon').is(":visible")) {
-				$(".navbar-collapse").collapse('hide');
+			$("#list_icon").toggle("slow", function(){
+				$state.transitionTo(section);
+			});
+			
+			/*if ($('#list_icon').is(":visible")) {
+				$(".navbar-collapse").toggle("slow", function(){
+					$state.transitionTo(section);
+				});
 				
 				// toggle topic content
 				
 				$timeout(function(){
 					$state.transitionTo(section);
 				}, 1000);
-			}
+			}*/
 		}
 
 		$scope.is_selected = function(section) {

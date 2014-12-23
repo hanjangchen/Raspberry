@@ -31,15 +31,13 @@
 
 <!-- bootstrap core css -->
 <link href="/css/plugin_bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="/css/base.css" rel="stylesheet">
 
 <!-- angularjs css -->
-<link type="text/css" rel="stylesheet" href="/css/plugin_ng/ng-animation.css">
+<link href="/css/plugin_ng/ng-animation.css">
 
 <!-- famous-angular -->
 <link href="/css/plugin_famous/famous-angular.min.css">
-
-<!-- self-defined css -->
-<link href="/css/base.css" rel="stylesheet">
 
 {% block css_content %} {% endblock %}
 
@@ -71,7 +69,7 @@
 	<script type="text/javascript" src="/js/plugin_ng/angular.min.js"></script>
 	<script type="text/javascript" src="/js/plugin_ng/angular-route.js"></script>
 	<script type="text/javascript" src="/js/plugin_ng/angular-ui-router.js"></script>
-    <script type="text/javascript" src="/js/plugin_ng/angular-animate.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
 
 	<!-- ng directives -->
 	<script type="text/javascript" src="/js/my_ng_directives/index_page_directives.js"></script>

@@ -171,7 +171,6 @@ var index_page_app, device;
 				$(".navbar-collapse").collapse('hide');
 				
 				// toggle topic content
-				
 				$timeout(function(){
 					$state.transitionTo(section);
 				}, 1000);
@@ -196,7 +195,7 @@ var index_page_app, device;
 			$scope.select_topic('index_introduction');
 		}
 	}
-	myIndexController.$inject = ['$state', '$scope', '$timeout', 'GLOBAL_VALUES' ];
+	myIndexController.$inject = ['$state', '$scope', 'GLOBAL_VALUES', '$timeout' ];
 	index_page_app.controller('myIndexCtrl', myIndexController);
 	// end of index page controllers
 	

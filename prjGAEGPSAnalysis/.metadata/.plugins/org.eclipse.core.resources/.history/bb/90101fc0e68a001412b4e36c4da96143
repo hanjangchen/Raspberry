@@ -124,7 +124,7 @@
 </div>
 
 <!-- template view -->
-<div class="jumbotron text-center template_conatiner_view well" ui-view></div>
+<div ui-view class="jumbotron text-center template_conatiner_view"></div>
 
 
 <!-- copy right -->
