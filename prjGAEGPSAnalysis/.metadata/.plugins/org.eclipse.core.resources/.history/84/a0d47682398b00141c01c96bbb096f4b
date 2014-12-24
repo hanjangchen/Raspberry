@@ -74,7 +74,7 @@ fa-app {
 <script type="text/javascript" src="/js/plugin_mis/numeric-1.2.6.min.js"></script>
 <script type="text/javascript">
 
-/* dynamically change classes */
+/* dynamically change classes test */
 $("#btn_animation").click(function(){
 	if($( "#test_animation" ).hasClass( "bounceOutLeft" )){
 		$('#test_animation').removeClass('bounceOutLeft');

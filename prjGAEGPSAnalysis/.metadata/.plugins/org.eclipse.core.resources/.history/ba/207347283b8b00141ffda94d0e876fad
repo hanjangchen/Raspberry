@@ -8,6 +8,7 @@ to prevent collapsing during animation*/
 }
 
 [ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
   left: 0;
   right: 0;
   -webkit-transition:all .5s ease-in-out;
@@ -32,6 +33,7 @@ to prevent collapsing during animation*/
 
 [ui-view].ng-leave {
   opacity: 1;
+  /*padding-left: 0px;*/  
   -webkit-transform:translate3d(0, 0, 0);
   -moz-transform:translate3d(0, 0, 0);
   transform:translate3d(0, 0, 0);
@@ -39,6 +41,7 @@ to prevent collapsing during animation*/
 
 [ui-view].ng-leave-active {
   opacity: 0;
+  /*padding-left: 100px;*/
   -webkit-transform:translate3d(100px, 0, 0);
   -moz-transform:translate3d(100px, 0, 0);
   transform:translate3d(100px, 0, 0);
