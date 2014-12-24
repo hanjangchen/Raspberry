@@ -14,7 +14,7 @@ var index_page_app, device;
 	var injected_module = [];
 	if (is_admin) {
 		injected_module = [ 'angular-responsive', 'ui.router',
-				'myGpsDataDirective', 'myIndexAdminImagesUploadDirective','ngAnimate' ];
+				'myGpsDataDirective', 'myIndexAdminImagesUploadDirective', 'ngAnimate' ];
 	} else {
 		injected_module = [ 'angular-responsive', 'ui.router',
 				'myGpsDataDirective', 'ngAnimate' ];

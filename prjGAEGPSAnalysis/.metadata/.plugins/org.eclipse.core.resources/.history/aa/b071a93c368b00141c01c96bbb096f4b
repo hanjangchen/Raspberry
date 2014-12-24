@@ -92,7 +92,7 @@ $("#btn_animation").click(function(){
 	window.particles_swarm_optimization_d3 = window.particles_swarm_optimization_d3 || {
 			// configuration
 			config : {
-				parameters_range : [[-15, -15],[15, 15]], // ranges of particles;
+				parameters_range : [[-10, -15],[35, 12]], // ranges of particles;
 															// row 1 represent low
 															// boundary and row 2
 															// represent up boundary

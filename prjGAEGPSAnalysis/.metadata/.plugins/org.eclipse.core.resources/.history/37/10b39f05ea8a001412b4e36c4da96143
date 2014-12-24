@@ -33,8 +33,6 @@
 <link href="/css/plugin_bootstrap/bootstrap.min.css" rel="stylesheet">
 
 <!-- angularjs css -->
-<link type="text/css" rel="stylesheet" href="/css/plugin_ng/ng-animation.css">
-<link type="text/css" rel="stylesheet" href="/css/plugin_ng/animate.css">
 
 <!-- famous-angular -->
 <link href="/css/plugin_famous/famous-angular.min.css">

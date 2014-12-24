@@ -63,30 +63,14 @@ fa-app {
 	</div>
 </div>
 
-<!-- 
 <div>
 <input id="btn_animation" type="button" value="Click Me">
-<div id="test_animation" style="width: 100px; height: 50px; border: 1px solid #555;" class="animated">Test</div>
+<div style="width: 100px; height: 50px; border: 1px solid #555;">Test</div>
 </div>
- -->
- 
+
 <!-- js -->
 <script type="text/javascript" src="/js/plugin_mis/numeric-1.2.6.min.js"></script>
 <script type="text/javascript">
-
-$("#btn_animation").click(function(){
-	if($( "#test_animation" ).hasClass( "bounceOutLeft" )){
-		$('#test_animation').removeClass('bounceOutLeft');
-		$('#test_animation').addClass(' fadeInUp');
-	}else{
-		$('#test_animation').removeClass('fadeInUp');
-		$('#test_animation').addClass(' bounceOutLeft');
-	}
-	
-	$('#test_animation').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){ alert("Done"); });
-});
-
-
 (function(){
 	//
 	window.particles_swarm_optimization_d3 = window.particles_swarm_optimization_d3 || {
