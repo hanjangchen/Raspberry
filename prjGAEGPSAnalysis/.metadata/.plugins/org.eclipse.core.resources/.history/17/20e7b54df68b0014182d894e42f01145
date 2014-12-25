@@ -163,21 +163,15 @@ var index_page_app, device;
 		$scope.email = GLOBAL_VALUES.EMAIL;
 		
 		// select topic
-		var selected_template = $state.current.name, isVisited = false;
+		var selected_template = $state.current.name;
 
 		$scope.select_topic = function(section) {
 			$scope.selected = section;
 			if ($('#list_icon').is(":visible")) {
 				$(".navbar-collapse").collapse('hide');
 				
-				//
-				if(!isVisited){
-					isVisited = true;
-				}else{
-					$(".navbar-collapse").collapse('hide');
-				}
-				
 				// toggle topic content
+				
 				$timeout(function(){
 					$state.transitionTo(section);
 				}, 1000);

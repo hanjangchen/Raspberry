@@ -20,9 +20,6 @@ handlers:
 - url: /css
   static_dir: static/css
 
-- url: /font-awesome
-  static_dir: static/font-awesome-4.1.0
-
 - url: /js
   static_dir: static/javascripts
 

@@ -10,7 +10,7 @@ from google.appengine.ext import blobstore
 from google.appengine.api import users
 from handlers.handler_webapp2_extra_auth import BaseHandler
 from handlers.handler_general_functions import generate_random_id
-import logging, jinja2, webapp2, json, datetime, time
+import logging, jinja2, webapp2, json, datetime, time, feedparser
 
 from handlers.handler_encryption import EncryptionTools
 
@@ -21,7 +21,6 @@ dict_general = KeysVaulesGeneral()
 # jinja environment
 jinja_environment = jinja2.Environment(loader=jinja2.FileSystemLoader('static/templates'))
 
-# encryption tools
 basic_encrypt = EncryptionTools()
 
 # dispatchers

@@ -56,6 +56,8 @@ var front_page_app;
 	frontPageDispatchController.$injector = ['$state', '$scope', 'GLOBAL_VALUES'];
 	front_page_app.controller('frontPageDispatchCtrl', frontPageDispatchController);
 
+
 	/* JQuery */
+	
 })();
 

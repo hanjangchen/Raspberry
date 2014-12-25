@@ -3,15 +3,11 @@
 .front_page_block{
 	height: 100%
 }
-
 .vertical-center {
 	min-height: 100% !important;
 	min-height: 100vh !important;
 	display: flex !important;
-	display: -webkit-flex !important;
 	align-items: center !important;
-	-webkit-align-items: center !important;
-  	justify-content: center;
 }
 
 .jumbotron {

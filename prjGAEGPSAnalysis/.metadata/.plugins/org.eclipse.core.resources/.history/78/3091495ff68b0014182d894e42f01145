@@ -170,14 +170,8 @@ var index_page_app, device;
 			if ($('#list_icon').is(":visible")) {
 				$(".navbar-collapse").collapse('hide');
 				
-				//
-				if(!isVisited){
-					isVisited = true;
-				}else{
-					$(".navbar-collapse").collapse('hide');
-				}
-				
 				// toggle topic content
+				
 				$timeout(function(){
 					$state.transitionTo(section);
 				}, 1000);
