@@ -1,3 +1,0 @@
-<div>GPS Data Container {{gpsData}}</div>
-<div ng-transclude></div>
-<p>{{my_data}}</p>

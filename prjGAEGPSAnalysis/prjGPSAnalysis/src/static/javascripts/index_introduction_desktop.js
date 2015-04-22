@@ -1,13 +1,9 @@
 /* shcedule data from google spradsheet */
 spreadsheet_data = {};
 spreadsheet_data_years = [];
-$.getJSON(
-				"https://spreadsheets.google.com/feeds/list/1SWwXdVpeFWi1cHcF5sUHj47qXunqCo5i1D2jeGhzHaE/od6/public/values?alt=json-in-script&callback=?",
+$.getJSON("https://spreadsheets.google.com/feeds/list/1SWwXdVpeFWi1cHcF5sUHj47qXunqCo5i1D2jeGhzHaE/od6/public/values?alt=json-in-script&callback=?",
 				function(data) {
-					$
-							.each(
-									data.feed.entry,
-									function(i, entry) {
+					$.each( data.feed.entry, function(i, entry) {
 										var datetime = entry.gsx$datetime.$t;
 										var date = new Date(datetime);
 										var year = date.getFullYear();

@@ -1,5 +1,0 @@
-<div ng-controller="myController">
-	<div>
-		<br> GPS-Data: {{gpsData}}
-	</div>
-</div>

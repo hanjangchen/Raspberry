@@ -1,5 +1,0 @@
-<div ng-controller="myController">
-    <h2>Mobile View 1</h2>
-    <p>Company Email: {{email}}</p>
-    <a  ui-sref="index_page"> Go to Index</a>
-</div>

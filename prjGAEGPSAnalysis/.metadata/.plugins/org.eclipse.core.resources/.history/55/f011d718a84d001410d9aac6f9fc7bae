@@ -1,4 +1,0 @@
-<div ng-controller="myController">
-    <h4>Desktop View</h4>
-    <p>index_1</p>
-</div>

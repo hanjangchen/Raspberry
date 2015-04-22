@@ -1,7 +1,0 @@
-<!-- index page directive -->
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-	<div ng-transclude></div>
-	<div style="margin: 10px auto;">
-		<br> GPS-Data: [[gpsData]]
-	</div>
-</div>

@@ -47,7 +47,7 @@ var index_page_app, device;
 			device = 'tablet';
 		}
 
-		// nested templates and routing
+		// nested templates routing
 		$stateProvider.state('home', {
 			templateUrl : '/ng_templates/my_ng_template_base.html',
 		}).state('index_page', {
@@ -146,6 +146,7 @@ var index_page_app, device;
 		else{
 		    $state.transitionTo('index_introduction');
 		};
+		$scope.selected = selected_template; // highlight selected topic
 		
 		// scroll to search field
 		$scope.scroll_to_top = function(){
@@ -165,10 +166,10 @@ var index_page_app, device;
 		// select topic
 		var selected_template = $state.current.name, isVisited = false;
 
+		// selected topic
 		$scope.select_topic = function(section) {
 			$scope.selected = section;
 			if ($('#list_icon').is(":visible")) {
-				$(".navbar-collapse").collapse('hide');
 				
 				//
 				if(!isVisited){
@@ -184,22 +185,16 @@ var index_page_app, device;
 			}
 		}
 
+		//
 		$scope.is_selected = function(section) {
 			return ($scope.selected === section);
 		}
 		
+		//
 		$scope.toggle_topic_list = function(){
 			if ($('#list_icon').is(":visible")) {
 				$(".navbar-collapse").collapse('hide');
 			}
-		}
-
-		// init selected topic
-		if(selected_template !== ''){
-			$scope.select_topic(selected_template);
-		}
-		else{
-			$scope.select_topic('index_introduction');
 		}
 	}
 	myIndexController.$inject = ['$state', '$scope', '$timeout', 'GLOBAL_VALUES' ];
@@ -223,7 +218,7 @@ var index_page_app, device;
 													scrollTop : $("#" + elemId).offset().top - 200
 												}, 800);
 							} catch (e) {
-								console.log('No such information in the SUDA tracking numbers\' array; Error Message: ' + e);
+								console.log('Error: ' + e);
 							}
 	                    }, 0);
 	                }
@@ -251,7 +246,7 @@ var index_page_app, device;
 					'Content-Type' : undefined
 				},
 				transformRequest : angular.identity
-			})
+			});
 		};
 	}
 	indexDataAnalysisService.$inject = [ '$http', 'GLOBAL_VALUES' ];

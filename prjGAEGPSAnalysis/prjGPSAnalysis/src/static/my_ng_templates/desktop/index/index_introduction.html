@@ -1,130 +1,107 @@
 <!-- sub-template for index page -->
 <style>
-<!--
-.scroll_to_top_arrow {
-	color: #eee;
-	font-size: 1.8em;
+@media all and (min-device-width: 768px) {
+	.scroll_to_top_arrow {
+		color: #eee;
+		font-size: 1.8em;
+	}
+	.scroll_to_top_arrow:hover {
+		cursor: pointer;
+		color: #888;
+	}
+	.row {
+		margin: 100px auto;
+	}
+	.gsc-control-cse,.gsc-control-cse-en {
+		background-color: transparent !important;
+		border: none !important;
+		padding: 2px !important;
+	}
+	.gsc-input {
+		border-radius: 2px !important;
+	}
+	.img-responsive {
+		border-radius: 3px !important;
+		-o-border-radius: 3px !important;
+		-moz-border-radius: 3px !important;
+		-webkit-border-radius: 3px !important;
+	}
+	.icon {
+		height: 80px;
+		margin: 5px auto;
+	}
+	.intro_title {
+		font-weight: bold;
+	}
+	.intro_content,.intro_content>span {
+		color: #555;
+		font-size: 14px;
+		letter-spacing: 2px;
+	}
+	.intro_content>a {
+		color: #3296fd;
+		font-size: 13px;
+		letter-spacing: 2px;
+	}
+	.outline_title {
+		font-size: 16px;
+	}
+	#project_calendar {
+		font: 10px sans-serif;
+		shape-rendering: crispEdges;
+	}
+	.day {
+		fill: #fff;
+		stroke: #ccc;
+	}
+	.day:hover {
+		cursor: pointer;
+	}
+	.month {
+		fill: none;
+		stroke: #000;
+		stroke-width: 2px;
+	}
+	.month_text,.wday {
+		font-size: 10px;
+	}
+	.RdYlGn .q0-11 {
+		fill: #ebf4fd;
+	}
+	.RdYlGn .q1-11 {
+		fill: #d6e9fd;
+	}
+	.RdYlGn .q2-11 {
+		fill: #91bef1;
+	}
+	.RdYlGn .q3-11 {
+		fill: #3d88db;
+	}
+	.RdYlGn .q4-11 {
+		fill: #337dd0;
+	}
+	.RdYlGn .q5-11 {
+		fill: #2c66a8;
+	}
+	.RdYlGn .q6-11 {
+		fill: #235185;
+	}
+	.RdYlGn .q7-11 {
+		fill: #16375d;
+	}
+	.RdYlGn .q8-11 {
+		fill: #0f2845;
+	}
+	.RdYlGn .q9-11 {
+		fill: #091b2f;
+	}
+	.RdYlGn .q10-11 {
+		fill: #030a11;
+	}
 }
 
-.scroll_to_top_arrow:hover {
-	cursor: pointer;
-	color: #888;
-}
+@media all and (max-device-width: 767px) {}
 
-.row {
-	margin: 100px auto;
-}
-
-.gsc-control-cse,.gsc-control-cse-en {
-	background-color: transparent !important;
-	border: none !important;
-	padding: 2px !important;
-}
-
-.gsc-input {
-	border-radius: 2px !important;
-}
-
-.img-responsive {
-	border-radius: 3px !important;
-	-o-border-radius: 3px !important;
-	-moz-border-radius: 3px !important;
-	-webkit-border-radius: 3px !important;
-}
-
-.icon {
-	height: 80px;
-	margin: 5px auto;
-}
-
-.intro_title {
-	font-weight: bold;
-}
-
-.intro_content,.intro_content>span {
-	color: #555;
-	font-size: 14px;
-	letter-spacing: 2px;
-}
-
-.intro_content>a {
-	color: #3296fd;
-	font-size: 13px;
-	letter-spacing: 2px;
-}
-
-.outline_title{
-	font-size: 16px;
-}
-
-#project_calendar {
-	font: 10px sans-serif;
-	shape-rendering: crispEdges;
-}
-
-.day {
-	fill: #fff;
-	stroke: #ccc;
-}
-
-.day:hover {
-	cursor: pointer;
-}
-
-.month {
-	fill: none;
-	stroke: #000;
-	stroke-width: 2px;
-}
-
-.month_text,.wday {
-	font-size: 10px;
-}
-
-.RdYlGn .q0-11 {
-	fill: #ebf4fd;
-}
-
-.RdYlGn .q1-11 {
-	fill: #d6e9fd;
-}
-
-.RdYlGn .q2-11 {
-	fill: #91bef1;
-}
-
-.RdYlGn .q3-11 {
-	fill: #3d88db;
-}
-
-.RdYlGn .q4-11 {
-	fill: #337dd0;
-}
-
-.RdYlGn .q5-11 {
-	fill: #2c66a8;
-}
-
-.RdYlGn .q6-11 {
-	fill: #235185;
-}
-
-.RdYlGn .q7-11 {
-	fill: #16375d;
-}
-
-.RdYlGn .q8-11 {
-	fill: #0f2845;
-}
-
-.RdYlGn .q9-11 {
-	fill: #091b2f;
-}
-
-.RdYlGn .q10-11 {
-	fill: #030a11;
-}
--->
 </style>
 <div>
 	<!-- introduction -->
@@ -166,39 +143,59 @@
 
 
 			<!-- outline -->
-			<br>
-			<br>
+			<br> <br>
 			<div>
 				<h4 class="intro_title">Outline of Hardware Establishment</h4>
 				<dl class="dl-vertical">
 					<dt>Introduction</dt>
 					<dd>Coming Soon...</dd>
-
 				</dl>
-
 			</div>
-			<br>
-			<br>
+			<br> <br>
 			<div>
 				<h4 class="intro_title">Outline of Software Development</h4>
 				<dl class="dl-vertical">
 					<dt class="outline_title">Introduction</dt>
-					<dd><p class="intro_content"><span>Coming Soon...</span></p></dd>
-					
+					<dd>
+						<p class="intro_content">
+							<span>Coming Soon...</span>
+						</p>
+					</dd>
+
 					<dt class="outline_title">Applications</dt>
-					<dd><p class="intro_content"><span>Project Calendar: Integration of Google Spreadsheet and D3.js</span></p></dd>
-					<dd><p class="intro_content"><span>Animations: Visualize Algorithms</span></p></dd>
-					<dd><p class="intro_content"><span>Pattern Modeling: Build Neural Network</span></p></dd>
-					<dd><p class="intro_content"><span>Data Analysis: Analyze Data collected by Raspberry PI</span></p></dd>
-					
+					<dd>
+						<p class="intro_content">
+							<span>Project Calendar: Integration of Google Spreadsheet
+								and D3.js</span>
+						</p>
+					</dd>
+					<dd>
+						<p class="intro_content">
+							<span>Animations: Visualize Algorithms</span>
+						</p>
+					</dd>
+					<dd>
+						<p class="intro_content">
+							<span>Pattern Modeling: Build Neural Network</span>
+						</p>
+					</dd>
+					<dd>
+						<p class="intro_content">
+							<span>Data Analysis: Analyze Data collected by Raspberry
+								PI</span>
+						</p>
+					</dd>
+
 					<dt class="outline_title">Advance Development</dt>
 					<dd>
-					<p class="intro_content"><span>Real-Time Monitoring: Google App Engine Channel</span></p>
+						<p class="intro_content">
+							<span>Real-Time Monitoring: Google App Engine Channel</span>
+						</p>
 					</dd>
 					<dd class="outline_title">
-					<p class="intro_content">
-					<span>Applications Swarm on Google App Engine</span>
-					</p>
+						<p class="intro_content">
+							<span>Applications Swarm on Google App Engine</span>
+						</p>
 					</dd>
 				</dl>
 			</div>
@@ -949,7 +946,7 @@
 				</div>
 			</div>
 
-	
+
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3>Algorithms</h3>
 				<div class="row">
@@ -970,11 +967,14 @@
 								class="btn btn-primary" title="Neural Network Introduction">Learn
 								More &raquo;</a>
 						</p>
-						<p style="font-size: 13px; text-align: justify; font-weight: 700;">Note:
-							Particles Swarm Optimiaztion is utilized for stochastic
+						<p style="font-size: 13px; text-align: justify; font-weight: 700;">
+							Note: Particles Swarm Optimiaztion is utilized for stochastic
 							optmization; in our case, we will use it for finding out the
-							optimal weights of neural-network<br><br>
-							<a ui-sref="particle_swarm_optimization" target="_blank">*Online Animation of Particle Swarm Optimization</a></p>
+							optimal weights of neural-network<br>
+							<br> <a ui-sref="particle_swarm_optimization"
+								target="_blank">*Online Animation of Particle Swarm
+								Optimization</a>
+						</p>
 					</div>
 
 					<div id="neural_network"

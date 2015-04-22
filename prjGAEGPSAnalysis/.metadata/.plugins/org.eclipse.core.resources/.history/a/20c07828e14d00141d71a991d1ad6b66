@@ -1,7 +1,0 @@
-<div ng-controller="myController">
-    <h4>GPS Analysis</h4>
-    <p>index_1</p>
-    <ng-index-gps-data ng_data = "'ng_data'">
-    <p>Data Set</p>
-    </ng-index-gps-data>
-</div>

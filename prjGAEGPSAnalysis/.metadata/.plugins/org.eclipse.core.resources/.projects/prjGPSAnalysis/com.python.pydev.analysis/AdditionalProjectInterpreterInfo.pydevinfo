@@ -25,7 +25,7 @@ dispatchers.__init__|1412633156250|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis
 11=dictionaries.dict_keys_values
 4=handlers.handler_webapp2_extra_auth
 15=BaseHandler.session
-28=ImagesDataDownloadDispatcher
+30=ImagesDataDownloadDispatcher
 12=KeysVaulesGeneral
 25=MessageService
 26=MessageResponse
@@ -50,7 +50,7 @@ dispatchers.__init__|1412633156250|D:\Raspberry\prjGAEGPSAnalysis\prjGPSAnalysis
 10=libs_encryption.rsaKeysGenerator
 31=BaseHandler.dispatch
 17=BaseHandler
-30=GPSDataRetrievingDispatcher
+28=GPSDataRetrievingDispatcher
 -- END DICTIONARY
 -- START TREE 1
 26
@@ -112,5 +112,5 @@ ses|2|session!17&34@session_store!31&35@
 set|1|set_session!17&34@
 upd|2|update_datetime!19&11@update_datetime!20&11@
 use|3|user_model!17&34@user!17&34@user_info!17&34@
-web|3|web_title_index_page!18&91@web_title_front_page!18&91@web_title!18&91@
+web|3|web_title!18&91@web_title_front_page!18&91@web_title_index_page!18&91@
 -- END TREE

@@ -1,6 +1,0 @@
-<div>
-	<h4>GPS Analysis</h4>
-	<my-index-gps-data my-data = "">
-	<p>index_2</p>
-	</my-index-gps-data>
-</div>

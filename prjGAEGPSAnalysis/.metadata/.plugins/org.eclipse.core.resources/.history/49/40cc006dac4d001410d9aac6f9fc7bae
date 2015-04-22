@@ -1,9 +1,0 @@
-'''
-Created on Oct 3, 2014
-
-@author: alan tai
-'''
-from google.appengine.ext import ndb
-
-class Order(ndb.Model):
-    gps_data = ndb.JsonProperty()

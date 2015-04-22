@@ -1,8 +1,0 @@
-<!-- sub-template for index page -->
-<my-index-admin-images-upload></my-index-admin-images-upload>
-
-<!-- js libs -->
-<script type="text/javascript" src="/js/plugin_mis/numeric-1.2.6.min.js"></script>
-<script type="text/javascript"
-	src="/js/plugin_mis/particle_swarm_optimization.js"></script>
-<script type="text/javascript" src="/js/index_data_analysis.js"></script>

@@ -1,6 +1,0 @@
-<div>
-	<div ng-transclude></div>
-	<div>
-		<br> GPS-Data: {{gpsData}}
-	</div>
-</div>
